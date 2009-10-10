@@ -1,1 +1,1 @@
-<h6>&copy;2009 Lance Wicks - Version 0.1.0</h6>
+<h6>DojoList v.0.0.1 - Created by Lance Wicks.<br /><a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> </h6>
