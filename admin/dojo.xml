@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="dojo.xsl"?>
+<xml><Dojo>
+<ClubName>Matsumachi Judo Club</ClubName>
+<DojoAddress>Two Riversmeet Leisure Centre, Stony Lane South, Christchurch, Dorset, BH23 1HW</DojoAddress>
+<TrainingSessions>Thursdays	6.30 - 7.30pm junior beginners, 7.30 - 8.30pm junior advanced, 8.30 - 10pm seniors</TrainingSessions>
+<ContactName>Paul Sawyer</ContactName>
+<ContactPhone>01202 429101</ContactPhone>
+<ContactEmail>pg_sawyer@hotmail.com</ContactEmail>
+<coordinates>-1.165786,51.090113,0</coordinates>
+</Dojo><Dojo><ClubName>test club</ClubName><DojoAddress>street</DojoAddress><TrainingSessions>monday 6pm</TrainingSessions><ContactName>lance Wicks</ContactName><ContactPhone>1234</ContactPhone><ContactEmail>lw@judocoach.com</ContactEmail><coordinates>5678,123</coordinates></Dojo><Dojo><ClubName>a club</ClubName><DojoAddress/><TrainingSessions/><ContactName/><ContactPhone/><ContactEmail/><coordinates>,</coordinates></Dojo><Dojo><ClubName>Z club</ClubName><DojoAddress/><TrainingSessions/><ContactName/><ContactPhone/><ContactEmail/><coordinates>,</coordinates></Dojo><Dojo><ClubName>1</ClubName><DojoAddress/><TrainingSessions/><ContactName/><ContactPhone/><ContactEmail/><coordinates>,</coordinates></Dojo><Dojo><ClubName>testing</ClubName><DojoAddress>-</DojoAddress><TrainingSessions>-</TrainingSessions><ContactName>-</ContactName><ContactPhone>-</ContactPhone><ContactEmail>-</ContactEmail><coordinates>-,-</coordinates></Dojo></xml>

@@ -1,0 +1,9 @@
+Thanks for using CodaProject
+	
+	Just set up a site in Coda and press ctrl+alt+p or Plug-ins->Create project
+	
+	This plugin will help you to quick set up your project.Please visit my site http://www.nuguerrilla.com for updates and releases.
+	
+	Enjoy.
+	
+	Francesco

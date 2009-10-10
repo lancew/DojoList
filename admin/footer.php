@@ -1,0 +1,1 @@
+<h6>&copy;2009 Lance Wicks - Version 0.1.0</h6>
