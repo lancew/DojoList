@@ -41,18 +41,39 @@ function admin_create_add() {
 	$new1->addChild('ContactPhone', $ContactPhone);
 	$new1->addChild('ContactEmail', $ContactEmail);
 	$new1->addChild('coordinates', "$Longitude,$Latitude");
-	//kml format is long,lat,0
+	#kml format is long,lat,0
 
 
-	//echo '<pre>'.$xml->asXML().'</pre>';
+	#echo '<pre>'.$xml->asXML().'</pre>';
 
-	//$myFile = "dojo.xml";
-	//$fh = fopen($myFile, 'w') or die("can't open file");
+	$myFile = "data/dojo.xml";
+	$fh = fopen($myFile, 'w') or die("can't open file");
 
 
-	//fwrite($fh, $xml->asXML());
+	fwrite($fh, $xml->asXML());
 
-	//fclose($fh);
-	return html('admin/create_add.html.php');
+	fclose($fh);
+	set('DojoName', $DojoName);
+	return render('admin/create_add.html.php');
+	#return html('admin/create_add.html.php');
 
 }
+
+function admin_delete() {
+	if (file_exists('data/dojo.xml')) {
+	$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+
+	$dojo_list = '';
+	foreach ($xml->Dojo as $dojo) {
+		 $dojo_list[] =$dojo->ClubName;
+	}
+	#print_r($dojo_list);
+	set('DojoList', $dojo_list);
+
+	
+	return html('admin/delete.html.php');
+}
+
