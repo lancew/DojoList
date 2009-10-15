@@ -12,6 +12,5 @@ dispatch_get   ('/admin/create',   'admin_create');
 dispatch_post  ('/admin/create',   'admin_create_add');
 
 dispatch_get   ('/admin/delete',   'admin_delete');
-dispatch_post  ('/admin/delete',   'admin_delete_end');
-
+dispatch('/admin/delete/:dojo', 'admin_delete_end');
 run();

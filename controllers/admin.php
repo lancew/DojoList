@@ -14,7 +14,6 @@ function admin_create() {
 
 
 function admin_create_add() {
-
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
 	} else {
@@ -77,3 +76,50 @@ function admin_delete() {
 	return html('admin/delete.html.php');
 }
 
+function admin_delete_end() {
+	$DojoName = params('dojo');
+	print '<h2>Deleting dojo: "'.$DojoName.'"</h2>';
+
+	if (file_exists('data/dojo.xml')) {
+		$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+
+
+
+	$newxml = '<xml>';
+
+	foreach ($xml->Dojo as $dojo) {
+  		// echo $dojo->ClubName, '<br />';
+
+		if ($dojo->ClubName == $DojoName)
+
+		{
+
+			echo $DojoName.' deleting...<br />';
+		
+		
+
+		} else {
+		
+			$newxml .= $dojo->asXML();
+		}
+
+	} 
+
+
+	$newxml .= '</xml>';
+
+	$myFile = "data/dojo.xml";
+	$fh = fopen($myFile, 'w') or die("can't open file");
+
+
+	fwrite($fh, $newxml);
+
+	fclose($fh);
+
+	print '<h4>Dojo Deleted</h4>';
+
+
+}
