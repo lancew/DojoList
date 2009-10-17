@@ -4,9 +4,9 @@
 function load_dojo() {
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
-		return 'Loaded dojo.xml';
+		return($xml);
 	} else {
-		return 'Failed to open dojo.xml';
+		return(0);
 	}
 
 }

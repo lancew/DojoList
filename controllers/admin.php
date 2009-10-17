@@ -2,9 +2,12 @@
 
 
 function admin_index() {
-	return html('admin/index.html.php');
-	$text = load_dojo();
-	halt($text);
+	if (load_dojo()) {
+		return html('admin/index.html.php');
+	} else {
+		halt('Dojo unable to load');
+	}
+	
 }
 
 
