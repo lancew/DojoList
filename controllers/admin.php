@@ -3,6 +3,8 @@
 
 function admin_index() {
 	return html('admin/index.html.php');
+	$text = load_dojo();
+	halt($text);
 }
 
 
