@@ -81,7 +81,7 @@ function admin_delete() {
 
 function admin_delete_end() {
 	$DojoName = params('dojo');
-	print '<h2>Deleting dojo: "'.$DojoName.'"</h2>';
+	
 
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
@@ -100,7 +100,7 @@ function admin_delete_end() {
 
 		{
 
-			echo $DojoName.' deleting...<br />';
+			#echo $DojoName.' deleting...<br />';
 		
 		
 
@@ -122,7 +122,9 @@ function admin_delete_end() {
 
 	fclose($fh);
 
-	print '<h4>Dojo Deleted</h4>';
+
+	set('DojoName', $DojoName);
+	return html('admin/delete_end.html.php');
 
 
 }
