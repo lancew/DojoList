@@ -2,11 +2,9 @@
 
 
 function admin_index() {
-	if (load_dojo()) {
+
 		return html('admin/index.html.php');
-	} else {
-		halt('Dojo unable to load');
-	}
+
 	
 }
 

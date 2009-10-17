@@ -1,6 +1,5 @@
 <?php
 require_once 'lib/limonade.php';
-require_once 'lib/dojoxml.php';
 
 layout('default_layout.php');
 
