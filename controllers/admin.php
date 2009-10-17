@@ -126,3 +126,48 @@ function admin_delete_end() {
 
 
 }
+
+function admin_create_kml() {
+	if (file_exists('data/dojo.xml')) {
+		$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+	
+	$newKML = '<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Dojo List</name>';
+
+foreach ($xml->Dojo as $dojo) {
+	$newKML .= '<Placemark>';
+	$newKML .= '<name>'.$dojo->ClubName.'</name>';
+	$newKML .= '<description>';
+		$newKML .= $dojo->DojoAddress;
+		$newKML .= $dojo->TrainingSessions;
+		$newKML .= $dojo->ContactName;
+		$newKML .= $dojo->ContactPhone;
+		$newKML .= $dojo->ContactEmail;
+	$newKML .= '</description>';	
+	$newKML .= '<Point><coordinates>';
+		$newKML .= $dojo->coordinates;
+	$newKML .= '</coordinates></Point>';
+	$newKML .= '</Placemark>';	
+	
+}
+
+	
+$newKML .= '</Document></kml>';
+//print $newKML;
+
+$myFile = "data/dojo.kml";
+$fh = fopen($myFile, 'w') or die("can't open file");
+
+
+fwrite($fh, $newKML);
+
+fclose($fh);
+
+
+		return html('admin/create_kml.html.php');
+}

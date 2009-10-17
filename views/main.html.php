@@ -13,6 +13,6 @@
      
       
       // Add url to the URL of your online KML dojo.kml file here      
-      mapstraction.addOverlay("http://hampshirejudo.org.uk/map/hantsjudo.kml");
+      mapstraction.addOverlay("data/hantsjudo.kml");
       
     </script> 

@@ -13,4 +13,7 @@ dispatch_post  ('/admin/create',   'admin_create_add');
 
 dispatch_get   ('/admin/delete',   'admin_delete');
 dispatch('/admin/delete/:dojo', 'admin_delete_end');
+
+dispatch_get   ('/admin/createkml',   'admin_create_kml');
+
 run();
