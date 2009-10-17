@@ -173,3 +173,4 @@ fclose($fh);
 
 		return html('admin/create_kml.html.php');
 }
+

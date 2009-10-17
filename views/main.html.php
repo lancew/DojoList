@@ -16,3 +16,4 @@
       mapstraction.addOverlay("data/hantsjudo.kml");
       
     </script> 
+	<p><a href="data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
