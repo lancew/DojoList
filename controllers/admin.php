@@ -25,6 +25,8 @@ function admin_create_add() {
 	//print $xml->Dojo->ClubName;
 
 	$DojoName = $_POST["DojoName"];
+	$CoachName = $_POST["CoachName"];
+	$MembershipID = $_POST["MembershipID"];
 	$DojoAddress = $_POST["DojoAddress"];
 	$TrainingSessions = $_POST["TrainingSessions"];
 	$ContactName = $_POST["ContactName"];
@@ -37,6 +39,8 @@ function admin_create_add() {
 
 	$new1 = $xml->addChild("Dojo");
 	$new1->addChild('ClubName', $DojoName);
+	$new1->addChild('CoachName', $CoachName);
+	$new1->addChild('MembershipID', $MembershipID);
 	$new1->addChild('DojoAddress', $DojoAddress);
 	$new1->addChild('TrainingSessions', $TrainingSessions);
 	$new1->addChild('ContactName', $ContactName);
@@ -145,7 +149,10 @@ foreach ($xml->Dojo as $dojo) {
 	$newKML .= '<Placemark>';
 	$newKML .= '<name>'.$dojo->ClubName.'</name>';
 	$newKML .= '<description>';
+		$newKML .= $dojo->CoachName;
+		$newKML .= $dojo->MembershipID;
 		$newKML .= $dojo->DojoAddress;
+		
 		$newKML .= $dojo->TrainingSessions;
 		$newKML .= $dojo->ContactName;
 		$newKML .= $dojo->ContactPhone;

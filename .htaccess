@@ -11,3 +11,6 @@
      
      RewriteRule ^(.*)$   index.php?/$1    [NC,L]
  </IfModule>
+ 
+
+ 
