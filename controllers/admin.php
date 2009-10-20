@@ -32,32 +32,7 @@ function admin_create_add() {
 	}
 
 	$DojoName = $_POST["DojoName"];
-	//$CoachName = $_POST["CoachName"];
-	//$MembershipID = $_POST["MembershipID"];
-	//$DojoAddress = $_POST["DojoAddress"];
-	//$TrainingSessions = $_POST["TrainingSessions"];
-	//$ContactName = $_POST["ContactName"];
-	//$ContactPhone = $_POST["ContactPhone"];
-	//$ContactEmail = $_POST["ContactEmail"];
-	//$Latitude = $_POST["Latitude"];
-	//$Longitude = $_POST["Longitude"];
-
-	#print $DojoName;
-
-	//$new1 = $xml->addChild("Dojo");
-	//$new1->addChild('ClubName', $DojoName);
-	//$new1->addChild('CoachName', $CoachName);
-	//$new1->addChild('MembershipID', $MembershipID);
-	//$new1->addChild('DojoAddress', $DojoAddress);
-	//$new1->addChild('TrainingSessions', $TrainingSessions);
-	//$new1->addChild('ContactName', $ContactName);
-	//$new1->addChild('ContactPhone', $ContactPhone);
-	//$new1->addChild('ContactEmail', $ContactEmail);
-	//$new1->addChild('coordinates', "$Longitude,$Latitude");
-	#kml format is long,lat,0
-
-
-	//echo '<pre>'.$xml->asXML().'</pre>';
+		//echo '<pre>'.$xml->asXML().'</pre>';
 
 	$myFile = "data/dojo.xml";
 	$fh = fopen($myFile, 'w') or die("can't open file");
@@ -81,7 +56,7 @@ function admin_delete() {
 
 	$dojo_list = '';
 	foreach ($xml->Dojo as $dojo) {
-		 $dojo_list[] =$dojo->ClubName;
+		 $dojo_list[] =$dojo->DojoName;
 	}
 	#print_r($dojo_list);
 	set('DojoList', $dojo_list);
@@ -107,7 +82,7 @@ function admin_delete_end() {
 	foreach ($xml->Dojo as $dojo) {
   		// echo $dojo->ClubName, '<br />';
 
-		if ($dojo->ClubName == $DojoName)
+		if ($dojo->DojoName == $DojoName)
 
 		{
 
@@ -154,16 +129,12 @@ function admin_create_kml() {
 
 foreach ($xml->Dojo as $dojo) {
 	$newKML .= '<Placemark>';
-	$newKML .= '<name>'.$dojo->ClubName.'</name>';
+	$newKML .= '<name>'.$dojo->DojoName.'</name>';
 	$newKML .= '<description>';
-		$newKML .= $dojo->CoachName;
-		$newKML .= $dojo->MembershipID;
-		$newKML .= $dojo->DojoAddress;
+				foreach ($dojo as $key => $value) {
+			$newKML .= "$key: $value \n";
+		}
 		
-		$newKML .= $dojo->TrainingSessions;
-		$newKML .= $dojo->ContactName;
-		$newKML .= $dojo->ContactPhone;
-		$newKML .= $dojo->ContactEmail;
 	$newKML .= '</description>';	
 	$newKML .= '<Point><coordinates>';
 		$newKML .= $dojo->coordinates;
@@ -174,7 +145,7 @@ foreach ($xml->Dojo as $dojo) {
 
 	
 $newKML .= '</Document></kml>';
-//print $newKML;
+//print"<pre> $newKML </pre>";
 
 $myFile = "data/dojo.kml";
 $fh = fopen($myFile, 'w') or die("can't open file");
