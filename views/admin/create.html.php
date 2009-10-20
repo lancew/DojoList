@@ -18,7 +18,7 @@ function removeFormField(id) {
 
 <form method="post" action="">
 
-Club/Dojo Name: <input type="text" name="ClubName"><br />
+Club/Dojo Name: <input type="text" name="DojoName"><br />
 NGB Membership ID: <input type="text" name="MembershipID"><br />
 Head Coach Name: <input type="text" name="CoachName"><br />
 Dojo Address: <input type="text" name="DojoAddress"><br />

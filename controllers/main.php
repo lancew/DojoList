@@ -12,11 +12,6 @@ function html_list() {
 		exit('Failed to open dojo.xml.');
 	}
 
-	$dojo_list = '';
-	foreach ($xml->Dojo as $dojo) {
-		 $dojo_list[] =$dojo->ClubName;
-	}
-	#print_r($dojo_list);
 	set('DojoList', $xml);
 
 	

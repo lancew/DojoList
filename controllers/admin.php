@@ -27,11 +27,11 @@ function admin_create_add() {
 	$new1 = $xml->addChild("Dojo");
 	foreach ($_POST as $key => $value)
 		{
-			print "$key has a value of $value<br />";
+			//print "$key has a value of $value<br />";
 			$new1->addChild($key, $value);
 	}
 
-	$DojoName = $_POST["ClubName"];
+	$DojoName = $_POST["DojoName"];
 	//$CoachName = $_POST["CoachName"];
 	//$MembershipID = $_POST["MembershipID"];
 	//$DojoAddress = $_POST["DojoAddress"];
@@ -57,7 +57,7 @@ function admin_create_add() {
 	#kml format is long,lat,0
 
 
-	echo '<pre>'.$xml->asXML().'</pre>';
+	//echo '<pre>'.$xml->asXML().'</pre>';
 
 	$myFile = "data/dojo.xml";
 	$fh = fopen($myFile, 'w') or die("can't open file");
