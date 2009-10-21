@@ -29,9 +29,9 @@
 	<meta name="description" content="Example output page" />
 	<meta name="keywords" content="Dojo List" />
 	<title>Dojo Listing</title>
-	<script src="/js/cufon/cufon-yui.js" type="text/javascript"></script>
-	<script src="/js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
-	<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="<?php echo option('base_path') ?>js/cufon/cufon-yui.js" type="text/javascript"></script>
+	<script src="<?php echo option('base_path') ?>js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<link href="<?php echo option('base_path') ?>css/reset.css" media="screen" rel="stylesheet" type="text/css" />
 	
 	<!-- ========================================================================================================================= -->
     <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
@@ -58,9 +58,10 @@
 <p></p> 		
 <hr>
 <a href="<?=url_for('/')?>">[Home]</a><a href="<?=url_for('admin')?>">[Admin Interface]</a>
-<h4>DojoList v.0.0.1 - Created by Lance Wicks.<br /><a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> </h4>
+<h4>DojoList v.<?php echo option('version');?> - Created by Lance Wicks.<br /><a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> </h4>
 	<a href="/agpl-3.0.txt"><img src="/images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a>
 	<p>Aerated with <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade</a></p>
+	
 	</body>
 </html>	
 	
