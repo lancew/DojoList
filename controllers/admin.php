@@ -42,8 +42,9 @@ function admin_create_add() {
 
 	fclose($fh);
 	set('DojoName', $DojoName);
+	admin_create_kml();
 	return render('admin/create_add.html.php');
-	#return html('admin/create_add.html.php');
+	
 
 }
 

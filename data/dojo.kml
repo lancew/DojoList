@@ -20,4 +20,22 @@ ContactPhone: 7
 ContactEmail: 8 
 Latitude: 9 
 Longitude: 10 
+</description><Point><coordinates></coordinates></Point></Placemark><Placemark><name>nbm</name><description>DojoName: nbm 
+MembershipID:  
+CoachName:  
+DojoAddress:  
+ContactName:  
+ContactPhone:  
+ContactEmail:  
+Latitude:  
+Longitude:  
+</description><Point><coordinates></coordinates></Point></Placemark><Placemark><name>TEST TEST TEST</name><description>DojoName: TEST TEST TEST 
+MembershipID:  
+CoachName:  
+DojoAddress:  
+ContactName:  
+ContactPhone:  
+ContactEmail:  
+Latitude:  
+Longitude:  
 </description><Point><coordinates></coordinates></Point></Placemark></Document></kml>

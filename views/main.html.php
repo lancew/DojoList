@@ -31,7 +31,7 @@
      
       
       // Add url to the URL of your online KML dojo.kml file here      
-      mapstraction.addOverlay("data/hantsjudo.kml");
+      mapstraction.addOverlay("<?php echo option('base_path') ?>data/dojo.kml");
       
     </script> 
-	<p><a href="data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
+	<p><a href="<?php echo option('base_path') ?>data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
