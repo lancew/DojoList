@@ -1,6 +1,7 @@
 <body>
 <h1>DOJO LIST</h1>
-
+<hr>
+<hr>
 <ul>
 <?php foreach ($DojoList as $dojo) { 
 

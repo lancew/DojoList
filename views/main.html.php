@@ -1,6 +1,24 @@
 <body onload="initialize()">
 	<h1>Dojo List</h1>
 	    <div id="mapstraction" style="width: 100%;"></div>
+   <!-- ========================================================================================================================= -->
+    <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
+    <!-- ========================================================================================================================= -->
+
+	
+	<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww" type="text/javascript"></script>
+    <script type="text/javascript" src="js/mapstraction.js"></script>
+    <style type="text/css">
+      #mapstraction {
+        height: 600px;
+        width: 600px;
+      }
+    </style> 
+	
+
+	
+	
+
     <script type="text/javascript">
 
       // initialise the map with your choice of API
