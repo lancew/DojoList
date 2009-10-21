@@ -42,7 +42,7 @@
 <hr>
 <a href="<?=url_for('/')?>">[Home]</a><a href="<?=url_for('admin')?>">[Admin Interface]</a>
 <h4>DojoList v.<?php echo option('version');?> - Created by Lance Wicks.<br /><a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> </h4>
-	<a href="/agpl-3.0.txt"><img src="<?php echo option('base_path') ?>images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a>
+	<a href="<?php echo option('base_path') ?>agpl-3.0.txt"><img src="<?php echo option('base_path') ?>images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a>
 	<p>Aerated with <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade</a></p>
 	
 	</body>

@@ -6,8 +6,8 @@
     <!-- ========================================================================================================================= -->
 
 	
-	<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww" type="text/javascript"></script>
-    <script type="text/javascript" src="js/mapstraction.js"></script>
+	<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo option('base_path') ?>js/mapstraction.js"></script>
     <style type="text/css">
       #mapstraction {
         height: 600px;
