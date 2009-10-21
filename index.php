@@ -1,6 +1,14 @@
 <?php
 require_once 'lib/limonade.php';
 
+function configure()
+{
+	option('base_uri', '/'); # '/' or same as the RewriteBase in your .htaccess
+
+
+}
+
+
 layout('default_layout.php');
 
 // main controller
