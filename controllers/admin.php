@@ -138,7 +138,7 @@ foreach ($xml->Dojo as $dojo) {
 		
 	$newKML .= '</description>';	
 	$newKML .= '<Point><coordinates>';
-		$newKML .= $dojo->coordinates;
+	$newKML .= $dojo->Longitude . ',' . $dojo->Latitude;
 	$newKML .= '</coordinates></Point>';
 	$newKML .= '</Placemark>';	
 	

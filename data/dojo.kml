@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>Dojo List</name><Placemark><name>abc</name><description>DojoName: abc 
-MembershipID: def 
-CoachName: 1 
-DojoAddress: 2 
-ContactName: 3 
-ContactPhone: 4 
-ContactEmail: 5 
-Latitude: 6 
-Longitude: 7 
-</description><Point><coordinates></coordinates></Point></Placemark><Placemark><name>alpha</name><description>DojoName: alpha 
-MembershipID: 123 
-CoachName: Lance Wicks 
-DojoAddress: 3 
-TrainingSession1: 1 
-ContactName: 6 
-ContactPhone: 7 
-ContactEmail: 8 
-Latitude: 9 
-Longitude: 10 
-</description><Point><coordinates></coordinates></Point></Placemark><Placemark><name>nbm</name><description>DojoName: nbm 
+<name>Dojo List</name><Placemark><name>BETA</name><description>DojoName: BETA 
 MembershipID:  
 CoachName:  
 DojoAddress:  
 ContactName:  
 ContactPhone:  
 ContactEmail:  
-Latitude:  
-Longitude:  
-</description><Point><coordinates></coordinates></Point></Placemark><Placemark><name>TEST TEST TEST</name><description>DojoName: TEST TEST TEST 
-MembershipID:  
-CoachName:  
-DojoAddress:  
-ContactName:  
-ContactPhone:  
-ContactEmail:  
-Latitude:  
-Longitude:  
-</description><Point><coordinates></coordinates></Point></Placemark></Document></kml>
+Latitude: 51.090113 
+Longitude: -1.165786 
+</description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark></Document></kml>
