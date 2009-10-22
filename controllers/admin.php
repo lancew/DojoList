@@ -111,6 +111,7 @@ function admin_delete_end() {
 
 
 	set('DojoName', $DojoName);
+	admin_create_kml();
 	return html('admin/delete_end.html.php');
 
 

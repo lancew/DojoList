@@ -7,7 +7,7 @@
 
 	
 	<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo option('base_path') ?>js/mapstraction.js"></script>
+    <script type="text/javascript" src="<?php echo option('app_path') ?>/js/mapstraction.js"></script>
     <style type="text/css">
       #mapstraction {
         height: 600px;
@@ -31,7 +31,7 @@
      
       
       // Add url to the URL of your online KML dojo.kml file here      
-      mapstraction.addOverlay("<?php echo option('base_path') ?>data/dojo.kml");
+      mapstraction.addOverlay("<?php echo option('app_path') ?>/data/dojo.kml");
       
     </script> 
-	<p><a href="<?php echo option('base_path') ?>data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
+	<p><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a> - <a href="html">HTML</a></p>

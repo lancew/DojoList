@@ -28,6 +28,8 @@ function configure()
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
 	option('version', '0.0.1'); #DojoList version.
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
+	$app_path = 'http://' . $_SERVER['HTTP_HOST'] . option('base_uri');
+	option('app_path', $app_path);
 }
 
 
