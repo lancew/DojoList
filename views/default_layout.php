@@ -1,6 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Splendid
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20090622
+
+-->
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 <!-- ======================================================================= -->
 <!-- This is a simple Dojo listing app for Judo and other arts.
@@ -21,8 +33,7 @@
 <!-- ============================================================================= -->
 
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 	<meta name="author" content="Lance Wicks" />
 	<meta name="designer" content="Lance Wicks" />
 	<meta name="developer" content="Lance Wicks" />
@@ -32,18 +43,105 @@
 	<script src="<?php echo option('app_path') ?>/js/cufon/cufon-yui.js" type="text/javascript"></script>
 	<script src="<?php echo option('app_path') ?>/js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
 	<link href="<?php echo option('app_path') ?>/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="<?php echo option('app_path') ?>/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 	
 		
 </head>
+<div id="wrapper">
+<div id="logo">
+		<h1><a href="#">DojoList</a></h1>
+		<p><em> A free Open Source Dojo Listing system for Judo (and other martial art) clubs.</em></p>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="<?=url_for('/')?>">Home</a></li>
+				<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
+				<li><a href="<?php echo option('app_path') ?>data/dojo.kml">KML</a></li>
+				
+				
+
+
+			</ul>
+		</div>
+		<!-- end #menu -->
+		<div id="search">
+			<form method="get" action="">
+				<fieldset>
+				<input type="text" name="s" id="search-text" size="15" value="Search not yet working" />
+				<input type="submit" id="search-submit" value="GO" />
+				</fieldset>
+			</form>
+		</div>
+		<!-- end #search -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="content">
+		
+
+
 
     <?= $content; ?>
- 
-<p></p> 		
-<hr>
-<a href="<?=url_for('/')?>">[Home]</a><a href="<?=url_for('admin')?>">[Admin Interface]</a>
-<h4>DojoList v.<?php echo option('version');?> - Created by Lance Wicks.<br /><a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> </h4>
-	<a href="<?php echo option('app_path') ?>/agpl-3.0.txt"><img src="<?php echo option('app_path') ?>/images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a>
-	<p>Aerated with <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade</a></p>
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="<?=url_for('/')?>">Home</a></li>
+						<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
+						<li><a href="<?php echo option('app_path') ?>data/dojo.kml">KML</a></li>
+						<li><a href="<?=url_for('admin')?>">Admin Interface</a></li>
+
+						
+					</ul>
+				</li>
+
+				<li>
+					<h2>DojoList</h2>
+					
+					<p>DojoList is an open source project by Lance Wicks. The project aims to provide a system to make it easy for a association to maintain a list of Judo clubs.</p>
+					<p>The project is hosted at <a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> where you can access all the source code.</p>
+					<p>This project has been built on the <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the jquery and mapstraction javascript libraries.</p>
+					<p>The DojoList project is licensed under a <a href="<?php echo option('app_path') ?>agpl-3.0.txt">AGPL license.<br /><img src="<?php echo option('app_path') ?>/images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
+					
+				</li>
+				<li>
+				<h2>Copyright</h2>
+				<p>(c)2009, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+	<p>DojoList v.<?php echo option('version');?></p>
+		
+		
+	
+	
+	
+	</div>
+	<!-- end #footer -->
+</div>
+
 	
 	</body>
 </html>	

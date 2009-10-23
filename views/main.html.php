@@ -1,5 +1,5 @@
 <body onload="initialize()">
-	<h1>Dojo List</h1>
+	
 	    <div id="mapstraction" style="width: 100%;"></div>
    <!-- ========================================================================================================================= -->
     <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
@@ -11,7 +11,7 @@
     <style type="text/css">
       #mapstraction {
         height: 600px;
-        width: 600px;
+        width: 738px;
       }
     </style> 
 	
