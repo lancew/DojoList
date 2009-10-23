@@ -34,4 +34,4 @@
       mapstraction.addOverlay("<?php echo option('app_path') ?>/data/dojo.kml");
       
     </script> 
-	<p><a href="<?php echo option('app_path') ?>data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
+	<p><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a> - <a href="html">HTML</a></p>
