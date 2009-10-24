@@ -99,6 +99,7 @@ Released   : 20090622
 		<!-- end #content -->
 		<div id="sidebar">
 			<ul>
+				<li><img src="../images/beta.jpg" alt="beta" width="98" height="100"/></li>
 				<li>
 					<h2>Menu</h2>
 					<ul>
@@ -118,6 +119,7 @@ Released   : 20090622
 					<p>The project is hosted at <a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> where you can access all the source code.</p>
 					<p>This project has been built on the <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the jquery and mapstraction javascript libraries.</p>
 					<p>The DojoList project is licensed under a <a href="<?php echo option('app_path') ?>agpl-3.0.txt">AGPL license.<br /><img src="<?php echo option('app_path') ?>/images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
+					<script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script>
 					
 				</li>
 				<li>
