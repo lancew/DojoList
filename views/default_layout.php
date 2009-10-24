@@ -99,7 +99,7 @@ Released   : 20090622
 		<!-- end #content -->
 		<div id="sidebar">
 			<ul>
-				<li><img src="../images/beta.jpg" alt="beta" width="98" height="100"/></li>
+				<li><img src="<?php echo option('app_path') ?>/images/beta.jpg" alt="beta" width="98" height="100"/></li>
 				<li>
 					<h2>Menu</h2>
 					<ul>

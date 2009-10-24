@@ -132,12 +132,12 @@ function admin_create_kml() {
 foreach ($xml->Dojo as $dojo) {
 	$newKML .= '<Placemark>';
 	$newKML .= '<name>'.$dojo->DojoName.'</name>';
-	$newKML .= '<description>';
+	$newKML .= '<description><![CDATA[';
 				foreach ($dojo as $key => $value) {
-			$newKML .= "$key: $value \n";
+			$newKML .= "$key: $value <br />\n";
 		}
 		
-	$newKML .= '</description>';	
+	$newKML .= ']]></description>';	
 	$newKML .= '<Point><coordinates>';
 	$newKML .= $dojo->Longitude . ',' . $dojo->Latitude;
 	$newKML .= '</coordinates></Point>';

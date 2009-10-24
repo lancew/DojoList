@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>Dojo List</name><Placemark><name>BETA</name><description>DojoName: BETA 
-MembershipID:  
-CoachName:  
-DojoAddress:  
-ContactName:  
-ContactPhone:  
-ContactEmail:  
-Latitude: 51.090113 
-Longitude: -1.165786 
-</description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark></Document></kml>
+<name>Dojo List</name><Placemark><name>TEST TEST TEST</name><description><![CDATA[DojoName: TEST TEST TEST <br />
+MembershipID: 123 <br />
+CoachName: <B>Lance</b> <br />
+DojoAddress:  <br />
+ContactName:  <br />
+ContactPhone:  <br />
+ContactEmail:  <br />
+Latitude:  <br />
+Longitude:  <br />
+]]></description><Point><coordinates>,</coordinates></Point></Placemark><Placemark><name>admin</name><description><![CDATA[DojoName: admin <br />
+MembershipID:  <br />
+CoachName:  <br />
+DojoAddress:  <br />
+ContactName: <a href="http://google.com">google</a> <br />
+ContactPhone:  <br />
+ContactEmail:  <br />
+Latitude:  <br />
+Longitude:  <br />
+]]></description><Point><coordinates>,</coordinates></Point></Placemark></Document></kml>

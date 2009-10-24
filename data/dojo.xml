@@ -1,1 +1,2 @@
-<xml><Dojo><DojoName>BETA</DojoName><MembershipID/><CoachName/><DojoAddress/><ContactName/><ContactPhone/><ContactEmail/><Latitude>51.090113</Latitude><Longitude>-1.165786</Longitude></Dojo></xml>
+<?xml version="1.0"?>
+<xml><Dojo><DojoName>TEST TEST TEST</DojoName><MembershipID>123</MembershipID><CoachName>&lt;B&gt;Lance&lt;/b&gt;</CoachName><DojoAddress/><ContactName/><ContactPhone/><ContactEmail/><Latitude/><Longitude/></Dojo><Dojo><DojoName>admin</DojoName><MembershipID></MembershipID><CoachName></CoachName><DojoAddress></DojoAddress><ContactName>&lt;a href="http://google.com"&gt;google&lt;/a&gt;</ContactName><ContactPhone></ContactPhone><ContactEmail></ContactEmail><Latitude></Latitude><Longitude></Longitude></Dojo></xml>
