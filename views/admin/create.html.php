@@ -3,7 +3,7 @@
 
 function addFormField() {
 	var id = document.getElementById("id").value;
-	$("#divTxt").append("<p id='row" + id + "'><label for='txt" + id + "'>Training Session " + id + ":&nbsp;&nbsp;<input type='text' size='20' name='TrainingSession" + id +"' id='txt" + id + "'>&nbsp;&nbsp<a href='#' onClick='removeFormField(\"#row" + id + "\"); return false;'>Remove</a><p>");
+	$("#divTxt").append("<p id='row" + id + "'><label for='txt" + id + "'>Training Session " + id + ":&nbsp;&nbsp;<input type='text' size='20' name='TrainingSession" + id + "Day' id='txt" + id + "' value='eg:Monday'>&nbsp;&nbsp<input type='text' size='8' name='TrainingSession" + id + "Time' id='txt" + id + "' value='eg:8:30pm'>&nbsp;&nbsp;<input type='text' size='20' name='TrainingSession" + id + "Age' id='txt" + id + "' value='eg:Juniors'><a href='#' onClick='removeFormField(\"#row" + id + "\"); return false;'>Remove</a><p>");
 	id = (id - 1) + 2;
 	document.getElementById("id").value = id;
 }
