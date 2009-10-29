@@ -33,6 +33,9 @@ function configure()
 }
 
 
+
+ 
+
 layout('default_layout.php');
 
 // main controller
