@@ -39,7 +39,13 @@ function configure()
 	$app_path = 'http://' . $_SERVER['HTTP_HOST'] . option('base_uri');
 	option('app_path', $app_path);
 	
-	
+		option('limonade_dir',       file_path('lib'));
+  option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
+  option('limonade_public_dir',file_path('lib', 'limonade','public'));
+  option('public_dir',         file_path('public'));
+  option('views_dir',          file_path('views'));
+  option('controllers_dir',    file_path('controllers'));
+  option('lib_dir',            file_path('lib'));
 	
 	option('env', ENV_DEVELOPMENT);
 }
