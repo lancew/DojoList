@@ -26,7 +26,7 @@ require_once 'lib/limonade.php';
 
 function configure()
 {
-	//option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
+	option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
 	option('version', '0.0.1'); #DojoList version.
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
@@ -40,6 +40,7 @@ function configure()
   	option('controllers_dir',    file_path('controllers'));
   	option('lib_dir',            file_path('lib'));
 	
+	option('password',			 'passw0rd');
 }
 
 
@@ -51,7 +52,11 @@ layout('default_layout.php');
 // main controller
 dispatch	   ('/', 'main_page');
 
-dispatch_get   ('/admin',          'admin_index');
+dispatch	   ('/admin',          'admin_index');
+dispatch_get   ('/admin/login',	   'admin_index');
+dispatch_post  ('/admin/login',	   'admin_login');
+dispatch	   ('/admin/logout',   'admin_logout');
+
 dispatch_get   ('/html',           'html_list');
 
 dispatch_get   ('/admin/create',   'admin_create');

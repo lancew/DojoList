@@ -11,10 +11,31 @@
 
 
 function admin_index() {
+	if(isset($_COOKIE["user"])) {
+		return html('admin/index.html.php');
+	} else {
+		return html('admin/index_login.html.php');
+	}	
 
-	return html('admin/index.html.php');
+
+}
 
 
+function admin_login() {
+		if($_POST['password'] == option('password')){
+			setcookie("user", "Alex Porter", time()+3600);
+			return html('admin/index.html.php');
+		} else {
+			return html('admin/index_login.html.php');
+		}
+	
+}
+
+function admin_logout() {
+	
+		setcookie("user", "", time()-3600);
+		return html('admin/index_login.html.php');
+	
 }
 
 

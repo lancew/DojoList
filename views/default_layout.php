@@ -108,7 +108,11 @@ Released   : 20090622
 						<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
 						<li><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a></li>
 						<li><a href="<?=url_for('admin')?>">Admin Interface</a></li>
-
+						<?php
+							if(isset($_COOKIE["user"])) {
+								print('<li><a href="'.url_for('admin','logout').'">[LOGOUT]</a></li>');
+							}
+						?>
 						
 					</ul>
 				</li>
