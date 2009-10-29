@@ -32,6 +32,7 @@ Training Sessions: <br />
 Contact Name: <input type="text" name="ContactName"><br />
 Contact Phone Number: <input type="text" name="ContactPhone"><br />
 Contact Email: <input type="text" name="ContactEmail"><br />
+Club website: Http://<input type="text" name="ClubWebsite"><br />
 Coordinates:<br />
 Latitude: <input type="text" name="Latitude"><br />
 Longitude: <input type="text" name="Longitude"><p />

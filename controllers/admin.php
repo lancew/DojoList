@@ -3,6 +3,13 @@
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
+
+
 function admin_index() {
 
 	return html('admin/index.html.php');
@@ -13,6 +20,11 @@ function admin_index() {
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
 function admin_create() {
 	return html('admin/create.html.php');
 }
@@ -20,6 +32,11 @@ function admin_create() {
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
 function admin_create_add() {
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
@@ -53,6 +70,11 @@ function admin_create_add() {
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
 function admin_delete() {
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
@@ -73,6 +95,11 @@ function admin_delete() {
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
 function admin_delete_end() {
 	$DojoName = params('dojo');
 
@@ -124,6 +151,11 @@ function admin_delete_end() {
 
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
 function admin_create_kml() {
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
@@ -169,3 +201,4 @@ function admin_create_kml() {
 }
 
 
+?>
