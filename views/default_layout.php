@@ -47,6 +47,7 @@ Released   : 20090622
 	
 		
 </head>
+<body>
 <div id="wrapper">
 <div id="logo">
 		<h1><a href="#">DojoList</a></h1>
@@ -60,7 +61,7 @@ Released   : 20090622
 				<li><a href="<?=url_for('/')?>">Home</a></li>
 				<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
 				<li><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a></li>
-				
+				<li><a href="<?php echo option('app_path') ?>/data/dojo.xml">XML</a></li>
 				
 
 

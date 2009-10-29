@@ -21,33 +21,25 @@
 
 
 require_once 'lib/limonade.php';
- ini_set('display_errors', 1);
-
-function before() 
-   { 
-     restore_error_handler(); 
-   } 
-   
-   
+  
+  
 
 function configure()
 {
-	option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
+	//option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
 	option('version', '0.0.1'); #DojoList version.
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
-	$app_path = 'http://' . $_SERVER['HTTP_HOST'] . option('base_uri');
-	option('app_path', $app_path);
 	
-		option('limonade_dir',       file_path('lib'));
-  option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
-  option('limonade_public_dir',file_path('lib', 'limonade','public'));
-  option('public_dir',         file_path('public'));
-  option('views_dir',          file_path('views'));
-  option('controllers_dir',    file_path('controllers'));
-  option('lib_dir',            file_path('lib'));
 	
-	option('env', ENV_DEVELOPMENT);
+	option('limonade_dir',       file_path('lib'));
+  	option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
+  	option('limonade_public_dir',file_path('lib', 'limonade','public'));
+  	option('public_dir',         file_path('public'));
+  	option('views_dir',          file_path('views'));
+  	option('controllers_dir',    file_path('controllers'));
+  	option('lib_dir',            file_path('lib'));
+	
 }
 
 
