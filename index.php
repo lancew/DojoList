@@ -21,6 +21,14 @@
 
 
 require_once 'lib/limonade.php';
+ ini_set('display_errors', 1);
+
+function before() 
+   { 
+     restore_error_handler(); 
+   } 
+   
+   
 
 function configure()
 {
@@ -30,6 +38,10 @@ function configure()
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
 	$app_path = 'http://' . $_SERVER['HTTP_HOST'] . option('base_uri');
 	option('app_path', $app_path);
+	
+	
+	
+	option('env', ENV_DEVELOPMENT);
 }
 
 
