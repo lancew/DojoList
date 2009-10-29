@@ -60,8 +60,8 @@ Released   : 20090622
 			<ul>
 				<li><a href="<?=url_for('/')?>">Home</a></li>
 				<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
-				<li><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a></li>
-				<li><a href="<?php echo option('app_path') ?>/data/dojo.xml">XML</a></li>
+				<li><a href="<?php echo option('base_uri') ?>data/dojo.kml">KML</a></li>
+				<li><a href="<?php echo option('base_uri') ?>data/dojo.xml">XML</a></li>
 				
 
 
@@ -107,6 +107,8 @@ Released   : 20090622
 						<li><a href="<?=url_for('/')?>">Home</a></li>
 						<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
 						<li><a href="<?php echo option('base_uri') ?>data/dojo.kml">KML</a></li>
+						<li><a href="<?php echo option('base_uri') ?>data/dojo.xml">XML</a></li>
+						<hr>
 						<li><a href="<?=url_for('admin')?>">Admin Interface</a></li>
 						<?php
 							if(isset($_COOKIE["user"])) {
