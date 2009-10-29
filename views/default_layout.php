@@ -40,10 +40,10 @@ Released   : 20090622
 	<meta name="description" content="Example output page" />
 	<meta name="keywords" content="Dojo List" />
 	<title>Dojo Listing</title>
-	<script src="<?php echo option('app_path') ?>/js/cufon/cufon-yui.js" type="text/javascript"></script>
-	<script src="<?php echo option('app_path') ?>/js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
-	<link href="<?php echo option('app_path') ?>/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="<?php echo option('app_path') ?>/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="<?php echo option('base_uri') ?>js/cufon/cufon-yui.js" type="text/javascript"></script>
+	<script src="<?php echo option('base_uri') ?>js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<link href="<?php echo option('base_uri') ?>css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="<?php echo option('base_uri') ?>css/style.css" media="screen" rel="stylesheet" type="text/css" />
 	
 		
 </head>
@@ -100,13 +100,13 @@ Released   : 20090622
 		<!-- end #content -->
 		<div id="sidebar">
 			<ul>
-				<li><img src="<?php echo option('app_path') ?>/images/beta.jpg" alt="beta" width="98" height="100"/></li>
+				<li><img src="<?php echo option('base_uri') ?>images/beta.jpg" alt="beta" width="98" height="100"/></li>
 				<li>
 					<h2>Menu</h2>
 					<ul>
 						<li><a href="<?=url_for('/')?>">Home</a></li>
 						<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
-						<li><a href="<?php echo option('app_path') ?>/data/dojo.kml">KML</a></li>
+						<li><a href="<?php echo option('base_uri') ?>data/dojo.kml">KML</a></li>
 						<li><a href="<?=url_for('admin')?>">Admin Interface</a></li>
 						<?php
 							if(isset($_COOKIE["user"])) {
@@ -123,7 +123,7 @@ Released   : 20090622
 					<p>DojoList is an open source project by Lance Wicks. The project aims to provide a system to make it easy for a association to maintain a list of Judo clubs.</p>
 					<p>The project is hosted at <a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> where you can access all the source code, record bugs, etc.</p>
 					<p>This project has been built on the <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the <a href="http://jquery.com/">jquery</a> and <a href="http://www.mapstraction.com/">mapstraction</a> javascript libraries.</p>
-					<p>The DojoList project is licensed under a <a href="<?php echo option('app_path') ?>agpl-3.0.txt">AGPL license.<br /><img src="<?php echo option('app_path') ?>/images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
+					<p>The DojoList project is licensed under a <a href="<?php echo option('base_uri') ?>agpl-3.0.txt">AGPL license.<br /><img src="<?php echo option('base_uri') ?>images/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script></p>
 					
 				</li>
