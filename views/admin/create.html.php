@@ -43,9 +43,9 @@ function removeFormField(id) {
             	
             		
 
-			  document.getElementById('long').value = coords[0];
+			  document.getElementById('long').value = coords[1];
 			  
-              document.getElementById('lat').value = coords[1];
+              document.getElementById('lat').value = coords[0];
               
             }
           }
