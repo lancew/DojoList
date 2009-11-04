@@ -12,6 +12,48 @@ function removeFormField(id) {
 	$(id).remove();
 }
 </script>
+	<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
+   <script type="text/javascript">
+
+    
+    
+
+       
+   
+  function showAddress(address) {
+      var geocoder = null;
+      geocoder = new GClientGeocoder();
+      
+      if (geocoder) {
+      
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              //alert(address + " not found");
+            } else {
+            
+                
+            	sPoint = point.toString();
+            	sPoint = sPoint.replace(/\(/i, "");
+            	sPoint = sPoint.replace(/\)/i, "");
+            	sPoint = sPoint.replace(/ /i, "");
+            	
+            	coords = sPoint.split(',');
+            	
+            		
+
+			  document.getElementById('long').value = coords[0];
+			  
+              document.getElementById('lat').value = coords[1];
+              
+            }
+          }
+        );
+      }
+    } 
+     
+ </script>
 
 
 <h1>Dojo Management System</h1>
@@ -21,7 +63,7 @@ function removeFormField(id) {
 Club/Dojo Name: <input type="text" name="DojoName"><br />
 NGB Membership ID: <input type="text" name="MembershipID"><br />
 Head Coach Name: <input type="text" name="CoachName"><br />
-Dojo Address: <input type="text" name="DojoAddress"><br />
+Dojo Address: <input type="text" name="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"><br />
 Training Sessions: <br />
 
 <input type="hidden" id="id" value="1">
@@ -34,8 +76,8 @@ Contact Phone Number: <input type="text" name="ContactPhone"><br />
 Contact Email: <input type="text" name="ContactEmail"><br />
 Club website: Http://<input type="text" name="ClubWebsite"><br />
 Coordinates:<br />
-Latitude: <input type="text" name="Latitude"><br />
-Longitude: <input type="text" name="Longitude"><p />
+Latitude: <input type="text" id='lat' name="Latitude"><br />
+Longitude: <input type="text" id='long' name="Longitude"><p />
 <input type="submit" value="submit"><br />
 </form>
 
