@@ -1,6 +1,6 @@
+
 <script type="text/javascript">
-
-
+// This block is used to add the training session fields. It uses jQuery.
 function addFormField() {
 	var id = document.getElementById("id").value;
 	$("#divTxt").append("<p id='row" + id + "'><label for='txt" + id + "'>Training Session " + id + ":&nbsp;&nbsp;<input type='text' size='20' name='TrainingSession" + id + "Day' id='txt" + id + "' value='eg:Monday'>&nbsp;&nbsp<input type='text' size='8' name='TrainingSession" + id + "Time' id='txt" + id + "' value='eg:8:30pm'>&nbsp;&nbsp;<input type='text' size='20' name='TrainingSession" + id + "Age' id='txt" + id + "' value='eg:Juniors'><a href='#' onClick='removeFormField(\"#row" + id + "\"); return false;'>Remove</a><p>");
@@ -12,14 +12,11 @@ function removeFormField(id) {
 	$(id).remove();
 }
 </script>
-	<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
-   <script type="text/javascript">
 
-    
-    
 
-       
-   
+<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
+<script type="text/javascript">
+  // This function is called when you tab away from the address field, it geocodes the address and comes up with the lat and long
   function showAddress(address) {
       var geocoder = null;
       geocoder = new GClientGeocoder();
@@ -59,26 +56,30 @@ function removeFormField(id) {
 <h1>Dojo Management System</h1>
 
 <form method="post" action="">
-
-Club/Dojo Name: <input type="text" name="DojoName"><br />
-NGB Membership ID: <input type="text" name="MembershipID"><br />
-Head Coach Name: <input type="text" name="CoachName"><br />
-Dojo Address: <input type="text" name="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"><br />
-Training Sessions: <br />
+<table>
+<tr><td>Club/Dojo Name:</td><td><input type="text" name="DojoName"></td></tr>
+<tr><td>NGB Membership ID:</td><td><input type="text" name="MembershipID"></td></tr>
+<tr><td>Head Coach Name:</td><td><input type="text" name="CoachName"></td></tr>
+<tr><td>Dojo Address:</td><td><input type="text" name="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
+<tr><td>Training Sessions:</td><td>
 
 <input type="hidden" id="id" value="1">
 <div id="divTxt"></div>
-<p><a href="#" onClick="addFormField(); return false;">Add</a></p>
+<p><a href="#" onClick="addFormField(); return false;">Add</a>
+</td></tr>
 
 
-Contact Name: <input type="text" name="ContactName"><br />
-Contact Phone Number: <input type="text" name="ContactPhone"><br />
-Contact Email: <input type="text" name="ContactEmail"><br />
-Club website: Http://<input type="text" name="ClubWebsite"><br />
-Coordinates:<br />
+<tr><td>Contact Name:</td><td><input type="text" name="ContactName"></td></tr>
+<tr><td>Contact Phone Number:</td><td><input type="text" name="ContactPhone"></td></tr>
+<tr><td>Contact Email:</td><td><input type="text" name="ContactEmail"></td></tr>
+<tr><td>Club website:</td><td>Http://<input type="text" name="ClubWebsite"></td></tr>
+<tr><td>Coordinates:</td><td>
 Latitude: <input type="text" id='lat' name="Latitude"><br />
 Longitude: <input type="text" id='long' name="Longitude"><p />
+</td></tr>
+</table>
 <input type="submit" value="submit"><br />
 </form>
+
 
 
