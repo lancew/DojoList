@@ -1,13 +1,20 @@
+<script type="text/javascript">
+window.onload=dofo;
+function dofo() {
+document.dojoform.DojoName.focus();
+}
+
+</script>
 
 <h1>Dojo Management System</h1>
 
-<form method="post" action="">
+<form method="post" action="" name="dojoform">
 <table>
 <div id="mapstraction" style="float:right;"></div>
 <tr><td>Club/Dojo Name:</td><td><input type="text" name="DojoName"></td></tr>
 <tr><td>NGB Membership ID:</td><td><input type="text" name="MembershipID"></td></tr>
 <tr><td>Head Coach Name:</td><td><input type="text" name="CoachName"></td></tr>
-<tr><td>Dojo Address:</td><td><input type="text" name="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
+<tr><td>Dojo Address:</td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
 <tr><td>Training Sessions:</td><td>
 
 <input type="hidden" id="id" value="1">
@@ -52,12 +59,8 @@ function removeFormField(id) {
 
 
 <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo option('base_uri') ?>js/mapstraction.js"></script>
 
-
-
-  	
-	<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo option('base_uri') ?>js/mapstraction.js"></script>
     <style type="text/css">
       #mapstraction {
         height: 250px;
@@ -70,25 +73,17 @@ function removeFormField(id) {
 	
 
     <script type="text/javascript">
-
-      // initialise the map with your choice of API
-      var mapstraction = new Mapstraction('mapstraction','openstreetmap');
-      
-      var myPoint = new LatLonPoint(51.090113,-1.165786);
-      // display the map centered on a latitude and longitude (Google zoom levels)
-      mapstraction.setCenterAndZoom(myPoint, 8);
-      
-     
-      
-      // Add url to the URL of your online KML dojo.kml file here      
-      mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'].option('base_uri') ?>/data/dojo.kml");
-      
-    </script> 
     
-    
-    <script type="text/javascript">
-  // This function is called when you tab away from the address field, it geocodes the address and comes up with the lat and long
-  function showAddress(address) {
+    	
+		var mapstraction = new Mapstraction('mapstraction','openstreetmap');
+      	var myPoint = new LatLonPoint(51.090113,-1.165786);
+      	mapstraction.setCenterAndZoom(myPoint, 6);
+      
+  	
+	  	
+  	
+  	
+  	function showAddress(address) {
       var geocoder = null;
       geocoder = new GClientGeocoder();
       
@@ -108,15 +103,13 @@ function removeFormField(id) {
             	sPoint = sPoint.replace(/ /i, "");
             	
             	coords = sPoint.split(',');
-            	
-            		
 
 			  	document.getElementById('long').value = coords[1];
-			  
-              	document.getElementById('lat').value = coords[0];
+			  	document.getElementById('lat').value = coords[0];
               	
-        
-
+              	mapstraction.addMarker( new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1])));	
+              	mapstraction.autoCenterAndZoom();	
+              	
               
             }
           }
