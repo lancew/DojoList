@@ -77,7 +77,7 @@ function removeFormField(id) {
     	
 		var mapstraction = new Mapstraction('mapstraction','openstreetmap');
       	var myPoint = new LatLonPoint(51.090113,-1.165786);
-      	mapstraction.setCenterAndZoom(myPoint, 6);
+      	mapstraction.setCenterAndZoom(myPoint, 9);
       
   	
 	  	
@@ -108,7 +108,8 @@ function removeFormField(id) {
 			  	document.getElementById('lat').value = coords[0];
               	
               	mapstraction.addMarker( new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1])));	
-              	mapstraction.autoCenterAndZoom();	
+              	mapstraction.autoCenter();	
+              	
               	
               
             }
