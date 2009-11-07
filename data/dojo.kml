@@ -13,14 +13,14 @@ ContactPhone: 7 <br />
 ContactEmail: 8 <br />
 Latitude: 51.090113 <br />
 Longitude: -1.165786 <br />
-]]></description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark><Placemark><name></name><description><![CDATA[DojoName:  <br />
-MembershipID:  <br />
-CoachName:  <br />
-DojoAddress: eastleigh <br />
-ContactName:  <br />
-ContactPhone:  <br />
-ContactEmail:  <br />
-ClubWebsite:  <br />
-Latitude: 50.9658375 <br />
-Longitude: -1.3148134 <br />
-]]></description><Point><coordinates>-1.3148134,50.9658375</coordinates></Point></Placemark></Document></kml>
+]]></description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark><Placemark><name>Shedokan</name><description><![CDATA[DojoName: Shedokan <br />
+MembershipID: 12345 <br />
+CoachName: Me <br />
+DojoAddress: Eastleigh, Hampshire <br />
+ContactName: You <br />
+ContactPhone: 67890 <br />
+ContactEmail: lw@judocoach.com <br />
+ClubWebsite: judocoach.com <br />
+Latitude: 50.9879376 <br />
+Longitude: -1.3741026 <br />
+]]></description><Point><coordinates>-1.3741026,50.9879376</coordinates></Point></Placemark></Document></kml>

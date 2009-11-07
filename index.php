@@ -65,6 +65,10 @@ dispatch_post  ('/admin/create',   'admin_create_add');
 dispatch_get   ('/admin/delete',   'admin_delete');
 dispatch	   ('/admin/delete/:dojo', 'admin_delete_end');
 
+dispatch_get   ('/admin/edit',   'admin_edit');
+dispatch	   ('/admin/edit/:dojo', 'admin_editform');
+
+
 dispatch_get   ('/admin/createkml',   'admin_create_kml');
 dispatch_get   ('/admin/createhtml',   'admin_create_html');
 run();

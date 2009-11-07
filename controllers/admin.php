@@ -90,6 +90,50 @@ function admin_create_add() {
 }
 
 
+function admin_edit() {
+	if (file_exists('data/dojo.xml')) {
+		$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+
+	$dojo_list = '';
+	foreach ($xml->Dojo as $dojo) {
+		$dojo_list[] =$dojo->DojoName;
+	}
+	//print_r($dojo_list);
+	set('DojoList', $dojo_list);
+
+
+	return html('admin/edit.html.php');
+}
+
+function admin_editform() {
+	$DojoName = params('dojo');
+	if (file_exists('data/dojo.xml')) {
+		$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+
+	$dojo_data = '';
+	foreach ($xml->Dojo as $dojo) {
+		if($dojo->DojoName == $DojoName) {
+			set('Dojo', $dojo);
+			//set('DojoName', $dojo->DojoName);
+		}
+	}
+	
+
+
+	return html('admin/edit_form.html.php');
+}
+
+
+
+
+
+
 
 /**
  *
