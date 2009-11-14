@@ -125,12 +125,32 @@ function admin_editform() {
 	}
 	
 
-
 	return html('admin/edit_form.html.php');
 }
 
 
+function admin_editform_end() {
+	$DojoName = params('dojo');
+	set('DojoName',$DojoName);
+	
+	// Read in the XML data from file.
+	if (file_exists('data/dojo.xml')) {
+		$xml = simplexml_load_file('data/dojo.xml');
+	} else {
+		exit('Failed to open dojo.xml.');
+	}
+	
+	//
+	//   Add code here to edit the XML data.
+	//
+	
+	
+	admin_create_kml();
 
+
+	return html('admin/edit_end.html.php');
+
+}
 
 
 
