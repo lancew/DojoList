@@ -131,7 +131,10 @@ function admin_editform() {
 
 function admin_editform_end() {
 	$DojoName = params('dojo');
-	set('DojoName',$DojoName);
+	print_r($_POST["DojoName"]);
+	
+	
+	
 	
 	// Read in the XML data from file.
 	if (file_exists('data/dojo.xml')) {
@@ -145,9 +148,47 @@ function admin_editform_end() {
 	//
 	
 	
+	$newxml = '<xml>';
+
+	foreach ($xml->Dojo as $dojo) {
+		// echo $dojo->ClubName, '<br />';
+
+		if ($dojo->DojoName == $DojoName) {
+
+			
+			//print_r($_POST);
+			foreach($_POST AS $field => $value) {
+				unset($dojo->$field);
+				$dojo->addChild($field, $value);
+				
+			}
+			
+			$newxml .= $dojo->asXML();
+			
+		} else {
+
+			$newxml .= $dojo->asXML();
+		}
+
+	}
+
+
+	$newxml .= '</xml>';
+
+	$myFile = "data/dojo.xml";
+	$fh = fopen($myFile, 'w') or die("can't open file");
+
+
+	fwrite($fh, $newxml);
+
+	fclose($fh);
+
+	print_r($newxml);
+	set('DojoName', $DojoName);
 	admin_create_kml();
 
 
+	set('DojoName',$DojoName);
 	return html('admin/edit_end.html.php');
 
 }

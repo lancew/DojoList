@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>Dojo List</name><Placemark><name>test2</name><description><![CDATA[DojoName: test2 <br />
-MembershipID: 12345 <br />
-CoachName: Lance Wicks <br />
-DojoAddress: here <br />
-TrainingSession1Day: Monday <br />
+<name>Dojo List</name><Placemark><name>test2</name><description><![CDATA[TrainingSession1Day: Monday <br />
 TrainingSession1Time: 8:30pm <br />
 TrainingSession1Age: Seniors <br />
-ContactName: <a href="http://google.com">google</a> <br />
+DojoName: test2 <br />
+MembershipID: 12345 <br />
+CoachName: Lance Wicks <br />
+DojoAddress: Portsmouth, UK <br />
+ContactName: Lance Wicks <br />
 ContactPhone: 7 <br />
 ContactEmail: 8 <br />
-Latitude: 51.090113 <br />
-Longitude: -1.165786 <br />
-]]></description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark><Placemark><name>Shedokan</name><description><![CDATA[DojoName: Shedokan <br />
+ClubWebsite: judocoach.com <br />
+Latitude: 50.7989137 <br />
+Longitude: -1.0911627 <br />
+]]></description><Point><coordinates>-1.0911627,50.7989137</coordinates></Point></Placemark><Placemark><name>Shedokan</name><description><![CDATA[DojoName: Shedokan <br />
 MembershipID: 12345 <br />
 CoachName: Me <br />
 DojoAddress: Eastleigh, Hampshire <br />
