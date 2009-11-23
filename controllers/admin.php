@@ -131,7 +131,7 @@ function admin_editform() {
 
 function admin_editform_end() {
 	$DojoName = params('dojo');
-	print_r($_POST["DojoName"]);
+	//print_r($_POST["DojoName"]);
 	
 	
 	
@@ -183,7 +183,7 @@ function admin_editform_end() {
 
 	fclose($fh);
 
-	print_r($newxml);
+	//print_r($newxml);
 	set('DojoName', $DojoName);
 	admin_create_kml();
 

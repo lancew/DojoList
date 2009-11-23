@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>Dojo List</name><Placemark><name>test2</name><description><![CDATA[TrainingSession1Day: Monday <br />
-TrainingSession1Time: 8:30pm <br />
-TrainingSession1Age: Seniors <br />
-DojoName: test2 <br />
+<name>Dojo List</name><Placemark><name>test2</name><description><![CDATA[DojoName: test2 <br />
 MembershipID: 12345 <br />
 CoachName: Lance Wicks <br />
 DojoAddress: Portsmouth, UK <br />
+TrainingSession1Day: None <br />
+TrainingSession1Time:  <br />
+TrainingSession1Age:  <br />
 ContactName: Lance Wicks <br />
 ContactPhone: 7 <br />
 ContactEmail: 8 <br />
