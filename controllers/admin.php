@@ -69,7 +69,7 @@ function admin_create_add() {
 	$new1 = $xml->addChild("Dojo");
 	foreach ($_POST as $key => $value) {
 		//print "$key has a value of $value<br />";
-		$new1->addChild($key, $value);
+		$new1->addChild(strip_tags(addslashes($key)), strip_tags(addslashes($value)));
 	}
 
 	$DojoName = $_POST["DojoName"];
@@ -160,7 +160,8 @@ function admin_editform_end() {
 			//print_r($_POST);
 			foreach($_POST AS $field => $value) {
 				unset($dojo->$field);
-				$dojo->addChild($field, $value);
+				//$dojo->addChild($field, $value);
+				$dojo->addChild(strip_tags(addslashes($field)), strip_tags(addslashes($value)));
 				
 			}
 			
