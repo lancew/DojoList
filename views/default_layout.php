@@ -131,7 +131,12 @@ Released   : 20090622
 				</li>
 				<li>
 				<h2>Copyright</h2>
-				<p>&copy;2009, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.
+				<p>&copy;2009, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">The data created by DojoList</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>.		
+				
+				</p>
+				
+
 				</li>
 			</ul>
 		</div>
@@ -142,8 +147,7 @@ Released   : 20090622
 	<!-- end #page -->
 	<div id="footer">
 	<p>DojoList v.<?php echo option('version');?></p>
-		
-		
+	
 	
 	
 	
