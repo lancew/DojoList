@@ -299,7 +299,24 @@ function admin_create_kml() {
 		$newKML .= '<name>'.$dojo->DojoName.'</name>';
 		$newKML .= '<description><![CDATA[';
 		foreach ($dojo as $key => $value) {
-			$newKML .= "$key: $value <br />\n";
+			switch ($key) {
+				case 'ClubWebsite':
+    				$newKML .= "$key: <a href='http://$value'>$value</a> <br />\n";
+    				break;
+				case 'ContactEmail':
+    				$newKML .= "$key: <a href='mailto:$value'>$value</a> <br />\n";
+    				break;
+				
+				default:
+					$newKML .= "$key: $value <br />\n";
+			
+			
+				
+			}
+			
+			
+			
+			
 		}
 
 		$newKML .= ']]></description>';
