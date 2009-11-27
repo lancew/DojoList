@@ -148,7 +148,8 @@ function admin_editform_end() {
 	//
 	
 	
-	$newxml = '<xml>';
+	$newxml = '<xml>
+	<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->';
 
 	foreach ($xml->Dojo as $dojo) {
 		// echo $dojo->ClubName, '<br />';
@@ -238,7 +239,9 @@ function admin_delete_end() {
 
 
 
-	$newxml = '<xml>';
+	$newxml = '<xml>
+	<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->
+	';
 
 	foreach ($xml->Dojo as $dojo) {
 		// echo $dojo->ClubName, '<br />';
@@ -291,7 +294,7 @@ function admin_create_kml() {
 
 	$newKML = '<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-
+<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->
 <Document>
 <name>Dojo List</name>';
 
