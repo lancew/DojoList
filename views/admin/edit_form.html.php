@@ -1,8 +1,8 @@
 <script type="text/javascript">
-window.onload=dofo;
-function dofo() {
-document.dojoform.DojoName.focus();
-}
+	window.onload=dofo;
+	function dofo() {
+		document.dojoform.DojoName.focus();
+	}
 
 </script>
 

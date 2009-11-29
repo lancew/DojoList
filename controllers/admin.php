@@ -110,9 +110,8 @@ function admin_edit() {
 
 function admin_editform() {
 	$DojoName = params('dojo');
-	print $Dojoname;
-	$Dojoname = str_replace('%20', ' ', $Dojoname);
-	print $Dojoname;
+	$DojoName = str_replace('%20', ' ', $DojoName);
+		
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
 	} else {
@@ -121,6 +120,8 @@ function admin_editform() {
 
 	$dojo_data = '';
 	foreach ($xml->Dojo as $dojo) {
+		
+		
 		if($dojo->DojoName == $DojoName) {
 			set('Dojo', $dojo);
 			//set('DojoName', $dojo->DojoName);
@@ -135,8 +136,9 @@ function admin_editform() {
 
 function admin_editform_end() {
 	$DojoName = params('dojo');
+	$DojoName = str_replace('%20', ' ', $DojoName);
 	//print_r($_POST["DojoName"]);
-	
+	print $DojoName;
 	
 	
 	
