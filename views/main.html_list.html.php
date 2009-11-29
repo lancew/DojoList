@@ -7,6 +7,7 @@
 
 	foreach ($dojo as $key => $value) {
 
+		if (!$value){continue;}
 
 		if ($key =='ContactEmail') {
 			print "<li>&nbsp; $key: <a href='mailto:$value'>$value</a></li>";
@@ -20,7 +21,9 @@
 			continue;
 		}
 
-		print "<li>&nbsp; $key: $value</li>";
+		
+			print "<li>&nbsp; $key: $value</li>";
+		
 
 	}
 	print '<p>&nbsp;</p>';
