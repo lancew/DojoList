@@ -138,7 +138,7 @@ function admin_editform_end() {
 	$DojoName = params('dojo');
 	$DojoName = str_replace('%20', ' ', $DojoName);
 	//print_r($_POST["DojoName"]);
-	print $DojoName;
+	//print $DojoName;
 	
 	
 	
@@ -197,8 +197,9 @@ function admin_editform_end() {
 
 
 	set('DojoName',$DojoName);
+	flash('notice', 'Edited OK');
 	return html('admin/edit_end.html.php');
-
+	
 }
 
 
