@@ -46,7 +46,7 @@ function configure()
 	option('data_dir',		     file_path('data'));
 	
 	
-	option('password',			 'h8mp5h1r3');
+	option('password',			 'passw0rd');
 }
 
 

@@ -308,6 +308,7 @@ function admin_create_kml() {
 		$newKML .= '<name>'.$dojo->DojoName.'</name>';
 		$newKML .= '<description><![CDATA[';
 		foreach ($dojo as $key => $value) {
+			if($value){
 			switch ($key) {
 				case 'ClubWebsite':
     				$newKML .= "$key: <a href='http://$value'>$value</a> <br />\n";
@@ -321,6 +322,7 @@ function admin_create_kml() {
 			
 			
 				
+				}
 			}
 			
 			

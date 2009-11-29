@@ -3,31 +3,21 @@
 <!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->
 <Document>
 <name>Dojo List</name><Placemark><name>Alresford Judo Club</name><description><![CDATA[DojoName: Alresford Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Alresford Hampshire <br />
 ContactName: Mr Ray  Whitfield <br />
 ContactPhone: 023 8090 0619 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.090113 <br />
 Longitude: -1.165786 <br />
 ]]></description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark><Placemark><name>Alton Judo Club</name><description><![CDATA[DojoName: Alton Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Alton Sports Centre Alton Hants <br />
 TrainingSession1Day: Friday <br />
 TrainingSession1Time: 8:20pm <br />
 TrainingSession1Age: Seniors <br />
 ContactName: Mr. Robert Smith <br />
 ContactPhone: 01420 47492 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.13735 <br />
 Longitude: -0.9942 <br />
 ]]></description><Point><coordinates>-0.9942,51.13735</coordinates></Point></Placemark><Placemark><name>Applemore Judokwai</name><description><![CDATA[DojoName: Applemore Judokwai <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Hythe Southampton Hants <br />
 TrainingSession1Day: Monday <br />
 TrainingSession1Time: 7:00pm <br />
@@ -37,13 +27,9 @@ TrainingSession2Time: 8:00pm <br />
 TrainingSession2Age: Seniors <br />
 ContactName: Lee Mellor <br />
 ContactPhone: 023 8087 9527 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8636769 <br />
 Longitude: -1.3660118 <br />
 ]]></description><Point><coordinates>-1.3660118,50.8636769</coordinates></Point></Placemark><Placemark><name>AWE Judo Club</name><description><![CDATA[DojoName: AWE Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Aldermaston, RG26 5NL <br />
 TrainingSession1Day: Monday <br />
 TrainingSession1Time: 7:30pm <br />
@@ -61,68 +47,46 @@ ClubWebsite: <a href='http://www.awejudoclub.org.uk'>www.awejudoclub.org.uk</a> 
 Latitude: 51.3544589 <br />
 Longitude: -1.1537209 <br />
 ]]></description><Point><coordinates>-1.1537209,51.3544589</coordinates></Point></Placemark><Placemark><name>Basingstoke Judo Club</name><description><![CDATA[DojoName: Basingstoke Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Basingstoke, RG23 8AB, uk <br />
 ContactName: Mr. Bryan. Ironside <br />
 ContactPhone: 01256 336677 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.2732846 <br />
 Longitude: -1.147398 <br />
 ]]></description><Point><coordinates>-1.147398,51.2732846</coordinates></Point></Placemark><Placemark><name>Breamore School Judo CLub</name><description><![CDATA[DojoName: Breamore School Judo CLub <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Breamore Primary School Salisbury Road Breamore Fordingbridge Hampshire SP6 2EF <br />
 ContactName: Mrs Conway <br />
-ContactPhone:  <br />
 ContactEmail: <a href='mailto:braemoreprimary@btclick.com'>braemoreprimary@btclick.com</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.9286499 <br />
 Longitude: -1.7884699 <br />
 ]]></description><Point><coordinates>-1.7884699,50.9286499</coordinates></Point></Placemark><Placemark><name>Brighton Hill Judo Club</name><description><![CDATA[DojoName: Brighton Hill Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Basingstoke, Hampshire RG22 4, UK <br />
 TrainingSession1Day: Friday <br />
 TrainingSession1Time: 6:30pm <br />
 TrainingSession1Age: Juniors and Seniors <br />
 ContactName: Mrs. Susan Pont <br />
 ContactPhone: 01256 780915 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.2395196 <br />
 Longitude: -1.1192596 <br />
 ]]></description><Point><coordinates>-1.1192596,51.2395196</coordinates></Point></Placemark><Placemark><name>Cosham CA Judo Club</name><description><![CDATA[DojoName: Cosham CA Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Portsmouth, Hants, Hampshire PO6 3AP, United Kingdom <br />
 TrainingSession1Day: Tuesday <br />
 TrainingSession1Time: 6:15pm <br />
 TrainingSession1Age: Juniors and Seniors <br />
 ContactName: Mr Pete Moore <br />
 ContactPhone: 023 92384003 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8485036 <br />
 Longitude: -1.0744455 <br />
 ]]></description><Point><coordinates>-1.0744455,50.8485036</coordinates></Point></Placemark><Placemark><name>Court Lane Judo Club Cosham Portsmouth Hants </name><description><![CDATA[DojoName: Court Lane Judo Club Cosham Portsmouth Hants  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Court Lane Junior School Hilary Avenue, Cosham, PORTSMOUTH, Hampshire, PO6 2PP <br />
 ContactName: Mr Tony Brown <br />
 ContactPhone: 023 9264 4183 <br />
 ContactEmail: <a href='mailto:crtlnjudo@aol.com'>crtlnjudo@aol.com</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8462461 <br />
 Longitude: -1.0363021 <br />
 ]]></description><Point><coordinates>-1.0363021,50.8462461</coordinates></Point></Placemark><Placemark><name>Crofton Judo Club</name><description><![CDATA[DojoName: Crofton Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Crofton Judo Club Stubbington Hants  <br />
 TrainingSession1Day: Friday <br />
 TrainingSession1Time: 6:30pm <br />
-TrainingSession1Age:  <br />
 ContactName: Mr. Peter Powell <br />
 ContactPhone: 01329 513081 <br />
 ContactEmail: <a href='mailto:peter.judo@ntlworld.com'>peter.judo@ntlworld.com</a> <br />
@@ -130,8 +94,6 @@ ClubWebsite: <a href='http://www.croftonjc.hampshire.org.uk/'>www.croftonjc.hamp
 Latitude: 39.0017772 <br />
 Longitude: -76.6874671 <br />
 ]]></description><Point><coordinates>-76.6874671,39.0017772</coordinates></Point></Placemark><Placemark><name>Devonshire Infants</name><description><![CDATA[DojoName: Devonshire Infants <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Francis Avenue, Portsmouth, PO4 0AG <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
@@ -140,8 +102,6 @@ ClubWebsite: <a href='http://portsmouthjudoclub/index.htm'>portsmouthjudoclub/in
 Latitude: 50.7908403 <br />
 Longitude: -1.071084 <br />
 ]]></description><Point><coordinates>-1.071084,50.7908403</coordinates></Point></Placemark><Placemark><name>Eastleigh Judokwai</name><description><![CDATA[DojoName: Eastleigh Judokwai <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Fleming Park Leisure Centre , Passfield Avenue, Eastleigh, Hampshire, SO50 9NL <br />
 TrainingSession1Day: Sunday <br />
 TrainingSession1Time: 5:30pm <br />
@@ -156,18 +116,12 @@ ClubWebsite: <a href='http://www.eastleighjudokwai.co.uk'>www.eastleighjudokwai.
 Latitude: 50.966672 <br />
 Longitude: -1.369626 <br />
 ]]></description><Point><coordinates>-1.369626,50.966672</coordinates></Point></Placemark><Placemark><name>Fernhurst Junior School (CSJ)</name><description><![CDATA[DojoName: Fernhurst Junior School (CSJ) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Francis Av, Southsea, Hampshire, PO4 0AG <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.790317 <br />
 Longitude: -1.071307 <br />
 ]]></description><Point><coordinates>-1.071307,50.790317</coordinates></Point></Placemark><Placemark><name>Fleet and Frogmore Judo Club</name><description><![CDATA[DojoName: Fleet and Frogmore Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Frogmore Leisure Centre, Potley Hill Road, Yateley,  Hampshire, GU46 6AG <br />
 ContactName: Mrs Barbara Cox <br />
 ContactPhone: 01252 624011 <br />
@@ -176,28 +130,20 @@ ClubWebsite: <a href='http://www.ffjc.org.uk'>www.ffjc.org.uk</a> <br />
 Latitude: 51.33672 <br />
 Longitude: -0.813267 <br />
 ]]></description><Point><coordinates>-0.813267,51.33672</coordinates></Point></Placemark><Placemark><name>Fleming Park Judo Club</name><description><![CDATA[DojoName: Fleming Park Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Eastleigh, Hampshire <br />
 ContactName: Louise Riley <br />
 ContactPhone: 07771594732 <br />
 ContactEmail: <a href='mailto:louise.riley@ordnancesurvey.co.uk'>louise.riley@ordnancesurvey.co.uk</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.9879376 <br />
 Longitude: -1.3741026 <br />
 ]]></description><Point><coordinates>-1.3741026,50.9879376</coordinates></Point></Placemark><Placemark><name>Fort Purbrook Judo Club</name><description><![CDATA[DojoName: Fort Purbrook Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Peter Ashley Activity Centre, Portsdown Hill Road, Cosham, Portsmouth, PO6 1BJ <br />
 ContactName: Mr. Pete Moore <br />
 ContactPhone: 023923 84003 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8532733 <br />
 Longitude: -1.049812 <br />
 ]]></description><Point><coordinates>-1.049812,50.8532733</coordinates></Point></Placemark><Placemark><name>Gosport Judokwai</name><description><![CDATA[DojoName: Gosport Judokwai <br />
 MembershipID: 264 <br />
-CoachName:  <br />
 DojoAddress: Gosport Hampshire <br />
 ContactName: Mr Peter Powell <br />
 ContactPhone: 01329 513081 <br />
@@ -206,8 +152,6 @@ ClubWebsite: <a href='http://gosportjudo.com/'>gosportjudo.com/</a> <br />
 Latitude: 50.7946636 <br />
 Longitude: -1.1290701 <br />
 ]]></description><Point><coordinates>-1.1290701,50.7946636</coordinates></Point></Placemark><Placemark><name>Guernsey Judo</name><description><![CDATA[DojoName: Guernsey Judo <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Guernsey <br />
 ContactName: Mitch Agnelli <br />
 ContactPhone: 01481 238501 <br />
@@ -216,8 +160,6 @@ ClubWebsite: <a href='http://www.guernseyjudo.com'>www.guernseyjudo.com</a> <br 
 Latitude: 49.465691 <br />
 Longitude: -2.585278 <br />
 ]]></description><Point><coordinates>-2.585278,49.465691</coordinates></Point></Placemark><Placemark><name>Guernsey Judo Club (Beechwood)</name><description><![CDATA[DojoName: Guernsey Judo Club (Beechwood) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: St Peters Port Guernsey <br />
 ContactName: Ben Jones <br />
 ContactPhone: 0778 111 8942 <br />
@@ -226,18 +168,13 @@ ClubWebsite: <a href='http://www.guernseyjudo.com'>www.guernseyjudo.com</a> <br 
 Latitude: 49.4457285 <br />
 Longitude: -2.5496172 <br />
 ]]></description><Point><coordinates>-2.5496172,49.4457285</coordinates></Point></Placemark><Placemark><name>Havant Judo Kwai</name><description><![CDATA[DojoName: Havant Judo Kwai <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Havant, Hampshire <br />
 ContactName: Mr. Kevin Chalk <br />
 ContactPhone: 023 9279836 <br />
 ContactEmail: <a href='mailto:kirsty.chalk@hotmail.co.uk'>kirsty.chalk@hotmail.co.uk</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8566072 <br />
 Longitude: -0.9855933 <br />
 ]]></description><Point><coordinates>-0.9855933,50.8566072</coordinates></Point></Placemark><Placemark><name>Holbrook Judo Club </name><description><![CDATA[DojoName: Holbrook Judo Club  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Brune Park School, Gosport <br />
 ContactName: Mr Paul Vella <br />
 ContactPhone: 07766 522264 <br />
@@ -246,8 +183,6 @@ ClubWebsite: <a href='http://www.holbrookjudo.co.uk/'>www.holbrookjudo.co.uk/</a
 Latitude: 50.7946636 <br />
 Longitude: -1.1290701 <br />
 ]]></description><Point><coordinates>-1.1290701,50.7946636</coordinates></Point></Placemark><Placemark><name>Holbrook (Sarisbury Green) Judo Club </name><description><![CDATA[DojoName: Holbrook (Sarisbury Green) Judo Club  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Sarisbury Southampton Hants <br />
 ContactName: Mr Paul Vella <br />
 ContactPhone: 07766 522264 <br />
@@ -256,18 +191,13 @@ ClubWebsite: <a href='http://www.holbrookjudo.co.uk '>www.holbrookjudo.co.uk </a
 Latitude: 50.8732661 <br />
 Longitude: -1.2873586 <br />
 ]]></description><Point><coordinates>-1.2873586,50.8732661</coordinates></Point></Placemark><Placemark><name>Jersey Judo Club</name><description><![CDATA[DojoName: Jersey Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: St. Clements Jersey <br />
 ContactName: Mr Mike Bisson <br />
 ContactPhone: 07797 743112 <br />
 ContactEmail: <a href='mailto:mike@ilsj.co.uk'>mike@ilsj.co.uk</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 49.1741873 <br />
 Longitude: -2.0570285 <br />
 ]]></description><Point><coordinates>-2.0570285,49.1741873</coordinates></Point></Placemark><Placemark><name>Kiaisan Judo Club</name><description><![CDATA[DojoName: Kiaisan Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Hart Leisure Center, Fleet <br />
 ContactName: Mrs AM Jones <br />
 ContactPhone: 01252 683001 <br />
@@ -276,68 +206,44 @@ ClubWebsite: <a href='http://www.kiaisanjudoclub.8k.com'>www.kiaisanjudoclub.8k.
 Latitude: 51.27821 <br />
 Longitude: -0.86371 <br />
 ]]></description><Point><coordinates>-0.86371,51.27821</coordinates></Point></Placemark><Placemark><name>Kings Court School</name><description><![CDATA[DojoName: Kings Court School <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Kingscourt School, 182 Five Heads Rd, Waterlooville, Hampshire, PO8 9NJ, United Kingdom <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.9063197 <br />
 Longitude: -1.0121384 <br />
 ]]></description><Point><coordinates>-1.0121384,50.9063197</coordinates></Point></Placemark><Placemark><name>Langstone School </name><description><![CDATA[DojoName: Langstone School  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Lakeside Av, Portsmouth, Hampshire, PO3 6EZ, United Kingdom <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.806408 <br />
 Longitude: -1.057123 <br />
 ]]></description><Point><coordinates>-1.057123,50.806408</coordinates></Point></Placemark><Placemark><name>Matsumachi Judo Club</name><description><![CDATA[DojoName: Matsumachi Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Two Riversmeet Leisure Centre Stony Lane South Christchurch Dorset, BH23 1HW  <br />
 ContactName: Mr Paul Sawyer <br />
 ContactPhone: 01202 429101 <br />
 ContactEmail: <a href='mailto:pg_sawyer@hotmail.com'>pg_sawyer@hotmail.com</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.7348817 <br />
 Longitude: -1.7675213 <br />
 ]]></description><Point><coordinates>-1.7675213,50.7348817</coordinates></Point></Placemark><Placemark><name>Meridian Judo Club</name><description><![CDATA[DojoName: Meridian Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: MENGHAM SPORTS CENTRE  HAROLD ROAD  HAYLING ISLAND  PO11 9LT <br />
 ContactName: Mr. Mike Spencer <br />
 ContactPhone: 02392 617450 <br />
-ContactEmail: <a href='mailto:'></a> <br />
 ClubWebsite: <a href='http://www.meridianjudo.org.uk'>www.meridianjudo.org.uk</a> <br />
 Latitude: 50.829374 <br />
 Longitude: -0.97819 <br />
 ]]></description><Point><coordinates>-0.97819,50.829374</coordinates></Point></Placemark><Placemark><name>New Forest Park Judo Club </name><description><![CDATA[DojoName: New Forest Park Judo Club  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Calmore Community Centre Calmore Drive, Calmore, SOUTHAMPTON, Hampshire, SO40 2ZW <br />
 ContactName: Rachel Matthews <br />
 ContactPhone: 023 80867186 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8877193 <br />
 Longitude: -1.5267763 <br />
 ]]></description><Point><coordinates>-1.5267763,50.8877193</coordinates></Point></Placemark><Placemark><name>Oaklands Judo Club</name><description><![CDATA[DojoName: Oaklands Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Fairisle Road, Lordshill, Southampton Hampshire, UK <br />
 ContactName: Mr Ray  Whitfield <br />
 ContactPhone: 023 8090 0619 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.907504 <br />
 Longitude: -1.195136 <br />
 ]]></description><Point><coordinates>-1.195136,50.907504</coordinates></Point></Placemark><Placemark><name>Judo Club Osaka</name><description><![CDATA[DojoName: Judo Club Osaka <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Connaught Leisure Centre Tongham Road Aldershot Hants GU12 4AS <br />
 ContactName: Michelle Stevens <br />
 ContactPhone: 01252 727282 <br />
@@ -346,98 +252,62 @@ ClubWebsite: <a href='http://judoclubosaka.org.uk'>judoclubosaka.org.uk</a> <br 
 Latitude: 51.238409 <br />
 Longitude: -0.741952 <br />
 ]]></description><Point><coordinates>-0.741952,51.238409</coordinates></Point></Placemark><Placemark><name>Judo Club Osaka Hawley</name><description><![CDATA[DojoName: Judo Club Osaka Hawley <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Moor Road Farnborough <br />
 ContactName: Franki McGuire <br />
-ContactPhone:  <br />
 ContactEmail: <a href='mailto:clubsecretary@hawley.judoclubosaka.org.uk'>clubsecretary@hawley.judoclubosaka.org.uk</a> <br />
 ClubWebsite: <a href='http://hawley.judoclubosaka.org.uk'>hawley.judoclubosaka.org.uk</a> <br />
 Latitude: 51.311743 <br />
 Longitude: -0.76233 <br />
 ]]></description><Point><coordinates>-0.76233,51.311743</coordinates></Point></Placemark><Placemark><name>Paul Jones School of Judo </name><description><![CDATA[DojoName: Paul Jones School of Judo  <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Black Dam, Basingstoke <br />
 ContactName: Mrs Kirsten Jones <br />
 ContactPhone: 01256 410449 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.259141 <br />
 Longitude: -1.071954 <br />
 ]]></description><Point><coordinates>-1.071954,51.259141</coordinates></Point></Placemark><Placemark><name>Portsmouth Judo Club</name><description><![CDATA[DojoName: Portsmouth Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Portsmouth, Hants, Hampshire PO6 3AP, United Kingdom <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8485036 <br />
 Longitude: -1.0744455 <br />
 ]]></description><Point><coordinates>-1.0744455,50.8485036</coordinates></Point></Placemark><Placemark><name>Portsmouth Grammar School Judo Club</name><description><![CDATA[DojoName: Portsmouth Grammar School Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Portsmouth Grammar School High Street Portsmouth Hampshire PO1 2LN <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.78973 <br />
 Longitude: -1.1028953 <br />
 ]]></description><Point><coordinates>-1.1028953,50.78973</coordinates></Point></Placemark><Placemark><name>Premier School of Judo</name><description><![CDATA[DojoName: Premier School of Judo <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: St Johns Road Hedge End Southampton <br />
 ContactName: Mr Peter Gittins <br />
 ContactPhone: 01489 782781 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.90756 <br />
 Longitude: -1.310752 <br />
 ]]></description><Point><coordinates>-1.310752,50.90756</coordinates></Point></Placemark><Placemark><name>Priory Judokwai (C.S.J)</name><description><![CDATA[DojoName: Priory Judokwai (C.S.J) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Fawcett Road, Southsea, Portsmouth <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.790801 <br />
 Longitude: -1.075378 <br />
 ]]></description><Point><coordinates>-1.075378,50.790801</coordinates></Point></Placemark><Placemark><name>Ringwood and Fordingbridge Judo Club</name><description><![CDATA[DojoName: Ringwood and Fordingbridge Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Greyfriars, 44 Christchurch Road, RINGWOOD,  Hants. BH24 1DW <br />
 ContactName: Mr Gary Evans <br />
 ContactPhone: 07747 004692 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8307017 <br />
 Longitude: -1.7823128 <br />
 ]]></description><Point><coordinates>-1.7823128,50.8307017</coordinates></Point></Placemark><Placemark><name>River Park Judo Club</name><description><![CDATA[DojoName: River Park Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Gordon Road, Winchester, Hampshire, SO23 7DD <br />
 ContactName: Mrs P Goater <br />
 ContactPhone: 01962 620251 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.067304 <br />
 Longitude: -1.312422 <br />
 ]]></description><Point><coordinates>-1.312422,51.067304</coordinates></Point></Placemark><Placemark><name>Ryde Judo Club</name><description><![CDATA[DojoName: Ryde Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Ryde Isle of Wight <br />
 ContactName: Mr Martin Holt <br />
 ContactPhone: 01983 564649 <br />
 ContactEmail: <a href='mailto:martin.holt@btinternet.com'>martin.holt@btinternet.com</a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.729914 <br />
 Longitude: -1.161966 <br />
 ]]></description><Point><coordinates>-1.161966,50.729914</coordinates></Point></Placemark><Placemark><name>Scorpion Judo Club</name><description><![CDATA[DojoName: Scorpion Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Middle Wallop Stockbridge Hants <br />
 ContactName: Hayley Wise <br />
 ContactPhone: 01264 393659 <br />
@@ -446,8 +316,6 @@ ClubWebsite: <a href='http://www.scorpionjudoclub.com'>www.scorpionjudoclub.com<
 Latitude: 51.1598698 <br />
 Longitude: -1.5616608 <br />
 ]]></description><Point><coordinates>-1.5616608,51.1598698</coordinates></Point></Placemark><Placemark><name>Southampton University J.C</name><description><![CDATA[DojoName: Southampton University J.C <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Highfield Southampton Hants <br />
 ContactName: A Johnstone <br />
 ContactPhone: 02380 340871 <br />
@@ -456,8 +324,6 @@ ClubWebsite: <a href='http://www.soton.ac.uk/~judo/'>www.soton.ac.uk/~judo/</a> 
 Latitude: 50.9307 <br />
 Longitude: -1.4002 <br />
 ]]></description><Point><coordinates>-1.4002,50.9307</coordinates></Point></Placemark><Placemark><name>Southern Judokan (Cowplain)</name><description><![CDATA[DojoName: Southern Judokan (Cowplain) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Padnell Infant School Padnell Avenue Cowplain Waterlooville PO8 8DS <br />
 ContactName: Michael Pring <br />
 ContactPhone: 07973 196409 <br />
@@ -466,8 +332,6 @@ ClubWebsite: <a href='http://www.southernjudokan.co.uk'>www.southernjudokan.co.u
 Latitude: 50.893469 <br />
 Longitude: -1.014772 <br />
 ]]></description><Point><coordinates>-1.014772,50.893469</coordinates></Point></Placemark><Placemark><name>Southern Judokan (Bourne)</name><description><![CDATA[DojoName: Southern Judokan (Bourne) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Bourne Leisure  <br />
 ContactName: Michael Pring <br />
 ContactPhone: 07973 196409 <br />
@@ -476,8 +340,6 @@ ClubWebsite: <a href='http://www.southernjudokan.co.uk'>www.southernjudokan.co.u
 Latitude: 50.8478106 <br />
 Longitude: -0.9371971 <br />
 ]]></description><Point><coordinates>-0.9371971,50.8478106</coordinates></Point></Placemark><Placemark><name>Southern Judokan (Rowlands Castle)</name><description><![CDATA[DojoName: Southern Judokan (Rowlands Castle) <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: St John\'s Primary School Whichers Gate Road Rowlands Castle Hampshire PO9 6BB  <br />
 ContactName: Michael Pring <br />
 ContactPhone: 07973 196409 <br />
@@ -486,18 +348,12 @@ ClubWebsite: <a href='http://www.southernjudokan.co.uk'>www.southernjudokan.co.u
 Latitude: 50.882137 <br />
 Longitude: -0.965811 <br />
 ]]></description><Point><coordinates>-0.965811,50.882137</coordinates></Point></Placemark><Placemark><name>Stamshaw School Judo</name><description><![CDATA[DojoName: Stamshaw School Judo <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: North End Avenue, Portsmouth, Hampshire, PO2 8NW <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.8201965 <br />
 Longitude: -1.0805774 <br />
 ]]></description><Point><coordinates>-1.0805774,50.8201965</coordinates></Point></Placemark><Placemark><name>Summit Judo Club</name><description><![CDATA[DojoName: Summit Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Chute Recreation Ground  Sherborne St John  Basingstoke  Hampshire  RG24 9JA <br />
 ContactName: Mr Len Dunce <br />
 ContactPhone: 07860 435831 <br />
@@ -506,28 +362,18 @@ ClubWebsite: <a href='http://www.summitjudoclub.org.uk'>www.summitjudoclub.org.u
 Latitude: 51.2846488 <br />
 Longitude: -1.0526527 <br />
 ]]></description><Point><coordinates>-1.0526527,51.2846488</coordinates></Point></Placemark><Placemark><name>Torakan Judo Club</name><description><![CDATA[DojoName: Torakan Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: St Brelades Jersey  <br />
 ContactName: J Palmer <br />
 ContactPhone: 01534 720182 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 49.1843798 <br />
 Longitude: -2.1936913 <br />
 ]]></description><Point><coordinates>-2.1936913,49.1843798</coordinates></Point></Placemark><Placemark><name>Wimbourne School</name><description><![CDATA[DojoName: Wimbourne School <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Wimborne Rd, Southsea, Hampshire, PO4 8DE, United Kingdom <br />
 ContactName: Mr Jon Patterson <br />
 ContactPhone: 023 9283 0043 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 50.7874037 <br />
 Longitude: -1.0735694 <br />
 ]]></description><Point><coordinates>-1.0735694,50.7874037</coordinates></Point></Placemark><Placemark><name>Winchester Judo Club</name><description><![CDATA[DojoName: Winchester Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Winchester Judo  <br />
 ContactName: Mr Glen Judd <br />
 ContactPhone: 02380 263819 <br />
@@ -536,13 +382,9 @@ ClubWebsite: <a href='http://http://www.winchester-martialarts.org/'>http://www.
 Latitude: 51.068964 <br />
 Longitude: -1.316494 <br />
 ]]></description><Point><coordinates>-1.316494,51.068964</coordinates></Point></Placemark><Placemark><name>Winchester College Judo Club</name><description><![CDATA[DojoName: Winchester College Judo Club <br />
-MembershipID:  <br />
-CoachName:  <br />
 DojoAddress: Winchester College College Street Winchester SO23 9NA United Kingdom <br />
 ContactName: Mr R Taylor <br />
 ContactPhone: 01962 621126 <br />
-ContactEmail: <a href='mailto:'></a> <br />
-ClubWebsite: <a href='http://'></a> <br />
 Latitude: 51.058442 <br />
 Longitude: -1.312632 <br />
 ]]></description><Point><coordinates>-1.312632,51.058442</coordinates></Point></Placemark></Document></kml>
