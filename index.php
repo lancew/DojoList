@@ -28,7 +28,7 @@ function configure()
 {
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
-	option('version', '0.1.0'); #DojoList version.
+	option('version', '0.2.0'); #DojoList version.
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
 	
 	
