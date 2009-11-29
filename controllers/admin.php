@@ -110,6 +110,9 @@ function admin_edit() {
 
 function admin_editform() {
 	$DojoName = params('dojo');
+	print $Dojoname;
+	$Dojoname = str_replace('%20', ' ', $Dojoname);
+	print $Dojoname;
 	if (file_exists('data/dojo.xml')) {
 		$xml = simplexml_load_file('data/dojo.xml');
 	} else {
@@ -121,6 +124,7 @@ function admin_editform() {
 		if($dojo->DojoName == $DojoName) {
 			set('Dojo', $dojo);
 			//set('DojoName', $dojo->DojoName);
+			print($dojo);
 		}
 	}
 	

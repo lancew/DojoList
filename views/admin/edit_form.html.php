@@ -59,7 +59,7 @@ function removeFormField(id) {
 
 
 <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
-<script type="text/javascript" src="<?php echo option('base_uri') ?>js/mapstraction.js"></script>
+<script type="text/javascript" src="<?php echo option('js_dir') ?>/mapstraction.js"></script>
 
     <style type="text/css">
       #mapstraction {
