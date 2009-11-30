@@ -17,6 +17,8 @@
 <tr><td>Dojo Address:</td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>"></td></tr>
 <tr><td>Training Sessions:</td><td>
 
+
+
 <input type="hidden" id="id" value="1">
 <div id="divTxt"></div>
 <p><a href="#" onClick="addFormField(); return false;">Add</a>
