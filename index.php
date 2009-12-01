@@ -56,14 +56,14 @@ function configure()
 layout('default_layout.php');
 
 // main controller
-dispatch	   ('/', 'main_page');
+dispatch	   ('/', 'Main_page');
 
 dispatch	   ('/admin',          'admin_index');
 dispatch_get   ('/admin/login',	   'admin_index');
 dispatch_post  ('/admin/login',	   'admin_login');
 dispatch	   ('/admin/logout',   'admin_logout');
 
-dispatch_get   ('/html',           'html_list');
+dispatch_get   ('/html',           'Html_list');
 
 dispatch_get   ('/admin/create',   'admin_create');
 dispatch_post  ('/admin/create',   'admin_create_add');

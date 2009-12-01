@@ -11,35 +11,38 @@
   *
   * @category  MainController
   * @package   DojoList
-  * @author    Lance WIcks <lw@judocoach.com>
+  * @author    Lance Wicks <lw@judocoach.com>
   * @copyright 2009 Lance Wicks
   * @license   http://www.gnu.org/licenses/agpl.html  AGPL License 3.0
   * @link      http://github.com/lancew/DojoList
  */
 
 
-function main_page() {
-	return html('main.html.php');
-}
-
-
 /**
- *
+ * Main_Page - Displays main page
  *
  * @return unknown
  */
-function html_list() {
-	if (file_exists('data/dojo.xml')) {
-		$xml = simplexml_load_file('data/dojo.xml');
-		//print_r($xml);
-	} else {
-		exit('Failed to open dojo.xml.');
-	}
+function Main_page() 
+{
+    return html('main.html.php');
+}
 
-	set('DojoList', $xml);
-
-
-	return html('main.html_list.html.php');
+/**
+ * Html_list - Displays all the Dojo in a HTML page
+ *
+ * @return dojolist html page
+ */
+function Html_list() 
+{
+    if (file_exists('data/dojo.xml')) {
+        $xml = simplexml_load_file('data/dojo.xml');
+        //print_r($xml);
+    } else {
+        exit('Failed to open dojo.xml.');
+    }
+    set('DojoList', $xml);
+    return html('main.html_list.html.php');
 }
 
 
