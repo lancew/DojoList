@@ -79,9 +79,9 @@ dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
 
 dispatch_get   ('/admin/edit',   'Admin_edit');
 dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
-dispatch_post  ('/admin/edit/:dojo', 'Admin_editform_end');
+dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
 
 
-dispatch_get   ('/admin/createkml',   'Admin_create_kml');
-dispatch_get   ('/admin/createhtml',   'Admin_create_html');
+dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
+dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 run();

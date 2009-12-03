@@ -77,13 +77,15 @@ function Admin_Create_add()
 {
     if (file_exists('data/dojo.xml')) {
             $xml = simplexml_load_file('data/dojo.xml');
-        } else {
+    } else {
             halt('Failed to open dojo.xml.');
-        }
+    }
     $new1 = $xml->addChild("Dojo");
     foreach ($_POST as $key => $value) {
-        $new1->addChild(strip_tags(addslashes($key)), strip_tags(addslashes($value)));
-        }
+        $clean_key = strip_tags(addslashes($key));
+        $clean_val = strip_tags(addslashes($value));
+        $new1->addChild($clean_key, $clean_val);
+    }
     $DojoName = $_POST["DojoName"];
     $myFile = "data/dojo.xml";
     $fh = fopen($myFile, 'w') or die("can't open file");
@@ -103,9 +105,9 @@ function Admin_edit()
 {
     if (file_exists('data/dojo.xml')) {
             $xml = simplexml_load_file('data/dojo.xml');
-        } else {
+    } else {
             exit('Failed to open dojo.xml.');
-        }
+    }
     $dojo_list = '';
     foreach ($xml->Dojo as $dojo) {
         $dojo_list[] =$dojo->DojoName;
@@ -125,16 +127,16 @@ function Admin_editform()
     $DojoName = str_replace('%20', ' ', $DojoName);	
     if (file_exists('data/dojo.xml')) {
             $xml = simplexml_load_file('data/dojo.xml');
-        } else {
+    } else {
             exit('Failed to open dojo.xml.');
-        }
+    }
     $dojo_data = '';
     foreach ($xml->Dojo as $dojo) {
-        if($dojo->DojoName == $DojoName) {
+        if ($dojo->DojoName == $DojoName) {
             set('Dojo', $dojo);
             print($dojo);
-		  }
-	   }
+        }
+    }
     return html('admin/edit_form.html.php');
 }
 
@@ -143,30 +145,41 @@ function Admin_editform()
  *
  * @return unknown
  */
-function Admin_editform_end() 
+function Admin_Editform_end() 
 {
     $DojoName = params('dojo');
     $DojoName = str_replace('%20', ' ', $DojoName);
 
     // Read in the XML data from file.
     if (file_exists('data/dojo.xml')) {
-    $xml = simplexml_load_file('data/dojo.xml');
+        $xml = simplexml_load_file('data/dojo.xml');
     } else {
         exit('Failed to open dojo.xml.');
     }
     $newxml = '<xml>
-	<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->';
+	<!-- The data created by DojoList by 
+	<a xmlns:cc="http://creativecommons.org/ns#" 
+	href="http://github.com/lancew/DojoList" 
+	property="cc:attributionName" 
+	rel="cc:attributionURL">
+	Lance Wicks</a> is licensed under a 
+	<a rel="license" 
+	href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+	Creative Commons Attribution-Noncommercial-Share Alike 2.0 
+	UK: England &amp; Wales License</a>. -->';
 
     foreach ($xml->Dojo as $dojo) {
-    if ($dojo->DojoName == $DojoName) {
-    foreach($_POST AS $field => $value) {
-        unset($dojo->$field);
-        $dojo->addChild(strip_tags(addslashes($field)), strip_tags(addslashes($value)));
+        if ($dojo->DojoName == $DojoName) {
+            foreach ($_POST AS $field => $value) {
+                unset($dojo->$field);
+                $clean_field = strip_tags(addslashes($field));
+                $clean_value = strip_tags(addslashes($value));
+                $dojo->addChild($clean_field, $clean_value);
+            }
+            $newxml .= $dojo->asXML();
+        } else {
+            $newxml .= $dojo->asXML();
         }
-        $newxml .= $dojo->asXML();
-    } else {
-        $newxml .= $dojo->asXML();
-		}
     }
     $newxml .= '</xml>';
     $myFile = "data/dojo.xml";
@@ -175,7 +188,7 @@ function Admin_editform_end()
     fclose($fh);
     set('DojoName', $DojoName);
     admin_create_kml();
-    set('DojoName',$DojoName);
+    set('DojoName', $DojoName);
     flash('notice', 'Edited OK');
     return html('admin/edit_end.html.php');
 }
@@ -215,8 +228,15 @@ function Admin_Delete_end()
         exit('Failed to open dojo.xml.');
     }
     $newxml = '<xml>
-	<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->
-	';
+	<!-- The data created by DojoList by 
+	<a xmlns:cc="http://creativecommons.org/ns#" 
+	href="http://github.com/lancew/DojoList" 
+	property="cc:attributionName" 
+	rel="cc:attributionURL">Lance Wicks</a>
+	 is licensed under a <a rel="license" 
+	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+	 Creative Commons Attribution-Noncommercial-Share Alike 2.0 
+	 UK: England &amp; Wales License</a>. -->';
 
     foreach ($xml->Dojo as $dojo) {
         if ($dojo->DojoName == $DojoName) {
@@ -240,7 +260,7 @@ function Admin_Delete_end()
  *
  * @return unknown
  */
-function Admin_create_kml()
+function Admin_Create_kml()
 {
     if (file_exists('data/dojo.xml')) {
         $xml = simplexml_load_file('data/dojo.xml');
@@ -249,25 +269,33 @@ function Admin_create_kml()
     }
 
     $newKML = '<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-<!-- The data created by DojoList by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>. -->
-<Document>
-<name>Dojo List</name>';
+    <kml xmlns="http://www.opengis.net/kml/2.2">
+    <!-- The data created by DojoList by 
+    <a xmlns:cc="http://creativecommons.org/ns#" 
+    href="http://github.com/lancew/DojoList" 
+    property="cc:attributionName" 
+    rel="cc:attributionURL">Lance Wicks</a> 
+    is licensed under a 
+    <a rel="license" 
+    href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+    Creative Commons Attribution-Noncommercial-Share Alike 2.0 
+    UK: England &amp; Wales License</a>. -->
+    <Document>
+    <name>Dojo List</name>';
 
     foreach ($xml->Dojo as $dojo) {
         $newKML .= '<Placemark>';
         $newKML .= '<name>'.$dojo->DojoName.'</name>';
         $newKML .= '<description><![CDATA[';
         foreach ($dojo as $key => $value) {
-            if($value){
-            switch ($key) {
+            if ($value) {
+                switch ($key) {
                 case 'ClubWebsite':
                     $newKML .= "$key: <a href='http://$value'>$value</a> <br />\n";
                     break;
                 case 'ContactEmail':
                     $newKML .= "$key: <a href='mailto:$value'>$value</a> <br />\n";
                     break;
-				
                 default:
                     $newKML .= "$key: $value <br />\n";
                 }
