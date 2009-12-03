@@ -103,17 +103,8 @@ function Admin_Create_add()
  */
 function Admin_edit() 
 {
-    if (file_exists('data/dojo.xml')) {
-            $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-            exit('Failed to open dojo.xml.');
-    }
-    $dojo_list = '';
-    foreach ($xml->Dojo as $dojo) {
-        $dojo_list[] =$dojo->DojoName;
-    }
-    set('DojoList', $dojo_list);
-    return html('admin/edit.html.php');
+       set('DojoList', Find_Dojo_all());
+       return html('admin/edit.html.php');
 }
 
 /**
