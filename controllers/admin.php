@@ -116,11 +116,7 @@ function Admin_editform()
 {
     $DojoName = params('dojo');
     $DojoName = str_replace('%20', ' ', $DojoName);	
-    if (file_exists('data/dojo.xml')) {
-            $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-            exit('Failed to open dojo.xml.');
-    }
+    $xml = Find_Dojo_all();
     $dojo_data = '';
     foreach ($xml->Dojo as $dojo) {
         if ($dojo->DojoName == $DojoName) {
@@ -142,11 +138,7 @@ function Admin_Editform_end()
     $DojoName = str_replace('%20', ' ', $DojoName);
 
     // Read in the XML data from file.
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        exit('Failed to open dojo.xml.');
-    }
+    $xml = Find_Dojo_all();
     $newxml = '<xml>
 	<!-- The data created by DojoList by 
 	<a xmlns:cc="http://creativecommons.org/ns#" 
@@ -191,11 +183,7 @@ function Admin_Editform_end()
  */
 function Admin_delete()
 {
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        exit('Failed to open dojo.xml.');
-    }
+    $xml = Find_Dojo_all();
 
     $dojo_list = '';
     foreach ($xml->Dojo as $dojo) {
@@ -213,11 +201,7 @@ function Admin_delete()
 function Admin_Delete_end()
 {
     $DojoName = params('dojo');
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        exit('Failed to open dojo.xml.');
-    }
+    $xml = Find_Dojo_all();
     $newxml = '<xml>
 	<!-- The data created by DojoList by 
 	<a xmlns:cc="http://creativecommons.org/ns#" 
@@ -253,11 +237,7 @@ function Admin_Delete_end()
  */
 function Admin_Create_kml()
 {
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        exit('Failed to open dojo.xml.');
-    }
+    $xml = Find_Dojo_all();
 
     $newKML = '<?xml version="1.0" encoding="UTF-8"?>
     <kml xmlns="http://www.opengis.net/kml/2.2">
