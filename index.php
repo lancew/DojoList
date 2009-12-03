@@ -63,25 +63,25 @@ layout('default_layout.php');
 // main controller
 dispatch	   ('/', 'Main_page');
 
-dispatch	   ('/admin',          'admin_index');
-dispatch_get   ('/admin/login',	   'admin_index');
-dispatch_post  ('/admin/login',	   'admin_login');
-dispatch	   ('/admin/logout',   'admin_logout');
+dispatch	   ('/admin',          'Admin_index');
+dispatch_get   ('/admin/login',	   'Admin_index');
+dispatch_post  ('/admin/login',	   'Admin_login');
+dispatch	   ('/admin/logout',   'Admin_logout');
 
 dispatch_get   ('/html',           'Html_list');
 
-dispatch_get   ('/admin/create',   'admin_create');
-dispatch_post  ('/admin/create',   'admin_create_add');
+dispatch_get   ('/admin/create',   'Admin_create');
+dispatch_post  ('/admin/create',   'Admin_Create_add');
 
-dispatch_get   ('/admin/delete',   'admin_delete');
-dispatch	   ('/admin/delete/:dojo', 'admin_delete_end');
-
-
-dispatch_get   ('/admin/edit',   'admin_edit');
-dispatch	   ('/admin/edit/:dojo', 'admin_editform');
-dispatch_post  ('/admin/edit/:dojo', 'admin_editform_end');
+dispatch_get   ('/admin/delete',   'Admin_delete');
+dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
 
 
-dispatch_get   ('/admin/createkml',   'admin_create_kml');
-dispatch_get   ('/admin/createhtml',   'admin_create_html');
+dispatch_get   ('/admin/edit',   'Admin_edit');
+dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
+dispatch_post  ('/admin/edit/:dojo', 'Admin_editform_end');
+
+
+dispatch_get   ('/admin/createkml',   'Admin_create_kml');
+dispatch_get   ('/admin/createhtml',   'Admin_create_html');
 run();

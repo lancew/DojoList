@@ -1,48 +1,79 @@
 <?php
-
+/**
+  * DojoList admin controller file
+  *
+  * This controller is for the main pages for the DojoList Application.
+  *
+  * PHP version 5
+  *
+  * LICENSE: please see the AGPL license file is data/agpl-3.0.txt
+  *
+  * @category  AdminController
+  * @package   DojoList
+  * @author    Lance Wicks <lw@judocoach.com>
+  * @copyright 2009 Lance Wicks
+  * @license   http://www.gnu.org/licenses/agpl.html  AGPL License 3.0
+  * @link      http://github.com/lancew/DojoList
+ */
 
 
 
 /**
- *
+ * Admin Index - Displays the admin index page page
  *
  * @return unknown
  */
-
-
-function admin_index() 
+function Admin_index() 
 {
-    if(isset($_COOKIE["user"])) {
+    if (isset($_COOKIE["user"])) {
         return html('admin/index.html.php');
     } else {
         return html('admin/index_login.html.php');
     }	
 }
 
-function admin_login() 
+/**
+ * Admin Login - Login page
+ *
+ * @return unknown
+ */
+function Admin_login() 
 {
-    if($_POST['password'] == option('password')){
+    if ($_POST['password'] == option('password')) {
         setcookie("user", "Alex Porter", time()+3600);
         return html('admin/index.html.php');
     } else {
         return html('admin/index_login.html.php');
     }
-	
 }
 
-function admin_logout() 
+/**
+ * Admin Logout - logs Admin out
+ *
+ * @return unknown
+ */
+function Admin_logout() 
 {
     setcookie("user", "", time()-3600);
     return html('admin/index_login.html.php');
 }
 
-
-function admin_create() 
+/**
+ * Admin Create - Displays create new dojo page
+ *
+ * @return unknown
+ */
+function Admin_create() 
 {
     return html('admin/create.html.php');
 }
 
-function admin_create_add() 
+/**
+ * Admin Create Add - writes dojo to XML file, then displays page saying job done.
+ *
+ * @return unknown
+ */
+function Admin_Create_add() 
 {
     if (file_exists('data/dojo.xml')) {
             $xml = simplexml_load_file('data/dojo.xml');
@@ -63,8 +94,12 @@ function admin_create_add()
     return render('admin/create_add.html.php');
 }
 
-
-function admin_edit() 
+/**
+ * Admin Edit - Displays a page with a list of existing Dojo to edit
+ *
+ * @return unknown
+ */
+function Admin_edit() 
 {
     if (file_exists('data/dojo.xml')) {
             $xml = simplexml_load_file('data/dojo.xml');
@@ -79,7 +114,12 @@ function admin_edit()
     return html('admin/edit.html.php');
 }
 
-function admin_editform() 
+/**
+ * Admin Edit Form - Displays the edit form, showing Dojo with pre-existing data
+ *
+ * @return unknown
+ */
+function Admin_editform() 
 {
     $DojoName = params('dojo');
     $DojoName = str_replace('%20', ' ', $DojoName);	
@@ -98,8 +138,12 @@ function admin_editform()
     return html('admin/edit_form.html.php');
 }
 
-
-function admin_editform_end() 
+/**
+ * Admin EditForm End - Writes changes from edit to XML file.
+ *
+ * @return unknown
+ */
+function Admin_editform_end() 
 {
     $DojoName = params('dojo');
     $DojoName = str_replace('%20', ' ', $DojoName);
@@ -136,8 +180,12 @@ function admin_editform_end()
     return html('admin/edit_end.html.php');
 }
 
-
-function admin_delete()
+/**
+ * Admin Delete - Displays list of Dojo so user can choose one to delete.
+ *
+ * @return unknown
+ */
+function Admin_delete()
 {
     if (file_exists('data/dojo.xml')) {
         $xml = simplexml_load_file('data/dojo.xml');
@@ -153,7 +201,12 @@ function admin_delete()
     return html('admin/delete.html.php');
 }
 
-function admin_delete_end()
+/**
+ * Admin Delete End - Once dojo selected to be deleted, write changes to XML
+ *
+ * @return unknown
+ */
+function Admin_Delete_end()
 {
     $DojoName = params('dojo');
     if (file_exists('data/dojo.xml')) {
@@ -182,7 +235,12 @@ function admin_delete_end()
     return html('admin/delete_end.html.php');
 }
 
-function admin_create_kml()
+/**
+ * Admin Create KML - Create the dojo.kml file
+ *
+ * @return unknown
+ */
+function Admin_create_kml()
 {
     if (file_exists('data/dojo.xml')) {
         $xml = simplexml_load_file('data/dojo.xml');
