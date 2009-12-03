@@ -30,7 +30,12 @@ function configure()
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
 	option('version', '0.2.0'); #DojoList version.
 	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
-	
+	/*
+	<!-- ========================================================================================================================= -->
+    <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
+    <!-- ========================================================================================================================= -->
+	*/
+
 	
 	option('limonade_dir',       file_path('lib'));
   	option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
