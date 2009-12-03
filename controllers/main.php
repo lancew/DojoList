@@ -35,16 +35,9 @@ function Main_page()
  */
 function Html_list() 
 {
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-        //print_r($xml);
-    } else {
-        exit('Failed to open dojo.xml.');
-    }
-    set('DojoList', $xml);
+    set('DojoList', Find_Dojo_all());
     return html('main.html_list.html.php');
 }
-
 
 
 ?>

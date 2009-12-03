@@ -84,4 +84,8 @@ dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
 
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
+
+
+dispatch	   ('/test',          'Test');
+
 run();

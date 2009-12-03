@@ -1,3 +1,4 @@
+
 <body onload="initialize()">
     <div id="mapstraction" style="width: 100%;"></div>
     <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript">
@@ -26,5 +27,4 @@
     </script> 
 	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 
 	<a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></p>
-	
 	
