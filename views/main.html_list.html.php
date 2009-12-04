@@ -5,10 +5,18 @@
 
 <?php foreach ($DojoList as $dojo) {
 
+	
+	
 	foreach ($dojo as $key => $value) {
 		// The following line skips fields if they are blank.
 		if (!$value){continue;}
 
+		// Display the email address as HTML link.
+		if ($key =='DojoName') {
+			print "<li>&nbsp;<a href='".url_for('view')."/$value'>$value</a></li>";
+			continue;
+		}
+		
 		// Display the email address as HTML link.
 		if ($key =='ContactEmail') {
 			print "<li>&nbsp; $key: <a href='mailto:$value'>$value</a></li>";
