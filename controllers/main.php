@@ -40,4 +40,17 @@ function Html_list()
 }
 
 
+/**
+ * view - Displays a single Dojo in a HTML page
+ *
+ * @return dojo html page
+ */
+function view()
+{
+    $target = params('dojo');
+    $target = str_replace('%20', ' ', $target);
+    set('Dojo', Find_dojo($target));
+    return html('view.html.php');
+}
+
 ?>

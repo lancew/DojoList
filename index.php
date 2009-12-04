@@ -86,4 +86,6 @@ dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 
 
+dispatch	   ('/view/:dojo',          'View');
+
 run();

@@ -396,6 +396,5 @@ ContactName: Mr R Taylor <br />
 ContactPhone: 01962 621126 <br />
 Latitude: 51.058442 <br />
 Longitude: -1.312632 <br />
-]]></description><Point><coordinates>-1.312632,51.058442</coordinates></Point></Placemark><Placemark><name>123</name><description><![CDATA[DojoName: 123 <br />
-MembershipID: 456 <br />
+]]></description><Point><coordinates>-1.312632,51.058442</coordinates></Point></Placemark><Placemark><name>1</name><description><![CDATA[DojoName: 1 <br />
 ]]></description><Point><coordinates>,</coordinates></Point></Placemark></Document></kml>
