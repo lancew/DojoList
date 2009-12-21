@@ -59,9 +59,13 @@ Released   : 20090622
 		<div id="menu">
 			<ul>
 				<li><a href="<?=url_for('/')?>">Home</a></li>
-				<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
-				<li><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
-				<li><a href="<?php echo option('data_dir') ?>/dojo.xml">XML</a></li>
+				<li><a href="<?=url_for('about')?>">About</a></li>
+				<li><a href="<?=url_for('download')?>">Download</a></li>
+				<li><a href="<?=url_for('support')?>"></a></li>
+				<li><a href="<?=url_for('about')?>"></a></li>
+				<li><a href="<?=url_for('about')?>"></a></li>
+				<li><a href="<?=url_for('about')?>"></a></li>
+
 				
 
 
