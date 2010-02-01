@@ -2,7 +2,7 @@
 
 // ============ 
 // ! DojoList - An open source Dojo listing system created by Lance Wicks.
-//    Copyright (C) 2009  Lance Wicks
+//    Copyright (C) 2009-2010  Lance Wicks
 //
 //    This program is free software: you can redistribute it and/or modify
 //    it under the terms of the GNU Affero General Public License as
