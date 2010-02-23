@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-23 22:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../views/default_layout.php:59
+msgid ""
+"A free Open Source Dojo Listing system for Judo (and other martial art) clubs"
+msgstr ""
+
+#: ../../../views/default_layout.php:66 ../../../views/default_layout.php:116
+msgid "Home"
+msgstr "aaa"
+
+#: ../../../views/default_layout.php:67
+msgid "About"
+msgstr ""
+
+#: ../../../views/default_layout.php:68
+msgid "Download"
+msgstr ""
+
+#: ../../../views/default_layout.php:117
+msgid "List of Dojo"
+msgstr ""
+
+#: ../../../views/default_layout.php:121
+msgid "Admin Interface"
+msgstr ""
+
+#: ../../../views/default_layout.php:124
+msgid "[LOGOUT]"
+msgstr ""

@@ -10,6 +10,11 @@ Version    : 1.0
 Released   : 20090622
 
 -->
+<?php 
+// Set language to Spanish 
+putenv ("LC_ALL=en"); 
+?>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -51,16 +56,16 @@ Released   : 20090622
 <div id="wrapper">
 <div id="logo">
 		<h1><a href="#">DojoList</a></h1>
-		<p><em> A free Open Source Dojo Listing system for Judo (and other martial art) clubs.</em></p>
+		<p><em><?php echo _("A free Open Source Dojo Listing system for Judo (and other martial art) clubs"); ?>.</em></p>
 	</div>
 	<hr />
 	<!-- end #logo -->
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li><a href="<?=url_for('/')?>">Home</a></li>
-				<li><a href="<?=url_for('about')?>">About</a></li>
-				<li><a href="<?=url_for('download')?>">Download</a></li>
+				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
+				<li><a href="<?=url_for('about')?>"><?php echo _("About"); ?></a></li>
+				<li><a href="<?=url_for('download')?>"><?php echo _("Download"); ?></a></li>
 				<li><a href="<?=url_for('support')?>"></a></li>
 				<li><a href="<?=url_for('about')?>"></a></li>
 				<li><a href="<?=url_for('about')?>"></a></li>
@@ -108,15 +113,16 @@ Released   : 20090622
 				<li>
 					<h2>Menu</h2>
 					<ul>
-						<li><a href="<?=url_for('/')?>">Home</a></li>
-						<li><a href="<?=url_for('html')?>">List of Dojo</a></li>
+						<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
+						<li><a href="<?=url_for('html')?>"><?php echo _("List of Dojo"); ?></a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.xml">XML</a></li>
 						<hr>
-						<li><a href="<?=url_for('admin')?>">Admin Interface</a></li>
+						<li><a href="<?=url_for('admin')?>"><?php echo _("Admin Interface"); ?></a></li>
 						<?php
 							if(isset($_COOKIE["user"])) {
-								print('<li><a href="'.url_for('admin','logout').'">[LOGOUT]</a></li>');
+							    $logout_text = _("[LOGOUT]");
+								print('<li><a href="'.url_for('admin','logout').'"'.">$logout_text<".'/a></li>');
 							}
 						?>
 						
