@@ -8,7 +8,7 @@ document.login.password.focus();
 
 <form method="post" action="<?=url_for('admin','login')?>" name="login">
 
-PASSWORD: <input type="password" name="password">
+<?php echo _("PASSWORD:"); ?> <input type="password" name="password">
 
 <input type="submit" value="submit"><br />
 </form>

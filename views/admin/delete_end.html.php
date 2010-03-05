@@ -1,5 +1,5 @@
-<h1>Dojo Management System</h1>
+<h1><?php echo _("Dojo Management System"); ?></h1>
 
-<p><?=h($DojoName)?> Dojo deleted</p>
+<p><?=h($DojoName)?> <?php echo _("Dojo deleted"); ?></p>
 
-<a href="<?=url_for('admin')?>">CONTINUE</a>
+<a href="<?=url_for('admin')?>"><?php echo _("CONTINUE"); ?></a>

@@ -11,7 +11,7 @@ Released   : 20090622
 
 -->
 <?php 
-// Set language to Spanish 
+// Set language to ... 
 putenv ("LC_ALL=en"); 
 ?>
 
@@ -80,8 +80,8 @@ putenv ("LC_ALL=en");
 		<div id="search">
 			<form method="get" action="">
 				<fieldset>
-				<input type="text" name="s" id="search-text" size="15" value="Search not yet working" />
-				<input type="submit" id="search-submit" value="GO" />
+				<input type="text" name="s" id="search-text" size="15" value="<?php echo _("Search not yet working"); ?>" />
+				<input type="submit" id="search-submit" value="<?php echo _("GO"); ?>" />
 				</fieldset>
 			</form>
 		</div>
@@ -111,7 +111,7 @@ putenv ("LC_ALL=en");
 			<ul>
 				<li><img src="<?php echo option('images_dir') ?>/beta.jpg" alt="beta" width="98" height="100"/></li>
 				<li>
-					<h2>Menu</h2>
+					<h2><?php echo _("Menu"); ?></h2>
 					<ul>
 						<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
 						<li><a href="<?=url_for('html')?>"><?php echo _("List of Dojo"); ?></a></li>
@@ -141,7 +141,7 @@ putenv ("LC_ALL=en");
 				</li>
 				<li>
 				<h2>Copyright</h2>
-				<p>&copy;2009, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
+				<p>&copy;2009-2010, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">The data created by DojoList</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a>.		
 				
 				</p>

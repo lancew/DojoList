@@ -1,2 +1,2 @@
-<h1>Dojo Management System</h1>
-<p>KML file created.</p>
+<h1><?php echo _("Dojo Management System"); ?></h1>
+<p><?php echo _("KML file created."); ?></p>

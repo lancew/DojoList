@@ -95,5 +95,16 @@ dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 
 
 dispatch	   ('/view/:dojo',          'View');
+dispatch	   ('/:dojo',          'View');
+
+
+dispatch	   ('/:dojo/edit', 'Admin_editform');
+dispatch_post  ('/:dojo/edit', 'Admin_Editform_end');
+
+
+
+
+
+
 
 run();

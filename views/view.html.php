@@ -1,5 +1,5 @@
 <body>
-<h1>DOJO LIST</h1>
+<h1><?php echo _("DOJO LIST"); ?></h1>
 <hr>
 <hr>
 

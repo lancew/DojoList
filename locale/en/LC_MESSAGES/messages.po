@@ -8,13 +8,139 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-23 22:23+0000\n"
+"POT-Creation-Date: 2010-03-05 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../views/admin/create.html.php:9
+#: ../../../views/admin/create_add.html.php:1
+#: ../../../views/admin/create_html.html.php:1
+#: ../../../views/admin/create_kml.html.php:1
+#: ../../../views/admin/delete_end.html.php:1
+#: ../../../views/admin/edit_end.html.php:1
+#: ../../../views/admin/edit_form.html.php:9
+#: ../../../views/admin/index.html.php:1
+msgid "Dojo Management System"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:14
+#: ../../../views/admin/edit_form.html.php:14
+msgid "Club/Dojo Name:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:15
+#: ../../../views/admin/edit_form.html.php:15
+msgid "NGB Membership ID:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:16
+#: ../../../views/admin/edit_form.html.php:16
+msgid "Head Coach Name:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:17
+#: ../../../views/admin/edit_form.html.php:17
+msgid "Dojo Address:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:18
+#: ../../../views/admin/edit_form.html.php:18
+msgid "Training Sessions:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:22
+#: ../../../views/admin/edit_form.html.php:24
+msgid "Add"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:26
+#: ../../../views/admin/edit_form.html.php:28
+msgid "Contact Name:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:27
+#: ../../../views/admin/edit_form.html.php:29
+msgid "Contact Phone Number:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:28
+#: ../../../views/admin/edit_form.html.php:30
+msgid "Contact Email:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:29
+#: ../../../views/admin/edit_form.html.php:31
+msgid "Club website:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:30
+#: ../../../views/admin/edit_form.html.php:32
+msgid "Coordinates:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:31
+#: ../../../views/admin/edit_form.html.php:33
+msgid "Latitude:"
+msgstr ""
+
+#: ../../../views/admin/create.html.php:32
+#: ../../../views/admin/edit_form.html.php:34
+msgid "Longitude:"
+msgstr ""
+
+#: ../../../views/admin/create_add.html.php:3
+msgid "Dojo Added"
+msgstr ""
+
+#: ../../../views/admin/create_add.html.php:5
+#: ../../../views/admin/delete_end.html.php:5
+#: ../../../views/admin/edit_end.html.php:5
+msgid "CONTINUE"
+msgstr ""
+
+#: ../../../views/admin/create_html.html.php:2
+msgid "HTML file created."
+msgstr ""
+
+#: ../../../views/admin/create_kml.html.php:2
+msgid "KML file created."
+msgstr ""
+
+#: ../../../views/admin/delete.html.php:4
+msgid "[Delete]"
+msgstr ""
+
+#: ../../../views/admin/delete_end.html.php:3
+msgid "Dojo deleted"
+msgstr ""
+
+#: ../../../views/admin/edit.html.php:4
+msgid "[Edit]"
+msgstr ""
+
+#: ../../../views/admin/edit_end.html.php:3
+msgid "Dojo edited"
+msgstr ""
+
+#: ../../../views/admin/index.html.php:3
+msgid "Create a new Dojo"
+msgstr ""
+
+#: ../../../views/admin/index.html.php:4
+msgid "Edit a Dojo"
+msgstr ""
+
+#: ../../../views/admin/index.html.php:5
+msgid "Delete a Dojo"
+msgstr ""
+
+#: ../../../views/admin/index_login.html.php:11
+msgid "PASSWORD:"
+msgstr ""
 
 #: ../../../views/default_layout.php:59
 msgid ""
@@ -23,7 +149,7 @@ msgstr ""
 
 #: ../../../views/default_layout.php:66 ../../../views/default_layout.php:116
 msgid "Home"
-msgstr "aaa"
+msgstr ""
 
 #: ../../../views/default_layout.php:67
 msgid "About"
@@ -31,6 +157,18 @@ msgstr ""
 
 #: ../../../views/default_layout.php:68
 msgid "Download"
+msgstr ""
+
+#: ../../../views/default_layout.php:83
+msgid "Search not yet working"
+msgstr ""
+
+#: ../../../views/default_layout.php:84
+msgid "GO"
+msgstr ""
+
+#: ../../../views/default_layout.php:114
+msgid "Menu"
 msgstr ""
 
 #: ../../../views/default_layout.php:117
@@ -43,4 +181,8 @@ msgstr ""
 
 #: ../../../views/default_layout.php:124
 msgid "[LOGOUT]"
+msgstr ""
+
+#: ../../../views/view.html.php:2
+msgid "DOJO LIST"
 msgstr ""

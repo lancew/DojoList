@@ -6,32 +6,32 @@
 
 </script>
 
-<h1>Dojo Management System</h1>
+<h1><?php echo _("Dojo Management System"); ?></h1>
 
 <form method="post" action="" name="dojoform">
 <table>
 <div id="mapstraction" style="float:right;"></div>
-<tr><td>Club/Dojo Name:</td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>"></td></tr>
-<tr><td>NGB Membership ID:</td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
-<tr><td>Head Coach Name:</td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
-<tr><td>Dojo Address:</td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>"></td></tr>
-<tr><td>Training Sessions:</td><td>
+<tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>"></td></tr>
+<tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
+<tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
+<tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>"></td></tr>
+<tr><td><?php echo _("Training Sessions:"); ?></td><td>
 
 
 
 <input type="hidden" id="id" value="1">
 <div id="divTxt"></div>
-<p><a href="#" onClick="addFormField(); return false;">Add</a>
+<p><a href="#" onClick="addFormField(); return false;"><?php echo _("Add"); ?></a>
 </td></tr>
 
 
-<tr><td>Contact Name:</td><td><input type="text" name="ContactName" value="<?=h($Dojo->ContactName)?>"></td></tr>
-<tr><td>Contact Phone Number:</td><td><input type="text" name="ContactPhone" value="<?=h($Dojo->ContactPhone)?>"></td></tr>
-<tr><td>Contact Email:</td><td><input type="text" name="ContactEmail" value="<?=h($Dojo->ContactEmail)?>"></td></tr>
-<tr><td>Club website:</td><td>Http://<input type="text" name="ClubWebsite" value="<?=h($Dojo->ClubWebsite)?>"></td></tr>
-<tr><td>Coordinates:</td><td>
-Latitude: <input type="text" id='lat' name="Latitude" value="<?=h($Dojo->Latitude)?>"><br />
-Longitude: <input type="text" id='long' name="Longitude" value="<?=h($Dojo->Longitude)?>">
+<tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName" value="<?=h($Dojo->ContactName)?>"></td></tr>
+<tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone" value="<?=h($Dojo->ContactPhone)?>"></td></tr>
+<tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail" value="<?=h($Dojo->ContactEmail)?>"></td></tr>
+<tr><td><?php echo _("Club website:"); ?></td><td>Http://<input type="text" name="ClubWebsite" value="<?=h($Dojo->ClubWebsite)?>"></td></tr>
+<tr><td><?php echo _("Coordinates:"); ?></td><td>
+<?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude" value="<?=h($Dojo->Latitude)?>"><br />
+<?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude" value="<?=h($Dojo->Longitude)?>">
 </td></tr>
 </table>
 
