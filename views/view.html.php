@@ -1,7 +1,4 @@
 <body>
-<h1><?php echo _("DOJO LIST"); ?></h1>
-<hr>
-<hr>
 
 <?php 
     
@@ -10,6 +7,12 @@
 		if (!$value){continue;}
 
 		// Display the email address as HTML link.
+		if ($key =='DojoName') {
+			print "<h1>$value</h1>";
+			continue;
+
+		}
+		
 		if ($key =='ContactEmail') {
 			print "<li>&nbsp; $key: <a href='mailto:$value'>$value</a></li>";
 			continue;
@@ -63,3 +66,7 @@
 
       
     </script> 
+    
+    <p />&nbsp;<p />
+    <a href=""><?php echo _("[EDIT DOJO]"); ?></a> - <a href=""><?php echo _("[DELETE DOJO]"); ?></a> 
+   
