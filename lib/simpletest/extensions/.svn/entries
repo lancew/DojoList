@@ -1,0 +1,70 @@
+8
+
+dir
+1920
+https://noserub.googlecode.com/svn/trunk/vendors/simpletest/extensions
+https://noserub.googlecode.com/svn
+
+
+
+2008-09-10T06:38:58.972557Z
+807
+dhofstet
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ae07c2c2-3635-0410-bec2-e7f8933db683
+
+testdox.php
+file
+
+
+
+
+2008-09-13T08:35:04.000000Z
+2dd84682c2c4741ad13a2d82fa31d2e9
+2007-12-01T09:19:45.320375Z
+497
+dhofstet
+has-props
+
+pear_test_case.php
+file
+
+
+
+
+2008-09-13T08:35:04.000000Z
+b32307f20aff0a387ffe0b5e9a8d499a
+2007-09-09T15:40:30.714876Z
+68
+dhofstet
+has-props
+
+phpunit_test_case.php
+file
+
+
+
+
+2008-09-13T08:35:04.000000Z
+ff242fb00b32dcfe984eed63fdbe6167
+2007-12-01T09:19:45.320375Z
+497
+dhofstet
+has-props
+
+testdox
+dir
+
