@@ -11,6 +11,9 @@ class TestOfDojolist extends UnitTestCase {
 	function testDojo_Negative() {
 		$this->assertFalse(negative());
 	}	
+	function testFind_Dojo_all() {
+		$this->assertTrue(Find_Dojo_all());
+	}
 	function testFind_dojo_empty() {
 		$this->assertFalse(Find_dojo());
 	} 
@@ -20,6 +23,12 @@ class TestOfDojolist extends UnitTestCase {
 	function testFind_dojo_Alresford() {
 		$this->assertTrue(Find_dojo('Alresford Judo Club'));
 	}	
+	function testFind_dojo_AlresfordDetails() {
+		$xml = Find_dojo('Alresford Judo Club');
+		$text = $xml->DojoName;
+		$this->assertEqual($text,'Alresford Judo Club');
+	}		
+	
 }
 
 $test = &new TestOfDojolist();
