@@ -16,6 +16,12 @@
   * @link      http://github.com/lancew/DojoList
  */
 
+
+function positive()
+{
+return 1;
+}
+
 /**
  * Return a list of all Dojo
  *
