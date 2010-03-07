@@ -22,6 +22,11 @@ function positive()
 return 1;
 }
 
+function negative()
+{
+return 0;
+}
+
 /**
  * Return a list of all Dojo
  *
