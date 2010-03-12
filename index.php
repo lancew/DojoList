@@ -37,10 +37,11 @@ function configure()
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
 	option('version', '0.4.0'); #DojoList version.
-	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhSWH-7MkD69eK1mPHwn7eqLiVV0phRL_kf0iV6RCaWfRCpODMqoZH0oxg');
+	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
 	/*
 	<!-- ========================================================================================================================= -->
     <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
+    <!-- ! dojolist.org Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhSWH-7MkD69eK1mPHwn7eqLiVV0phRL_kf0iV6RCaWfRCpODMqoZH0oxg   -->
     <!-- ========================================================================================================================= -->
 	*/
 
@@ -81,13 +82,13 @@ dispatch_get   ('/html',           'Html_list');
 dispatch_get   ('/admin/create',   'Admin_create');
 dispatch_post  ('/admin/create',   'Admin_Create_add');
 
-dispatch_get   ('/admin/delete',   'Admin_delete');
-dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
+//dispatch_get   ('/admin/delete',   'Admin_delete');
+//dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
 
 
-dispatch_get   ('/admin/edit',   'Admin_edit');
-dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
-dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
+//dispatch_get   ('/admin/edit',   'Admin_edit');
+//dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
+//dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
 
 
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
@@ -101,6 +102,8 @@ dispatch	   ('/:dojo',          'View');
 dispatch	   ('/:dojo/edit', 'Admin_editform');
 dispatch_post  ('/:dojo/edit', 'Admin_Editform_end');
 
+dispatch_get   ('/:dojo/delete',   'Dojo_delete');
+dispatch	   ('/:dojo/delete_end/', 'Dojo_Delete_end');
 
 
 

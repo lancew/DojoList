@@ -68,5 +68,5 @@
     </script> 
     
     <p />&nbsp;<p />
-    <a href=""><?php echo _("[EDIT DOJO]"); ?></a> - <a href=""><?php echo _("[DELETE DOJO]"); ?></a> 
-   
+    <a href="<?= url_for($Dojo->DojoName, '/edit'); ?>"><?php echo _("[EDIT DOJO]"); ?></a> - <a href=""><?php echo _("[DELETE DOJO]"); ?></a> 
+  
