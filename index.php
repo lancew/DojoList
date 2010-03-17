@@ -72,38 +72,42 @@ layout('default_layout.php');
 // main controller
 dispatch	   ('/', 'Main_page');
 
-dispatch	   ('/admin',          'Admin_index');
-dispatch_get   ('/admin/login',	   'Admin_index');
-dispatch_post  ('/admin/login',	   'Admin_login');
-dispatch	   ('/admin/logout',   'Admin_logout');
-
 dispatch_get   ('/html',           'Html_list');
 
-dispatch_get   ('/admin/create',   'Admin_create');
-dispatch_post  ('/admin/create',   'Admin_Create_add');
+dispatch_get   ('/dojo/create',   'Admin_create');
+dispatch_post  ('/dojo/create',   'Admin_Create_add');
 
-//dispatch_get   ('/admin/delete',   'Admin_delete');
-//dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
+dispatch_get   ('/dojo/:dojo/delete',   'Dojo_delete');
+dispatch_get   ('/dojo/:dojo/delete_end/', 'Dojo_Delete_end');
 
-
-//dispatch_get   ('/admin/edit',   'Admin_edit');
-//dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
-//dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
-
+dispatch	   ('/dojo/:dojo/edit', 'Admin_editform');
+dispatch_post  ('/dojo/:dojo/edit', 'Admin_Editform_end');
 
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 
 
-dispatch	   ('/view/:dojo',          'View');
-dispatch	   ('/:dojo',          'View');
+// depreciated paths
+
+//dispatch	   ('/admin',          'Admin_index');
+//dispatch_get   ('/admin/login',	   'Admin_index');
+//dispatch_post  ('/admin/login',	   'Admin_login');
+//dispatch	   ('/admin/logout',   'Admin_logout');
+
+//dispatch_get   ('/admin/delete',   'Admin_delete');
+//dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
+
+//dispatch_get   ('/admin/edit',   'Admin_edit');
+//dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
+//dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
+
+//dispatch	   ('/view/:dojo',          'View');
+//dispatch	   ('/dojo/:dojo',          'View');
 
 
-dispatch	   ('/:dojo/edit', 'Admin_editform');
-dispatch_post  ('/:dojo/edit', 'Admin_Editform_end');
 
-dispatch_get   ('/:dojo/delete',   'Dojo_delete');
-dispatch	   ('/:dojo/delete_end/', 'Dojo_Delete_end');
+
+
 
 
 
