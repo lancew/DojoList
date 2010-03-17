@@ -45,14 +45,15 @@ putenv ("LC_ALL=en");
 	<meta name="description" content="Example output page" />
 	<meta name="keywords" content="Dojo List" />
 	<title>Dojo Listing</title>
-	<script src="<?php echo option('js_dir') ?>/cufon/cufon-yui.js" type="text/javascript"></script>
-	<script src="<?php echo option('js_dir') ?>/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
-	<link href="<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="<?php echo option('css_dir') ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="/<?php echo option('js_dir') ?>/cufon/cufon-yui.js" type="text/javascript"></script>
+	<script src="/<?php echo option('js_dir') ?>/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<link href="/<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/<?php echo option('css_dir') ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
 	
 		
 </head>
 <body>
+
 <div id="wrapper">
 <div id="logo">
 		<h1><a href="#">DojoList</a></h1>
@@ -109,22 +110,16 @@ putenv ("LC_ALL=en");
 		<!-- end #content -->
 		<div id="sidebar">
 			<ul>
-				<li><img src="<?php echo option('images_dir') ?>/beta.jpg" alt="beta" width="98" height="100"/></li>
+				<li><img src="/<?php echo option('images_dir') ?>/beta.jpg" alt="beta" width="98" height="100"/></li>
 				<li>
 					<h2><?php echo _("Menu"); ?></h2>
 					<ul>
 						<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
-						<li><a href="<?=url_for('html')?>"><?php echo _("List of Dojo"); ?></a></li>
+						<li><a href="<?=url_for('dojo')?>"><?php echo _("List of Dojo"); ?></a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.xml">XML</a></li>
-						<hr>
-						<li><a href="<?=url_for('admin')?>"><?php echo _("Admin Interface"); ?></a></li>
-						<?php
-							if(isset($_COOKIE["user"])) {
-							    $logout_text = _("[LOGOUT]");
-								print('<li><a href="'.url_for('admin','logout').'"'.">$logout_text<".'/a></li>');
-							}
-						?>
+						<br />
+							<li><a href="<?php echo url_for('dojo','create'); ?>"> <?php echo _("Create new Dojo"); ?></a></li>
 						
 					</ul>
 				</li>

@@ -2,4 +2,4 @@
 
 <p><?=h($DojoName)?> <?php echo _("Dojo deleted"); ?></p>
 
-<a href="<?=url_for('admin')?>"><?php echo _("CONTINUE"); ?></a>
+<a href="<?=url_for('dojo')?>"><?php echo _("CONTINUE"); ?></a>

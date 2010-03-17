@@ -59,6 +59,8 @@ function configure()
 	option('images_dir',		 file_path('images'));
 	option('data_dir',		     file_path('data'));
 	
+	option('recaptcha_public_key',			 '');
+	option('recaptcha_private_key',			 '');
 	
 	option('password',			 'passw0rd');
 }
@@ -72,13 +74,16 @@ layout('default_layout.php');
 // main controller
 dispatch	   ('/', 'Main_page');
 
-dispatch_get   ('/html',           'Html_list');
+dispatch_get   ('/dojo/',           'Html_list');
 
 dispatch_get   ('/dojo/create',   'Admin_create');
 dispatch_post  ('/dojo/create',   'Admin_Create_add');
 
-dispatch_get   ('/dojo/:dojo/delete',   'Dojo_delete');
-dispatch_get   ('/dojo/:dojo/delete_end/', 'Dojo_Delete_end');
+// The dojo/create paths have to be above the  view path to work.
+dispatch	   ('/dojo/:dojo',          'View');
+
+dispatch_get   ('/dojo/:dojo/delete',   'Admin_Delete');
+dispatch_post   ('/dojo/:dojo/delete', 'Admin_Delete_end');
 
 dispatch	   ('/dojo/:dojo/edit', 'Admin_editform');
 dispatch_post  ('/dojo/:dojo/edit', 'Admin_Editform_end');
@@ -88,6 +93,8 @@ dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 
 
 // depreciated paths
+
+dispatch_get   ('/html',           'Html_list');
 
 //dispatch	   ('/admin',          'Admin_index');
 //dispatch_get   ('/admin/login',	   'Admin_index');
@@ -102,7 +109,7 @@ dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 //dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
 
 //dispatch	   ('/view/:dojo',          'View');
-//dispatch	   ('/dojo/:dojo',          'View');
+
 
 
 

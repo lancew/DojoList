@@ -2,4 +2,4 @@
 
 <p><?=h($DojoName)?> <?php echo _("Dojo edited"); ?></p>
 
-<a href="<?=url_for('admin')?>"><?php echo _("CONTINUE"); ?></a>
+<a href="<?=url_for('dojo',$DojoName)?>"><?php echo _("CONTINUE"); ?></a>

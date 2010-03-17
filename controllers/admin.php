@@ -80,20 +80,39 @@ function Admin_Create_add()
     } else {
             halt('Failed to open dojo.xml.');
     }
-    $new1 = $xml->addChild("Dojo");
-    foreach ($_POST as $key => $value) {
-        $clean_key = strip_tags(addslashes($key));
-        $clean_val = strip_tags(addslashes($value));
-        $new1->addChild($clean_key, $clean_val);
-    }
-    $DojoName = $_POST["DojoName"];
-    $myFile = "data/dojo.xml";
-    $fh = fopen($myFile, 'w') or die("can't open file");
-    fwrite($fh, $xml->asXML());
-    fclose($fh);
-    set('DojoName', $DojoName);
-    admin_create_kml();
-    return render('admin/create_add.html.php');
+    
+    $resp = recaptcha_check_answer (option('recaptcha_private_key'),
+                                        $_SERVER["REMOTE_ADDR"],
+                                        $_POST["recaptcha_challenge_field"],
+                                        $_POST["recaptcha_response_field"]);
+
+        if ($resp->is_valid) {
+        				$new1 = $xml->addChild("Dojo");
+    					foreach ($_POST as $key => $value) {
+        					if($key != 'recaptcha_challenge_field' && $key != 'recaptcha_response_field') {
+        						$clean_key = strip_tags(addslashes($key));
+        						$clean_val = strip_tags(addslashes($value));
+        						$new1->addChild($clean_key, $clean_val);
+        						}
+    					}
+    					$DojoName = $_POST["DojoName"];
+    					$myFile = "data/dojo.xml";
+    					$fh = fopen($myFile, 'w') or die("can't open file");
+    					fwrite($fh, $xml->asXML());
+    					fclose($fh);
+    					set('DojoName', $DojoName);
+    					admin_create_kml();
+    					return render('admin/create_add.html.php');
+                
+        } else {
+                # set the error code so that we can display it
+                halt('Failed to add new Dojo: '.$resp->error);
+              
+        }
+
+    
+    
+    
 }
 
 /**
@@ -134,6 +153,12 @@ function Admin_editform()
  */
 function Admin_Editform_end() 
 {
+    $resp = recaptcha_check_answer (option('recaptcha_private_key'),
+                                        $_SERVER["REMOTE_ADDR"],
+                                        $_POST["recaptcha_challenge_field"],
+                                        $_POST["recaptcha_response_field"]);
+    if ($resp->is_valid) {                                    
+
     $DojoName = params('dojo');
     $DojoName = str_replace('%20', ' ', $DojoName);
 
@@ -155,9 +180,11 @@ function Admin_Editform_end()
         if ($dojo->DojoName == $DojoName) {
             foreach ($_POST AS $field => $value) {
                 unset($dojo->$field);
-                $clean_field = strip_tags(addslashes($field));
-                $clean_value = strip_tags(addslashes($value));
-                $dojo->addChild($clean_field, $clean_value);
+                if($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field') {
+                	$clean_field = strip_tags(addslashes($field));
+                	$clean_value = strip_tags(addslashes($value));
+                	$dojo->addChild($clean_field, $clean_value);
+                	}
             }
             $newxml .= $dojo->asXML();
         } else {
@@ -174,6 +201,11 @@ function Admin_Editform_end()
     set('DojoName', $DojoName);
     flash('notice', 'Edited OK');
     return html('admin/edit_end.html.php');
+     } else {
+                # set the error code so that we can display it
+                halt('Failed to edit Dojo: '.$resp->error);
+              
+        }
 }
 
 /**
@@ -183,14 +215,9 @@ function Admin_Editform_end()
  */
 function Admin_delete()
 {
-    $xml = Find_Dojo_all();
-
-    $dojo_list = '';
-    foreach ($xml->Dojo as $dojo) {
-        $dojo_list[] =$dojo->DojoName;
-    }
-    set('DojoList', $dojo_list);
-    return html('admin/delete.html.php');
+    $DojoName = params('dojo');
+        set('DojoName', $DojoName);
+    return html('admin/delete_recaptcha.html.php');
 }
 
 /**
@@ -200,7 +227,8 @@ function Admin_delete()
  */
 function Admin_Delete_end()
 {
-    $DojoName = params('dojo');
+   if ($_POST["recaptcha_response_field"]) {
+   		$DojoName = params('dojo');
     $xml = Find_Dojo_all();
     $newxml = '<xml>
 	<!-- The data created by DojoList by 
@@ -228,6 +256,10 @@ function Admin_Delete_end()
     set('DojoName', $DojoName);
     admin_create_kml();
     return html('admin/delete_end.html.php');
+   		} else {
+   		halt('no recaptcha provided');
+   		}
+    
 }
 
 /**

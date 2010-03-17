@@ -1,7 +1,6 @@
 <body>
 <h1>DOJO LIST</h1>
-<hr>
-<hr>
+
 
 <?php foreach ($DojoList as $dojo) {
 
@@ -13,7 +12,7 @@
 
 		// Display the email address as HTML link.
 		if ($key =='DojoName') {
-			print "<li>&nbsp;<a href='".url_for('view')."/$value'>$value</a></li>";
+			print "<li>&nbsp;<a href='".url_for('dojo')."/$value'>$value</a></li>";
 			continue;
 		}
 		

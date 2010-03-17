@@ -34,7 +34,7 @@
 <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude" value="<?=h($Dojo->Longitude)?>">
 </td></tr>
 </table>
-
+<?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />
 </form>
 
