@@ -12,13 +12,13 @@
     UK: England &amp; Wales License</a>. -->
     <Document>
     <name>Dojo List</name><Placemark><name>Alresford Judo Club</name><description><![CDATA[DojoName: Alresford Judo Club <br />
-CoachName: Lance Wicks <br />
-DojoAddress: Alresford Hampshire <br />
+CoachName: Lance Wicks. <br />
+DojoAddress: Sun Lane, Alresford, Hampshire <br />
 ContactName: Mr Ray  Whitfield <br />
 ContactPhone: 023 8090 0619 <br />
-Latitude: 51.090113 <br />
-Longitude: -1.165786 <br />
-]]></description><Point><coordinates>-1.165786,51.090113</coordinates></Point></Placemark><Placemark><name>Alton Judo Club</name><description><![CDATA[DojoName: Alton Judo Club <br />
+Latitude: 51.08527 <br />
+Longitude: -1.159517 <br />
+]]></description><Point><coordinates>-1.159517,51.08527</coordinates></Point></Placemark><Placemark><name>Alton Judo Club</name><description><![CDATA[DojoName: Alton Judo Club <br />
 DojoAddress: Alton Sports Centre Alton Hants <br />
 TrainingSession1Day: Friday <br />
 TrainingSession1Time: 8:20pm <br />
@@ -397,4 +397,14 @@ ContactName: Mr R Taylor <br />
 ContactPhone: 01962 621126 <br />
 Latitude: 51.058442 <br />
 Longitude: -1.312632 <br />
-]]></description><Point><coordinates>-1.312632,51.058442</coordinates></Point></Placemark></Document></kml>
+]]></description><Point><coordinates>-1.312632,51.058442</coordinates></Point></Placemark><Placemark><name>lwtemp</name><description><![CDATA[DojoName: lwtemp <br />
+MembershipID: - <br />
+CoachName: - <br />
+DojoAddress: so50 7dx <br />
+ContactName: - <br />
+ContactPhone: - <br />
+ContactEmail: <a href='mailto:-'>-</a> <br />
+ClubWebsite: <a href='http://-'>-</a> <br />
+Latitude: 50.9658375 <br />
+Longitude: -1.3148134 <br />
+]]></description><Point><coordinates>-1.3148134,50.9658375</coordinates></Point></Placemark></Document></kml>

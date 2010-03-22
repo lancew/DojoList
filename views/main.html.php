@@ -18,11 +18,11 @@
       
         var myPoint = new LatLonPoint(51.090113,-1.165786);
         // display the map centered on a latitude and longitude (Google zoom levels)
-        mapstraction.setCenterAndZoom(myPoint, 9);
+        mapstraction.setCenterAndZoom(myPoint, 2);
         mapstraction.addControls({zoom: 'large'});
      
         // Add url to the URL of your online KML dojo.kml file here      
-        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>/dojolist/data/dojo.kml");
+        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>/data/dojo.kml");
       
     </script> 
 	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 
