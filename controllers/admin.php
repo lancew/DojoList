@@ -87,11 +87,34 @@ function Admin_Create_add()
                                         $_POST["recaptcha_response_field"]);
 
         if ($resp->is_valid) {
-        				$new1 = $xml->addChild("Dojo");
+						$new1 = $xml->addChild("Dojo");
+    					
+    					if ((($_FILES["DojoLogo"]["type"] == "image/gif")
+						|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
+						|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
+						|| ($_FILES["DojoLogo"]["type"] == "image/png"))
+						&& ($_FILES["DojoLogo"]["size"] < 20000))
+  						{
+    						if ($_FILES["DojoLogo"]["error"] > 0)
+  								{
+  									echo "Error: " . $_FILES["DojoLogo"]["error"] . "<br />";
+  								} else {
+  									echo "Upload: " . $_FILES["DojoLogo"]["name"] . "<br />";
+  									echo "Type: " . $_FILES["DojoLogo"]["type"] . "<br />";
+  									echo "Size: " . ($_FILES["DojoLogo"]["size"] / 1024) . " Kb<br />";
+  									echo "Stored in: " . $_FILES["DojoLogo"]["tmp_name"];
+  									echo "<br />Image encoded as: ".base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name']))."<br />";
+  									$new1->addChild('DojoLogo', base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+ 						 		}
+    					} else {
+    						halt('image file not right');
+    					}
+    					
     					foreach ($_POST as $key => $value) {
-        					if($key != 'recaptcha_challenge_field' && $key != 'recaptcha_response_field') {
+        					if($key != 'recaptcha_challenge_field' && $key != 'recaptcha_response_field' && $key !='MAX_FILE_SIZE') {
         						$clean_key = strip_tags(addslashes($key));
         						$clean_val = strip_tags(addslashes($value));
+        						
         						$new1->addChild($clean_key, $clean_val);
         						}
     					}
@@ -317,7 +340,6 @@ function Admin_Create_kml()
     fclose($fh);
     return html('admin/create_kml.html.php');
 }
-
 
 
 ?>

@@ -15,7 +15,7 @@
 <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
 <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
 <tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>"></td></tr>
-<tr><td><?php echo _("Training Sessions:"); ?></td><td></tr>
+<tr><td><?php echo _("Training Sessions:"); ?></td><td></td></tr>
 
 <?php
 
@@ -28,6 +28,8 @@ foreach ($Dojo AS $field => $value) {
 
 ?>
 <tr><td></td><td>&nbsp;</td></tr>
+<tr><td></td>
+<td>
 <input type="hidden" id="id" value="1">
 <div id="divTxt"></div>
 <p><a href="#" onClick="addFormField(); return false;"><?php echo _("Add"); ?></a>

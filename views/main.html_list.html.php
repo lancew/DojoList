@@ -28,6 +28,14 @@
 			print "<li>&nbsp; $key: <a href='http://$value'>$value</a></li>";
 			continue;
 		}
+		
+		if ($key =='DojoLogo') {
+			
+			echo '<img alt="'.$dojo->DojoName.'" 
+  src="data:image/png;base64,'.$dojo->DojoLogo.'" />';
+
+			continue;
+		}
 
 		// Default: Display the key and Value for the fields
 		print "<li>&nbsp; $key: $value</li>";

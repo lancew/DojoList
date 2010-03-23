@@ -44,7 +44,7 @@ putenv ("LC_ALL=en");
 	<meta name="developer" content="Lance Wicks" />
 	<meta name="description" content="Example output page" />
 	<meta name="keywords" content="Dojo List" />
-	<title>Dojo Listing</title>
+	<title>Dojo Listing - ERROR</title>
 	<script src="/<?php echo option('js_dir') ?>/cufon/cufon-yui.js" type="text/javascript"></script>
 	<script src="/<?php echo option('js_dir') ?>/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
 	<link href="/<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
@@ -56,7 +56,7 @@ putenv ("LC_ALL=en");
 
 <div id="wrapper">
 <div id="logo">
-		<h1><a href="#">DojoList</a></h1>
+		<h1><a href="#">DojoList - ERROR</a></h1>
 		<p><em><?php echo _("A free Open Source Dojo Listing system for Judo (and other martial art) clubs"); ?>.</em></p>
 	</div>
 	<hr />
@@ -129,7 +129,7 @@ putenv ("LC_ALL=en");
 					
 					<p>DojoList is an open source project by Lance Wicks. The project aims to provide a system to make it easy for a association to maintain a list of Judo clubs.</p>
 					<p>The project is hosted at <a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> where you can access all the source code, record bugs, etc.</p>
-					<p>This project has been built on the <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the <a href="http://jquery.com/">jquery</a> and <a href="http://www.mapstraction.com/">mapstraction</a> javascript libraries. Updates are protected by the <a href="http://recaptcha.net">reCaptcha</a> project.</p>
+					<p>This project has been built on the <a href="http://sofa-design.net/limonade/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the <a href="http://jquery.com/">jquery</a> and <a href="http://www.mapstraction.com/">mapstraction</a> javascript libraries.</p>
 					<p>The DojoList project is licensed under a <a href="<?php echo option('data_dir') ?>/agpl-3.0.txt">AGPL license.<br /><img src="<?php echo option('images_dir') ?>/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script></p>
 					

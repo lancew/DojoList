@@ -8,7 +8,7 @@ document.dojoform.DojoName.focus();
 
 <h1><?php echo _("Dojo Management System"); ?></h1>
 
-<form method="post" action="" name="dojoform">
+<form method="post" action="" name="dojoform" enctype="multipart/form-data">
 <table>
 <div id="mapstraction" style="float:right;"></div>
 <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
@@ -31,6 +31,9 @@ document.dojoform.DojoName.focus();
 <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />
 <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude">
 </td></tr>
+
+<tr><td><input type="hidden" name="MAX_FILE_SIZE" value="100000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
+
 </table>
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />

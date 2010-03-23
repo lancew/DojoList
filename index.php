@@ -71,6 +71,7 @@ function configure()
 
 layout('default_layout.php');
 
+
 // main controller
 dispatch	   ('/', 'Main_page');
 
@@ -91,6 +92,7 @@ dispatch_post  ('/dojo/:dojo/edit', 'Admin_Editform_end');
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
 
+dispatch	   ('/dojo/:dojo/image', 'DojoLogo');
 
 // depreciated paths
 
