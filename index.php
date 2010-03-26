@@ -59,8 +59,8 @@ function configure()
 	option('images_dir',		 file_path('images'));
 	option('data_dir',		     file_path('data'));
 	
-	option('recaptcha_public_key',			 '');
-	option('recaptcha_private_key',			 '');
+	option('recaptcha_public_key',			 '6LcC4wsAAAAAAECY3J0fNlR7zHIAKYfyQljTlvaM');
+	option('recaptcha_private_key',			 '6LcC4wsAAAAAACV_1QJcAJpB24bmXi_UpGPPmeRF');
 	
 	option('password',			 'passw0rd');
 }
