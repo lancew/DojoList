@@ -10,3 +10,6 @@ Started by Lance Wicks in 2009.
 http://www.dojolist.org
 
 =========================================
+
+** NB: The index.php.default file needs to have some option 
+fields entered and then needs to be renamed to index.php

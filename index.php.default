@@ -1,6 +1,6 @@
 <?php
 
-// ============
+// ============ 
 // ! DojoList - An open source Dojo listing system created by Lance Wicks.
 //    Copyright (C) 2009-2010  Lance Wicks
 //
@@ -19,6 +19,10 @@
 // ============ 
 
 
+// ==============================================
+//  * This file needs to be renamed to index.php
+// ==============================================
+
 
 
 // Specify location of translation tables 
@@ -36,15 +40,17 @@ function configure()
 {
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
-	option('version', '0.4.0'); #DojoList version.
-	option('GoogleKey','ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww');
-	/*
-	<!-- ========================================================================================================================= -->
-    <!-- ! dev.dojolist Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhQXBDc1CkX49eEa50oiJq9JEnZWARSVOY8m3-zJmuoOv8hU-Z2ODM5hww   -->
-    <!-- ! dojolist.org Google Maps key = ABQIAAAA2Xy4GEmk_3kINx3LAgnNqhSWH-7MkD69eK1mPHwn7eqLiVV0phRL_kf0iV6RCaWfRCpODMqoZH0oxg   -->
-    <!-- ========================================================================================================================= -->
-	*/
-
+	option('version', '0.5.0'); #DojoList version.
+	
+	// The following three options need filling in for the system to work.
+	// 1. Obtain a gogle Maps API key from: http://code.google.com/apis/maps/signup.html
+	// 2. Obtain public and private reCaptcha keys from: https://admin.recaptcha.net/recaptcha/createsite/ 
+	
+	option('GoogleKey','');
+	option('recaptcha_public_key',			 '');
+	option('recaptcha_private_key',			 '');
+	
+	
 	
 	option('limonade_dir',       file_path('lib'));
   	option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
@@ -59,8 +65,7 @@ function configure()
 	option('images_dir',		 file_path('images'));
 	option('data_dir',		     file_path('data'));
 	
-	option('recaptcha_public_key',			 '6LcC4wsAAAAAAECY3J0fNlR7zHIAKYfyQljTlvaM');
-	option('recaptcha_private_key',			 '6LcC4wsAAAAAACV_1QJcAJpB24bmXi_UpGPPmeRF');
+
 	
 	option('password',			 'passw0rd');
 }
