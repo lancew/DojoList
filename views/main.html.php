@@ -6,7 +6,7 @@
     <script type="text/javascript" src="<?php echo option('js_dir') ?>/mapstraction.js">
     </script>
     <form action="javascript:document.search.s.focus();return false;" onSubmit="showAddress(this.form.s.value)">
-    <input type="text" name="s" id="search-postcode" size="45" value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" onBlur="showAddress(this.form.s.value)" /></form>
+    <input type="text" name="s" id="search-postcode" size="45" value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" onBlur="showAddress(this.form.s.value)" onFocus="this.form.s.value = '';" /></form>
     <style type="text/css">
         #mapstraction {
             height: 450px;
