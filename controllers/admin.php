@@ -311,20 +311,11 @@ function Admin_Create_kml() {
 		$newKML .= '<Placemark>';
 		$newKML .= '<name>'.$dojo->DojoName.'</name>';
 		$newKML .= '<description><![CDATA[';
-		foreach ($dojo as $key => $value) {
-			if ($value) {
-				switch ($key) {
-				case 'ClubWebsite':
-					$newKML .= "$key: <a href='http://$value'>$value</a> <br />\n";
-					break;
-				case 'ContactEmail':
-					$newKML .= "$key: <a href='mailto:$value'>$value</a> <br />\n";
-					break;
-				default:
-					$newKML .= "$key: $value <br />\n";
-				}
-			}
-		}
+		
+		//$newKML .= '<h1>'.$dojo->DojoName.'</h1>';
+		$newKML .= '<img alt="'.$dojo->DojoName.'" src="data:image/png;base64,'.$dojo->DojoLogo.'" width="250px"/>';
+		$newKML .= '<a href="dojo/'.$dojo->ClubWebsite.'/view">View Details</a>';
+		
 		$newKML .= ']]></description>';
 		$newKML .= '<Point><coordinates>';
 		$newKML .= $dojo->Longitude . ',' . $dojo->Latitude;

@@ -32,7 +32,7 @@
 		if ($key =='DojoLogo') {
 			
 			echo '<img alt="'.$dojo->DojoName.'" 
-  src="data:image/png;base64,'.$dojo->DojoLogo.'" />';
+  src="data:image/png;base64,'.$dojo->DojoLogo.'" width="250px" />';
 
 			continue;
 		}
