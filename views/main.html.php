@@ -5,6 +5,8 @@
     </script>
     <script type="text/javascript" src="<?php echo option('js_dir') ?>/mapstraction.js">
     </script>
+    <form action="javascript:document.search.s.focus();return false;" onSubmit="showAddress(this.form.s.value)">
+    <input type="text" name="s" id="search-postcode" size="45" value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" onBlur="showAddress(this.form.s.value)" /></form>
     <style type="text/css">
         #mapstraction {
             height: 450px;
@@ -28,3 +30,37 @@
 	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 
 	<a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></p>
 	
+<script type="text/javascript">
+  	function showAddress(address) {
+      var geocoder = null;
+      geocoder = new GClientGeocoder();
+      
+      if (geocoder) {
+      
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              //alert(address + " not found");
+            } else {
+            
+                
+            	sPoint = point.toString();
+            	sPoint = sPoint.replace(/\(/i, "");
+            	sPoint = sPoint.replace(/\)/i, "");
+            	sPoint = sPoint.replace(/ /i, "");
+            	
+            	coords = sPoint.split(',');
+				
+			  	var home = new mxn.LatLonPoint(coords[0],coords[1]);
+              	mapstraction.addMarker( new mxn.Marker(home));	
+              	mapstraction.setCenterAndZoom(home, 12);
+              	
+              	              
+            }
+          }
+        );
+      }
+    } 
+     
+ </script>

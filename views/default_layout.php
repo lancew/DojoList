@@ -42,7 +42,7 @@ putenv ("LC_ALL=en");
 	<meta name="author" content="Lance Wicks" />
 	<meta name="designer" content="Lance Wicks" />
 	<meta name="developer" content="Lance Wicks" />
-	<meta name="description" content="Example output page" />
+	<meta name="description" content="Dojo Listings" />
 	<meta name="keywords" content="Dojo List" />
 	<title>Dojo Listing</title>
 	<script src="/<?php echo option('js_dir') ?>/cufon/cufon-yui.js" type="text/javascript"></script>
@@ -79,9 +79,9 @@ putenv ("LC_ALL=en");
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-			<form method="get" action="">
+			<form method="get" action="" name="search">
 				<fieldset>
-				<input type="text" name="s" id="search-text" size="15" value="<?php echo _("Search not yet working"); ?>" />
+				<input type="text" name="s" id="search-text" size="15" value="<?php echo _("Search not yet working"); ?>"/>
 				<input type="submit" id="search-submit" value="<?php echo _("GO"); ?>" />
 				</fieldset>
 			</form>
@@ -155,11 +155,10 @@ putenv ("LC_ALL=en");
 	
 	
 	
-	
 	</div>
 	<!-- end #footer -->
 </div>
-
+    
 	
 	</body>
 </html>	

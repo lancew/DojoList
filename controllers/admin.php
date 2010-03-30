@@ -313,8 +313,8 @@ function Admin_Create_kml() {
 		$newKML .= '<description><![CDATA[';
 		
 		//$newKML .= '<h1>'.$dojo->DojoName.'</h1>';
-		$newKML .= '<img alt="'.$dojo->DojoName.'" src="data:image/png;base64,'.$dojo->DojoLogo.'" width="250px"/>';
-		$newKML .= '<a href="dojo/'.$dojo->ClubWebsite.'/view">View Details</a>';
+		if ($dojo->DojoLogo) {$newKML .= '<img alt="'.$dojo->DojoName.'" src="data:image/png;base64,'.$dojo->DojoLogo.'" width="250px"/>'; }
+		$newKML .= '<a href="'.option('site_url').'/dojo/'.$dojo->DojoName.'">View Details</a>';
 		
 		$newKML .= ']]></description>';
 		$newKML .= '<Point><coordinates>';
