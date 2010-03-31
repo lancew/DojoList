@@ -28,7 +28,7 @@
 		if ($key =='DojoLogo') {
 			
 			echo '<img alt="'.$Dojo->DojoName.'" 
-  src="data:image/png;base64,'.$Dojo->DojoLogo.'" />';
+  src="'.$Dojo->DojoLogo.'" />';
 
 			continue;
 		}

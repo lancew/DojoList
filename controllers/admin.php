@@ -83,7 +83,7 @@ function Admin_Create_add() {
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
 		$_POST["recaptcha_response_field"]);
-
+	
 	if ($resp->is_valid) {
 		$new1 = $xml->addChild("Dojo");
 
@@ -101,7 +101,7 @@ function Admin_Create_add() {
 					//echo "Size: " . ($_FILES["DojoLogo"]["size"] / 1024) . " Kb<br />";
 					//echo "Stored in: " . $_FILES["DojoLogo"]["tmp_name"];
 					//echo "<br />Image encoded as: ".base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name']))."<br />";
-					$new1->addChild('DojoLogo', base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+					$new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
 				}
 			} else {
 				halt('image file not right');
@@ -313,7 +313,7 @@ function Admin_Create_kml() {
 		$newKML .= '<description><![CDATA[';
 		
 		//$newKML .= '<h1>'.$dojo->DojoName.'</h1>';
-		if ($dojo->DojoLogo) {$newKML .= '<img alt="'.$dojo->DojoName.'" src="data:image/png;base64,'.$dojo->DojoLogo.'" width="250px"/>'; }
+		if ($dojo->DojoLogo) {$newKML .= '<img alt="'.$dojo->DojoName.'" src="'.$dojo->DojoLogo.'" width="250px"/>'; }
 		$newKML .= '<a href="'.option('site_url').'/dojo/'.$dojo->DojoName.'">View Details</a>';
 		
 		$newKML .= ']]></description>';
