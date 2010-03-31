@@ -65,12 +65,9 @@ putenv ("LC_ALL=en");
 		<div id="menu">
 			<ul>
 				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
-				<li><a href="<?=url_for('about')?>"><?php echo _("About"); ?></a></li>
-				<li><a href="<?=url_for('download')?>"><?php echo _("Download"); ?></a></li>
-				<li><a href="<?=url_for('support')?>"></a></li>
-				<li><a href="<?=url_for('about')?>"></a></li>
-				<li><a href="<?=url_for('about')?>"></a></li>
-				<li><a href="<?=url_for('about')?>"></a></li>
+				<li><a href="#"><?php echo _("About"); ?></a></li>
+				<li><a href="#"><?php echo _("Download"); ?></a></li>
+
 
 				
 
