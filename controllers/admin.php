@@ -183,6 +183,7 @@ function Admin_Editform_end() {
 		$DojoName = params('dojo');
 		$DojoName = str_replace('%20', ' ', $DojoName);
 
+		$DojoOrigEmail ='';
 		// Read in the XML data from file.
 		$xml = Find_Dojo_all();
 		$newxml = '<xml>
@@ -200,6 +201,7 @@ function Admin_Editform_end() {
 		foreach ($xml->Dojo as $dojo) {
 			if ($dojo->DojoName == $DojoName) {
 				foreach ($_POST as $field => $value) {
+					$DojoOrigEmail = $dojo->ContactEmail;
 					unset($dojo->$field);
 					if ($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field') {
 						$clean_field = strip_tags(addslashes($field));
@@ -217,6 +219,15 @@ function Admin_Editform_end() {
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		fwrite($fh, $newxml);
 		fclose($fh);
+		
+		$to      = $DojoOrigEmail;
+        $subject =  _("A change has been made to ") .$dojo->DojoName;
+        $message = _("Hello, a change has been made to the listing for the dojo ") . $dojo->DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $dojo->DojoName ;
+        $headers = 'From: noreply@dojolist.org' . "\r\n";
+        $message = wordwrap($message, 70);           
+
+        mail($to, $subject, $message, $headers);
+        
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		set('DojoName', $DojoName);

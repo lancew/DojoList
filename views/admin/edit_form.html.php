@@ -44,7 +44,9 @@ foreach ($Dojo AS $field => $value) {
 <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude" value="<?=h($Dojo->Latitude)?>"><br />
 <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude" value="<?=h($Dojo->Longitude)?>">
 </td></tr>
+<tr><td><em><?php echo _("Please note: Notifications of changes will be send to administrators."); ?></em></td></tr>
 </table>
+
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />
 </form>
