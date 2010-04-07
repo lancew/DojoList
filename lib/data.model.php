@@ -16,5 +16,24 @@
   * @link      http://github.com/lancew/DojoList
  */
 
+/**
+ * Load dojo list as XML
+ *
+ * @return $xml list
+ */
+function Load_Xml_data($file = 'data/dojo.xml')
+{
+    
+    if (file_exists($file)) {
+        $xml = simplexml_load_file($file);
+    } else {
+        return 'Failed to load XML';
+    }
+    return $xml;
+}
+
+
+
+
 
 ?>

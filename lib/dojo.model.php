@@ -16,22 +16,18 @@
  * @link      http://github.com/lancew/DojoList
  */
 
+require_once('lib/data.model.php');
+
 
 /**
  * Return a list of all Dojo
  *
  * @return $xml list
  */
-
-
 function Find_Dojo_all()
 {
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        halt('Failed to open dojo.xml.');
-    }
-    return $xml;
+   $xml = Load_Xml_data();
+   return $xml;
 }
 
 
@@ -43,12 +39,7 @@ function Find_Dojo_all()
 function Find_dojo($target=null)
 {
     $return_value = null;
-
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        halt('Failed to open dojo.xml.');
-    }
+    $xml = Load_Xml_data();
 
     foreach ($xml->Dojo as $dojo) {
         if ($dojo->DojoName == $target) {
@@ -63,13 +54,8 @@ function Find_dojo($target=null)
 
 function Create_dojo ()
 {
-		
-		
-    if (file_exists('data/dojo.xml')) {
-        $xml = simplexml_load_file('data/dojo.xml');
-    } else {
-        halt('Failed to open dojo.xml.');
-    }
+			
+        $xml = Load_Xml_data();
 		$new1 = $xml->addChild("Dojo");
 
 		if ($_FILES["DojoLogo"]["name"]) {
@@ -89,7 +75,7 @@ function Create_dojo ()
 					$new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
 				}
 			} else {
-				halt('image file not right');
+				return 0;
 			}
 		}
 
@@ -106,7 +92,7 @@ function Create_dojo ()
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		fwrite($fh, $xml->asXML());
 		fclose($fh);
-		
+		return 'Dojo Created';
 		
 		
 
