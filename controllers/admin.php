@@ -73,11 +73,6 @@ function Admin_create() {
  * @return unknown
  */
 function Admin_Create_add() {
-	if (file_exists('data/dojo.xml')) {
-		$xml = simplexml_load_file('data/dojo.xml');
-	} else {
-		halt('Failed to open dojo.xml.');
-	}
 
 	$resp = recaptcha_check_answer (option('recaptcha_private_key'),
 		$_SERVER["REMOTE_ADDR"],
@@ -85,45 +80,11 @@ function Admin_Create_add() {
 		$_POST["recaptcha_response_field"]);
 	
 	if ($resp->is_valid) {
-		$new1 = $xml->addChild("Dojo");
-
-		if ($_FILES["DojoLogo"]["name"]) {
-			if ((($_FILES["DojoLogo"]["type"] == "image/gif")
-					|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
-					|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
-					|| ($_FILES["DojoLogo"]["type"] == "image/png"))
-				&& ($_FILES["DojoLogo"]["size"] < 20000)) {
-				if ($_FILES["DojoLogo"]["error"] > 0) {
-					halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
-				} else {
-					//echo "Upload: " . $_FILES["DojoLogo"]["name"] . "<br />";
-					//echo "Type: " . $_FILES["DojoLogo"]["type"] . "<br />";
-					//echo "Size: " . ($_FILES["DojoLogo"]["size"] / 1024) . " Kb<br />";
-					//echo "Stored in: " . $_FILES["DojoLogo"]["tmp_name"];
-					//echo "<br />Image encoded as: ".base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name']))."<br />";
-					$new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
-				}
-			} else {
-				halt('image file not right');
-			}
-		}
-
-		foreach ($_POST as $key => $value) {
-			if ($key != 'recaptcha_challenge_field' && $key != 'recaptcha_response_field' && $key !='MAX_FILE_SIZE') {
-				$clean_key = strip_tags(addslashes($key));
-				$clean_val = strip_tags(addslashes($value));
-
-				$new1->addChild($clean_key, $clean_val);
-			}
-		}
-		$DojoName = $_POST["DojoName"];
-		$myFile = "data/dojo.xml";
-		$fh = fopen($myFile, 'w') or die("can't open file");
-		fwrite($fh, $xml->asXML());
-		fclose($fh);
-		set('DojoName', $DojoName);
-		admin_create_kml();
+		
+		Create_dojo($_POST, $_FILES);
 		return render('admin/create_add.html.php');
+		
+
 
 	} else {
 		// set the error code so that we can display it
