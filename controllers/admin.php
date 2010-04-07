@@ -22,7 +22,8 @@
  *
  * @return unknown
  */
-function Admin_index() {
+function Admin_index()
+{
 	if (isset($_COOKIE["user"])) {
 		return html('admin/index.html.php');
 	} else {
@@ -36,7 +37,8 @@ function Admin_index() {
  *
  * @return unknown
  */
-function Admin_login() {
+function Admin_login()
+{
 	if ($_POST['password'] == option('password')) {
 		setcookie("user", "Alex Porter", time()+3600);
 		return html('admin/index.html.php');
@@ -51,7 +53,8 @@ function Admin_login() {
  *
  * @return unknown
  */
-function Admin_logout() {
+function Admin_logout()
+{
 	setcookie("user", "", time()-3600);
 	return html('admin/index_login.html.php');
 }
@@ -62,7 +65,8 @@ function Admin_logout() {
  *
  * @return unknown
  */
-function Admin_create() {
+function Admin_create()
+{
 	return html('admin/create.html.php');
 }
 
@@ -72,18 +76,19 @@ function Admin_create() {
  *
  * @return unknown
  */
-function Admin_Create_add() {
+function Admin_Create_add()
+{
 
 	$resp = recaptcha_check_answer (option('recaptcha_private_key'),
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
 		$_POST["recaptcha_response_field"]);
-	
+
 	if ($resp->is_valid) {
-		
+
 		Create_dojo($_POST, $_FILES);
 		return render('admin/create_add.html.php');
-		
+
 
 
 	} else {
@@ -91,9 +96,6 @@ function Admin_Create_add() {
 		halt('Failed to add new Dojo: '.$resp->error);
 
 	}
-
-
-
 
 }
 
@@ -103,7 +105,8 @@ function Admin_Create_add() {
  *
  * @return unknown
  */
-function Admin_edit() {
+function Admin_edit()
+{
 	set('DojoList', Find_Dojo_all());
 	return html('admin/edit.html.php');
 }
@@ -114,7 +117,8 @@ function Admin_edit() {
  *
  * @return unknown
  */
-function Admin_editform() {
+function Admin_editform()
+{
 	$DojoName = params('dojo');
 	$DojoName = str_replace('%20', ' ', $DojoName);
 	$xml = Find_Dojo_all();
@@ -134,7 +138,8 @@ function Admin_editform() {
  *
  * @return unknown
  */
-function Admin_Editform_end() {
+function Admin_Editform_end()
+{
 	$resp = recaptcha_check_answer (option('recaptcha_private_key'),
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
@@ -180,15 +185,15 @@ function Admin_Editform_end() {
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		fwrite($fh, $newxml);
 		fclose($fh);
-		
-		$to      = $DojoOrigEmail;
-        $subject =  _("A change has been made to ") .$dojo->DojoName;
-        $message = _("Hello, a change has been made to the listing for the dojo ") . $dojo->DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $dojo->DojoName ;
-        $headers = 'From: noreply@dojolist.org' . "\r\n";
-        $message = wordwrap($message, 70);           
 
-        mail($to, $subject, $message, $headers);
-        
+		$to      = $DojoOrigEmail;
+		$subject =  _("A change has been made to ") .$dojo->DojoName;
+		$message = _("Hello, a change has been made to the listing for the dojo ") . $dojo->DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $dojo->DojoName ;
+		$headers = 'From: noreply@dojolist.org' . "\r\n";
+		$message = wordwrap($message, 70);
+
+		mail($to, $subject, $message, $headers);
+
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		set('DojoName', $DojoName);
@@ -207,7 +212,8 @@ function Admin_Editform_end() {
  *
  * @return unknown
  */
-function Admin_delete() {
+function Admin_delete()
+{
 	$DojoName = params('dojo');
 	set('DojoName', $DojoName);
 	return html('admin/delete_recaptcha.html.php');
@@ -219,7 +225,8 @@ function Admin_delete() {
  *
  * @return unknown
  */
-function Admin_Delete_end() {
+function Admin_Delete_end()
+{
 	if ($_POST["recaptcha_response_field"]) {
 		$DojoName = params('dojo');
 		$xml = Find_Dojo_all();
@@ -261,7 +268,8 @@ function Admin_Delete_end() {
  *
  * @return unknown
  */
-function Admin_Create_kml() {
+function Admin_Create_kml()
+{
 	$xml = Find_Dojo_all();
 
 	$newKML = '<?xml version="1.0" encoding="UTF-8"?>
@@ -283,11 +291,11 @@ function Admin_Create_kml() {
 		$newKML .= '<Placemark>';
 		$newKML .= '<name>'.$dojo->DojoName.'</name>';
 		$newKML .= '<description><![CDATA[';
-		
+
 		//$newKML .= '<h1>'.$dojo->DojoName.'</h1>';
 		if ($dojo->DojoLogo) {$newKML .= '<img alt="'.$dojo->DojoName.'" src="'.$dojo->DojoLogo.'" width="250px"/>'; }
 		$newKML .= '<a href="'.option('site_url').'/dojo/'.$dojo->DojoName.'">View Details</a>';
-		
+
 		$newKML .= ']]></description>';
 		$newKML .= '<Point><coordinates>';
 		$newKML .= $dojo->Longitude . ',' . $dojo->Latitude;
