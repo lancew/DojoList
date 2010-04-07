@@ -106,8 +106,8 @@ function Create_dojo ()
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		fwrite($fh, $xml->asXML());
 		fclose($fh);
-		set('DojoName', $DojoName);
-		admin_create_kml();
+		
+		
 		
 
 
