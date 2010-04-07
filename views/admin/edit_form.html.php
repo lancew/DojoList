@@ -1,7 +1,7 @@
 <script type="text/javascript">
 	window.onload=dofo;
 	function dofo() {
-		document.dojoform.DojoName.focus();
+		document.dojoform.MembershipID.focus();
 	}
 
 </script>
@@ -11,6 +11,15 @@
 <form method="post" action="" name="dojoform">
 <table>
 <div id="mapstraction" style="float:right;"></div>
+<tr><td><?php echo  _("Dojo Logo:"); ?></td><td> <?php if ($Dojo->DojoLogo) { echo '<img alt="'.$Dojo->DojoName.'" src="'.$Dojo->DojoLogo.'" />'; ?> 
+	<br /> <input type=checkbox name="delete_logo"> <?php } ?>   
+	<br /><input type="hidden" name="MAX_FILE_SIZE" value="100000" /><input type="file" name="DojoLogo">
+	
+	</td></tr>
+
+
+
+</td></tr>
 <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>"></td></tr>
 <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
 <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
