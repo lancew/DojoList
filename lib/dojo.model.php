@@ -87,7 +87,7 @@ function Create_dojo ()
 				$new1->addChild($clean_key, $clean_val);
 			}
 		}
-		$DojoName = $_POST["DojoName"];
+		
 		$myFile = "data/dojo.xml";
 		$fh = fopen($myFile, 'w') or die("can't open file");
 		fwrite($fh, $xml->asXML());

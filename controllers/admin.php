@@ -87,6 +87,7 @@ function Admin_Create_add()
 	if ($resp->is_valid) {
 
 		Create_dojo($_POST, $_FILES);
+		$DojoName = $_POST["DojoName"];
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		return render('admin/create_add.html.php');
