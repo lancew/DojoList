@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev.dojolist/" />
+<title>test1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test1</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DojoList</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>KML - HTML - KML</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Create new Dojo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create new Dojo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>DojoName</td>
+	<td>test_case_dojo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>MembershipID</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>CoachName</td>
+	<td>test coach</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>DojoAddress</td>
+	<td>Arinsal</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txt1</td>
+	<td>Monday</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>TrainingSession1Time</td>
+	<td>8:00pm</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>TrainingSession1Age</td>
+	<td>All</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ContactName</td>
+	<td>test contact</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ContactPhone</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ContactEmail</td>
+	<td>lw@judocoach.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClubWebsite</td>
+	<td>dojolist.org</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>recaptcha_response_field</td>
+	<td>crazier was</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test_case_dojo Dojo Added</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CONTINUE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>MembershipID: 123</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=[EDIT DOJO]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Please note: Notifications of changes will be send to administrators.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>TrainingSession1Day</td>
+	<td>Monday</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>DojoName</td>
+	<td>test_case_dojo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=List of Dojo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>#&nbsp;&nbsp;test_case_dojo<br />#&nbsp;&nbsp;&nbsp;MembershipID: 123<br />#&nbsp;&nbsp;&nbsp;CoachName: test coach<br />#&nbsp;&nbsp;&nbsp;DojoAddress: Arinsal<br />#&nbsp;&nbsp;&nbsp;TrainingSession1Day: Monday<br />#&nbsp;&nbsp;&nbsp;TrainingSession1Time: 8:00pm<br />#&nbsp;&nbsp;&nbsp;TrainingSession1Age: All<br />#&nbsp;&nbsp;&nbsp;ContactName: test contact<br />#&nbsp;&nbsp;&nbsp;ContactPhone: 12345<br />#&nbsp;&nbsp;&nbsp;ContactEmail: lw@judocoach.com<br />#&nbsp;&nbsp;&nbsp;ClubWebsite: dojolist.org<br />#&nbsp;&nbsp;&nbsp;Latitude: 42.5666667<br />#&nbsp;&nbsp;&nbsp;Longitude: 1.4833333</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
