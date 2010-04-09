@@ -8,12 +8,22 @@ class TestOfDataModel extends UnitTestCase {
     function testLoad_wrong_file() {
 		$this->assertEqual(Load_Xml_data('data/No_file.xml'),'Failed to load XML');
 	}
-	function testLoad_xml_data() {
+	function testLoad_specific_xml_data() {
 		$this->assertTrue(Load_Xml_data('data/data.xml'));
 	}
 	function testLoad_default_xml_data() {
 		$this->assertTrue(Load_Xml_data('data/data.xml'));
 	}
+
+
+    function testSave_data() {
+		require_once('lib/data.model.php');
+		$xml = Load_Xml_data();
+		$response = Save_Xml_data($xml);
+		
+		$this->assertEqual($response,'Data saved');
+	}
+
 
 }
 

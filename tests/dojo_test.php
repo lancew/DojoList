@@ -27,6 +27,7 @@ class TestOfDojolist extends UnitTestCase {
 	function testCreate_dojo() {
 		$this->assertEqual(Create_dojo(), 'Dojo Created');
 	}
+	
 }
 
 $test = &new TestOfDojolist();

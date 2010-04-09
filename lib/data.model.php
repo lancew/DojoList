@@ -32,7 +32,11 @@ function Load_Xml_data($file = 'data/dojo.xml')
     return $xml;
 }
 
-
+function Save_Xml_data($xml,$file = 'data/data.xml')
+{
+    
+    return (string)$xml->Dojo[0]->DojoName;
+}
 
 
 
