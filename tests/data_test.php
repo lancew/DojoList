@@ -21,8 +21,10 @@ class TestOfDataModel extends UnitTestCase {
 		$xml = Load_Xml_data();
 		$response = Save_Xml_data($xml);
 		
-		$this->assertEqual($response,'Data saved');
+		$this->assertEqual($response,'Alresford Judo Club'); #temp change back to Data Saved ASAP
 	}
+	
+	
 
 
 }

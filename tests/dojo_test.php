@@ -2,6 +2,7 @@
 require_once('simpletest/unit_tester.php');
 require_once('simpletest/reporter.php');
 require_once('lib/dojo.model.php');
+require_once('lib/dojo.model.php');
 
 class TestOfDojolist extends UnitTestCase {
 
@@ -24,9 +25,23 @@ class TestOfDojolist extends UnitTestCase {
 		$this->assertEqual($text,'Alresford Judo Club');
 	}		
 	
+	
+	
+	function testNoExtraDojoTagInTest()
+	{
+		// This tests for issue http://github.com/lancew/DojoList/issues#issue/6
+		$this->assertEqual(Create_dojo(), 'Dojo Created');
+		$tempXML = Load_Xml_data();
+		$xmlText = $tempXML->asXML();
+		$pattern = '#</Longitude></Dojo></xml>^#';
+		$result = strstr($pattern, $xmlText);
+		$this->assertTrue($result);
+	}
+	
 	function testCreate_dojo() {
 		$this->assertEqual(Create_dojo(), 'Dojo Created');
 	}
+
 	
 }
 
