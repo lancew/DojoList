@@ -12,7 +12,7 @@
 
 		// Display the email address as HTML link.
 		if ($key =='DojoName') {
-			print "<li>&nbsp;<a href='".url_for('dojo')."/$value'>$value</a></li>";
+			print "<h2>&nbsp;<a href='".url_for('dojo')."/$value'>$value</a></h2>";
 			continue;
 		}
 		
