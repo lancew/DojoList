@@ -102,6 +102,7 @@ function Create_dojo ()
 
 function Delete_dojo($Dojoname)
 {
+		
 		$xml = Load_Xml_data();
 		$newxml = '<xml>
 	<!-- The data created by DojoList by
@@ -115,19 +116,18 @@ function Delete_dojo($Dojoname)
 	 UK: England &amp; Wales License</a>. -->';
 
 		foreach ($xml->Dojo as $dojo) {
-			if ($dojo->DojoName == $DojoName) {
-
+			if ($dojo->DojoName == $Dojoname) {
+                // do nothing if it is the dojo we are looking for
+                
 			} else {
+				// for every other dojo create a new dojo in the newxml file
 				$newxml .= $dojo->asXML();
+				
 			}
 		}
 		$newxml .= '</xml>';
-		$myFile = "data/dojo.xml";
-		$fh = fopen($myFile, 'w') or die("can't open file");
-		fwrite($fh, $newxml);
-		fclose($fh);
+		Save_Xml_data($newxml,'data/dojo.xml');
         return "$Dojoname Dojo Deleted";
-
 
 }
 

@@ -26,14 +26,15 @@ class TestOfDojolist extends UnitTestCase {
 	}		
 	
 	
-	function testCreate_dojo() {
+	//function testCreate_dojo() {
 	   // The Create_dojo function and test needs modifying to stop using $_FILES
 	//	$this->assertEqual(Create_dojo(), 'Dojo Created');
-	}
-	
-	//function testDelete_dojo() {
-	//	$this->assertEqual(Delete_dojo('test_dojo'), 'test_dojo Dojo Deleted');
 	//}
+	
+	function testDelete_dojo() {
+		Delete_dojo('test_dojo');
+		$this->assertFalse(Find_dojo('test_dojo'));
+	}
     
 	
 	function testNoExtraDojoTagInTest()
