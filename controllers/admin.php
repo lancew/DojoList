@@ -170,7 +170,7 @@ function Admin_Editform_end()
 				foreach ($_POST as $field => $value) {
 					$DojoOrigEmail = $dojo->ContactEmail;
 					unset($dojo->$field);
-					if ($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field') {
+					if ($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field' && $field != 'MAX_FILE_SIZE') {
 						$clean_field = strip_tags(addslashes($field));
 						$clean_value = strip_tags(addslashes($value));
 						$dojo->addChild($clean_field, $clean_value);
@@ -230,7 +230,7 @@ function Admin_Delete_end()
 {
 	if ($_POST["recaptcha_response_field"]) {
 		$DojoName = params('dojo');
-		Delete_dojo($Dojoname);
+		Delete_dojo($DojoName);
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		return html('admin/delete_end.html.php');
