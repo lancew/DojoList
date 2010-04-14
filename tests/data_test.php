@@ -15,18 +15,28 @@ class TestOfDataModel extends UnitTestCase {
 	function testLoad_default_xml_data() {
 		$this->assertTrue(Load_Xml_data('data/data.xml'));
 	}
+	
+    function testLoad_test_xml_data() {
+        $tempXML = Load_Xml_data('data/test.xml');
+		$xmlText = $tempXML->asXML();
+		$pattern = '#<DojoName>test_dojo</DojoName>#';
+		$result = preg_match($pattern, $xmlText);
+		$this->assertTrue($result);
+
+	}
+	
 
 
     function testSave_data() {
 		require_once('lib/data.model.php');
-		$xml = Load_Xml_data();
-		$response = Save_Xml_data($xml);
-		
-		$this->assertEqual($response,'Alresford Judo Club'); #temp change back to Data Saved ASAP
+		$xml = Load_Xml_data('data/test.xml');
+		$response = Save_Xml_data($xml,'data/test1.xml');
+		$this->assertTrue(file_exists('data/test1.xml')); #temp change back to Data Saved ASAP
+        unlink('data/test1.xml');
 	} 
 	
 	
-	
+
 
 
 }

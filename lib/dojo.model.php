@@ -100,8 +100,33 @@ function Create_dojo ()
 
 }
 
-function Delete_dojo()
+function Delete_dojo($Dojoname)
 {
+		$xml = Load_Xml_data();
+		$newxml = '<xml>
+	<!-- The data created by DojoList by
+	<a xmlns:cc="http://creativecommons.org/ns#"
+	href="http://github.com/lancew/DojoList"
+	property="cc:attributionName"
+	rel="cc:attributionURL">Lance Wicks</a>
+	 is licensed under a <a rel="license"
+	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
+	 UK: England &amp; Wales License</a>. -->';
+
+		foreach ($xml->Dojo as $dojo) {
+			if ($dojo->DojoName == $DojoName) {
+
+			} else {
+				$newxml .= $dojo->asXML();
+			}
+		}
+		$newxml .= '</xml>';
+		$myFile = "data/dojo.xml";
+		$fh = fopen($myFile, 'w') or die("can't open file");
+		fwrite($fh, $newxml);
+		fclose($fh);
+        return "$Dojoname Dojo Deleted";
 
 
 }
