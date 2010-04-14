@@ -5,6 +5,7 @@ require_once('lib/data.model.php');
 
 class TestOfDataModel extends UnitTestCase {
 
+    
     function testLoad_wrong_file() {
 		$this->assertEqual(Load_Xml_data('data/No_file.xml'),'Failed to load XML');
 	}
@@ -22,7 +23,8 @@ class TestOfDataModel extends UnitTestCase {
 		$response = Save_Xml_data($xml);
 		
 		$this->assertEqual($response,'Alresford Judo Club'); #temp change back to Data Saved ASAP
-	}
+	} 
+	
 	
 	
 
