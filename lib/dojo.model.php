@@ -66,13 +66,8 @@ function Create_dojo ()
 				&& ($_FILES["DojoLogo"]["size"] < 20000)) {
 				if ($_FILES["DojoLogo"]["error"] > 0) {
 					halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
-				} else {
-					//echo "Upload: " . $_FILES["DojoLogo"]["name"] . "<br />";
-					//echo "Type: " . $_FILES["DojoLogo"]["type"] . "<br />";
-					//echo "Size: " . ($_FILES["DojoLogo"]["size"] / 1024) . " Kb<br />";
-					//echo "Stored in: " . $_FILES["DojoLogo"]["tmp_name"];
-					//echo "<br />Image encoded as: ".base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name']))."<br />";
-					$new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+                } else {
+				    $new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
 				}
 			} else {
 				return 0;
