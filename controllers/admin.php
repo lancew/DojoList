@@ -314,7 +314,7 @@ function Admin_Create_kml()
 function Admin_importjwm()
 {
 
-    /*
+    
 	$ch = curl_init("http://judoworldmap.com/");
 	$fp = fopen("data/jwm.txt", "w");
 
@@ -323,7 +323,7 @@ function Admin_importjwm()
 	curl_exec($ch);
 	curl_close($ch);
 	fclose($fp);
-    */
+    
 
 	$raw_data = file_get_contents('data/jwm.txt');
 
