@@ -110,6 +110,7 @@ dispatch_get   ('/html',           'Html_list');
 
 //dispatch_get   ('/admin/delete',   'Admin_delete');
 //dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
+dispatch_get   ('/admin/importjwm',   'Admin_importjwm');
 
 //dispatch_get   ('/admin/edit',   'Admin_edit');
 //dispatch	   ('/admin/edit/:dojo', 'Admin_editform');

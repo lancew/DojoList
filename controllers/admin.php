@@ -175,14 +175,16 @@ function Admin_Editform_end()
 						$clean_field = strip_tags(addslashes($field));
 						$clean_value = strip_tags(addslashes($value));
 						$dojo->addChild($clean_field, $clean_value);
-
+            
 
 					}
 				}
 
 				// start of if ($_FILES... section, encodes and adds an upload logo file
+				
+				
 				if ($_FILES["DojoLogo"]["name"]) {
-
+                        
 					if ((($_FILES["DojoLogo"]["type"] == "image/gif")
 							|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
 							|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
@@ -191,6 +193,7 @@ function Admin_Editform_end()
 						if ($_FILES["DojoLogo"]["error"] > 0) {
 							halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
 						} else {
+						
 							$dojo->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
 
 						}
@@ -369,7 +372,7 @@ function Admin_importjwm()
 
 	}
 	echo '</table>';
-
+    admin_create_kml();
 
 
 }
