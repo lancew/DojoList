@@ -113,7 +113,9 @@ function Delete_dojo($Dojoname)
 	 is licensed under a <a rel="license"
 	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
 	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
-	 UK: England &amp; Wales License</a>. -->';
+	 UK: England &amp; Wales License</a>.
+	 Some data imported from www.judoworldmap.com by 
+	 Ulrich Wisser under a Creative Commons NC-SA License. -->';
 
 		foreach ($xml->Dojo as $dojo) {
 			if ($dojo->DojoName == $Dojoname) {
