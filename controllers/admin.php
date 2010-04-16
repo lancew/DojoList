@@ -309,5 +309,83 @@ function Admin_Create_kml()
 	return html('admin/create_kml.html.php');
 }
 
+function Admin_importjwm()
+{
+   /*
+    $ch = curl_init("http://judoworldmap.com/");
+    $fp = fopen("data/jwm.txt", "w");
+
+    curl_setopt($ch, CURLOPT_FILE, $fp);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_exec($ch);
+    curl_close($ch);
+    fclose($fp);
+    */
+    
+    $raw_data = file_get_contents('data/jwm.txt');
+    
+    /* Example entry:
+    var icon195   = null;
+    var point195  = new GLatLng(-37.702837,145.092144);
+    var marker195 = new GMarker(point195, icon195);
+    var html195   = '<a href=\"http://www.dvjudo.asn.au/\" target=\"_blank\"><b>Diamond Valley Judo Centre</b></a><br/>';
+    GEvent.addListener(marker195, 'click', function() { marker195.openInfoWindow(html195); });
+    map.addOverlay(marker195);
+
+    var icon196   = null;
+    var point196  = new GLatLng(51.416686,-0.228353);
+    var marker196 = new GMarker(point196, icon196);
+    var html196   = '<a href=\"http://www.raystevensjudo.co.uk/\" target=\"_blank\"><b>Ray Stevens Judo - Blossom Hse Dojo</b></a><br/>';
+    GEvent.addListener(marker196, 'click', function() { marker196.openInfoWindow(html196); });
+    map.addOverlay(marker196);
+    */
+    
+    
+   $data = get_string_between($raw_data, 'var icon17', 'new GIcon();');
+   $data_array = explode('var icon', $data);
+   echo '<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">';
+   echo '<table border=1>';
+   $loop=1;
+   foreach ($data_array as $value)
+   {
+        //echo ".$value<br />";
+        echo '<tr>';
+        echo "<td>$loop</td>";
+        $coords = get_string_between($value, 'GLatLng(', ')');
+        $LatLng = explode(',',$coords);
+        $url = get_string_between($value, 'http://', '\\"');
+        $name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
+          $name = str_replace('&', ' and ', $name);
+          $name = str_replace('\\\'', '', $name);
+        $Lat = $LatLng[0];
+        $Lng = $LatLng[1];
+       
+
+        echo "<td>$name</td><td width =50>$url</td><td>$Lat</td><td>$Lng</td>";
+       
+        
+        $dojo = Find_dojo($name);
+        
+        if (!$dojo && $name) {
+        echo "<td>NEW</td>";
+        
+         $dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng );
+         //print_r($dojo_array);
+        Create_dojo($dojo_array);
+        } else {
+            echo "<td>&nbsp;</td>";
+        }
+        
+        echo "</tr>";
+        $loop++;
+        
+   }
+   echo '</table>';   
+    
+
+
+}
+
 
 ?>

@@ -52,33 +52,38 @@ function Find_dojo($target=null)
 
 
 
-function Create_dojo ()
+function Create_dojo ($dojo,$file = null)
 {
 			
         $xml = Load_Xml_data();
 		$new1 = $xml->addChild("Dojo");
 
-		if ($_FILES["DojoLogo"]["name"]) {
-			if ((($_FILES["DojoLogo"]["type"] == "image/gif")
-					|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
-					|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
-					|| ($_FILES["DojoLogo"]["type"] == "image/png"))
-				&& ($_FILES["DojoLogo"]["size"] < 20000)) {
-				if ($_FILES["DojoLogo"]["error"] > 0) {
-					halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
+		
+		if ($file){
+		if ($file["DojoLogo"]["name"]) {
+			if ((($file["DojoLogo"]["type"] == "image/gif")
+					|| ($file["DojoLogo"]["type"] == "image/jpeg")
+					|| ($file["DojoLogo"]["type"] == "image/pjpeg")
+					|| ($file["DojoLogo"]["type"] == "image/png"))
+				&& ($file["DojoLogo"]["size"] < 20000)) {
+				if ($file["DojoLogo"]["error"] > 0) {
+					halt("Error: " . $file["DojoLogo"]["error"] . "<br />");
                 } else {
-				    $new1->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+				    $new1->addChild('DojoLogo', 'data:'.$file["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($file['DojoLogo']['tmp_name'])));
 				}
 			} else {
 				return 0;
 			}
 		}
+		}
+		
 
-		foreach ($_POST as $key => $value) {
+		foreach ($dojo as $key => $value) {
+		      //echo "$key, $value";
 			if ($key != 'recaptcha_challenge_field' && $key != 'recaptcha_response_field' && $key !='MAX_FILE_SIZE') {
 				$clean_key = strip_tags(addslashes($key));
 				$clean_val = strip_tags(addslashes($value));
-
+                //echo "$clean_key, $clean_val";
 				$new1->addChild($clean_key, $clean_val);
 			}
 		}
