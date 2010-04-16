@@ -158,12 +158,13 @@ function Admin_Editform_end()
 	<a xmlns:cc="http://creativecommons.org/ns#"
 	href="http://github.com/lancew/DojoList"
 	property="cc:attributionName"
-	rel="cc:attributionURL">
-	Lance Wicks</a> is licensed under a
-	<a rel="license"
-	href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
-	Creative Commons Attribution-Noncommercial-Share Alike 2.0
-	UK: England &amp; Wales License</a>. -->';
+	rel="cc:attributionURL">Lance Wicks</a>
+	 is licensed under a <a rel="license"
+	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
+	 UK: England &amp; Wales License</a>.
+	 Some data imported from www.judoworldmap.com by 
+	 Ulrich Wisser under a Creative Commons NC-SA License. -->';
 
 		foreach ($xml->Dojo as $dojo) {
 			if ($dojo->DojoName == $DojoName) {
@@ -174,29 +175,29 @@ function Admin_Editform_end()
 						$clean_field = strip_tags(addslashes($field));
 						$clean_value = strip_tags(addslashes($value));
 						$dojo->addChild($clean_field, $clean_value);
-						
+
 
 					}
 				}
-				
-						// start of if ($_FILES... section, encodes and adds an upload logo file
-						if ($_FILES["DojoLogo"]["name"]) {
-						  
-			                 if ((($_FILES["DojoLogo"]["type"] == "image/gif")
-					           || ($_FILES["DojoLogo"]["type"] == "image/jpeg")
-					           || ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
-					           || ($_FILES["DojoLogo"]["type"] == "image/png"))
-				               && ($_FILES["DojoLogo"]["size"] < 20000)) {
-				                if ($_FILES["DojoLogo"]["error"] > 0) {
-					               halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
-                                } else {
-				                    $dojo->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
-				                
-				                }
-			                 }
-		              } 
-		              // end of if ($_FILES... section.
-				
+
+				// start of if ($_FILES... section, encodes and adds an upload logo file
+				if ($_FILES["DojoLogo"]["name"]) {
+
+					if ((($_FILES["DojoLogo"]["type"] == "image/gif")
+							|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
+							|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
+							|| ($_FILES["DojoLogo"]["type"] == "image/png"))
+						&& ($_FILES["DojoLogo"]["size"] < 20000)) {
+						if ($_FILES["DojoLogo"]["error"] > 0) {
+							halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
+						} else {
+							$dojo->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+
+						}
+					}
+				}
+				// end of if ($_FILES... section.
+
 				$newxml .= $dojo->asXML();
 			}    else {
 				$newxml .= $dojo->asXML();
@@ -255,10 +256,10 @@ function Admin_Delete_end()
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		return html('admin/delete_end.html.php');
-    } else {
+	} else {
 		halt('no recaptcha provided');
 	}
-    
+
 }
 
 
@@ -273,16 +274,17 @@ function Admin_Create_kml()
 
 	$newKML = '<?xml version="1.0" encoding="UTF-8"?>
     <kml xmlns="http://www.opengis.net/kml/2.2">
-    <!-- The data created by DojoList by
-    <a xmlns:cc="http://creativecommons.org/ns#"
-    href="http://github.com/lancew/DojoList"
-    property="cc:attributionName"
-    rel="cc:attributionURL">Lance Wicks</a>
-    is licensed under a
-    <a rel="license"
-    href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
-    Creative Commons Attribution-Noncommercial-Share Alike 2.0
-    UK: England &amp; Wales License</a>. -->
+	<!-- The data created by DojoList by
+	<a xmlns:cc="http://creativecommons.org/ns#"
+	href="http://github.com/lancew/DojoList"
+	property="cc:attributionName"
+	rel="cc:attributionURL">Lance Wicks</a>
+	 is licensed under a <a rel="license"
+	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
+	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
+	 UK: England &amp; Wales License</a>.
+	 Some data imported from www.judoworldmap.com by 
+	 Ulrich Wisser under a Creative Commons NC-SA License. -->
     <Document>
     <name>Dojo List</name>';
 
@@ -311,78 +313,61 @@ function Admin_Create_kml()
 
 function Admin_importjwm()
 {
-   /*
-    $ch = curl_init("http://judoworldmap.com/");
-    $fp = fopen("data/jwm.txt", "w");
 
-    curl_setopt($ch, CURLOPT_FILE, $fp);
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_exec($ch);
-    curl_close($ch);
-    fclose($fp);
-    */
-    
-    $raw_data = file_get_contents('data/jwm.txt');
-    
-    /* Example entry:
-    var icon195   = null;
-    var point195  = new GLatLng(-37.702837,145.092144);
-    var marker195 = new GMarker(point195, icon195);
-    var html195   = '<a href=\"http://www.dvjudo.asn.au/\" target=\"_blank\"><b>Diamond Valley Judo Centre</b></a><br/>';
-    GEvent.addListener(marker195, 'click', function() { marker195.openInfoWindow(html195); });
-    map.addOverlay(marker195);
+	$ch = curl_init("http://judoworldmap.com/");
+	$fp = fopen("data/jwm.txt", "w");
 
-    var icon196   = null;
-    var point196  = new GLatLng(51.416686,-0.228353);
-    var marker196 = new GMarker(point196, icon196);
-    var html196   = '<a href=\"http://www.raystevensjudo.co.uk/\" target=\"_blank\"><b>Ray Stevens Judo - Blossom Hse Dojo</b></a><br/>';
-    GEvent.addListener(marker196, 'click', function() { marker196.openInfoWindow(html196); });
-    map.addOverlay(marker196);
-    */
-    
-    
-   $data = get_string_between($raw_data, 'var icon17', 'new GIcon();');
-   $data_array = explode('var icon', $data);
-   echo '<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	curl_setopt($ch, CURLOPT_FILE, $fp);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_exec($ch);
+	curl_close($ch);
+	fclose($fp);
+
+
+	$raw_data = file_get_contents('data/jwm.txt');
+
+
+	$data = get_string_between($raw_data, 'var icon17', 'new GIcon();');
+	$data_array = explode('var icon', $data);
+	echo '<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">';
-   echo '<table border=1>';
-   $loop=1;
-   foreach ($data_array as $value)
-   {
-        //echo ".$value<br />";
-        echo '<tr>';
-        echo "<td>$loop</td>";
-        $coords = get_string_between($value, 'GLatLng(', ')');
-        $LatLng = explode(',',$coords);
-        $url = get_string_between($value, 'http://', '\\"');
-        $name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
-          $name = str_replace('&', ' and ', $name);
-          $name = str_replace('\\\'', '', $name);
-        $Lat = $LatLng[0];
-        $Lng = $LatLng[1];
-       
+	echo '<table border=1>';
+	$loop=1;
+	foreach ($data_array as $value) {
+		//echo ".$value<br />";
+		echo '<tr>';
+		echo "<td>$loop</td>";
+		$coords = get_string_between($value, 'GLatLng(', ')');
+		$LatLng = explode(',', $coords);
+		$url = get_string_between($value, 'http://', '\\"');
+		$name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
+		$name = str_replace('&', ' and ', $name);
+		$name = str_replace('\\\'', '', $name);
+		$Lat = $LatLng[0];
+		$Lng = $LatLng[1];
 
-        echo "<td>$name</td><td width =50>$url</td><td>$Lat</td><td>$Lng</td>";
-       
-        
-        $dojo = Find_dojo($name);
-        
-        if (!$dojo && $name) {
-        echo "<td>NEW</td>";
-        
-         $dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng );
-         //print_r($dojo_array);
-        Create_dojo($dojo_array);
-        } else {
-            echo "<td>&nbsp;</td>";
-        }
-        
-        echo "</tr>";
-        $loop++;
-        
-   }
-   echo '</table>';   
-    
+
+		echo "<td>$name</td><td width =50>$url</td><td>$Lat</td><td>$Lng</td>";
+
+
+		$dojo = Find_dojo($name);
+
+		if (!$dojo && $name) {
+			echo "<td>NEW</td>";
+
+			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng );
+			//print_r($dojo_array);
+			Create_dojo($dojo_array);
+		} else {
+			echo "<td>&nbsp;</td>";
+		}
+
+		echo "</tr>";
+		$loop++;
+
+	}
+	echo '</table>';
+
 
 
 }
