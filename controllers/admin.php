@@ -314,6 +314,7 @@ function Admin_Create_kml()
 function Admin_importjwm()
 {
 
+    /*
 	$ch = curl_init("http://judoworldmap.com/");
 	$fp = fopen("data/jwm.txt", "w");
 
@@ -322,7 +323,7 @@ function Admin_importjwm()
 	curl_exec($ch);
 	curl_close($ch);
 	fclose($fp);
-
+    */
 
 	$raw_data = file_get_contents('data/jwm.txt');
 
@@ -343,6 +344,7 @@ function Admin_importjwm()
 		$name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
 		$name = str_replace('&', ' and ', $name);
 		$name = str_replace('\\\'', '', $name);
+		$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
 		$Lat = $LatLng[0];
 		$Lng = $LatLng[1];
 

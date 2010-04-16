@@ -50,7 +50,7 @@ map.addOverlay(marker3);
 latest15[3] = function() { map.setCenter(point3, 8); marker3.openInfoWindow(html3); }; var icon4   = null;
 var point4  = new GLatLng(52.343625,7.978842);
 var marker4 = new GMarker(point4, icon4);
-var html4   = '<a href=\"http://www.blauweisshollage.com\" target=\"_blank\"><b>Blau-Wei√ü Hollage</b></a><br/>';
+var html4   = '<a href=\"http://www.blauweisshollage.com\" target=\"_blank\"><b>Blau-Weiß Hollage</b></a><br/>';
 GEvent.addListener(marker4, 'click', function() { marker4.openInfoWindow(html4); });
 map.addOverlay(marker4);
 
@@ -365,7 +365,7 @@ map.addOverlay(marker48);
 var icon49   = null;
 var point49  = new GLatLng(50.850655,6.764574);
 var marker49 = new GMarker(point49, icon49);
-var html49   = '<b>Judo Club Hajime Kerpen-Br√ºggen</b><br/>';
+var html49   = '<b>Judo Club Hajime Kerpen-Brüggen</b><br/>';
 GEvent.addListener(marker49, 'click', function() { marker49.openInfoWindow(html49); });
 map.addOverlay(marker49);
 
@@ -449,21 +449,21 @@ map.addOverlay(marker60);
 var icon61   = null;
 var point61  = new GLatLng(57.644600,11.923100);
 var marker61 = new GMarker(point61, icon61);
-var html61   = '<a href=\"http://www.frolunda-judo.se\" target=\"_blank\"><b>Fr√∂lunda Judoklubb</b></a><br/>';
+var html61   = '<a href=\"http://www.frolunda-judo.se\" target=\"_blank\"><b>Frölunda Judoklubb</b></a><br/>';
 GEvent.addListener(marker61, 'click', function() { marker61.openInfoWindow(html61); });
 map.addOverlay(marker61);
 
 var icon62   = null;
 var point62  = new GLatLng(59.470100,15.355700);
 var marker62 = new GMarker(point62, icon62);
-var html62   = '<a href=\"http://www.frovijudo.se\" target=\"_blank\"><b>Fr√∂vi Judo</b></a><br/>';
+var html62   = '<a href=\"http://www.frovijudo.se\" target=\"_blank\"><b>Frövi Judo</b></a><br/>';
 GEvent.addListener(marker62, 'click', function() { marker62.openInfoWindow(html62); });
 map.addOverlay(marker62);
 
 var icon63   = null;
 var point63  = new GLatLng(58.569700,12.060800);
 var marker63 = new GMarker(point63, icon63);
-var html63   = '<a href=\"http://www.fjk.se/\" target=\"_blank\"><b>F√§rgelanda Judoklubb</b></a><br/>';
+var html63   = '<a href=\"http://www.fjk.se/\" target=\"_blank\"><b>Färgelanda Judoklubb</b></a><br/>';
 GEvent.addListener(marker63, 'click', function() { marker63.openInfoWindow(html63); });
 map.addOverlay(marker63);
 
@@ -505,7 +505,7 @@ map.addOverlay(marker68);
 var icon69   = null;
 var point69  = new GLatLng(59.304700,13.539700);
 var marker69 = new GMarker(point69, icon69);
-var html69   = '<a href=\"http://www.hammarojudo.se\" target=\"_blank\"><b>Hammar√∂ Judoklubb</b></a><br/>';
+var html69   = '<a href=\"http://www.hammarojudo.se\" target=\"_blank\"><b>Hammarö Judoklubb</b></a><br/>';
 GEvent.addListener(marker69, 'click', function() { marker69.openInfoWindow(html69); });
 map.addOverlay(marker69);
 
@@ -519,35 +519,35 @@ map.addOverlay(marker70);
 var icon71   = null;
 var point71  = new GLatLng(58.526800,13.477900);
 var marker71 = new GMarker(point71, icon71);
-var html71   = '<a href=\"http://hem.passagen.se/gotene_judo\" target=\"_blank\"><b>G√∂tene Judo</b></a><br/>';
+var html71   = '<a href=\"http://hem.passagen.se/gotene_judo\" target=\"_blank\"><b>Götene Judo</b></a><br/>';
 GEvent.addListener(marker71, 'click', function() { marker71.openInfoWindow(html71); });
 map.addOverlay(marker71);
 
 var icon72   = null;
 var point72  = new GLatLng(57.698600,11.940500);
 var marker72 = new GMarker(point72, icon72);
-var html72   = '<a href=\"http://www.gjk.se/\" target=\"_blank\"><b>G√∂teborgs Judoklubb</b></a><br/>';
+var html72   = '<a href=\"http://www.gjk.se/\" target=\"_blank\"><b>Göteborgs Judoklubb</b></a><br/>';
 GEvent.addListener(marker72, 'click', function() { marker72.openInfoWindow(html72); });
 map.addOverlay(marker72);
 
 var icon73   = null;
 var point73  = new GLatLng(57.698900,11.975500);
 var marker73 = new GMarker(point73, icon73);
-var html73   = '<a href=\"http://www.jkkano.se/\" target=\"_blank\"><b>G√∂teborg - JK Kano</b></a><br/>';
+var html73   = '<a href=\"http://www.jkkano.se/\" target=\"_blank\"><b>Göteborg - JK Kano</b></a><br/>';
 GEvent.addListener(marker73, 'click', function() { marker73.openInfoWindow(html73); });
 map.addOverlay(marker73);
 
 var icon74   = null;
 var point74  = new GLatLng(60.691400,17.116200);
 var marker74 = new GMarker(point74, icon74);
-var html74   = '<a href=\"http://gavletjader.com\" target=\"_blank\"><b>G√§vle Tj√§der</b></a><br/>';
+var html74   = '<a href=\"http://gavletjader.com\" target=\"_blank\"><b>Gävle Tjäder</b></a><br/>';
 GEvent.addListener(marker74, 'click', function() { marker74.openInfoWindow(html74); });
 map.addOverlay(marker74);
 
 var icon75   = null;
 var point75  = new GLatLng(60.659400,17.175200);
 var marker75 = new GMarker(point75, icon75);
-var html75   = '<a href=\"http://www.gavlejudo.se\" target=\"_blank\"><b>G√§vle Judo Club</b></a><br/>';
+var html75   = '<a href=\"http://www.gavlejudo.se\" target=\"_blank\"><b>Gävle Judo Club</b></a><br/>';
 GEvent.addListener(marker75, 'click', function() { marker75.openInfoWindow(html75); });
 map.addOverlay(marker75);
 
@@ -589,14 +589,14 @@ map.addOverlay(marker80);
 var icon81   = null;
 var point81  = new GLatLng(59.288300,17.716500);
 var marker81 = new GMarker(point81, icon81);
-var html81   = '<a href=\"http://www.ekerobudo.com/\" target=\"_blank\"><b>Eker√∂ Judoklubb</b></a><br/>';
+var html81   = '<a href=\"http://www.ekerobudo.com/\" target=\"_blank\"><b>Ekerö Judoklubb</b></a><br/>';
 GEvent.addListener(marker81, 'click', function() { marker81.openInfoWindow(html81); });
 map.addOverlay(marker81);
 
 var icon82   = null;
 var point82  = new GLatLng(59.560200,17.538700);
 var marker82 = new GMarker(point82, icon82);
-var html82   = '<a href=\"http://www.svenskidrott.se/c/balstajudo\" target=\"_blank\"><b>B√•lsta Judoklubb</b></a><br/>';
+var html82   = '<a href=\"http://www.svenskidrott.se/c/balstajudo\" target=\"_blank\"><b>Bålsta Judoklubb</b></a><br/>';
 GEvent.addListener(marker82, 'click', function() { marker82.openInfoWindow(html82); });
 map.addOverlay(marker82);
 
@@ -610,14 +610,14 @@ map.addOverlay(marker83);
 var icon84   = null;
 var point84  = new GLatLng(57.720100,12.931500);
 var marker84 = new GMarker(point84, icon84);
-var html84   = '<a href=\"http://www.borasjudo.org/\" target=\"_blank\"><b>Bor√•s Judoklubb</b></a><br/>';
+var html84   = '<a href=\"http://www.borasjudo.org/\" target=\"_blank\"><b>Borås Judoklubb</b></a><br/>';
 GEvent.addListener(marker84, 'click', function() { marker84.openInfoWindow(html84); });
 map.addOverlay(marker84);
 
 var icon85   = null;
 var point85  = new GLatLng(60.472600,15.404300);
 var marker85 = new GMarker(point85, icon85);
-var html85   = '<a href=\"http://borlangejudo.se/\" target=\"_blank\"><b>Borl√§nge Judo Club</b></a><br/>';
+var html85   = '<a href=\"http://borlangejudo.se/\" target=\"_blank\"><b>Borlänge Judo Club</b></a><br/>';
 GEvent.addListener(marker85, 'click', function() { marker85.openInfoWindow(html85); });
 map.addOverlay(marker85);
 
@@ -645,49 +645,49 @@ map.addOverlay(marker88);
 var icon89   = null;
 var point89  = new GLatLng(59.264400,18.041700);
 var marker89 = new GMarker(point89, icon89);
-var html89   = '<a href=\"http://www.hogdalenjudo.org.se\" target=\"_blank\"><b>H√∂gdalens Judoklubb</b></a><br/>';
+var html89   = '<a href=\"http://www.hogdalenjudo.org.se\" target=\"_blank\"><b>Högdalens Judoklubb</b></a><br/>';
 GEvent.addListener(marker89, 'click', function() { marker89.openInfoWindow(html89); });
 map.addOverlay(marker89);
 
 var icon90   = null;
 var point90  = new GLatLng(59.374200,18.156800);
 var marker90 = new GMarker(point90, icon90);
-var html90   = '<a href=\"http://www.aktivungdomlidingo.se\" target=\"_blank\"><b>IF Aktiv Ungdom i Liding√∂</b></a><br/>';
+var html90   = '<a href=\"http://www.aktivungdomlidingo.se\" target=\"_blank\"><b>IF Aktiv Ungdom i Lidingö</b></a><br/>';
 GEvent.addListener(marker90, 'click', function() { marker90.openInfoWindow(html90); });
 map.addOverlay(marker90);
 
 var icon91   = null;
 var point91  = new GLatLng(59.417100,17.838100);
 var marker91 = new GMarker(point91, icon91);
-var html91   = '<a href=\"http://www.jarfallajudo.se\" target=\"_blank\"><b>IF J√§rf√§lla Judo</b></a><br/>';
+var html91   = '<a href=\"http://www.jarfallajudo.se\" target=\"_blank\"><b>IF Järfälla Judo</b></a><br/>';
 GEvent.addListener(marker91, 'click', function() { marker91.openInfoWindow(html91); });
 map.addOverlay(marker91);
 
 var icon92   = null;
 var point92  = new GLatLng(59.239300,18.084900);
 var marker92 = new GMarker(point92, icon92);
-var html92   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK S√∂dra Judo, Farstahallen</b></a><br/>';
+var html92   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK Södra Judo, Farstahallen</b></a><br/>';
 GEvent.addListener(marker92, 'click', function() { marker92.openInfoWindow(html92); });
 map.addOverlay(marker92);
 
 var icon93   = null;
 var point93  = new GLatLng(59.267400,18.143400);
 var marker93 = new GMarker(point93, icon93);
-var html93   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK S√∂dra Judo, Skarpn√§ck</b></a><br/>';
+var html93   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK Södra Judo, Skarpnäck</b></a><br/>';
 GEvent.addListener(marker93, 'click', function() { marker93.openInfoWindow(html93); });
 map.addOverlay(marker93);
 
 var icon94   = null;
 var point94  = new GLatLng(59.166100,18.155900);
 var marker94 = new GMarker(point94, icon94);
-var html94   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK S√∂dra Judo, Torvallahallen</b></a><br/>';
+var html94   = '<a href=\"http://www.iksodra.com\" target=\"_blank\"><b>IK Södra Judo, Torvallahallen</b></a><br/>';
 GEvent.addListener(marker94, 'click', function() { marker94.openInfoWindow(html94); });
 map.addOverlay(marker94);
 
 var icon95   = null;
 var point95  = new GLatLng(57.661600,11.991600);
 var marker95 = new GMarker(point95, icon95);
-var html95   = '<a href=\"http://web.ikvm.se\" target=\"_blank\"><b>IK V√§stra M√∂lndal</b></a><br/>';
+var html95   = '<a href=\"http://web.ikvm.se\" target=\"_blank\"><b>IK Västra Mölndal</b></a><br/>';
 GEvent.addListener(marker95, 'click', function() { marker95.openInfoWindow(html95); });
 map.addOverlay(marker95);
 
@@ -743,14 +743,14 @@ map.addOverlay(marker102);
 var icon103   = null;
 var point103  = new GLatLng(59.427000,17.834900);
 var marker103 = new GMarker(point103, icon103);
-var html103   = '<b>J√§rf√§lla Budoklubb</b><br/>';
+var html103   = '<b>Järfälla Budoklubb</b><br/>';
 GEvent.addListener(marker103, 'click', function() { marker103.openInfoWindow(html103); });
 map.addOverlay(marker103);
 
 var icon104   = null;
 var point104  = new GLatLng(57.782400,14.206600);
 var marker104 = new GMarker(point104, icon104);
-var html104   = '<a href=\"http://www.judoklubben.com\" target=\"_blank\"><b>J√∂nk√∂pings Judoklubb</b></a><br/>';
+var html104   = '<a href=\"http://www.judoklubben.com\" target=\"_blank\"><b>Jönköpings Judoklubb</b></a><br/>';
 GEvent.addListener(marker104, 'click', function() { marker104.openInfoWindow(html104); });
 map.addOverlay(marker104);
 
@@ -841,14 +841,14 @@ map.addOverlay(marker116);
 var icon117   = null;
 var point117  = new GLatLng(58.714200,15.808400);
 var marker117 = new GMarker(point117, icon117);
-var html117   = '<a href=\"http://judo-i-finspong.org\" target=\"_blank\"><b>K√§llan i Finsp√•ng</b></a><br/>';
+var html117   = '<a href=\"http://judo-i-finspong.org\" target=\"_blank\"><b>Källan i Finspång</b></a><br/>';
 GEvent.addListener(marker117, 'click', function() { marker117.openInfoWindow(html117); });
 map.addOverlay(marker117);
 
 var icon118   = null;
 var point118  = new GLatLng(59.518000,15.993500);
 var marker118 = new GMarker(point118, icon118);
-var html118   = '<a href=\"http://www.koping.net/judoklubb/\" target=\"_blank\"><b>K√∂pings Judoklubb</b></a><br/>';
+var html118   = '<a href=\"http://www.koping.net/judoklubb/\" target=\"_blank\"><b>Köpings Judoklubb</b></a><br/>';
 GEvent.addListener(marker118, 'click', function() { marker118.openInfoWindow(html118); });
 map.addOverlay(marker118);
 
@@ -869,7 +869,7 @@ map.addOverlay(marker120);
 var icon121   = null;
 var point121  = new GLatLng(58.496200,13.147200);
 var marker121 = new GMarker(point121, icon121);
-var html121   = '<a href=\"http://www.lidkopingsbudoklubb.com\" target=\"_blank\"><b>Lidk√∂pings Budoklubb</b></a><br/>';
+var html121   = '<a href=\"http://www.lidkopingsbudoklubb.com\" target=\"_blank\"><b>Lidköpings Budoklubb</b></a><br/>';
 GEvent.addListener(marker121, 'click', function() { marker121.openInfoWindow(html121); });
 map.addOverlay(marker121);
 
@@ -890,7 +890,7 @@ map.addOverlay(marker123);
 var icon124   = null;
 var point124  = new GLatLng(58.411700,15.634700);
 var marker124 = new GMarker(point124, icon124);
-var html124   = '<a href=\"http://www.linkopingjudo.org\" target=\"_blank\"><b>Link√∂ping Judo</b></a><br/>';
+var html124   = '<a href=\"http://www.linkopingjudo.org\" target=\"_blank\"><b>Linköping Judo</b></a><br/>';
 GEvent.addListener(marker124, 'click', function() { marker124.openInfoWindow(html124); });
 map.addOverlay(marker124);
 
@@ -918,21 +918,21 @@ map.addOverlay(marker127);
 var icon128   = null;
 var point128  = new GLatLng(65.587800,22.150400);
 var marker128 = new GMarker(point128, icon128);
-var html128   = '<b>Lule√• Judoklubb</b><br/>';
+var html128   = '<b>Luleå Judoklubb</b><br/>';
 GEvent.addListener(marker128, 'click', function() { marker128.openInfoWindow(html128); });
 map.addOverlay(marker128);
 
 var icon129   = null;
 var point129  = new GLatLng(60.446900,16.026700);
 var marker129 = new GMarker(point129, icon129);
-var html129   = '<a href=\"http://svenskidrott.se/Organisation.asp?orgelementid=44593\" target=\"_blank\"><b>L√•ngshyttans Judoklubb</b></a><br/>';
+var html129   = '<a href=\"http://svenskidrott.se/Organisation.asp?orgelementid=44593\" target=\"_blank\"><b>Långshyttans Judoklubb</b></a><br/>';
 GEvent.addListener(marker129, 'click', function() { marker129.openInfoWindow(html129); });
 map.addOverlay(marker129);
 
 var icon130   = null;
 var point130  = new GLatLng(55.597400,13.000100);
 var marker130 = new GMarker(point130, icon130);
-var html130   = '<a href=\"http://www.malmobudokan.com\" target=\"_blank\"><b>Malm√∂ Budokan Judoklubb</b></a><br/>';
+var html130   = '<a href=\"http://www.malmobudokan.com\" target=\"_blank\"><b>Malmö Budokan Judoklubb</b></a><br/>';
 GEvent.addListener(marker130, 'click', function() { marker130.openInfoWindow(html130); });
 map.addOverlay(marker130);
 
@@ -953,21 +953,21 @@ map.addOverlay(marker132);
 var icon133   = null;
 var point133  = new GLatLng(59.617700,17.826600);
 var marker133 = new GMarker(point133, icon133);
-var html133   = '<a href=\"http://marstajudoklubb.se\" target=\"_blank\"><b>M√§rsta Judoklubb</b></a><br/>';
+var html133   = '<a href=\"http://marstajudoklubb.se\" target=\"_blank\"><b>Märsta Judoklubb</b></a><br/>';
 GEvent.addListener(marker133, 'click', function() { marker133.openInfoWindow(html133); });
 map.addOverlay(marker133);
 
 var icon134   = null;
 var point134  = new GLatLng(57.661600,11.991600);
 var marker134 = new GMarker(point134, icon134);
-var html134   = '<a href=\"http://fly.to/mjk\" target=\"_blank\"><b>M√∂lndals Judoklubb</b></a><br/>';
+var html134   = '<a href=\"http://fly.to/mjk\" target=\"_blank\"><b>Mölndals Judoklubb</b></a><br/>';
 GEvent.addListener(marker134, 'click', function() { marker134.openInfoWindow(html134); });
 map.addOverlay(marker134);
 
 var icon135   = null;
 var point135  = new GLatLng(59.615700,16.226500);
 var marker135 = new GMarker(point135, icon135);
-var html135   = '<a href=\"http://www1.idrottonline.se/default.aspx?id=27258\" target=\"_blank\"><b>M√∂lntorps IK Judo</b></a><br/>';
+var html135   = '<a href=\"http://www1.idrottonline.se/default.aspx?id=27258\" target=\"_blank\"><b>Mölntorps IK Judo</b></a><br/>';
 GEvent.addListener(marker135, 'click', function() { marker135.openInfoWindow(html135); });
 map.addOverlay(marker135);
 
@@ -981,14 +981,14 @@ map.addOverlay(marker136);
 var icon137   = null;
 var point137  = new GLatLng(58.597600,16.135400);
 var marker137 = new GMarker(point137, icon137);
-var html137   = '<a href=\"http://www.norrkopingsjudoklubb.se\" target=\"_blank\"><b>Norrk√∂pings judoklubb</b></a><br/>';
+var html137   = '<a href=\"http://www.norrkopingsjudoklubb.se\" target=\"_blank\"><b>Norrköpings judoklubb</b></a><br/>';
 GEvent.addListener(marker137, 'click', function() { marker137.openInfoWindow(html137); });
 map.addOverlay(marker137);
 
 var icon138   = null;
 var point138  = new GLatLng(59.765300,18.720800);
 var marker138 = new GMarker(point138, icon138);
-var html138   = '<a href=\"http://www4.idrottonline.se/default.aspx?id=65943\" target=\"_blank\"><b>Norrt√§lje Judoklubb</b></a><br/>';
+var html138   = '<a href=\"http://www4.idrottonline.se/default.aspx?id=65943\" target=\"_blank\"><b>Norrtälje Judoklubb</b></a><br/>';
 GEvent.addListener(marker138, 'click', function() { marker138.openInfoWindow(html138); });
 map.addOverlay(marker138);
 
@@ -1002,21 +1002,21 @@ map.addOverlay(marker139);
 var icon140   = null;
 var point140  = new GLatLng(58.750200,17.043400);
 var marker140 = new GMarker(point140, icon140);
-var html140   = '<a href=\"http://www.njk.nu/\" target=\"_blank\"><b>Nyk√∂pings judoklubb</b></a><br/>';
+var html140   = '<a href=\"http://www.njk.nu/\" target=\"_blank\"><b>Nyköpings judoklubb</b></a><br/>';
 GEvent.addListener(marker140, 'click', function() { marker140.openInfoWindow(html140); });
 map.addOverlay(marker140);
 
 var icon141   = null;
 var point141  = new GLatLng(56.270600,14.530400);
 var marker141 = new GMarker(point141, icon141);
-var html141   = '<a href=\"http://www.olofstromsjudo.se\" target=\"_blank\"><b>Olofstr√∂ms Judoklubb</b></a><br/>';
+var html141   = '<a href=\"http://www.olofstromsjudo.se\" target=\"_blank\"><b>Olofströms Judoklubb</b></a><br/>';
 GEvent.addListener(marker141, 'click', function() { marker141.openInfoWindow(html141); });
 map.addOverlay(marker141);
 
 var icon142   = null;
 var point142  = new GLatLng(58.674000,17.080700);
 var marker142 = new GMarker(point142, icon142);
-var html142   = '<a href=\"http://www.ojk.nu/\" target=\"_blank\"><b>Oxel√∂sunds Judoklubb</b></a><br/>';
+var html142   = '<a href=\"http://www.ojk.nu/\" target=\"_blank\"><b>Oxelösunds Judoklubb</b></a><br/>';
 GEvent.addListener(marker142, 'click', function() { marker142.openInfoWindow(html142); });
 map.addOverlay(marker142);
 
@@ -1030,7 +1030,7 @@ map.addOverlay(marker143);
 var icon144   = null;
 var point144  = new GLatLng(65.326600,21.483200);
 var marker144 = new GMarker(point144, icon144);
-var html144   = '<a href=\"http://www.pitejudo.net\" target=\"_blank\"><b>Pite√• Judoklubb</b></a><br/>';
+var html144   = '<a href=\"http://www.pitejudo.net\" target=\"_blank\"><b>Piteå Judoklubb</b></a><br/>';
 GEvent.addListener(marker144, 'click', function() { marker144.openInfoWindow(html144); });
 map.addOverlay(marker144);
 
@@ -1044,7 +1044,7 @@ map.addOverlay(marker145);
 var icon146   = null;
 var point146  = new GLatLng(60.895800,15.146800);
 var marker146 = new GMarker(point146, icon146);
-var html146   = '<a href=\"http://www.rattviksjudoklubb.se\" target=\"_blank\"><b>R√§ttviks Judoklubb</b></a><br/>';
+var html146   = '<a href=\"http://www.rattviksjudoklubb.se\" target=\"_blank\"><b>Rättviks Judoklubb</b></a><br/>';
 GEvent.addListener(marker146, 'click', function() { marker146.openInfoWindow(html146); });
 map.addOverlay(marker146);
 
@@ -1058,7 +1058,7 @@ map.addOverlay(marker147);
 var icon148   = null;
 var point148  = new GLatLng(59.335800,18.395500);
 var marker148 = new GMarker(point148, icon148);
-var html148   = '<a href=\"http://www.saltsjojudo.se\" target=\"_blank\"><b>Saltsj√∂ Judoklubb</b></a><br/>';
+var html148   = '<a href=\"http://www.saltsjojudo.se\" target=\"_blank\"><b>Saltsjö Judoklubb</b></a><br/>';
 GEvent.addListener(marker148, 'click', function() { marker148.openInfoWindow(html148); });
 map.addOverlay(marker148);
 
@@ -1079,14 +1079,14 @@ map.addOverlay(marker150);
 var icon151   = null;
 var point151  = new GLatLng(64.755100,20.970100);
 var marker151 = new GMarker(point151, icon151);
-var html151   = '<b>Skellefte√• Judoklubb</b><br/>';
+var html151   = '<b>Skellefteå Judoklubb</b><br/>';
 GEvent.addListener(marker151, 'click', function() { marker151.openInfoWindow(html151); });
 map.addOverlay(marker151);
 
 var icon152   = null;
 var point152  = new GLatLng(58.383900,13.836700);
 var marker152 = new GMarker(point152, icon152);
-var html152   = '<a href=\"http://www.skovdejudo.com\" target=\"_blank\"><b>Sk√∂vde Judoklubb</b></a><br/>';
+var html152   = '<a href=\"http://www.skovdejudo.com\" target=\"_blank\"><b>Skövde Judoklubb</b></a><br/>';
 GEvent.addListener(marker152, 'click', function() { marker152.openInfoWindow(html152); });
 map.addOverlay(marker152);
 
@@ -1142,21 +1142,21 @@ map.addOverlay(marker159);
 var icon160   = null;
 var point160  = new GLatLng(61.307700,17.069000);
 var marker160 = new GMarker(point160, icon160);
-var html160   = '<a href=\"http://www.soderhamnsjudo.se\" target=\"_blank\"><b>S√∂derhamns Judoklubb</b></a><br/>';
+var html160   = '<a href=\"http://www.soderhamnsjudo.se\" target=\"_blank\"><b>Söderhamns Judoklubb</b></a><br/>';
 GEvent.addListener(marker160, 'click', function() { marker160.openInfoWindow(html160); });
 map.addOverlay(marker160);
 
 var icon161   = null;
 var point161  = new GLatLng(58.477800,16.309100);
 var marker161 = new GMarker(point161, icon161);
-var html161   = '<b>S√∂derk√∂pings Judoklubb</b><br/>';
+var html161   = '<b>Söderköpings Judoklubb</b><br/>';
 GEvent.addListener(marker161, 'click', function() { marker161.openInfoWindow(html161); });
 map.addOverlay(marker161);
 
 var icon162   = null;
 var point162  = new GLatLng(59.204100,17.663600);
 var marker162 = new GMarker(point162, icon162);
-var html162   = '<a href=\"http://www.sjk.nu\" target=\"_blank\"><b>S√∂dert√§lje Judoklubb</b></a><br/>';
+var html162   = '<a href=\"http://www.sjk.nu\" target=\"_blank\"><b>Södertälje Judoklubb</b></a><br/>';
 GEvent.addListener(marker162, 'click', function() { marker162.openInfoWindow(html162); });
 map.addOverlay(marker162);
 
@@ -1191,7 +1191,7 @@ map.addOverlay(marker166);
 var icon167   = null;
 var point167  = new GLatLng(59.220800,18.207300);
 var marker167 = new GMarker(point167, icon167);
-var html167   = '<a href=\"http://www.tjjk.com\" target=\"_blank\"><b>Tyres√∂ Judo & Jujutsuklubb</b></a><br/>';
+var html167   = '<a href=\"http://www.tjjk.com\" target=\"_blank\"><b>Tyresö Judo & Jujutsuklubb</b></a><br/>';
 GEvent.addListener(marker167, 'click', function() { marker167.openInfoWindow(html167); });
 map.addOverlay(marker167);
 
@@ -1205,14 +1205,14 @@ map.addOverlay(marker168);
 var icon169   = null;
 var point169  = new GLatLng(63.828700,20.286200);
 var marker169 = new GMarker(point169, icon169);
-var html169   = '<a href=\"http://www.umeajudo.se\" target=\"_blank\"><b>Ume√• Judoklubb</b></a><br/>';
+var html169   = '<a href=\"http://www.umeajudo.se\" target=\"_blank\"><b>Umeå Judoklubb</b></a><br/>';
 GEvent.addListener(marker169, 'click', function() { marker169.openInfoWindow(html169); });
 map.addOverlay(marker169);
 
 var icon170   = null;
 var point170  = new GLatLng(59.517300,17.899500);
 var marker170 = new GMarker(point170, icon170);
-var html170   = '<a href=\"http://www.vasbyjudo.nu\" target=\"_blank\"><b>Upplands V√§sby Judoklubb</b></a><br/>';
+var html170   = '<a href=\"http://www.vasbyjudo.nu\" target=\"_blank\"><b>Upplands Väsby Judoklubb</b></a><br/>';
 GEvent.addListener(marker170, 'click', function() { marker170.openInfoWindow(html170); });
 map.addOverlay(marker170);
 
@@ -1240,42 +1240,42 @@ map.addOverlay(marker173);
 var icon174   = null;
 var point174  = new GLatLng(59.364300,17.880500);
 var marker174 = new GMarker(point174, icon174);
-var html174   = '<b>V√§llingby Budoklubb</b><br/>';
+var html174   = '<b>Vällingby Budoklubb</b><br/>';
 GEvent.addListener(marker174, 'click', function() { marker174.openInfoWindow(html174); });
 map.addOverlay(marker174);
 
 var icon175   = null;
 var point175  = new GLatLng(57.305100,13.536200);
 var marker175 = new GMarker(point175, icon175);
-var html175   = '<a href=\"http://www1.idrottonline.se/default.aspx?id=5102\" target=\"_blank\"><b>V√§stbo Judoklubb</b></a><br/>';
+var html175   = '<a href=\"http://www1.idrottonline.se/default.aspx?id=5102\" target=\"_blank\"><b>Västbo Judoklubb</b></a><br/>';
 GEvent.addListener(marker175, 'click', function() { marker175.openInfoWindow(html175); });
 map.addOverlay(marker175);
 
 var icon176   = null;
 var point176  = new GLatLng(57.754300,16.621600);
 var marker176 = new GMarker(point176, icon176);
-var html176   = '<a href=\"http://www.vvikjudo.se\" target=\"_blank\"><b>V√§sterviks Judoklubb</b></a><br/>';
+var html176   = '<a href=\"http://www.vvikjudo.se\" target=\"_blank\"><b>Västerviks Judoklubb</b></a><br/>';
 GEvent.addListener(marker176, 'click', function() { marker176.openInfoWindow(html176); });
 map.addOverlay(marker176);
 
 var icon177   = null;
 var point177  = new GLatLng(59.614100,16.608600);
 var marker177 = new GMarker(point177, icon177);
-var html177   = '<a href=\"http://beam.to/vjudo\" target=\"_blank\"><b>V√§ster√•s Judoklubb</b></a><br/>';
+var html177   = '<a href=\"http://beam.to/vjudo\" target=\"_blank\"><b>Västerås Judoklubb</b></a><br/>';
 GEvent.addListener(marker177, 'click', function() { marker177.openInfoWindow(html177); });
 map.addOverlay(marker177);
 
 var icon178   = null;
 var point178  = new GLatLng(59.606700,16.539000);
 var marker178 = new GMarker(point178, icon178);
-var html178   = '<a href=\"http://www.vasterasjudoskola.se\" target=\"_blank\"><b>V√§ster√•s Judoskola</b></a><br/>';
+var html178   = '<a href=\"http://www.vasterasjudoskola.se\" target=\"_blank\"><b>Västerås Judoskola</b></a><br/>';
 GEvent.addListener(marker178, 'click', function() { marker178.openInfoWindow(html178); });
 map.addOverlay(marker178);
 
 var icon179   = null;
 var point179  = new GLatLng(56.887400,14.763400);
 var marker179 = new GMarker(point179, icon179);
-var html179   = '<b>V√§xj√∂ Judoklubb</b><br/>';
+var html179   = '<b>Växjö Judoklubb</b><br/>';
 GEvent.addListener(marker179, 'click', function() { marker179.openInfoWindow(html179); });
 map.addOverlay(marker179);
 
@@ -1289,42 +1289,42 @@ map.addOverlay(marker180);
 var icon181   = null;
 var point181  = new GLatLng(62.518900,15.657200);
 var marker181 = new GMarker(point181, icon181);
-var html181   = '<a href=\"http://www.angejudo.se/\" target=\"_blank\"><b>√Önge Judoklubb</b></a><br/>';
+var html181   = '<a href=\"http://www.angejudo.se/\" target=\"_blank\"><b>Ånge Judoklubb</b></a><br/>';
 GEvent.addListener(marker181, 'click', function() { marker181.openInfoWindow(html181); });
 map.addOverlay(marker181);
 
 var icon182   = null;
 var point182  = new GLatLng(58.196500,16.003100);
 var marker182 = new GMarker(point182, icon182);
-var html182   = '<a href=\"http://www.atvidjudo.se/\" target=\"_blank\"><b>√Ötvidabergs Judoklubb</b></a><br/>';
+var html182   = '<a href=\"http://www.atvidjudo.se/\" target=\"_blank\"><b>Åtvidabergs Judoklubb</b></a><br/>';
 GEvent.addListener(marker182, 'click', function() { marker182.openInfoWindow(html182); });
 map.addOverlay(marker182);
 
 var icon183   = null;
 var point183  = new GLatLng(56.552800,14.156600);
 var marker183 = new GMarker(point183, icon183);
-var html183   = '<a href=\"http://www2.idrottonline.se/default.aspx?id=157460\" target=\"_blank\"><b>√Ñlmhults Judoklubb</b></a><br/>';
+var html183   = '<a href=\"http://www2.idrottonline.se/default.aspx?id=157460\" target=\"_blank\"><b>Älmhults Judoklubb</b></a><br/>';
 GEvent.addListener(marker183, 'click', function() { marker183.openInfoWindow(html183); });
 map.addOverlay(marker183);
 
 var icon184   = null;
 var point184  = new GLatLng(56.248300,12.856900);
 var marker184 = new GMarker(point184, icon184);
-var html184   = '<a href=\"http://svenskidrott.se/Organisation.asp?WCI=wiOrgInfo&OrgElementId=36014\" target=\"_blank\"><b>√Ñngelholm Judo</b></a><br/>';
+var html184   = '<a href=\"http://svenskidrott.se/Organisation.asp?WCI=wiOrgInfo&OrgElementId=36014\" target=\"_blank\"><b>Ängelholm Judo</b></a><br/>';
 GEvent.addListener(marker184, 'click', function() { marker184.openInfoWindow(html184); });
 map.addOverlay(marker184);
 
 var icon185   = null;
 var point185  = new GLatLng(59.279000,15.215400);
 var marker185 = new GMarker(point185, icon185);
-var html185   = '<a href=\"http://www.klubben.se/orebrojudo\" target=\"_blank\"><b>√ñrebro Judo</b></a><br/>';
+var html185   = '<a href=\"http://www.klubben.se/orebrojudo\" target=\"_blank\"><b>Örebro Judo</b></a><br/>';
 GEvent.addListener(marker185, 'click', function() { marker185.openInfoWindow(html185); });
 map.addOverlay(marker185);
 
 var icon186   = null;
 var point186  = new GLatLng(63.189200,14.654600);
 var marker186 = new GMarker(point186, icon186);
-var html186   = '<a href=\"http://www.judo.nu\" target=\"_blank\"><b>√ñstersunds Judoklubb</b></a><br/>';
+var html186   = '<a href=\"http://www.judo.nu\" target=\"_blank\"><b>Östersunds Judoklubb</b></a><br/>';
 GEvent.addListener(marker186, 'click', function() { marker186.openInfoWindow(html186); });
 map.addOverlay(marker186);
 
@@ -1338,7 +1338,7 @@ map.addOverlay(marker187);
 var icon188   = null;
 var point188  = new GLatLng(61.349400,16.386400);
 var marker188 = new GMarker(point188, icon188);
-var html188   = '<a href=\"http://www.bollnasjudo.se/\" target=\"_blank\"><b>Bolln√§s JK</b></a><br/>';
+var html188   = '<a href=\"http://www.bollnasjudo.se/\" target=\"_blank\"><b>Bollnäs JK</b></a><br/>';
 GEvent.addListener(marker188, 'click', function() { marker188.openInfoWindow(html188); });
 map.addOverlay(marker188);
 
@@ -1359,14 +1359,14 @@ map.addOverlay(marker190);
 var icon191   = null;
 var point191  = new GLatLng(57.940000,12.532600);
 var marker191 = new GMarker(point191, icon191);
-var html191   = '<a href=\"http://www.alingsasjudo.org/\" target=\"_blank\"><b>Alings√•s Judoklubb</b></a><br/>';
+var html191   = '<a href=\"http://www.alingsasjudo.org/\" target=\"_blank\"><b>Alingsås Judoklubb</b></a><br/>';
 GEvent.addListener(marker191, 'click', function() { marker191.openInfoWindow(html191); });
 map.addOverlay(marker191);
 
 var icon192   = null;
 var point192  = new GLatLng(-23.589200,-46.636405);
 var marker192 = new GMarker(point192, icon192);
-var html192   = '<a href=\"http://www.judoshoorikan.com.br/\" target=\"_blank\"><b>Shoorikan Jud√¥ Club</b></a><br/>';
+var html192   = '<a href=\"http://www.judoshoorikan.com.br/\" target=\"_blank\"><b>Shoorikan Judô Club</b></a><br/>';
 GEvent.addListener(marker192, 'click', function() { marker192.openInfoWindow(html192); });
 map.addOverlay(marker192);
 
@@ -1436,7 +1436,7 @@ map.addOverlay(marker200);
 var icon201   = null;
 var point201  = new GLatLng(59.443169,18.065622);
 var marker201 = new GMarker(point201, icon201);
-var html201   = '<a href=\"http://tabyjudo.se\" target=\"_blank\"><b>T√§by Judo Klubb</b></a><br/>';
+var html201   = '<a href=\"http://tabyjudo.se\" target=\"_blank\"><b>Täby Judo Klubb</b></a><br/>';
 GEvent.addListener(marker201, 'click', function() { marker201.openInfoWindow(html201); });
 map.addOverlay(marker201);
 
@@ -1462,7 +1462,7 @@ Already 201
 <a href="" onclick="latest15[1](); return false;">All Star Family Center</a><br/>
 <a href="" onclick="latest15[2](); return false;">Ridgewood Judo</a><br/>
 <a href="" onclick="latest15[3](); return false;">Portland Judo Club</a><br/>
-<a href="" onclick="latest15[4](); return false;">Blau-Wei√ü Hollage</a><br/>
+<a href="" onclick="latest15[4](); return false;">Blau-Weiß Hollage</a><br/>
 <a href="" onclick="latest15[5](); return false;">Steveston Judo Club</a><br/>
 <a href="" onclick="latest15[6](); return false;">SouthSide Dojo</a><br/>
 <a href="" onclick="latest15[7](); return false;">Delta Kaigan Judo</a><br/>
