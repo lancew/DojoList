@@ -64,6 +64,12 @@ class TestOfDojolist extends UnitTestCase {
 		$this->assertFalse($result, 'The test for <Dojo/> tags at the end of the file failed');
 	}
 	
+	function testCount_dojo ()
+	{
+	
+        $this->assertTrue(Count_dojo());
+	}
+	
 }
 
 $test = &new TestOfDojolist();

@@ -163,6 +163,24 @@ function Update_dojo($Dojo)
 
 }
 
+/**
+ * Count the number of Dojo in the DB.
+ *
+ * @return int $dojo_count
+ * 
+ */
+function Count_dojo()
+{
+    $xml = Load_Xml_data();
+    $dojo_count = 0;
+    foreach ($xml->Dojo as $dojo) {
+       $dojo_count++;
+    }
+    
+    return $dojo_count;
+    
+}
+
 
 
 ?>
