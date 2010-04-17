@@ -329,7 +329,8 @@ function Admin_importjwm()
 
 
 	$raw_data = file_get_contents('data/jwm.txt');
-
+    if (strpos($raw_data, 'This work is licensed under Creative Commons NC-SA'))
+    {
 
 	$data = get_string_between($raw_data, 'var icon17', 'new GIcon();');
 	$data_array = explode('var icon', $data);
@@ -374,6 +375,9 @@ function Admin_importjwm()
 	echo '</table>';
 	admin_create_kml();
 
+    } else {
+    halt('CC License no longer on JWM site');
+    }
 
 }
 
