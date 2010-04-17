@@ -31,15 +31,24 @@ class TestOfDojolist extends UnitTestCase {
         {
         
         $dojo_array = array('DojoName' => 'test_dojo', 'ClubWebsite' => 'url', 'Latitude' => '0', 'Longitude' => '0' );
-	    $this->assertEqual(Create_dojo($dojo_array), 'Dojo Created');
+	    Create_dojo($dojo_array);
+	    $xml = Find_dojo('test_dojo');
+		$text = $xml->DojoName;
+		$this->assertEqual($text,'test_dojo');
+	    
 	    } else {
 	       $this->fail('test_dojo found prior to create test');
 	    }
 	}
 	
 	function testDelete_dojo() {
-		Delete_dojo('test_dojo');
-		$this->assertFalse(Find_dojo('test_dojo'), 'test_dojo was not deleted');
+		if(Find_dojo('test_dojo'))
+		{
+            Delete_dojo('test_dojo');
+            $this->assertFalse(Find_dojo('test_dojo'), 'test_dojo was not deleted');
+        } else {
+            $this->fail('test_dojo did not exist prior to delete test');
+        }
 	}
     
 	
@@ -49,10 +58,10 @@ class TestOfDojolist extends UnitTestCase {
 		
 		$tempXML = Load_Xml_data();
 		$xmlText = $tempXML->asXML();
-		$pattern = '#</Longitude></Dojo></xml>#';
+		$pattern = '#<Dojo/>#';
 		$result = preg_match($pattern, $xmlText);
 		//echo "result:".$result;
-		$this->assertTrue($result, 'The test for <Dojo/> tags at the end of the file failed');
+		$this->assertFalse($result, 'The test for <Dojo/> tags at the end of the file failed');
 	}
 	
 }

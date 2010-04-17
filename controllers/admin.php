@@ -163,7 +163,7 @@ function Admin_Editform_end()
 	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
 	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
 	 UK: England &amp; Wales License</a>.
-	 Some data imported from www.judoworldmap.com by 
+	 Some data imported from www.judoworldmap.com by
 	 Ulrich Wisser under a Creative Commons NC-SA License. -->';
 
 		foreach ($xml->Dojo as $dojo) {
@@ -175,16 +175,16 @@ function Admin_Editform_end()
 						$clean_field = strip_tags(addslashes($field));
 						$clean_value = strip_tags(addslashes($value));
 						$dojo->addChild($clean_field, $clean_value);
-            
+
 
 					}
 				}
 
 				// start of if ($_FILES... section, encodes and adds an upload logo file
-				
-				
+
+
 				if ($_FILES["DojoLogo"]["name"]) {
-                        
+
 					if ((($_FILES["DojoLogo"]["type"] == "image/gif")
 							|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
 							|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
@@ -193,7 +193,7 @@ function Admin_Editform_end()
 						if ($_FILES["DojoLogo"]["error"] > 0) {
 							halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
 						} else {
-						
+
 							$dojo->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
 
 						}
@@ -286,7 +286,7 @@ function Admin_Create_kml()
 	 href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">
 	 Creative Commons Attribution-Noncommercial-Share Alike 2.0
 	 UK: England &amp; Wales License</a>.
-	 Some data imported from www.judoworldmap.com by 
+	 Some data imported from www.judoworldmap.com by
 	 Ulrich Wisser under a Creative Commons NC-SA License. -->
     <Document>
     <name>Dojo List</name>';
@@ -317,7 +317,7 @@ function Admin_Create_kml()
 function Admin_importjwm()
 {
 
-    
+
 	$ch = curl_init("http://judoworldmap.com/");
 	$fp = fopen("data/jwm.txt", "w");
 
@@ -326,7 +326,7 @@ function Admin_importjwm()
 	curl_exec($ch);
 	curl_close($ch);
 	fclose($fp);
-    
+
 
 	$raw_data = file_get_contents('data/jwm.txt');
 
@@ -372,7 +372,7 @@ function Admin_importjwm()
 
 	}
 	echo '</table>';
-    admin_create_kml();
+	admin_create_kml();
 
 
 }
