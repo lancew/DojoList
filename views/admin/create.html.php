@@ -32,7 +32,7 @@ document.dojoform.DojoName.focus();
 <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude">
 </td></tr>
 
-<tr><td><input type="hidden" name="MAX_FILE_SIZE" value="100000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
+<tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
 
 </table>
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
