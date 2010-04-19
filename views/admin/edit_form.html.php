@@ -12,7 +12,7 @@
 <table>
 <div id="mapstraction" style="float:right;"></div>
 <tr><td><?php echo  _("Dojo Logo:"); ?></td><td> <?php if ($Dojo->DojoLogo) { echo '<img alt="'.$Dojo->DojoName.'" src="'.$Dojo->DojoLogo.'" />'; ?> 
-	<br /><br /> <input type=checkbox name="delete_logo" value="delete_logo"/> <?php } ?>   
+	<br /><br />Delete Logo <input type=checkbox name="delete_logo" value="delete_logo"/> <?php } ?>   
 	<br /><input type="hidden" name="MAX_FILE_SIZE" value="20000" /><input type="file" name="DojoLogo" />
 	
 	</td></tr>

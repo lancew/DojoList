@@ -171,20 +171,25 @@ function Admin_Editform_end()
 				foreach ($_POST as $field => $value) {
 					$DojoOrigEmail = $dojo->ContactEmail;
 					unset($dojo->$field);
-					if ($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field' && $field != 'MAX_FILE_SIZE') {
+					if ($field != 'recaptcha_challenge_field' && $field != 'recaptcha_response_field' && $field != 'MAX_FILE_SIZE' && $field != 'delete_logo') {
 						$clean_field = strip_tags(addslashes($field));
 						$clean_value = strip_tags(addslashes($value));
 						$dojo->addChild($clean_field, $clean_value);
+						}
+                    if ($field === 'delete_logo')
+                    {
+                        unset($dojo->DojoLogo);
+                    }
 
-
-					}
+					
+					
 				}
 
 				// start of if ($_FILES... section, encodes and adds an upload logo file
 
-
+                
 				if ($_FILES["DojoLogo"]["name"]) {
-
+                    unset($dojo->DojoLogo);
 					if ((($_FILES["DojoLogo"]["type"] == "image/gif")
 							|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
 							|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
@@ -199,6 +204,7 @@ function Admin_Editform_end()
 						}
 					}
 				}
+				
 				// end of if ($_FILES... section.
 
 				$newxml .= $dojo->asXML();
@@ -373,6 +379,7 @@ function Admin_importjwm()
 
 	}
 	echo '</table>';
+	unlink('data/jwm.txt');
 	admin_create_kml();
 
     } else {
