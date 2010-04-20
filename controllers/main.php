@@ -35,7 +35,8 @@ function Main_page()
  */
 function Html_list() 
 {
-    set('DojoList', Find_Dojo_all());
+    //set('DojoList', Find_Dojo_all());
+    set('DojoList', Sorted_dojo());
     return html('main.html_list.html.php');
 }
 

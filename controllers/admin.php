@@ -388,5 +388,11 @@ function Admin_importjwm()
 
 }
 
+function Admin_Sort_xml()
+{
+  $dojo = Sorted_dojo();
+  return $dojo;
+}
+
 
 ?>

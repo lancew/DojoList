@@ -181,6 +181,24 @@ function Count_dojo()
     
 }
 
+/**
+ * Return a sorted list of clubs as an array.
+ *
+ *
+ * @return array $dojolist an array of dojo sorted alpha a-z
+ * 
+ */
+function Sorted_dojo($Dojo)
+{
+    $xml = Find_Dojo_all();
+    $dojolist = array();
+    foreach ($xml->Dojo as $dojo) {
+        $dojolist[] = (string)$dojo->DojoName;
+        
+    }
+    sort($dojolist);
+    return $dojolist;
 
+}
 
 ?>
