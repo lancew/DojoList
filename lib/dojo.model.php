@@ -188,7 +188,7 @@ function Count_dojo()
  * @return array $dojolist an array of dojo sorted alpha a-z
  * 
  */
-function Sorted_dojo($Dojo)
+function Sorted_dojo()
 {
     $xml = Find_Dojo_all();
     $dojolist = array();

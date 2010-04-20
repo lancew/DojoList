@@ -1,6 +1,6 @@
 <body>
 <h1>DOJO LIST</h1>
-
+<h2><?php echo _("Number of Dojo:"); echo Count_dojo(); ?></h2>
 
 <?php foreach ($DojoList as $dojo) {
 
