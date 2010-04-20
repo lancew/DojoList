@@ -40,7 +40,7 @@ function configure()
 {
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
-	option('version', '0.5.0'); #DojoList version.
+	option('version', '0.6.0'); #DojoList version.
 	
 	// The following three options need filling in for the system to work.
 	// 1. Obtain a gogle Maps API key from: http://code.google.com/apis/maps/signup.html
@@ -103,14 +103,8 @@ dispatch	   ('/dojo/:dojo/image', 'DojoLogo');
 
 dispatch_get   ('/html',           'Html_list');
 
-//dispatch	   ('/admin',          'Admin_index');
-//dispatch_get   ('/admin/login',	   'Admin_index');
-//dispatch_post  ('/admin/login',	   'Admin_login');
-//dispatch	   ('/admin/logout',   'Admin_logout');
-
-//dispatch_get   ('/admin/delete',   'Admin_delete');
-//dispatch	   ('/admin/delete/:dojo', 'Admin_Delete_end');
-dispatch_get   ('/admin/importjwm',   'Admin_importjwm');
+// Only used if importing JudoWorldMap.com data
+//dispatch_get   ('/admin/importjwm',   'Admin_importjwm');
 
 //dispatch_get   ('/admin/edit',   'Admin_edit');
 //dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
