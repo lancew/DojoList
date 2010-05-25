@@ -56,6 +56,8 @@ foreach ($Dojo AS $field => $value) {
 <tr><td><em><?php echo _("Please note: Notifications of changes will be send to administrators."); ?></em></td></tr>
 </table>
 
+<input type="hidden" name="GUID" value="<?=h($Dojo->GUID)?>" />
+
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />
 </form>

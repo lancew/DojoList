@@ -33,7 +33,7 @@ document.dojoform.DojoName.focus();
 </td></tr>
 
 <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
-
+<input type="hidden" name="GUID" value="<?php echo guid(); ?>" />
 </table>
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />

@@ -5,6 +5,12 @@
 	foreach ($Dojo as $key => $value) {
 		// The following line skips fields if they are blank.
 		if (!$value){continue;}
+		
+		// Skip display of the GUID
+		if ($key =='GUID') {
+			continue;
+
+		}
 
 		// Display the email address as HTML link.
 		if ($key =='DojoName') {

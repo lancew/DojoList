@@ -17,9 +17,12 @@
  */
 
 /**
- * Load dojo list as XML
+ * Load_Xml_data function.
+ * 
+ * @access public
+ * @param string $file. (default: 'data/dojo.xml')
  *
- * @return $xml list
+ * @return void
  */
 function Load_Xml_data($file = 'data/dojo.xml')
 {
@@ -32,16 +35,33 @@ function Load_Xml_data($file = 'data/dojo.xml')
 	return $xml;
 }
 
+
+/**
+ * Save_Xml_data function.
+ * 
+ * @access public
+ * @param mixed $xml
+ * @param string $file. (default: 'data/dojo.xml')
+ * @return void
+ */
 function Save_Xml_data($xml, $file = 'data/dojo.xml')
 {
 	$fh = fopen($file, 'w') or die("can't open file");
 	fwrite($fh, $xml);
 	fclose($fh);
-   // print_r($xml);
-   // print($file);
-   	return $file;
+    return $file;
 }
 
+
+/**
+ * get_string_between function.
+ * 
+ * @access public
+ * @param mixed $string
+ * @param mixed $start
+ * @param mixed $end
+ * @return void
+ */
 function get_string_between($string, $start, $end)
 {
 	$string = " ".$string;
@@ -52,6 +72,28 @@ function get_string_between($string, $start, $end)
 	return substr($string, $ini, $len);
 }
 
-
+/**
+ * guid function.
+ * 
+ * @access public
+ * @return void
+ */
+function guid(){
+    if (function_exists('com_create_guid')){
+        return com_create_guid();
+    }else{
+        mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
+        $charid = strtoupper(md5(uniqid(rand(), true)));
+        $hyphen = chr(45);// "-"
+        $uuid = chr(123)// "{"
+                .substr($charid, 0, 8).$hyphen
+                .substr($charid, 8, 4).$hyphen
+                .substr($charid,12, 4).$hyphen
+                .substr($charid,16, 4).$hyphen
+                .substr($charid,20,12)
+                .chr(125);// "}"
+        return $uuid;
+    }
+}
 
 ?>
