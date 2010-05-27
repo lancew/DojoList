@@ -353,7 +353,9 @@ function Admin_importjwm()
 		$url = get_string_between($value, 'http://', '\\"');
 		$name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
 		$name = str_replace('&', ' and ', $name);
-		$name = str_replace('\\\'', '', $name);
+		$name = str_replace("'", '', $name);
+		$name = str_replace("\\", '', $name);
+		$name = str_replace("\"", '', $name);
 		$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
 		$Lat = $LatLng[0];
 		$Lng = $LatLng[1];

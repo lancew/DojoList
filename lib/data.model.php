@@ -76,7 +76,7 @@ function get_string_between($string, $start, $end)
  * guid function.
  * 
  * @access public
- * @return void
+ * @return guid
  */
 function guid(){
     if (function_exists('com_create_guid')){
