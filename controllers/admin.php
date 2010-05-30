@@ -368,7 +368,7 @@ function Admin_importjwm()
 
 		if (!$dojo && $name) {
 			echo "<td>NEW</td>";
-
+            
 			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng );
 			//print_r($dojo_array);
 			Create_dojo($dojo_array);

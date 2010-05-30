@@ -30,7 +30,7 @@ class TestOfDojolist extends UnitTestCase {
         if (Find_dojo('test_dojo')->DojoName != 'test_dojo') 
         {
         
-        $dojo_array = array('DojoName' => 'test_dojo', 'ClubWebsite' => 'url', 'Latitude' => '0', 'Longitude' => '0' );
+        $dojo_array = array('DojoName' => 'test_dojo', 'ClubWebsite' => 'url', 'Latitude' => '0', 'Longitude' => '0', 'GUID' => guid() );
 	    Create_dojo($dojo_array);
 	    $xml = Find_dojo('test_dojo');
 		$text = $xml->DojoName;
@@ -40,6 +40,12 @@ class TestOfDojolist extends UnitTestCase {
 	       $this->fail('test_dojo found prior to create test');
 	    }
 	}
+	
+	function testGUIDisPresent() {
+		$xml = Find_dojo('test_dojo');
+		$text = $xml->GUID;
+		$this->assertPattern('/^\{?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\}?$/i', $text);
+	}		
 	
 	function testDelete_dojo() {
 		if(Find_dojo('test_dojo'))
