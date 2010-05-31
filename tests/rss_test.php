@@ -1,30 +1,32 @@
 <?php
 require_once('simpletest/unit_tester.php');
 require_once('simpletest/reporter.php');
-require_once('lib/data.model.php');
+require_once('lib/rss.php');
+
 
 class TestOfRSS extends UnitTestCase {
 
     
    	function testLoad_RSS_file() {
-		$this->assertTrue(Load_Xml_data('data/dojo.rss'));
+		$this->assertTrue(Load_RSS_data());
 	}	
 	
-    function testRSS_Channel_Title() {
-        $rss = Load_Xml_data('data/dojo.rss');
-        //print_r($rss);
-        $text = $rss->channel->title;
-        $this->assertEqual($text, 'DojoList Updates');
+        
+    function testDelete_oldest_rss() {
+        $text = Delete_oldest_rss();
+        $this->assertEqual($text, 'data/dojo.rss');
+    
     }
     
-    function testRSS_Item_Description() {
-        $rss = Load_Xml_data('data/dojo.rss');
-        //print_r($rss->channel->item[0]->description[0]);
-        $text = $rss->channel->item[0]->description;
-        $pattern = '#test123#';
-		$result = preg_match($pattern, $text);
-		$this->assertTrue($result);
+    function testAdd_rss_item() {
+        $item_array = array('description' => 'test_add');
+        //print_r($item_array);
+		Add_rss_item($item_array);      
+    
     }
+    
+
+		
 
 
 }

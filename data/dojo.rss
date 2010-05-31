@@ -1,21 +1,42 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+    <rss version="2.0">
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description>
-		
-		<lastBuildDate>Mon, 30 Sep 2002 11:00:00 GMT</lastBuildDate>
-		
-		<generator>DojoList</generator>
-		
-
-		<item>
-			<description>test123
-			</description>
-			<pubDate>Sun, 29 Sep 2002 19:59:01 GMT</pubDate>
-			<guid>http://scriptingnews.userland.com/backissues/2002/09/29#When:12:59:01PM</guid>
-			</item>
+		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 31 May 10 23:59:58 +0100</lastBuildDate><generator>DojoList</generator>
 	
-		</channel>
-</rss>
+    <item>
+			<description>zazazaz was created.
+			</description>
+			<pubDate>Mon, 31 May 10 23:59:58 +0100</pubDate>
+			<guid>Mon,31May1023:59:58+0100</guid>
+    </item>
+    
+	       <item>
+			<description>bleep was created.
+			</description>
+			<pubDate>Mon, 31 May 10 23:56:56 +0100</pubDate>
+			<guid>Mon, 31 May 10 23:56:56 +0100</guid>
+    </item>
+	       
+	       <item>
+			<description>blahblah was created.
+			</description>
+			<pubDate>Mon, 31 May 10 23:55:48 +0100</pubDate>
+			<guid>http://dev.dojolist/dojo//Mon, 31 May 10 23:55:48 +0100</guid>
+    </item>
+	       
+	       <item>
+			<description>wasabe was created.
+			</description>
+			<pubDate>Mon, 31 May 10 23:54:29 +0100</pubDate>
+			<guid>http://dev.dojolist/dojo//Mon, 31 May 10 23:54:29 +0100</guid>
+    </item>
+	       
+	       <item>
+			<description>testqwerty was created.
+			</description>
+			<pubDate>Mon, 31 May 10 23:53:27 +0100</pubDate>
+			<guid>http://dev.dojolist/dojo/$/pubDate</guid>
+    </item>
+	       </channel></rss>

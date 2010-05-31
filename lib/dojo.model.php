@@ -17,6 +17,7 @@
  */
 
 require_once 'lib/data.model.php';
+require_once 'lib/rss.php';
 
 
 /**
@@ -71,6 +72,8 @@ function Create_dojo($dojo, $file = null)
 	//print_r($dojo);
 	//print_r($file);
 
+    $dojo_name = '';
+    $source_url = '';
     
     
 	if ($file["DojoLogo"]["name"]) {
@@ -108,6 +111,7 @@ function Create_dojo($dojo, $file = null)
         ) {
 			// If we are up to the DojoName entry, create the appropriate URL and add it to the XML.
 			if ($key === 'DojoName' and $flag_url_present != '1') {
+			     $dojo_name = $value;
 			     $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
                  $new1->addChild('URL', $source_url);
                  
@@ -122,6 +126,11 @@ function Create_dojo($dojo, $file = null)
 	}
 
 	Save_Xml_data($xml->asXML());
+	$description = "$dojo_name was created.";
+	//echo $description;
+	$rss_array = array('description' => $description);
+	Add_rss_item($rss_array);
+
 	return 'Dojo Created';
 
 }

@@ -396,11 +396,7 @@ function Admin_importjwm()
 //  return $dojo;
 //}
 
-function Admin_New_Rss_item()
-{
-    
-    
-    
-}
+
+
 
 ?>
