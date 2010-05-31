@@ -71,7 +71,8 @@ function Create_dojo($dojo, $file = null)
 	//print_r($dojo);
 	//print_r($file);
 
-
+    
+    
 	if ($file["DojoLogo"]["name"]) {
         if ((($file["DojoLogo"]["type"] == "image/gif")
             || ($file["DojoLogo"]["type"] == "image/jpeg")
@@ -91,14 +92,28 @@ function Create_dojo($dojo, $file = null)
 			return 0;
 		}
 	}
+    
+    $flag_url_present = '0';
+   foreach ($dojo as $key => $value) {
+	   if ($key === 'URL') { $flag_url_present = '1';}
+	}
+    
 
-
-
+    // Go through all the data passed to us and add the items to the XML
 	foreach ($dojo as $key => $value) {
+		
 		if ($key != 'recaptcha_challenge_field' 
 		    && $key != 'recaptcha_response_field' 
 		    && $key !='MAX_FILE_SIZE'
         ) {
+			// If we are up to the DojoName entry, create the appropriate URL and add it to the XML.
+			if ($key === 'DojoName' and $flag_url_present != '1') {
+			     $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
+                 $new1->addChild('URL', $source_url);
+                 
+			
+			}
+			
 			$clean_key = strip_tags(addslashes($key));
 			$clean_val = strip_tags(addslashes($value));
 			$new1->addChild($clean_key, $clean_val);

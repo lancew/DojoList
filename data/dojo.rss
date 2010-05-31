@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>DojoList Updates</title>
+		<link>http://www.dojolist.org/</link>
+		<description>Updates to Dojo listings</description>
+		
+		<lastBuildDate>Mon, 30 Sep 2002 11:00:00 GMT</lastBuildDate>
+		
+		<generator>DojoList</generator>
+		
+
+		<item>
+			<description>test123
+			</description>
+			<pubDate>Sun, 29 Sep 2002 19:59:01 GMT</pubDate>
+			<guid>http://scriptingnews.userland.com/backissues/2002/09/29#When:12:59:01PM</guid>
+			</item>
+	
+		</channel>
+</rss>

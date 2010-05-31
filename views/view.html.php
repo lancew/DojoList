@@ -7,7 +7,7 @@
 		if (!$value){continue;}
 		
 		// Skip display of the GUID
-		if ($key =='GUID') {
+		if ($key =='GUID' or $key =='URL') {
 			continue;
 
 		}

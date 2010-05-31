@@ -6,6 +6,7 @@ class AllTests extends TestSuite {
         $this->TestSuite('All tests');
         $this->addFile('tests/dojo_test.php');
         $this->addFile('tests/data_test.php');
+        $this->addFile('tests/rss_test.php');
     }
 }
 ?>

@@ -369,7 +369,7 @@ function Admin_importjwm()
 		if (!$dojo && $name) {
 			echo "<td>NEW</td>";
             
-			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng );
+			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng, 'URL' => 'http://judoworldmap.com/' );
 			//print_r($dojo_array);
 			Create_dojo($dojo_array);
 		} else {
@@ -390,11 +390,17 @@ function Admin_importjwm()
 
 }
 
-function Admin_Sort_xml()
-{
-  $dojo = Sorted_dojo();
-  return $dojo;
-}
+//function Admin_Sort_xml()
+//{
+//  $dojo = Sorted_dojo();
+//  return $dojo;
+//}
 
+function Admin_New_Rss_item()
+{
+    
+    
+    
+}
 
 ?>
