@@ -49,6 +49,8 @@ putenv ("LC_ALL=en");
 	<link href="/<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="/<?php echo option('css_dir') ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
 	
+	<link rel="alternate" type="application/rss+xml" href="<?php echo option('data_dir') ?>/dojo.rss" title="RSS feed for DojoList">
+	
 		
 </head>
 <body>
@@ -114,6 +116,7 @@ putenv ("LC_ALL=en");
 						<li><a href="<?=url_for('dojo')?>"><?php echo _("List of Dojo"); ?></a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
 						<li><a href="<?php echo option('data_dir') ?>/dojo.xml">XML</a></li>
+						<li><a href="<?php echo option('data_dir') ?>/dojo.rss">RSS</a></li>
 						<br />
 							<li><a href="<?php echo url_for('dojo','create'); ?>"> <?php echo _("Create new Dojo"); ?></a></li>
 						
