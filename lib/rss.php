@@ -59,7 +59,7 @@ function RSS_header()
 
 }
 
-function Delete_oldest_rss($max_items='3')
+function Delete_oldest_rss($max_items='20')
 {
     $new_rss = RSS_header();
     $item_count = 0;
@@ -94,8 +94,8 @@ function Add_rss_item($item_array = null)
     
     $new_rss .= "
     <item>
-			<description>$desc
-			</description>
+			<title>$desc</title>
+			<description>$desc</description>
 			<pubDate>$pubDate</pubDate>
 			<guid>$guid</guid>
     </item>

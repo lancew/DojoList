@@ -125,7 +125,7 @@ function Create_dojo($dojo, $file = null)
 	}
 
 	Save_Xml_data($xml->asXML());
-	$description = "$dojo[DojoName] was created.";
+	$description = "$dojo[DojoName] Dojo was created.";
 	//print_r($dojo);
 	echo $description;
 	$rss_array = array('description' => $description);
