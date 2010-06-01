@@ -3,40 +3,47 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 31 May 10 23:59:58 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 01 Jun 10 15:15:44 +0100</lastBuildDate><generator>DojoList</generator>
 	
     <item>
-			<description>zazazaz was created.
+			<description>test101 Dojo was updated
 			</description>
-			<pubDate>Mon, 31 May 10 23:59:58 +0100</pubDate>
-			<guid>Mon,31May1023:59:58+0100</guid>
+			<pubDate>Tue, 01 Jun 10 15:15:44 +0100</pubDate>
+			<guid>Tue01Jun1015:15:44+0100</guid>
     </item>
     
 	       <item>
-			<description>bleep was created.
+			<description> Dojo was updated
 			</description>
-			<pubDate>Mon, 31 May 10 23:56:56 +0100</pubDate>
-			<guid>Mon, 31 May 10 23:56:56 +0100</guid>
+			<pubDate>Tue, 01 Jun 10 15:14:34 +0100</pubDate>
+			<guid>Tue01Jun1015:14:34+0100</guid>
     </item>
 	       
 	       <item>
-			<description>blahblah was created.
+			<description>test_add
 			</description>
-			<pubDate>Mon, 31 May 10 23:55:48 +0100</pubDate>
-			<guid>http://dev.dojolist/dojo//Mon, 31 May 10 23:55:48 +0100</guid>
+			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
+			<guid>Tue01Jun1015:13:38+0100</guid>
     </item>
 	       
 	       <item>
-			<description>wasabe was created.
+			<description>test_dojo Dojo was deleted
 			</description>
-			<pubDate>Mon, 31 May 10 23:54:29 +0100</pubDate>
-			<guid>http://dev.dojolist/dojo//Mon, 31 May 10 23:54:29 +0100</guid>
+			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
+			<guid>Tue01Jun1015:13:38+0100</guid>
     </item>
 	       
 	       <item>
-			<description>testqwerty was created.
+			<description>test_dojo was created.
 			</description>
-			<pubDate>Mon, 31 May 10 23:53:27 +0100</pubDate>
-			<guid>http://dev.dojolist/dojo/$/pubDate</guid>
+			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
+			<guid>Tue01Jun1015:13:38+0100</guid>
+    </item>
+	       
+	       <item>
+			<description>test_add
+			</description>
+			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
+			<guid>Tue01Jun1015:13:38+0100</guid>
     </item>
 	       </channel></rss>

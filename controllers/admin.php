@@ -16,6 +16,7 @@
  * @package   DojoList
  */
 
+require_once 'lib/rss.php';
 
 /**
  * Admin Index - Displays the admin index page page
@@ -229,7 +230,11 @@ function Admin_Editform_end()
 		set('DojoName', $DojoName);
 		admin_create_kml();
 		set('DojoName', $DojoName);
-		flash('notice', 'Edited OK');
+		
+		$description = $dojo->DojoName.' Dojo was updated';
+	   $rss_array = array('description' => $description);
+	   Add_rss_item($rss_array);
+		
 		return html('admin/edit_end.html.php');
 	} else {
 		// set the error code so that we can display it
