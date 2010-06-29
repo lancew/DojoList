@@ -1,50 +1,40 @@
 <script type="text/javascript">
-window.onload=dofo;
-function dofo() {
-document.dojoform.DojoName.focus();
-}
-
+    window.onload=dofo;
+        function dofo() {
+            document.dojoform.DojoName.focus();
+        }
 </script>
 
 <h1><?php echo _("Dojo Management System"); ?></h1>
 
 <form method="post" action="" name="dojoform" enctype="multipart/form-data">
 <table>
-<div id="mapstraction" style="float:right;"></div>
-<tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
-<tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID"></td></tr>
-<tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName"></td></tr>
-<tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
-<tr><td><?php echo _("Training Sessions:"); ?></td><td>
-
-<input type="hidden" id="id" value="1">
-<div id="divTxt"></div>
-<p><a href="#" onClick="addFormField(); return false;"><?php echo _("Add"); ?></a>
-</td></tr>
-
-
-<tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName"></td></tr>
-<tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone"></td></tr>
-<tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail"></td></tr>
-<tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite"></td></tr>
-<tr><td><?php echo _("Coordinates:"); ?></td><td>
-<?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />
-<?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude">
-</td></tr>
-
-<tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
-<input type="hidden" name="GUID" value="<?php echo guid(); ?>" />
+    <div id="mapstraction" style="float:right;"></div>
+    <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
+    <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID"></td></tr>
+    <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName"></td></tr>
+    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
+    <tr><td><?php echo _("Training Sessions:"); ?></td><td>
+            <input type="hidden" id="id" value="1">
+            <div id="divTxt"></div>
+            <p><a href="#" onClick="addFormField(); return false;"><?php echo _("Add"); ?></a>
+    </td></tr>
+    <tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName"></td></tr>
+    <tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone"></td></tr>
+    <tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail"></td></tr>
+    <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite"></td></tr>
+    <tr><td><?php echo _("Coordinates:"); ?></td><td>
+            <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />
+            <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude">
+    </td></tr>
+    <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
+            <input type="hidden" name="GUID" value="<?php echo guid(); ?>" />
 </table>
+
 <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
 <input type="submit" value="submit"><br />
+
 </form>
-
-
-
-
-
-
-
 
 <script type="text/javascript">
 // This block is used to add the training session fields. It uses jQuery.
@@ -69,74 +59,74 @@ function removeFormField(id) {
         height: 250px;
         width: 250px;
       }
-    </style> 
-	
+    </style>
 
-	
-	
+
+
+
 
     <script type="text/javascript">
-    
-    	
+
+
 		var mapstraction = new Mapstraction('mapstraction','google');
       	var myPoint = new LatLonPoint(51.090113,-1.165786);
       	mapstraction.setCenterAndZoom(myPoint, 9);
       		    mapstraction.addControls({
-        				pan: true, 
+        				pan: true,
         				zoom: 'small',
-        				map_type: true 
+        				map_type: true
     			});
-  	
-	  	
-  	
-  	
+
+
+        
+
   	function showAddress(address) {
       var geocoder = null;
       geocoder = new GClientGeocoder();
-      
+
       if (geocoder) {
-      
+
         geocoder.getLatLng(
           address,
           function(point) {
             if (!point) {
               //alert(address + " not found");
             } else {
-            
-                
+
+
             	sPoint = point.toString();
             	sPoint = sPoint.replace(/\(/i, "");
             	sPoint = sPoint.replace(/\)/i, "");
             	sPoint = sPoint.replace(/ /i, "");
-            	
+
             	coords = sPoint.split(',');
 
 			  	document.getElementById('long').value = coords[1];
 			  	document.getElementById('lat').value = coords[0];
-              	
-              	//mapstraction.addMarker( new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1])));	
+
+              	//mapstraction.addMarker( new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1])));
               	var my_marker = new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1]));
-              	
-              	
+
+
               	mapstraction.addMarkerWithData(my_marker,{
-                
+
                 draggable : true,
                 hover : true
-                
+
                 });
 
-              	
-              	mapstraction.autoCenterAndZoom();	
-              	
-                
-              
+
+              	mapstraction.autoCenterAndZoom();
+
+
+
+
             }
           }
         );
       }
-    } 
-    
-      
-     
- </script>
+    }
 
+
+
+ </script>
