@@ -1,3 +1,5 @@
+<script src="/<?php echo option('js_dir') ?>/dojolist.js" type="text/javascript"></script>
+
 <script type="text/javascript">
     window.onload=dofo;
         function dofo() {
@@ -13,7 +15,7 @@
     <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
     <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID"></td></tr>
     <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName"></td></tr>
-    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="showAddress(this.form.DojoAddress.value)"></td></tr>
+    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value)"></td></tr>
     <tr><td><?php echo _("Training Sessions:"); ?></td><td>
             <input type="hidden" id="id" value="1">
             <div id="divTxt"></div>
@@ -23,110 +25,57 @@
     <tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone"></td></tr>
     <tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail"></td></tr>
     <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite"></td></tr>
+    <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
     <tr><td><?php echo _("Coordinates:"); ?></td><td>
             <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />
             <?php echo _("Longitude:"); ?> <input type="text" id='long' name="Longitude">
     </td></tr>
-    <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
+    <tr><td></td><td><div id="map" style="width: 250px; height: 250px; float: right;"></div></td></tr>
+    
             <input type="hidden" name="GUID" value="<?php echo guid(); ?>" />
+
+
+    <tr><td></td><td><?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
+    <input type="submit" value="submit"><br /></td></tr>
 </table>
-
-<?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
-<input type="submit" value="submit"><br />
-
 </form>
 
-<script type="text/javascript">
-// This block is used to add the training session fields. It uses jQuery.
-function addFormField() {
-	var id = document.getElementById("id").value;
-	$("#divTxt").append("<p id='row" + id + "'><label for='txt" + id + "'>Training Session " + id + ":<br /><input type='text' size='20' name='TrainingSession" + id + "Day' id='txt" + id + "' value='eg:Monday'><br /><input type='text' size='8' name='TrainingSession" + id + "Time' id='txt" + id + "' value='eg:8:30pm'><br /><input type='text' size='20' name='TrainingSession" + id + "Age' id='txt" + id + "' value='eg:Juniors'><a href='#' onClick='removeFormField(\"#row" + id + "\"); return false;'>Remove</a><p>");
-	id = (id - 1) + 2;
-	document.getElementById("id").value = id;
-}
 
-function removeFormField(id) {
-	$(id).remove();
+
+
+
+    
+<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">	
+<!--
+if (GBrowserIsCompatible()) 
+{
+	// create map and add controls
+	var map = new GMap2(document.getElementById("map"));
+	map.addControl(new GLargeMapControl());        
+	map.addControl(new GMapTypeControl());
+	
+	// set centre point of map
+	var centrePoint = new GLatLng('53.34870686020199', '-6.267356872558594');
+	map.setCenter(centrePoint, 14);	
+	
+	// add a draggable marker
+	var marker = new GMarker(centrePoint, {draggable: true});
+	map.addOverlay(marker);
+	
+	// add a drag listener to the map
+	GEvent.addListener(marker, "dragend", function() {
+		var point = marker.getPoint();
+		map.panTo(point);
+		document.getElementById("lat").value = point.lat();
+		document.getElementById("long").value = point.lng();
+    });
 }
+//-->
 </script>
 
 
-<script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript"></script>
-<script type="text/javascript" src="/<?php echo option('js_dir') ?>/mapstraction.js"></script>
-
-    <style type="text/css">
-      #mapstraction {
-        height: 250px;
-        width: 250px;
-      }
-    </style>
-
-
-
-
-
-    <script type="text/javascript">
-
-
-		var mapstraction = new Mapstraction('mapstraction','google');
-      	var myPoint = new LatLonPoint(51.090113,-1.165786);
-      	mapstraction.setCenterAndZoom(myPoint, 9);
-      		    mapstraction.addControls({
-        				pan: true,
-        				zoom: 'small',
-        				map_type: true
-    			});
-
-
-        
-
-  	function showAddress(address) {
-      var geocoder = null;
-      geocoder = new GClientGeocoder();
-
-      if (geocoder) {
-
-        geocoder.getLatLng(
-          address,
-          function(point) {
-            if (!point) {
-              //alert(address + " not found");
-            } else {
-
-
-            	sPoint = point.toString();
-            	sPoint = sPoint.replace(/\(/i, "");
-            	sPoint = sPoint.replace(/\)/i, "");
-            	sPoint = sPoint.replace(/ /i, "");
-
-            	coords = sPoint.split(',');
-
-			  	document.getElementById('long').value = coords[1];
-			  	document.getElementById('lat').value = coords[0];
-
-              	//mapstraction.addMarker( new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1])));
-              	var my_marker = new mxn.Marker( new mxn.LatLonPoint(coords[0],coords[1]));
-
-
-              	mapstraction.addMarkerWithData(my_marker,{
-
-                draggable : true,
-                hover : true
-
-                });
-
-
-              	mapstraction.autoCenterAndZoom();
-
-
-
-
-            }
-          }
-        );
-      }
-    }
-
-
-
- </script>
