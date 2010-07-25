@@ -46,6 +46,7 @@ putenv ("LC_ALL=en");
 	<meta name="keywords" content="Dojo List" />
 	<title>Dojo Listing</title>
 	<script src="/<?php echo option('js_dir') ?>/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<script src="/<?php echo option('js_dir') ?>/dojolist.js" type="text/javascript"></script>
 	<link href="/<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="/<?php echo option('css_dir') ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
 	
