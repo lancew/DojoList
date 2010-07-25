@@ -3,15 +3,99 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 25 Jul 10 10:43:09 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 25 Jul 10 10:58:48 +0100</lastBuildDate><generator>DojoList</generator>
 	
     <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 25 Jul 10 10:58:48 +0100</pubDate>
+			<guid>Sun25Jul1010:58:48+0100</guid>
+    </item>
+    
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sun, 25 Jul 10 10:58:48 +0100</pubDate>
+			<guid>Sun25Jul1010:58:48+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created.</title>
+			<description>test_dojo Dojo was created.</description>
+			<pubDate>Sun, 25 Jul 10 10:58:48 +0100</pubDate>
+			<guid>Sun25Jul1010:58:48+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 25 Jul 10 10:58:47 +0100</pubDate>
+			<guid>Sun25Jul1010:58:47+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sun, 25 Jul 10 10:58:47 +0100</pubDate>
+			<guid>Sun25Jul1010:58:47+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created.</title>
+			<description>test_dojo Dojo was created.</description>
+			<pubDate>Sun, 25 Jul 10 10:58:47 +0100</pubDate>
+			<guid>Sun25Jul1010:58:47+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 25 Jul 10 10:58:42 +0100</pubDate>
+			<guid>Sun25Jul1010:58:42+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sun, 25 Jul 10 10:58:42 +0100</pubDate>
+			<guid>Sun25Jul1010:58:42+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created.</title>
+			<description>test_dojo Dojo was created.</description>
+			<pubDate>Sun, 25 Jul 10 10:58:42 +0100</pubDate>
+			<guid>Sun25Jul1010:58:42+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 25 Jul 10 10:58:42 +0100</pubDate>
+			<guid>Sun25Jul1010:58:42+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sun, 25 Jul 10 10:58:41 +0100</pubDate>
+			<guid>Sun25Jul1010:58:41+0100</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created.</title>
+			<description>test_dojo Dojo was created.</description>
+			<pubDate>Sun, 25 Jul 10 10:58:41 +0100</pubDate>
+			<guid>Sun25Jul1010:58:41+0100</guid>
+    </item>
+	       
+	       <item>
 			<title>Northglenn Judo Dojo was updated</title>
 			<description>Northglenn Judo Dojo was updated</description>
 			<pubDate>Sun, 25 Jul 10 10:43:09 +0100</pubDate>
 			<guid>Sun25Jul1010:43:09+0100</guid>
     </item>
-    
+	       
 	       <item>
 			<title>Northglenn Judo Dojo was updated</title>
 			<description>Northglenn Judo Dojo was updated</description>
@@ -66,54 +150,5 @@
 			<description>testqqq Dojo was deleted</description>
 			<pubDate>Tue, 29 Jun 10 22:52:45 +0100</pubDate>
 			<guid>Tue29Jun1022:52:45+0100</guid>
-    </item>
-	       
-	       <item>
-			<title>testqqq Dojo was created.</title>
-			<description>testqqq Dojo was created.</description>
-			<pubDate>Tue, 29 Jun 10 22:50:54 +0100</pubDate>
-			<guid>Tue29Jun1022:50:54+0100</guid>
-    </item>
-	       
-	       <item>
-			<description>test101 Dojo was updated
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:15:44 +0100</pubDate>
-			<guid>Tue01Jun1015:15:44+0100</guid>
-    </item>
-	       
-	       <item>
-			<description> Dojo was updated
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:14:34 +0100</pubDate>
-			<guid>Tue01Jun1015:14:34+0100</guid>
-    </item>
-	       
-	       <item>
-			<description>test_add
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
-			<guid>Tue01Jun1015:13:38+0100</guid>
-    </item>
-	       
-	       <item>
-			<description>test_dojo Dojo was deleted
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
-			<guid>Tue01Jun1015:13:38+0100</guid>
-    </item>
-	       
-	       <item>
-			<description>test_dojo was created.
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
-			<guid>Tue01Jun1015:13:38+0100</guid>
-    </item>
-	       
-	       <item>
-			<description>test_add
-			</description>
-			<pubDate>Tue, 01 Jun 10 15:13:38 +0100</pubDate>
-			<guid>Tue01Jun1015:13:38+0100</guid>
     </item>
 	       </channel></rss>
