@@ -12,11 +12,10 @@
 
 <form method="post" action="" name="dojoform" enctype="multipart/form-data">
 <table>
-    <div id="mapstraction" style="float:right;"></div>
     <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
     <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID"></td></tr>
     <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName"></td></tr>
-    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="newAddress(this.form.DojoAddress.value);"></td></tr>
+    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value);"></td></tr>
     <tr><td><?php echo _("Training Sessions:"); ?></td><td>
             <input type="hidden" id="id" value="1">
             <div id="divTxt"></div>

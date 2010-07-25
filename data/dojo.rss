@@ -3,15 +3,29 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 18 Jul 10 14:13:30 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 25 Jul 10 10:43:09 +0100</lastBuildDate><generator>DojoList</generator>
 	
     <item>
+			<title>Northglenn Judo Dojo was updated</title>
+			<description>Northglenn Judo Dojo was updated</description>
+			<pubDate>Sun, 25 Jul 10 10:43:09 +0100</pubDate>
+			<guid>Sun25Jul1010:43:09+0100</guid>
+    </item>
+    
+	       <item>
+			<title>Northglenn Judo Dojo was updated</title>
+			<description>Northglenn Judo Dojo was updated</description>
+			<pubDate>Sun, 25 Jul 10 10:42:42 +0100</pubDate>
+			<guid>Sun25Jul1010:42:42+0100</guid>
+    </item>
+	       
+	       <item>
 			<title>test_add</title>
 			<description>test_add</description>
 			<pubDate>Sun, 18 Jul 10 14:13:30 +0100</pubDate>
 			<guid>Sun18Jul1014:13:30+0100</guid>
     </item>
-    
+	       
 	       <item>
 			<title>test_dojo Dojo was deleted</title>
 			<description>test_dojo Dojo was deleted</description>

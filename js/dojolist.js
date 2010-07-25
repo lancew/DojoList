@@ -1,23 +1,24 @@
+/*
 // Javascript functions used on the DojoList.org
 // by Lance Wicks. Last updated: 7 July 2010.
-
 // showAddress is from 0.6.0 and geolocates off the address and places a marker on the map
 // location: create dojo page
-// *** This is using maprstraction and needs correcting to work with 0.7.0 testing version
-  	
+// *** This is using maprstraction and needs correcting to work with 0.7.0 testing version 	
 // moveMarker updates the lat and long fields when the marker is dragged
 // location: create dojo page	
-  	function moveMarker(address) {
+*/
+
+function moveMarker(address) {
       var geocoder = null;
       geocoder = new GClientGeocoder();
 
       if (geocoder) {
-
+        
         geocoder.getLatLng(
           address,
           function(point) {
             if (!point) {
-              //alert(address + " not found");
+             // alert(address + " not found");
             } else {
 
 
@@ -25,23 +26,29 @@
             	sPoint = sPoint.replace('/\(/i', "");
             	sPoint = sPoint.replace('/\)/i', "");
             	sPoint = sPoint.replace('/ /i', "");
-
+                
+                sPoint = sPoint.replace("(", "");
+                sPoint = sPoint.replace(")", "");
             	coords = sPoint.split(',');
 
 			  	document.getElementById('long').value = coords[1];
 			  	document.getElementById('lat').value = coords[0];
 			  	
-			  				  	
-                });
+			  	var centrePoint = new GLatLng(coords[0], coords[1]);
+			  	marker.setPoint(centrePoint);
+	            map.setCenter(centrePoint, 14);
+			  			  	
+                }
 
 
               
 
             }
-          }
+          
         );
+        
       }
-    }
+}
 
 
 
