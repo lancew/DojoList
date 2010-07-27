@@ -80,6 +80,7 @@ function Admin_create()
 function Admin_Create_add()
 {
 
+	if(Validate_form($_POST)){
 	$resp = recaptcha_check_answer (option('recaptcha_private_key'),
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
@@ -97,6 +98,9 @@ function Admin_Create_add()
 		// set the error code so that we can display it
 		halt('Failed to add new Dojo: '.$resp->error);
 
+	}
+	} else {
+	   halt('Data failed to validate, please try again, click back button');
 	}
 
 }
@@ -142,6 +146,7 @@ function Admin_editform()
  */
 function Admin_Editform_end()
 {
+	if(Validate_form($_POST)){
 	$resp = recaptcha_check_answer (option('recaptcha_private_key'),
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
@@ -240,6 +245,9 @@ function Admin_Editform_end()
 		// set the error code so that we can display it
 		halt('Failed to edit Dojo: '.$resp->error);
 
+	}
+	} else {
+	   halt('Failed to validate');
 	}
 }
 
