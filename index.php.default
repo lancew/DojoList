@@ -19,17 +19,13 @@
 // ============ 
 
 
-// ==============================================
-//  * This file needs to be renamed to index.php
-// ==============================================
-
 
 
 // Specify location of translation tables 
-bindtextdomain ("messages", "./locale"); 
+//bindtextdomain ("messages", "./locale"); 
 
 // Choose domain 
-textdomain ("messages");
+//textdomain ("messages");
 
 
 require_once 'lib/limonade.php';
@@ -40,17 +36,10 @@ function configure()
 {
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
-	option('version', '0.6.0'); #DojoList version.
-	
-	// The following three options need filling in for the system to work.
-	// 1. Obtain a gogle Maps API key from: http://code.google.com/apis/maps/signup.html
-	// 2. Obtain public and private reCaptcha keys from: https://admin.recaptcha.net/recaptcha/createsite/ 
-	
+	option('version', '0.7.0'); #DojoList version.
 	option('GoogleKey','');
-	option('recaptcha_public_key',			 '');
-	option('recaptcha_private_key',			 '');
 	
-	
+
 	
 	option('limonade_dir',       file_path('lib'));
   	option('limonade_views_dir', file_path('lib', 'limonade', 'views'));
@@ -65,9 +54,14 @@ function configure()
 	option('images_dir',		 file_path('images'));
 	option('data_dir',		     file_path('data'));
 	
-
+	option('site_url',			 'http://'.$_SERVER['SERVER_NAME']);
+	
+	option('recaptcha_public_key',			 '');
+	option('recaptcha_private_key',			 '');
 	
 	option('password',			 'passw0rd');
+	
+	
 }
 
 
@@ -75,6 +69,7 @@ function configure()
  
 
 layout('default_layout.php');
+
 
 
 // main controller
@@ -96,30 +91,13 @@ dispatch_post  ('/dojo/:dojo/edit', 'Admin_Editform_end');
 
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
+dispatch_get   ('/admin/importjwm',   'Admin_importjwm');
+dispatch_get   ('/admin/sortxml',   'Admin_Sort_xml');
 
 dispatch	   ('/dojo/:dojo/image', 'DojoLogo');
 
-// depreciated paths
 
 dispatch_get   ('/html',           'Html_list');
-
-// Only used if importing JudoWorldMap.com data
-//dispatch_get   ('/admin/importjwm',   'Admin_importjwm');
-
-//dispatch_get   ('/admin/edit',   'Admin_edit');
-//dispatch	   ('/admin/edit/:dojo', 'Admin_editform');
-//dispatch_post  ('/admin/edit/:dojo', 'Admin_Editform_end');
-
-//dispatch	   ('/view/:dojo',          'View');
-
-
-
-
-
-
-
-
-
 
 
 
