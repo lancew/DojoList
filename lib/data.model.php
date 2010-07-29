@@ -137,13 +137,13 @@ function validate_field($data, $type)
             if(ereg('[^A-Za-z ]',$data)) {return 1;}
             break;
         case "DojoAddress":
-            if(ereg('[^A-Za-z0-9 ]',$data)) {return 1;}
+            if(ereg('[^A-Za-z0-9,. ]',$data)) {return 1;}
             break;
         case "ContactName":
             if(ereg('[^A-Za-z ]',$data)) {return 1;}
             break;
         case "ContactPhone":
-            if(ereg('[^0-9()]',$data)) {return 1;}
+            if(ereg('[^0-9() ]',$data)) {return 1;}
             break;    
         
         default:

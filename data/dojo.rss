@@ -3,15 +3,29 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 25 Jul 10 11:01:21 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 27 Jul 10 21:29:18 +0100</lastBuildDate><generator>DojoList</generator>
 	
     <item>
+			<title>lwtest%20test Dojo was deleted</title>
+			<description>lwtest%20test Dojo was deleted</description>
+			<pubDate>Tue, 27 Jul 10 21:29:18 +0100</pubDate>
+			<guid>Tue27Jul1021:29:18+0100</guid>
+    </item>
+    
+	       <item>
+			<title>lwtest test Dojo was created.</title>
+			<description>lwtest test Dojo was created.</description>
+			<pubDate>Tue, 27 Jul 10 21:29:03 +0100</pubDate>
+			<guid>Tue27Jul1021:29:03+0100</guid>
+    </item>
+	       
+	       <item>
 			<title>test_add</title>
 			<description>test_add</description>
 			<pubDate>Sun, 25 Jul 10 11:01:21 +0100</pubDate>
 			<guid>Sun25Jul1011:01:21+0100</guid>
     </item>
-    
+	       
 	       <item>
 			<title>test_dojo Dojo was deleted</title>
 			<description>test_dojo Dojo was deleted</description>
