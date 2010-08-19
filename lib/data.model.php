@@ -182,7 +182,7 @@ function Validate_form($_POST = null)
                 }
             }
         if($value){
-                $result = validate_field($value,$field);
+               // $result = validate_field($value,$field);
               //  echo  $field.": ".$result;
                 $error_count = $error_count + $result;
               //  echo "COUNT: $error_count<br>";

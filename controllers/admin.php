@@ -407,11 +407,11 @@ function Admin_importBJA()
 
 	$bja_url = 'http://www.britishjudo.org.uk/thesport/findclubresults.php';
 	$select_field_name = 'hidRegion';
-	/*
+	
 	$aAreas = array('ARMY','BJA IN SCHOOLS','BRISTOL CITY','BUCKS, BERKS AND OXON','CAMBRIDGESHIRE/PETERBOROU','DEVON AND CORNWALL','DORSET AND GLOS.','EAST MIDLANDS','EASTERN','ENJOY JUDO','ESSEX','GUERNSEY','HAMPSHIRE','HERTS AND BEDS','JERSEY','KENT','LANCASHIRE','LONDON','MIDDLESEX','MISCELLANEOUS','NORTHERN','NORTHERN IRELAND','NORTHWEST','SCOTLAND','SOMERSET AND WILTSHIRE','SURREY','SUSSEX','WALES','WEST MIDLANDS','WESTERN','YORKSHIRE AND HUMBERSIDE');
 	
 	foreach($aAreas as $area){
-	*/
+	
 	echo $area.'<br>';
 	$field = 'hidRegion=NORTHERN';
 	
@@ -489,6 +489,7 @@ function Admin_importBJA()
 			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $club_url, 'DojoAddress' => $address, 'URL' => 'http://www.britishjudo.org.uk/thesport/findclubresults.php', 'ContactPhone' => $phone, 'ContactName' => $contact, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng );
 			//print_r($dojo_array);
 			Create_dojo($dojo_array);
+			echo '<br>';
 		} else {
 			echo ".";
 		}
@@ -503,7 +504,8 @@ function Admin_importBJA()
 	admin_create_kml();
     unlink('data/bja.txt');
 
-//}
+}
+
 
 
 
