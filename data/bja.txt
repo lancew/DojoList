@@ -1,0 +1,526 @@
+<html><!-- InstanceBegin template="/Templates/ContentPage.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" --> 
+<title>British Judo Association </title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../includes/styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="Javascript" src="../includes/functions.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="../includes/ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "submenuheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["suffix", "<img src='../images/plus.gif' class='statusicon' />", "<img src='../images/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+
+<style type="text/css">
+
+.glossymenu{
+margin: 5px 0;
+padding: 0;
+width: 150px; /*width of menu*/
+border: 1px solid #9A9A9A;
+border-bottom-width: 0;
+}
+
+.glossymenu a.menuitem{
+background: black url(../images/glossyback.gif) repeat-x bottom left;
+font: bold 12px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 4px 0;
+padding-left: 10px;
+text-decoration: none;
+}
+
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+color: white;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none;
+}
+
+.glossymenu a.menuitem:hover{
+background-image: url(../images/glossyback2.gif);
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+border-bottom: 1px solid blue;
+}
+
+.glossymenu div.submenu ul li a{
+display: block;
+font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: black;
+text-decoration: none;
+padding: 2px 0;
+padding-left: 10px;
+}
+
+.glossymenu div.submenu ul li a:hover{
+background: #DFDCCB;
+colorz: white;
+}
+
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<script>
+<!--
+
+function refresh() {
+	document.forms[0].action="findclubresults.php";
+	document.forms[0].method="post";
+	document.forms[0].submit();
+}
+
+function selectPreviousValue(lstDropdown,strValue) {
+	var listbox = document.forms[0].elements[lstDropdown]
+
+	for(i = 0;i<listbox.length;i++){
+		if (listbox.options[i].value == strValue) {
+			listbox.options[i].selected = true;
+		}
+	}
+}
+//-->
+</script>
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form>
+  <table width="780" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr> 
+		<td height="120" colspan="2" valign="top"> <table width="780" height="120" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="99"><img src="/images/bja_banner.jpg" width="780" height="99"></td>
+  </tr>
+  <tr> 
+    <td height="2"><img src="/images/blank.gif" width="780" height="2"></td>
+  </tr>
+  <tr> 
+    <td height="19" align="right" background="/images/backgrounds/bg_blue.jpg">
+	<a href="/home/search.php" class="whitebold">Search</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/home/sitemap.php" class="whitebold">Sitemap</a>&nbsp;&nbsp;&nbsp;&nbsp;  
+      <a href="/home/feedback.php" class="whitebold">Feedback</a>&nbsp;</td>
+  </tr>
+</table>
+</td>          
+    </tr>
+    <tr> 
+      <td width="150" valign="top" bgcolor="#F1F1F1"> 
+        <div class="glossymenu">
+<a class="menuitem" href="/home/index.php">Home</a>
+<a class="menuitem submenuheader" href="" >The Sport</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/thesport/history.php">The Sport</a></li>
+	<li><a href="/thesport/value.php">The Value of Judo</a></li>
+	<li><a href="/thesport/how.php">How do I start?</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="">Executive</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/executive/aboutus.php">About Us</a></li>
+	<li><a href="/executive/AGMInformation.php">AGM Information</a></li>
+	<li><a href="/executive/history.php">British Judo History</a></li>
+	<li><a href="/executive/board.php">Board of Directors</a></li>
+	<li><a href="/executive/commissions.php">Commissions</a></li>
+	<li><a href="/executive/staff.php">Staff</a></li>
+	<li><a href="/executive/policydocs.php">Policy Documents</a></li>
+	<li><a href="/executive/facilities.php">Corporate Facilities</a></li>
+	<li><a href="/executive/annualaccounts.php">Annual Accounts</a></li>
+	<li><a href="/executive/area_contacts.php">Area Contacts</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="">Policy &amp; Guidelines</a>
+<div class="submenu">
+	<a class="menuitem" href="">Conduct and Complaints</a>
+	<ul>
+	<li><a href="/policy/conduct/panelmembers.php">Panel Members</a></li>
+	<li><a href="/policy/conduct/policiesprocedures.php">Policy</a></li>
+	</ul>
+	<a class="menuitem" href="">Child Protection</a>
+	<ul>
+	<li><a href="/policy/childprotection/policy.php">Working Party</a></li>
+	<li><a href="/policy/childprotection/procedures.php">Policy and Procedures</a></li>
+	<li><a href="/policy/childprotection/report_concerns.php">Concerns</a></li>
+	</ul>
+	<a class="menuitem" href="">Doping Guidelines</a>
+	<ul>
+	<li><a href="/policy/doping/guidelines.php">Policy</a></li>
+	<li><a href="http://www.ukad.org.uk">UKAD</a></li>
+	<li><a href="http://www.wada-ama.org/en/">WADA</a></li>
+	</ul>
+	<a class="menuitem" href="/policy/equity_policy.php">Equity Policy</a>
+
+</div>
+<a class="menuitem submenuheader" href="">Membership</a>
+<div class="submenu">
+	<ul><li><a href="/membership/individual_2010.php">Individual</a></li>
+	<li><a href="/membership/club.php">Club</a></li>
+	<li><a href="/membership/insurance.php">Insurance</a></li>
+	</ul>
+</div>
+<a class="menuitem" href="/development/developmenthome.php" style="border-bottom-width: 0">Development</a>		
+<a class="menuitem" href="/commercial/commercial.php" style="border-bottom-width: 0">Commercial</a>
+<a class="menuitem submenuheader" href="">Communications</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/beijing/index.php">Beijing 2008</a></li>
+	<li><a href="/athens/index.php">Athens 2004</a></li>
+	<li><a href="/communications/annualreport.php">Annual Reports</a></li>
+	<li><a href="/communications/annualaccounts.php">Annual Accounts</a></li>
+	<li><a href="/communications/ceo_report.php">Reports to AGM's</a></li>
+	<li><a href="/home/matside2.php">Matside</a></li>
+	<li><a href="/communications/notices.php">BJA Notices</a></li>
+	<li><a href="/communications/clubnews.php">Club News</a></li>
+	<li><a href="/communications/previousnews.php">Previous News Items</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="">Media Centre</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/media/press_office.php">Media Contacts</a></li>
+	<li><a href="/media/release.php">Press Releases</a></li>
+	<li><a href="/media/profiles.php">Player Profiles</a></li>
+	<li><a href="/media/photo_library.php">Photo Library</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="">Competitions</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/competitions/general.php">General</a></li>
+	<li><a href="/competitions/guidancedocs.php">Guidance Documents</a></li>
+	<!--<li><a href="/home/2008worldcup.php">GB World Cup</a></li>-->
+	<!--<li><a href="/competitions/britishopen.php">British Open</a></li>-->
+	<!--<li><a href="/competitions/britishclosed.php">British Closed</a></li>-->
+	<li><a href="/competitions/results.php">International Results</a></li>
+	<li><a href="/competitions/results.php">Domestic Results</a></li>
+	<li><a href="/home/calendar.php">Calendar of Events</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="">High Performance</a>
+<div class="submenu">
+	<ul>
+	<!--<li><a href="/highperformance/staff.php">Contacts</a></li>-->
+	<li><a href="/highperformance/start_home.php">England Squad</a></li>
+	<li><a href="/highperformance/">Performance</a></li>
+	<!--<li><a href="/home/HoldingPage.php">Centres of Excellence</a></li>-->
+	<!--<li><a href="/highperformance/masters_home.php">Masters Squad</a></li>-->
+	</ul>
+</div>
+<a class="menuitem" href="/technical/technical_home.php" style="border-bottom-width: 0">Technical</a>		
+<a class="menuitem" href="/home/vacancies.php" style="border-bottom-width: 0">Vacancies</a>
+<a class="menuitem" href="/membersarea/login.php" style="border-bottom-width: 0">Members Area</a>
+</div>
+	<table><tr><td><img src="/images/blank.gif" width="150" height="20" border="0" alt=""></td></tr>
+	<tr><td><a href="/tootherpage.php?to=3"><img src="/images/BJAVI.png" width="150" border="0" height="100" alt="Click here to view the British Judo Visually Impaired Information" title="Click here to view the British Judo Visually Impaired Information"></a></td></tr>
+	<tr><td><img src="/images/blank.gif" width="150" height="20" border="0" alt=""></td></tr>
+	<tr><td><a href="http://www.britishjudo.org.uk/membership/JudoDiary.php"><img src="/images/buttons/JudoDiary.png" border="0" alt="Judo Diary" title="Judo Diary"></a></td></tr>
+	<tr><td><img src="/images/blank.gif" width="150" height="20" border="0" alt=""></td></tr>
+	<tr><td><a href="/sales2/shop.php"><img src="/images/buttons/img_merchandise.jpg" width="150" border="0" height="100" alt="Click here to view and buy British Judo Merchandise"></a></td></tr>
+	<tr><td><img src="/images/blank.gif" width="150" height="20" border="0" alt=""></td></tr>
+	<tr><td><a href="/tootherpage.php?to=1" target="_new"><img src="/images/buttons/backnumberAD.png" width="150" border="0" height="100" alt="Click here to view"></a></td></tr>
+	<tr><td><img src="/images/blank.gif" width="150" height="20" border="0" alt=""></td></tr>
+	<tr><td><a href="/tootherpage.php?to=2" target="_new"><img src="/images/buttons/img_ejutv_button.jpg" width="150" border="0" height="100" alt="Click here to view"></a></td></tr>
+	</table>      </td>
+      <td width="630" valign="top">  
+        <table width="100%" border="0" cellpadding="0" cellspacing="10">
+          <tr> 
+            <td valign="top"><!-- InstanceBeginEditable name="HeadingImage" --><img src="/images/headings/hd_find_a_club.gif" width="102" height="22"><!-- InstanceEndEditable --></td>
+          </tr>
+          <tr> 
+            <td valign="top"><!-- InstanceBeginEditable name="PageContent" --> 
+              <p><select name="hidRegion" onChange="Javascript:refresh();"><option value="ARMY">ARMY</option><option value="BJA IN SCHOOLS">BJA IN SCHOOLS</option><option value="BRISTOL CITY">BRISTOL CITY</option><option value="BUCKS, BERKS AND OXON">BUCKS, BERKS AND OXON</option><option value="CAMBRIDGESHIRE/PETERBOROU">CAMBRIDGESHIRE/PETERBOROU</option><option value="DEVON AND CORNWALL">DEVON AND CORNWALL</option><option value="DORSET AND GLOS.">DORSET AND GLOS.</option><option value="EAST MIDLANDS">EAST MIDLANDS</option><option value="EASTERN">EASTERN</option><option value="ENJOY JUDO">ENJOY JUDO</option><option value="ESSEX">ESSEX</option><option value="GUERNSEY">GUERNSEY</option><option value="HAMPSHIRE">HAMPSHIRE</option><option value="HERTS AND BEDS">HERTS AND BEDS</option><option value="JERSEY">JERSEY</option><option value="KENT">KENT</option><option value="LANCASHIRE">LANCASHIRE</option><option value="LONDON">LONDON</option><option value="MIDDLESEX">MIDDLESEX</option><option value="MISCELLANEOUS">MISCELLANEOUS</option><option value="NORTHERN">NORTHERN</option><option value="NORTHERN IRELAND">NORTHERN IRELAND</option><option value="NORTHWEST">NORTHWEST</option><option value="SCOTLAND">SCOTLAND</option><option value="SOMERSET AND WILTSHIRE">SOMERSET AND WILTSHIRE</option><option value="SURREY">SURREY</option><option value="SUSSEX">SUSSEX</option><option value="WALES">WALES</option><option value="WEST MIDLANDS">WEST MIDLANDS</option><option value="WESTERN">WESTERN</option><option value="YORKSHIRE AND HUMBERSIDE">YORKSHIRE AND HUMBERSIDE</option></select>&nbsp;<a href="findclub.php">Back to map</a></p><script>selectPreviousValue('hidRegion','MIDDLESEX');</script><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#f1f1f1" colspan="3"><strong>BRUNEL UNIVERSITY JUDO CLUB</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#f1f1f1"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#f1f1f1">BRUNEL SPORTS CENTRE, UXBRIDGE, MIDDX - UB8 3PH</td>
+						<td width="20%" bgcolor="#f1f1f1" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#f1f1f1">9 - 11 Monday 21:00 - 23:00<br>Women - 2 Monday 21:00 - 23:00<br>Men - 8 Monday 21:00 - 23:00</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Phone:</strong></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Contact name:</strong></td>
+						<td bgcolor="#f1f1f1">OMAR ANAZ</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Email:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="mailto:chairman@bruneljudo.com">chairman@bruneljudo.com</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Website:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="http://www.bruneljudo.com">http://www.bruneljudo.com</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#ffffff" colspan="3"><strong>DK-JUDO</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#ffffff"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#ffffff">PANTHERS, PACKET BOAT LANE - UB8 2JP</td>
+						<td width="20%" bgcolor="#ffffff" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#ffffff">Men & Women Tuesday& Thursday 20:30 - 22:00<br>Boys & Girls Monday& Wednesday 19:00 - 20:30</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Phone:</strong></td>
+						<td bgcolor="#ffffff">07769 653422</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Contact name:</strong></td>
+						<td bgcolor="#ffffff">IAN MORGAN</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Email:</strong></td>
+						<td bgcolor="#ffffff"><a href="mailto:ianscotmorgan@hotmail.com">ianscotmorgan@hotmail.com</a></td>
+						<td bgcolor="#ffffff"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#f1f1f1" colspan="3"><strong>HAREFIELD JUDO CLUB</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#f1f1f1"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#f1f1f1">HAREFIELD COMMUNITY CENTRE, HAREFIELD - UB9 6AP</td>
+						<td width="20%" bgcolor="#f1f1f1" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#f1f1f1">Juniors Wednesday 18:30 - 19:45<br>Juniors Monday 19:00 - 20:30<br>Adults Monday 20:30 - 22:00</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Phone:</strong></td>
+						<td bgcolor="#f1f1f1">01895 823494</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Contact name:</strong></td>
+						<td bgcolor="#f1f1f1">COLIN DACRE</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Email:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="mailto:colindacre@hotmail.com">colindacre@hotmail.com</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#ffffff" colspan="3"><strong>KYU SHIN RYU JUDO CLUB</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#ffffff"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#ffffff">HAYES RUGBY CLUB, NORTHOLT - UB4 8DD</td>
+						<td width="20%" bgcolor="#ffffff" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#ffffff">Boys & Girls Tuesday 19:00 - 20:00</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Phone:</strong></td>
+						<td bgcolor="#ffffff">07984 013210</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Contact name:</strong></td>
+						<td bgcolor="#ffffff">ERIC CRANSTON</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Email:</strong></td>
+						<td bgcolor="#ffffff"><a href="mailto:ericcranston@hotmail.com">ericcranston@hotmail.com</a></td>
+						<td bgcolor="#ffffff"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#f1f1f1" colspan="3"><strong>ORLEY FARM SCHOOL JUDO CLUB</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#f1f1f1"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#f1f1f1">ORLEY FARM SCHOOL, HARROW ON THE HILL, MIDDX - HA1 3NU</td>
+						<td width="20%" bgcolor="#f1f1f1" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#f1f1f1">Boys & Girls Under 8 Thursday 16:00 - 17:00<br>Boys & Girls Over 8 Thursday 17:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Phone:</strong></td>
+						<td bgcolor="#f1f1f1">0208 302 0553</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Contact name:</strong></td>
+						<td bgcolor="#f1f1f1">MIKE SMITH</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Email:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="mailto:mikesmithjudo@hotmail.co.uk">mikesmithjudo@hotmail.co.uk</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#ffffff" colspan="3"><strong>SHIN CHI JUDOKWAI</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#ffffff"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#ffffff">WEST LONDON ACADEMY, NORTHOLT, MIDDLESEX - UB5 5LQ</td>
+						<td width="20%" bgcolor="#ffffff" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#ffffff">Men & Women Monday 20:30 - 22:00<br>Boys & Girls Monday 19:30 - 20:30</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Phone:</strong></td>
+						<td bgcolor="#ffffff">020 8845 5923</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Contact name:</strong></td>
+						<td bgcolor="#ffffff">JOHN MORRIS</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Email:</strong></td>
+						<td bgcolor="#ffffff"><a href="mailto:morrisjs@gmail.com">morrisjs@gmail.com</a></td>
+						<td bgcolor="#ffffff"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff"><strong>Website:</strong></td>
+						<td bgcolor="#ffffff"><a href="http://www.shinchijudo.org.uk/">http://www.shinchijudo.org.uk/</a></td>
+						<td bgcolor="#ffffff"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr><tr><td>
+
+					<table cellpadding="5" cellspacing="0" width="100%">
+						<tr>
+						<td bgcolor="#f1f1f1" colspan="3"><strong>WILLOW-HEART JUDO CLUB</strong></td>
+					</tr>
+					<tr>
+						<td width="20%" bgcolor="#f1f1f1"><strong>Location:</strong></td>
+						<td width="60%" bgcolor="#f1f1f1">HILLINGDON SPTS & LEISURE CPLX, UXBRIDGE - UB8 1ES</td>
+						<td width="20%" bgcolor="#f1f1f1" rowspan="4" valign="top" align="center"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1" valign="top"><strong>Training times:</strong></td>
+						<td bgcolor="#f1f1f1">Juniors (9-13 Years) Friday 19:30 - 20:45<br>Seniors (14+ years) Friday 20:45 - 22:00<br>Primary (5-8 Years) Friday 18:30 - 19:30</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Phone:</strong></td>
+						<td bgcolor="#f1f1f1">07811 307 333</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Contact name:</strong></td>
+						<td bgcolor="#f1f1f1">ANDY COLDWELL</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Email:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="mailto:join@willowheartjudoclub.com">join@willowheartjudoclub.com</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#f1f1f1"><strong>Website:</strong></td>
+						<td bgcolor="#f1f1f1"><a href="http://www.willowheartjudoclub.com">http://www.willowheartjudoclub.com</a></td>
+						<td bgcolor="#f1f1f1"></td>
+					</tr></table>
+					
+					</td></tr>
+					<tr><td bgcolor="#010F70"><img src="/images/blank.gif" height="1" wdith="100"></td></tr></table>              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table>
+        </td>
+    </tr>
+	 <tr>
+      <td valign="top" bgcolor="#f1f1f1" height="7"></td>
+      <td align="center" class="copy" height="7"><div align="left"><img src="/images/backgrounds/dark_grey.gif" width="600" height="1"><br>
+          &copy;&nbsp;British Judo Association 2003. &nbsp;&nbsp;Email all comments 
+          to <a href="mailto:webmaster@britishjudo.org.uk">webmaster@britishjudo.org.uk</a>|<a href="../home/terms_and_conditions.php">terms 
+          and conditions</a>|<a href="../home/privacy_policy.php">Privacy Policy</a> 
+        </div></td>
+    </tr>
+  </table>
+</form>
+</body>
+<!-- InstanceEnd --></html>
