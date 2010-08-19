@@ -407,12 +407,13 @@ function Admin_importBJA()
 
 	$bja_url = 'http://www.britishjudo.org.uk/thesport/findclubresults.php';
 	$select_field_name = 'hidRegion';
+	/*
 	$aAreas = array('ARMY','BJA IN SCHOOLS','BRISTOL CITY','BUCKS, BERKS AND OXON','CAMBRIDGESHIRE/PETERBOROU','DEVON AND CORNWALL','DORSET AND GLOS.','EAST MIDLANDS','EASTERN','ENJOY JUDO','ESSEX','GUERNSEY','HAMPSHIRE','HERTS AND BEDS','JERSEY','KENT','LANCASHIRE','LONDON','MIDDLESEX','MISCELLANEOUS','NORTHERN','NORTHERN IRELAND','NORTHWEST','SCOTLAND','SOMERSET AND WILTSHIRE','SURREY','SUSSEX','WALES','WEST MIDLANDS','WESTERN','YORKSHIRE AND HUMBERSIDE');
 	
 	foreach($aAreas as $area){
-	
+	*/
 	echo $area.'<br>';
-	$field = 'hidRegion='.$area;
+	$field = 'hidRegion=NORTHERN';
 	
 	$ch = curl_init($bja_url);
 	$fp = fopen("data/bja.txt", "w");
@@ -429,15 +430,12 @@ function Admin_importBJA()
 	$data_array = explode('<table ', $data);
 	$dojo_count = count($data_array);
 	
-
-
-
 	for ($i = 2; $i <= $dojo_count; $i++) {
 		$d = $data_array[$i];
 
 		//grab the data from the tables
 		$name = strip_tags(stripslashes(get_string_between($d, 'colspan="3"><strong>', '</strong>')));
-		$url = get_string_between($d, '><a href="http://', '">http:');
+		$club_url = get_string_between($d, '><a href="http://', '">http:');
 		$address = trim(get_string_between($d, 'Location:</strong></td>', '</td>'));
 		$phone = trim(get_string_between($d, 'Phone:</strong></td>', '</td>'));
 		$contact = trim(get_string_between($d, 'Contact name:</strong></td>', '</td>'));
@@ -449,8 +447,6 @@ function Admin_importBJA()
 		$name = str_replace("\\", '', $name);
 		$name = str_replace("\"", '', $name);
 		$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
-
-
 
 		//Set up our variables
 		$longitude = "";
@@ -477,7 +473,7 @@ function Admin_importBJA()
 
 
 		//print_r($data);
-		$point = $url = get_string_between($data, 'coordinates": [', ']');
+		$point = get_string_between($data, 'coordinates": [', ']');
 		$latlong = explode(',', $point);
 		$lat = $latlong[1];
 		$lng = $latlong[0];
@@ -490,7 +486,7 @@ function Admin_importBJA()
 		if (!$dojo && $name) {
 			echo "NEW:";
 
-			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $url, 'DojoAddress' => $address, 'URL' => 'http://www.britishjudo.org.uk/thesport/findclubresults.php', 'ContactPhone' => $phone, 'ContactName' => $contact, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng );
+			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $club_url, 'DojoAddress' => $address, 'URL' => 'http://www.britishjudo.org.uk/thesport/findclubresults.php', 'ContactPhone' => $phone, 'ContactName' => $contact, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng );
 			//print_r($dojo_array);
 			Create_dojo($dojo_array);
 		} else {
@@ -507,7 +503,7 @@ function Admin_importBJA()
 	admin_create_kml();
     unlink('data/bja.txt');
 
-}
+//}
 
 
 
