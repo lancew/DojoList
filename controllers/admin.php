@@ -235,7 +235,8 @@ function Admin_Editform_end()
 			admin_create_kml();
 			set('DojoName', $DojoName);
 
-			$description = $dojo->DojoName.' Dojo was updated';
+            $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
+			$description = $DojoName.' Dojo was updated. <a href="'.$source_url.'">'.$DojoName.'</a>';
 			$rss_array = array('description' => $description);
 			Add_rss_item($rss_array);
 
