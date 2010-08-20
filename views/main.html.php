@@ -30,7 +30,7 @@
       
     </script> 
 	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 
-	<a href="<?php echo option('data_dir') ?>/dojo.xml">XML</a>
+	<a href="<?php echo option('data_dir') ?>/dojo.xml" rel="nofollow">XML</a>
 	 -> <?php echo Count_dojo(); ?> <?php echo _("Dojo listed on this site and in these files."); ?>
 	</p>
 	
