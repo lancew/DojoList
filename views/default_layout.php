@@ -17,6 +17,7 @@ putenv ("LC_ALL=en");
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name="google-site-verification" content="xPYxa4szc5Gz0vLN9CjpuyFNNTqCD36Rggk-ZerYrGY" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 <!-- ======================================================================= -->
@@ -69,6 +70,8 @@ putenv ("LC_ALL=en");
 				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
 				
 				<li><a href="DojoList-060.zip"><?php echo _("Download"); ?></a></li>
+				
+				<li><a href="<?=url_for('/about')?>"><?php echo _("About"); ?></a></li>
 
 
 				

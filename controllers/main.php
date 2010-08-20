@@ -28,6 +28,12 @@ function Main_page()
     return html('main.html.php');
 }
 
+
+function About_page() 
+{
+    return html('about.html.php');
+}
+
 /**
  * Html_list - Displays all the Dojo in a HTML page
  *

@@ -405,104 +405,87 @@ function Admin_importjwm()
 function Admin_importBJA()
 {
 
+	set_time_limit(0);
 	$bja_url = 'http://www.britishjudo.org.uk/thesport/findclubresults.php';
 	$select_field_name = 'hidRegion';
-	
-	$aAreas = array('ARMY','BJA IN SCHOOLS','BRISTOL CITY','BUCKS, BERKS AND OXON','CAMBRIDGESHIRE/PETERBOROU','DEVON AND CORNWALL','DORSET AND GLOS.','EAST MIDLANDS','EASTERN','ENJOY JUDO','ESSEX','GUERNSEY','HAMPSHIRE','HERTS AND BEDS','JERSEY','KENT','LANCASHIRE','LONDON','MIDDLESEX','MISCELLANEOUS','NORTHERN','NORTHERN IRELAND','NORTHWEST','SCOTLAND','SOMERSET AND WILTSHIRE','SURREY','SUSSEX','WALES','WEST MIDLANDS','WESTERN','YORKSHIRE AND HUMBERSIDE');
-	
-	foreach($aAreas as $area){
-	
-	echo $area.'<br>';
-	$field = 'hidRegion=NORTHERN';
-	
-	$ch = curl_init($bja_url);
-	$fp = fopen("data/bja.txt", "w");
+	$aAreas = array('ARMY', 'BJA IN SCHOOLS', 'BRISTOL CITY', 'BUCKS, BERKS AND OXON', 'CAMBRIDGESHIRE/PETERBOROU', 'DEVON AND CORNWALL', 'DORSET AND GLOS.', 'EAST MIDLANDS', 'EASTERN', 'ENJOY JUDO', 'ESSEX', 'GUERNSEY', 'HAMPSHIRE', 'HERTS AND BEDS', 'JERSEY', 'KENT', 'LANCASHIRE', 'LONDON', 'MIDDLESEX', 'MISCELLANEOUS', 'NORTHERN', 'NORTHERN IRELAND', 'NORTHWEST', 'SCOTLAND', 'SOMERSET AND WILTSHIRE', 'SURREY', 'SUSSEX', 'WALES', 'WEST MIDLANDS', 'WESTERN', 'YORKSHIRE AND HUMBERSIDE');
 
-	curl_setopt($ch, CURLOPT_FILE, $fp);
-	curl_setopt($ch, CURLOPT_HEADER, 0);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $field);
-	curl_exec($ch);
-	curl_close($ch);
-	fclose($fp);
-    
-	$raw_data = file_get_contents('data/bja.txt');
-	$data = get_string_between($raw_data, '<!-- InstanceBeginEditable name="PageContent" -->', '<!-- InstanceEndEditable --></td>');
-	$data_array = explode('<table ', $data);
-	$dojo_count = count($data_array);
-	
-	for ($i = 2; $i <= $dojo_count; $i++) {
-		$d = $data_array[$i];
+	foreach ($aAreas as $area) {
 
-		//grab the data from the tables
-		$name = strip_tags(stripslashes(get_string_between($d, 'colspan="3"><strong>', '</strong>')));
-		$club_url = get_string_between($d, '><a href="http://', '">http:');
-		$address = trim(get_string_between($d, 'Location:</strong></td>', '</td>'));
-		$phone = trim(get_string_between($d, 'Phone:</strong></td>', '</td>'));
-		$contact = trim(get_string_between($d, 'Contact name:</strong></td>', '</td>'));
-		$email = get_string_between($d, '<a href="mailto:', '">');
+		echo $area.'<br>';
+		$field = 'hidRegion=';
 
-		// c;lean up the name
-		$name = str_replace('&', ' and ', $name);
-		$name = str_replace("'", '', $name);
-		$name = str_replace("\\", '', $name);
-		$name = str_replace("\"", '', $name);
-		$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+		$ch = curl_init($bja_url);
+		$fp = fopen("data/bja.txt", "w");
 
-		//Set up our variables
-		$longitude = "";
-		$latitude = "";
-		$precision = "";
+		curl_setopt($ch, CURLOPT_FILE, $fp);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $field.$area);
+		curl_exec($ch);
+		curl_close($ch);
+		fclose($fp);
 
-		//Three parts to the querystring: q is address, output is the format (
-		$key = option('GoogleKey');
-		//echo $address;
-		$address2 = urlencode($address);
-		$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
-		//echo $url;
+		$raw_data = file_get_contents('data/bja.txt');
+		$data = get_string_between($raw_data, '<!-- InstanceBeginEditable name="PageContent" -->', '<!-- InstanceEndEditable --></td>');
+		$data_array = explode('<table ', $data);
+		$dojo_count = count($data_array);
 
-		$ch2 = curl_init();
+		for ($i = 2; $i <= $dojo_count; $i++) {
+			$d = $data_array[$i];
 
-		curl_setopt($ch2, CURLOPT_URL, $url);
-		curl_setopt($ch2, CURLOPT_HEADER, 0);
-		curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
-		curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			//grab the data from the tables
+			$name = strip_tags(stripslashes(get_string_between($d, 'colspan="3"><strong>', '</strong>')));
+			$club_url = get_string_between($d, '><a href="http://', '">http:');
+			$address = trim(get_string_between($d, 'Location:</strong></td>', '</td>'));
+			$phone = trim(get_string_between($d, 'Phone:</strong></td>', '</td>'));
+			$contact = trim(get_string_between($d, 'Contact name:</strong></td>', '</td>'));
+			$email = get_string_between($d, '<a href="mailto:', '">');
 
-		$data = curl_exec($ch2);
-		curl_close($ch2);
+			// c;lean up the name
+			$name = str_replace('&', ' and ', $name);
+			$name = str_replace("'", '', $name);
+			$name = str_replace("\\", '', $name);
+			$name = str_replace("\"", '', $name);
+			$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
 
+			//Set up our variables
+			$longitude = "";
+			$latitude = "";
+			$precision = "";
 
-		//print_r($data);
-		$point = get_string_between($data, 'coordinates": [', ']');
-		$latlong = explode(',', $point);
-		$lat = $latlong[1];
-		$lng = $latlong[0];
+			//Three parts to the querystring: q is address, output is the format (
+			$key = option('GoogleKey');
+			$address2 = urlencode($address);
+			$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+			$ch2 = curl_init();
+			curl_setopt($ch2, CURLOPT_URL, $url);
+			curl_setopt($ch2, CURLOPT_HEADER, 0);
+			curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+			curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			$data = curl_exec($ch2);
+			curl_close($ch2);
+			$point = get_string_between($data, 'coordinates": [', ']');
+			$latlong = explode(',', $point);
+			$lat = trim($latlong[1]);
+			$lng = trim($latlong[0]);
+			$dojo = Find_dojo($name);
 
-
-
-
-		$dojo = Find_dojo($name);
-
-		if (!$dojo && $name) {
-			echo "NEW:";
-
-			$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $club_url, 'DojoAddress' => $address, 'URL' => 'http://www.britishjudo.org.uk/thesport/findclubresults.php', 'ContactPhone' => $phone, 'ContactName' => $contact, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng );
-			//print_r($dojo_array);
-			Create_dojo($dojo_array);
-			echo '<br>';
-		} else {
-			echo ".";
+			if (!$dojo && $name) {
+				echo "NEW:";
+				$dojo_array = array('DojoName' => $name, 'ClubWebsite' => $club_url, 'DojoAddress' => $address, 'URL' => 'http://www.britishjudo.org.uk/thesport/findclubresults.php', 'ContactPhone' => $phone, 'ContactName' => $contact, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng, 'GUID' => guid() );
+				//print_r($dojo_array);
+				Create_dojo($dojo_array);
+				echo '<br>';
+			} else {
+				echo ".";
+			}
 		}
-
-
-
-
 	}
-}
 
 
 	admin_create_kml();
-    unlink('data/bja.txt');
+	unlink('data/bja.txt');
 
 }
 
