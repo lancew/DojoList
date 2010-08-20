@@ -157,7 +157,8 @@ function Delete_dojo($Dojoname)
     Creative Commons Attribution-Noncommercial-Share Alike 2.0
     UK: England &amp; Wales License</a>.
     Some data imported from www.judoworldmap.com by
-    Ulrich Wisser under a Creative Commons NC-SA License. -->';
+    Ulrich Wisser under a Creative Commons NC-SA License.
+    DojoList software version'.option('version').' -->';
 
 	foreach ($xml->Dojo as $dojo) {
 		if ($dojo->DojoName == $Dojoname) {
