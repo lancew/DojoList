@@ -1,4 +1,8 @@
-
+<script>
+  $(document).ready(function(){
+    $("#dojoform").validate();
+  });
+  </script>
 
 <script type="text/javascript">
     window.onload=dofo;
@@ -10,12 +14,12 @@
 
 <h1><?php echo _("Dojo Management System"); ?></h1>
 
-<form method="post" action="" name="dojoform" enctype="multipart/form-data">
+<form method="post" action="" name="dojoform" enctype="multipart/form-data" id="dojoform">
 <table>
-    <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName"></td></tr>
+    <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" class="required"></td></tr>
     <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID"></td></tr>
     <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName"></td></tr>
-    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value);"></td></tr>
+    <tr><td><?php echo _("* Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value);" class="required"></td></tr>
     <tr><td><?php echo _("Training Sessions:"); ?></td><td>
             <input type="hidden" id="id" value="1">
             <div id="divTxt"></div>
@@ -23,8 +27,8 @@
     </td></tr>
     <tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName"></td></tr>
     <tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone"></td></tr>
-    <tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail"></td></tr>
-    <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite"></td></tr>
+    <tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail" class="email"></td></tr>
+    <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite" class="url"></td></tr>
     <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
     <tr><td><?php echo _("Coordinates:"); ?></td><td>
             <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />

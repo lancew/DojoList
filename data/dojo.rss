@@ -3,15 +3,29 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 20 Aug 10 20:28:50 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sat, 21 Aug 10 14:11:27 +0100</lastBuildDate><generator>DojoList</generator>
 	
     <item>
+			<title>lwtest Dojo was deleted</title>
+			<description>lwtest Dojo was deleted</description>
+			<pubDate>Sat, 21 Aug 10 14:11:27 +0100</pubDate>
+			<guid>Sat21Aug1014:11:27+0100</guid>
+    </item>
+    
+	       <item>
+			<title>lwtest Dojo was created. <a href="http://dev.dojolist/dojo/lwtest">lwtest</a></title>
+			<description>lwtest Dojo was created. <a href="http://dev.dojolist/dojo/lwtest">lwtest</a></description>
+			<pubDate>Sat, 21 Aug 10 14:09:42 +0100</pubDate>
+			<guid>Sat21Aug1014:09:42+0100</guid>
+    </item>
+	       
+	       <item>
 			<title>ASTT%20Judo%20Club Dojo was deleted</title>
 			<description>ASTT%20Judo%20Club Dojo was deleted</description>
 			<pubDate>Fri, 20 Aug 10 20:28:50 +0100</pubDate>
 			<guid>Fri20Aug1020:28:50+0100</guid>
     </item>
-    
+	       
 	       <item>
 			<title>ASTT Judo Club Dojo was updated. <a href="http://dev.dojolist/dojo/pacelot in">ASTT Judo Club</a></title>
 			<description>ASTT Judo Club Dojo was updated. <a href="http://dev.dojolist/dojo/pacelot in">ASTT Judo Club</a></description>
