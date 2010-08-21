@@ -1,3 +1,9 @@
+<script>
+  $(document).ready(function(){
+    $("#dojoform").validate();
+  });
+</script>
+
 <script type="text/javascript">
 	window.onload=dofo;
 	function dofo() {
@@ -9,7 +15,7 @@
 
 <h1><?php echo _("Dojo Management System"); ?></h1>
 
-<form method="post" action="" name="dojoform" enctype="multipart/form-data">
+<form method="post" action="" name="dojoform" enctype="multipart/form-data" id="dojoform">
 <table>
 <div id="map" style="width: 250px; height: 250px; float: right;">
 <tr><td><?php echo  _("Dojo Logo:"); ?></td><td> <?php if ($Dojo->DojoLogo) { echo '<img alt="'.$Dojo->DojoName.'" src="'.$Dojo->DojoLogo.'" />'; ?> 
@@ -21,10 +27,10 @@
 
 
 </td></tr>
-<tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>"></td></tr>
+<tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>" class="required"></td></tr>
 <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
 <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
-<tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>"></td></tr>
+<tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>" class="required"></td></tr>
 <tr><td><?php echo _("Training Sessions:"); ?></td><td></td></tr>
 
 <?php
