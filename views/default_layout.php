@@ -70,7 +70,7 @@ putenv ("LC_ALL=en");
 			<ul>
 				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
 				
-				<li><a href="DojoList-060.zip"><?php echo _("Download"); ?></a></li>
+				<li><a href="DojoList-070.zip"><?php echo _("Download"); ?></a></li>
 				
 				<li><a href="<?=url_for('/about')?>"><?php echo _("About"); ?></a></li>
 
