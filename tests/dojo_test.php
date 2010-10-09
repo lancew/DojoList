@@ -4,6 +4,21 @@ require_once('simpletest/reporter.php');
 require_once('lib/dojo.model.php');
 
 
+/**
+ * option function.
+ * 
+ * This function is a mock of the option function in index.php needed to provide version number which is used in dojo.model.php
+ * if this function not included, tests fail. 
+ *
+ * @access public
+ * @param mixed $var
+ * @return void
+ */
+function option($var)
+{
+    return '0.7.0';
+}
+
 class TestOfDojolist extends UnitTestCase {
 
 	

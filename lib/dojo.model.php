@@ -42,6 +42,7 @@ function Find_Dojo_all()
  */
 function Find_dojo($target=null)
 {
+	$target = clean_name($target);
 	$return_value = null;
 	$xml = Load_Xml_data();
 
@@ -113,7 +114,7 @@ function Create_dojo($dojo, $file = null)
 			if ($key === 'DojoName' and $flag_url_present != '1') {
 			     $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
                  $new1->addChild('URL', $source_url);
-                 
+                 $value = clean_name($value);
 			
 			}
 			
@@ -127,7 +128,7 @@ function Create_dojo($dojo, $file = null)
 	Save_Xml_data($xml->asXML());
 	$description = $dojo['DojoName'].' Dojo was created. <a href="'.$source_url.'">'.$dojo['DojoName'].'</a>';
 	//print_r($dojo);
-	echo $description;
+	//echo $description;
 	$rss_array = array('description' => $description);
 	Add_rss_item($rss_array);
 
@@ -230,6 +231,20 @@ function Sorted_dojo()
 	sort($dojolist);
 	return $dojolist;
 
+}
+
+function clean_name($name)
+{
+    
+	$name = str_replace('&', ' and ', $name);
+	$name = str_replace("'", '', $name);
+	$name = str_replace("\\", '', $name);
+	$name = str_replace("\"", '', $name);
+	$name = str_replace("(", '', $name);
+	$name = str_replace(")", '', $name);
+	$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+
+    return $name;
 }
 
 ?>

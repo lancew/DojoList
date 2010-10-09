@@ -17,6 +17,7 @@
  */
 
 require_once 'lib/rss.php';
+require_once 'lib/dojo.model.php';
 
 /**
  * Admin Index - Displays the admin index page page
@@ -89,7 +90,7 @@ function Admin_Create_add()
 		if ($resp->is_valid) {
 
 			Create_dojo($_POST, $_FILES);
-			$DojoName = $_POST["DojoName"];
+			$DojoName = clean_name($_POST["DojoName"]);
 			set('DojoName', $DojoName);
 			admin_create_kml();
 			return render('admin/create_add.html.php');
@@ -364,11 +365,10 @@ function Admin_importjwm()
 			$LatLng = explode(',', $coords);
 			$url = get_string_between($value, 'http://', '\\"');
 			$name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
-			$name = str_replace('&', ' and ', $name);
-			$name = str_replace("'", '', $name);
-			$name = str_replace("\\", '', $name);
-			$name = str_replace("\"", '', $name);
-			$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+			$name = clean_name($name);
+			
+			
+			
 			$Lat = $LatLng[0];
 			$Lng = $LatLng[1];
 
@@ -442,12 +442,8 @@ function Admin_importBJA()
 			$contact = trim(get_string_between($d, 'Contact name:</strong></td>', '</td>'));
 			$email = get_string_between($d, '<a href="mailto:', '">');
 
-			// c;lean up the name
-			$name = str_replace('&', ' and ', $name);
-			$name = str_replace("'", '', $name);
-			$name = str_replace("\\", '', $name);
-			$name = str_replace("\"", '', $name);
-			$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+			// clean up the name
+			$name = clean_name($name);
 
 			//Set up our variables
 			$longitude = "";
@@ -489,7 +485,6 @@ function Admin_importBJA()
 	unlink('data/bja.txt');
 
 }
-
 
 
 
