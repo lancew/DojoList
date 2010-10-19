@@ -114,6 +114,7 @@ function Add_rss_item($item_array = null)
 	}
 	$new_rss .= '</channel></rss>';
 	Save_RSS_data($new_rss);
+	Delete_oldest_rss();
  
 
     

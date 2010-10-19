@@ -487,7 +487,212 @@ function Admin_importBJA()
 }
 
 
+function Admin_importUSJA()
+{
+    // http://usjamanagement.com/public/charteredClubs/
+    // http://usjamanagement.com/public/charteredClubs/clubDetail.asp?clubID=682 1929
+    set_time_limit(0);
+    
+    
+    for ( $id = 6501; $id <= 7000; $id++){
+    sleep (1);   
+    $usja_url = 'http://usjamanagement.com/public/charteredClubs/clubDetail.asp?clubID='.$id;
+    $club_url = str_ireplace('http://','', $usja_url);
+    $html = file_get_contents($usja_url);
+    $data = explode('</td>', $html);
 
+    
+    
+    $name = htmlspecialchars_decode($data[0]);
+    $name = clean_name(strip_tags($name));
+    $name = str_ireplace(' and nbsp;','',$name);
+    $name = str_ireplace('\n','',$name);
+    $name = str_ireplace('\t','',$name);
+    $name = str_ireplace('  ',' ',$name);
+    $name = trim($name);
+    
+    $address = strip_tags($data[1].' '.$data[2]);
+    $address = str_ireplace('\n','',$address);
+    $address = str_ireplace('\t','',$address);
+    
+    $address = htmlspecialchars_decode($address);
+    $address = str_ireplace('&nbsp;',' ',$address);
+    $address = str_replace(array("\n", "\r", "\t", "  ", "\o", "\xOB"), '', $address);
+    $address = trim($address);
+    //echo '<pre>';
+    //var_dump($address);
+    //echo '</pre>';
+    
+    
+    $short_addy = strip_tags(trim($data[2]));
+    
+    $phone = strip_tags($data[3]);
+    
+    $email = get_string_between($data[6], "<a href='mailto:", "'><font");
+    
+    
+    //Three parts to the querystring: q is address, output is the format (
+			$key = option('GoogleKey');
+			$address2 = urlencode($address);
+			$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+			$ch2 = curl_init();
+			curl_setopt($ch2, CURLOPT_URL, $url);
+			curl_setopt($ch2, CURLOPT_HEADER, 0);
+			curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+			curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			$data = curl_exec($ch2);
+			//echo $data;
+			curl_close($ch2);
+			$status = get_string_between($data, '"code": ', ',');
+			if($status === '200'){
+			$point = get_string_between($data, 'coordinates": [', ']');
+			$latlong = explode(',', $point);
+			$lat = trim($latlong[1]);
+			$lng = trim($latlong[0]);
+
+    
+            $dojo = Find_dojo($name);
+
+			if (!$dojo) {
+				echo " $name ";
+				$dojo_array = array('DojoName' => $name, 'DojoAddress' => $address, 'ClubWebsite' => $club_url, 'URL' => $usja_url, 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng, 'GUID' => guid() );
+				//print_r($dojo_array);
+				Create_dojo($dojo_array);
+				echo '<br>';
+				
+			} else {
+				echo ".";
+				
+			}    
+        } else
+            echo 'x';
+            
+           
+    }
+    
+}
+
+function Admin_importUSAJUDO()
+{
+    // http://www.usjudo.org/documents/websiteclubs.pdf
+    echo 'Importing USJA Judo club list...';
+    $data = file_get_contents('USAJUDOClubs.txt');
+    
+    $data = explode("\n", $data);
+    
+    $count = count($data);
+    echo $count.'<br />';
+    
+    $count = 1;
+    $temp_name = null;
+    $temp_address = null;
+    foreach($data as $item)
+    {
+        
+        
+        if($count === 1)
+        {
+            $temp_name = $item;
+            
+        }
+        if($count === 2)
+        {
+            $temp_address = $item;
+            
+            $phone = null;
+            $email = null;
+            $address = null;
+            $contact = get_string_between($item, 'Contact: ', ' Phone:');
+            $regex = '/\(?\d{3}\)?[-\s.]?\d{3}[-\s.]\d{4}/x';
+            if (preg_match($regex, $item, $regs)) 
+            {
+                $phone = $regs[0];
+		    }  
+		    
+		    
+		    
+		    $regex = '/[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/';
+		    if (preg_match($regex, $item, $regs)) 
+            {
+                $email = trim($regs[0]);
+		    }   
+		    
+		    $regex = '/^.*Contact/';
+		    if (preg_match($regex, $item, $regs)) 
+            {
+                $address = trim($regs[0]);
+                $address = str_ireplace(' Contact', '', $address);
+		    }        
+            
+            $name = clean_name(strip_tags($temp_name));
+            /*
+            echo $name;
+            echo ':';
+            echo $contact;
+            echo ':';
+            if($phone){echo $phone;}
+            echo ':';
+            if($email){echo $email;}
+            echo ':';
+            if($address){echo $address;}
+            echo '<br />';
+           */
+           
+           
+           // Now we have all the data, lets check if the dojo exists and add it if it does not.
+           
+            //Three parts to the querystring: q is address, output is the format (
+			$key = option('GoogleKey');
+			$address2 = urlencode($address);
+			$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+			$ch2 = curl_init();
+			curl_setopt($ch2, CURLOPT_URL, $url);
+			curl_setopt($ch2, CURLOPT_HEADER, 0);
+			curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+			curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			$data = curl_exec($ch2);
+			//echo $data;
+			curl_close($ch2);
+			$status = get_string_between($data, '"code": ', ',');
+			if($status === '200')
+			{
+			$point = get_string_between($data, 'coordinates": [', ']');
+			$latlong = explode(',', $point);
+			$lat = trim($latlong[1]);
+			$lng = trim($latlong[0]);
+
+    
+            $dojo = Find_dojo($name);
+
+			if (!$dojo) {
+				echo " $name ";
+				$dojo_array = array('DojoName' => $name, 'DojoAddress' => $address, 'URL' => 'http://www.usjudo.org/documents/websiteclubs.pdf', 'ContactEmail' => $email, 'Latitude' => $lat, 'Longitude' => $lng, 'GUID' => guid() );
+				//print_r($dojo_array);
+				Create_dojo($dojo_array);
+				echo '<br>';
+				
+			} else {
+				echo ".";
+				
+			}    
+        } else
+            echo 'x';
+            
+           
+    
+            
+            
+            
+            
+            
+            $count = 0;
+        }
+        $count++;
+    
+    }
+}
 
 
 ?>
