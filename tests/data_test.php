@@ -16,6 +16,7 @@ class TestOfDataModel extends UnitTestCase {
 		$this->assertTrue(Load_Xml_data('data/data.xml'));
 	}
 	
+  /*
     function testLoad_test_xml_data() {
         $tempXML = Load_Xml_data('data/test.xml');
 		$xmlText = $tempXML->asXML();
@@ -24,7 +25,7 @@ class TestOfDataModel extends UnitTestCase {
 		$this->assertTrue($result);
 
 	}
-	
+    */	
 
 
     function testSave_data() {

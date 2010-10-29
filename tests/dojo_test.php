@@ -50,10 +50,12 @@ class TestOfDojolist extends UnitTestCase {
 	    $xml = Find_dojo('test_dojo');
 		$text = $xml->DojoName;
 		$this->assertEqual($text,'test_dojo');
+		
 	    
 	    } else {
 	       $this->fail('test_dojo found prior to create test');
 	    }
+	    
 	}
 	
 	function testGUIDisPresent() {
@@ -61,6 +63,30 @@ class TestOfDojolist extends UnitTestCase {
 		$text = $xml->GUID;
 		$this->assertPattern('/^\{?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\}?$/i', $text);
 	}		
+	
+	
+	function testUpdatedisPresent() {
+		$xml = Find_dojo('test_dojo');
+		$text = $xml->Updated;
+		
+		// Friday, October 29, 2010 02:16
+		$this->assertTrue($text);
+	}		
+	
+	function testUpdatedisRight() {
+		$xml = Find_dojo('test_dojo');
+		$text = $xml->Updated;
+		
+		// Friday, October 29, 2010 02:16
+		$this->assertPattern('/^[A-Za-z]*+,/i', $text);
+	}	
+	
+	
+	
+	// --------------------------------------
+	// *** test_dojo is deleted at this point
+	// --------------------------------------
+	
 	
 	function testDelete_dojo() {
 		if(Find_dojo('test_dojo'))
@@ -90,6 +116,16 @@ class TestOfDojolist extends UnitTestCase {
 	
         $this->assertTrue(Count_dojo());
 	}
+	
+	function testUpdateField()
+	{
+	   
+	
+        //$this->assertTrue(Count_dojo());
+	}
+
+	
+	
 	
 }
 

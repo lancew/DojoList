@@ -186,13 +186,9 @@ function Admin_Editform_end()
 						if ($field === 'delete_logo') {
 							unset($dojo->DojoLogo);
 						}
-
-
-
 					}
 
 					// start of if ($_FILES... section, encodes and adds an upload logo file
-
 
 					if ($_FILES["DojoLogo"]["name"]) {
 						unset($dojo->DojoLogo);
@@ -212,7 +208,13 @@ function Admin_Editform_end()
 					}
 
 					// end of if ($_FILES... section.
-
+					
+					// update the Updated field
+					date_default_timezone_set("UTC");
+                    $time = date("l, F d, Y h:i" ,time()); 
+                    $dojo->Updated = $time;
+                    
+                    
 					$newxml .= $dojo->asXML();
 				}    else {
 					$newxml .= $dojo->asXML();

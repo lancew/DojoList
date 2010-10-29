@@ -124,6 +124,11 @@ function Create_dojo($dojo, $file = null)
 
 		}
 	}
+
+    // Add field for update date and time
+    date_default_timezone_set("UTC");
+    $time = date("l, F d, Y h:i" ,time()); 
+    $new1->addChild('Updated', $time);
     
 	Save_Xml_data($xml->asXML());
 	$description = $dojo['DojoName'].' Dojo was created. <a href="'.$source_url.'/dojo/'.$dojo['DojoName'].'">'.$dojo['DojoName'].'</a>';
