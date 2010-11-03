@@ -540,7 +540,7 @@ FOUND 24 ERROR(S) AND 1 WARNING(S) AFFECTING 13 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/dojo_test.php
 --------------------------------------------------------------------------------
-FOUND 51 ERROR(S) AND 4 WARNING(S) AFFECTING 30 LINE(S)
+FOUND 50 ERROR(S) AND 4 WARNING(S) AFFECTING 29 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | Missing file doc comment
    2 | ERROR   | "require_once" is a statement, not a function; no parentheses
@@ -616,7 +616,6 @@ FOUND 51 ERROR(S) AND 4 WARNING(S) AFFECTING 30 LINE(S)
  114 | ERROR   | You must use "/**" style comments for a function comment
  114 | ERROR   | Method name "TestOfDojolist::testCount_dojo" is not in camel
      |         | caps format
- 120 | ERROR   | Missing function doc comment
 --------------------------------------------------------------------------------
 
 

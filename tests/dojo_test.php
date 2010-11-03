@@ -117,12 +117,7 @@ class TestOfDojolist extends UnitTestCase {
         $this->assertTrue(Count_dojo());
 	}
 	
-	function testUpdateField()
-	{
-	   
 	
-        //$this->assertTrue(Count_dojo());
-	}
 
 	
 	
