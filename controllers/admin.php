@@ -699,6 +699,88 @@ function Admin_importUSAJUDO()
 	}
 }
 
+function Admin_import_NZJF()
+{
+// http://judonz.org/front/index.php?option=com_content&view=article&id=18
+// id ranges from 16 through to 23.
+// Start of clubs: <div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>
+// End of clubs: <!--EOF content section -->
+echo '<h1>Import NZJF</h1>';
+
+for ( $id = 16; $id <= 23; $id++) {
+    $url = 'http://judonz.org/front/index.php?option=com_content&view=article&id='.$id;
+	$html = file_get_contents($url);
+	$data = get_string_between($html, '<div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>', '<!--EOF content section -->');
+	
+	
+	// Having got data for the area, explode out each club then loop through them.
+	$aClub = explode('<div style="width:100%;background-color:#999;">', $data);
+	array_shift($aClub);
+	foreach($aClub as $club){
+	   //echo $club;
+	  
+	
+	   $name = clean_name(get_string_between($club, '<div style="float:left;margin-left:5px;"><strong>','</strong></div>'));
+	   
+	   $dojo = Find_dojo($name);
+	   if(!$dojo){
+	   
+	   
+	       $address = trim(strip_tags(get_string_between($club, '<div style="float:left;width:37px;">dojo:</div>','</div>')));
+	   
+	       $address .= ', New Zealand';
+	       
+	       //Three parts to the querystring: q is address, output is the format (
+			$key = option('GoogleKey');
+			$address2 = urlencode($address);
+			$mapurl = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+			$ch2 = curl_init();
+			curl_setopt($ch2, CURLOPT_URL, $mapurl);
+			curl_setopt($ch2, CURLOPT_HEADER, 0);
+			curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+			curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			$data = curl_exec($ch2);
+			//echo $data;
+			curl_close($ch2);
+			$status = get_string_between($data, '"code": ', ',');
+			if ($status === '200') {
+				$point = get_string_between($data, 'coordinates": [', ']');
+				$latlong = explode(',', $point);
+				$lat = trim($latlong[1]);
+				$lng = trim($latlong[0]);
+
+	       }
+	       	
+	   
+
+	       
+	       $dojo_array = array(
+	       'DojoName' => $name, 
+	       'DojoAddress' => $address, 
+	       'URL' => $url,  
+	       'Latitude' => $lat, 
+	       'Longitude' => $lng, 
+	       'GUID' => guid() 
+	       );
+					//print_r($dojo_array);
+					Create_dojo($dojo_array);
+					echo "$name<br>";
+
+	       
+	   
+	   } else {
+	       echo "* $name exists in database<br>";
+	       }
+	}
+	
+
+}
+
+
+}
+
+
 function Admin_importJudoBC()
 {
 	// http://174.120.241.98/~judobc/locator/store_info.php?store=1
@@ -826,7 +908,7 @@ function Admin_import_judo_alberta()
 
 			if (!$dojo) {
 				echo " $name ";
-				$dojo_array = array('DojoName' => $name, 'DojoAddress' => $address, 'ClubWebsite' => $website, 'ContactEmail' => $email, 'URL' => $url, 'Latitude' => $lat, 'Longitude' => $lng, 'GUID' => guid() );
+				$dojo_array = array('DojoName' => $name, 'DojoAddress' => $address, 'ClubWebsite' => $website, 'ContactEmail' => $email, 'URL' => 'http://judonz.org', 'Latitude' => $lat, 'Longitude' => $lng, 'GUID' => guid() );
 				//print_r($dojo_array);
 				Create_dojo($dojo_array);
 				echo '<br>';

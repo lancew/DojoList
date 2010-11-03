@@ -47,7 +47,7 @@ function Find_dojo($target=null)
 	$xml = Load_Xml_data();
 
 	foreach ($xml->Dojo as $dojo) {
-		if ($dojo->DojoName == $target) {
+		if (strtolower($dojo->DojoName) == strtolower($target)) {
 			$return_value = $dojo;
 		}
 	}
@@ -245,6 +245,7 @@ function clean_name($name)
 	$name = str_replace("'", '', $name);
 	$name = str_replace("\\", '', $name);
 	$name = str_replace("\"", '', $name);
+	$name = str_replace("/", ' ', $name);
 	$name = str_replace("(", '', $name);
 	$name = str_replace(")", '', $name);
 	$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
