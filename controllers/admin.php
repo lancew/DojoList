@@ -847,7 +847,7 @@ function Admin_importNSW()
                     );
                 
 				    //print_r($dojo_array);
-				    //Create_dojo($dojo_array);
+				    Create_dojo($dojo_array);
 				    echo "$name created<br>";
 				}
 
