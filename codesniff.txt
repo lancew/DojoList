@@ -1,7 +1,7 @@
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/admin.php
 --------------------------------------------------------------------------------
-FOUND 82 ERROR(S) AND 41 WARNING(S) AFFECTING 107 LINE(S)
+FOUND 94 ERROR(S) AND 44 WARNING(S) AFFECTING 119 LINE(S)
 --------------------------------------------------------------------------------
   90 | ERROR   | Multi-line function call not indented correctly; expected 8
      |         | spaces but found 12
@@ -170,17 +170,35 @@ FOUND 82 ERROR(S) AND 41 WARNING(S) AFFECTING 107 LINE(S)
  774 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
      |         | 11
  784 | ERROR   | You must use "/**" style comments for a function comment
- 795 | WARNING | Line exceeds 85 characters; contains 98 characters
- 813 | WARNING | Line exceeds 85 characters; contains 95 characters
- 835 | WARNING | Line exceeds 85 characters; contains 159 characters
- 844 | WARNING | Inline control structures are discouraged
- 853 | ERROR   | You must use "/**" style comments for a function comment
- 853 | ERROR   | Function name "Admin_import_judo_alberta" is invalid; consider
+ 786 | WARNING | Line exceeds 85 characters; contains 91 characters
+ 787 | WARNING | Line exceeds 85 characters; contains 98 characters
+ 792 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 794 | ERROR   | Multi-line function call not indented correctly; expected 4
+     |         | spaces but found 8
+ 798 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...)\n       
+     |         | {\n"
+ 798 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
+ 801 | ERROR   | No space found after comma in function call
+ 806 | ERROR   | Expected "if (...) {\n"; found "if(...)\n            {\n"
+ 806 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
+ 813 | ERROR   | No space found after comma in function call
+ 830 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                {\n"
+ 830 | ERROR   | Line indented incorrectly; expected 12 spaces, found 16
+ 849 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
+ 853 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
+     |         | 10
+ 862 | ERROR   | You must use "/**" style comments for a function comment
+ 873 | WARNING | Line exceeds 85 characters; contains 98 characters
+ 891 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 913 | WARNING | Line exceeds 85 characters; contains 159 characters
+ 922 | WARNING | Inline control structures are discouraged
+ 931 | ERROR   | You must use "/**" style comments for a function comment
+ 931 | ERROR   | Function name "Admin_import_judo_alberta" is invalid; consider
      |         | "Admin_Import_Judo_alberta" instead
- 857 | WARNING | Line exceeds 85 characters; contains 88 characters
- 889 | WARNING | Line exceeds 85 characters; contains 95 characters
- 911 | WARNING | Line exceeds 85 characters; contains 227 characters
- 920 | WARNING | Inline control structures are discouraged
+ 935 | WARNING | Line exceeds 85 characters; contains 88 characters
+ 967 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 989 | WARNING | Line exceeds 85 characters; contains 227 characters
+ 998 | WARNING | Inline control structures are discouraged
 --------------------------------------------------------------------------------
 
 
@@ -194,7 +212,7 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 58 ERROR(S) AND 1 WARNING(S) AFFECTING 41 LINE(S)
+FOUND 59 ERROR(S) AND 1 WARNING(S) AFFECTING 42 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
   35 | ERROR   | You must use "/**" style comments for a function comment
@@ -253,11 +271,12 @@ FOUND 58 ERROR(S) AND 1 WARNING(S) AFFECTING 41 LINE(S)
   99 | ERROR   | Space before opening parenthesis of function call prohibited
  100 | ERROR   | Expected 1 space after comma in function call; 5 found
  100 | ERROR   | Space before opening parenthesis of function call prohibited
- 103 | ERROR   | Expected 1 space after comma in function call; 3 found
- 103 | ERROR   | Space before opening parenthesis of function call prohibited
- 105 | ERROR   | Space before opening parenthesis of function call prohibited
- 108 | ERROR   | Expected 1 space after comma in function call; 11 found
- 108 | ERROR   | Space before opening parenthesis of function call prohibited
+ 101 | ERROR   | Space before opening parenthesis of function call prohibited
+ 104 | ERROR   | Expected 1 space after comma in function call; 3 found
+ 104 | ERROR   | Space before opening parenthesis of function call prohibited
+ 106 | ERROR   | Space before opening parenthesis of function call prohibited
+ 109 | ERROR   | Expected 1 space after comma in function call; 11 found
+ 109 | ERROR   | Space before opening parenthesis of function call prohibited
 --------------------------------------------------------------------------------
 
 
@@ -376,7 +395,7 @@ FOUND 81 ERROR(S) AND 3 WARNING(S) AFFECTING 46 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php
 --------------------------------------------------------------------------------
-FOUND 9 ERROR(S) AND 2 WARNING(S) AFFECTING 7 LINE(S)
+FOUND 11 ERROR(S) AND 3 WARNING(S) AFFECTING 10 LINE(S)
 --------------------------------------------------------------------------------
  101 | ERROR   | Line indented incorrectly; expected 4 spaces, found 3
  102 | ERROR   | Expected "if (...) {\n"; found "if (...) { "
@@ -390,6 +409,10 @@ FOUND 9 ERROR(S) AND 2 WARNING(S) AFFECTING 7 LINE(S)
  241 | ERROR   | Missing function doc comment
  241 | ERROR   | Function name "clean_name" is prefixed with a package name but
      |         | does not begin with a capital letter
+ 256 | ERROR   | Missing function doc comment
+ 263 | WARNING | Line exceeds 85 characters; contains 94 characters
+ 280 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found
+     |         | 11
 --------------------------------------------------------------------------------
 
 
@@ -642,7 +665,7 @@ FOUND 24 ERROR(S) AND 1 WARNING(S) AFFECTING 13 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/dojo_test.php
 --------------------------------------------------------------------------------
-FOUND 50 ERROR(S) AND 4 WARNING(S) AFFECTING 29 LINE(S)
+FOUND 50 ERROR(S) AND 4 WARNING(S) AFFECTING 32 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | Missing file doc comment
    2 | ERROR   | "require_once" is a statement, not a function; no parentheses
@@ -662,62 +685,60 @@ FOUND 50 ERROR(S) AND 4 WARNING(S) AFFECTING 29 LINE(S)
   25 | ERROR   | Method name "TestOfDojolist::testFind_Dojo_all" is not in
      |         | camel caps format
   25 | ERROR   | Opening brace should be on a new line
-  28 | ERROR   | Missing function doc comment
-  28 | ERROR   | Method name "TestOfDojolist::testFind_dojo_empty" is not in
-     |         | camel caps format
-  28 | ERROR   | Opening brace should be on a new line
-  31 | ERROR   | Missing function doc comment
-  31 | ERROR   | Method name "TestOfDojolist::testFind_dojo_doesnotexist" is
+  33 | ERROR   | You must use "/**" style comments for a function comment
+  33 | ERROR   | Method name "TestOfDojolist::testFind_dojo_doesnotexist" is
      |         | not in camel caps format
-  31 | ERROR   | Opening brace should be on a new line
-  34 | ERROR   | Missing function doc comment
-  34 | ERROR   | Method name "TestOfDojolist::testFind_dojo_Alresford" is not
+  33 | ERROR   | Opening brace should be on a new line
+  36 | ERROR   | Missing function doc comment
+  36 | ERROR   | Method name "TestOfDojolist::testFind_dojo_Alresford" is not
      |         | in camel caps format
-  34 | ERROR   | Opening brace should be on a new line
-  37 | ERROR   | Missing function doc comment
-  37 | ERROR   | Method name "TestOfDojolist::testFind_dojo_AlresfordDetails"
+  36 | ERROR   | Opening brace should be on a new line
+  39 | ERROR   | Missing function doc comment
+  39 | ERROR   | Method name "TestOfDojolist::testFind_dojo_AlresfordDetails"
      |         | is not in camel caps format
-  37 | ERROR   | Opening brace should be on a new line
-  40 | ERROR   | No space found after comma in function call
-  44 | ERROR   | Missing function doc comment
-  44 | ERROR   | Method name "TestOfDojolist::testCreate_dojo" is not in camel
+  39 | ERROR   | Opening brace should be on a new line
+  43 | ERROR   | No space found after comma in function call
+  47 | ERROR   | You must use "/**" style comments for a function comment
+  47 | ERROR   | Method name "TestOfDojolist::testCreate_dojo" is not in camel
      |         | caps format
-  44 | ERROR   | Opening brace should be on a new line
-  45 | ERROR   | Expected "if (...) {\n"; found "if (...) \n        {\n"
-  45 | ERROR   | There must be a single space between the closing parenthesis
+  47 | ERROR   | Opening brace should be on a new line
+  48 | ERROR   | Expected "if (...) {\n"; found "if (...) \n        {\n"
+  48 | ERROR   | There must be a single space between the closing parenthesis
      |         | and the opening brace of a multi-line IF statement; found 2
      |         | spaces
-  48 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  48 | WARNING | Line exceeds 85 characters; contains 137 characters
-  49 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  50 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
   51 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
      |         | 8
+  51 | WARNING | Line exceeds 85 characters; contains 137 characters
   52 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
      |         | 8
-  52 | ERROR   | No space found after comma in function call
-  56 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+  53 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+     |         | 8
+  54 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+     |         | 8
+  55 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+     |         | 8
+  55 | ERROR   | No space found after comma in function call
+  59 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
      |         | 11
-  61 | ERROR   | Missing function doc comment
-  61 | ERROR   | Opening brace should be on a new line
-  64 | WARNING | Line exceeds 85 characters; contains 111 characters
-  68 | ERROR   | Missing function doc comment
-  68 | ERROR   | Opening brace should be on a new line
-  76 | ERROR   | You must use "/**" style comments for a function comment
-  76 | ERROR   | Opening brace should be on a new line
-  91 | ERROR   | You must use "/**" style comments for a function comment
-  91 | ERROR   | Method name "TestOfDojolist::testDelete_dojo" is not in camel
+  64 | ERROR   | Missing function doc comment
+  64 | ERROR   | Opening brace should be on a new line
+  67 | WARNING | Line exceeds 85 characters; contains 111 characters
+  71 | ERROR   | Missing function doc comment
+  71 | ERROR   | Opening brace should be on a new line
+  79 | ERROR   | You must use "/**" style comments for a function comment
+  79 | ERROR   | Opening brace should be on a new line
+  94 | ERROR   | You must use "/**" style comments for a function comment
+  94 | ERROR   | Method name "TestOfDojolist::testDelete_dojo" is not in camel
      |         | caps format
-  91 | ERROR   | Opening brace should be on a new line
-  92 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
- 102 | ERROR   | Missing function doc comment
- 111 | WARNING | Line exceeds 85 characters; contains 95 characters
- 114 | ERROR   | You must use "/**" style comments for a function comment
- 114 | ERROR   | Method name "TestOfDojolist::testCount_dojo" is not in camel
-     |         | caps format
+  94 | ERROR   | Opening brace should be on a new line
+  95 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
+ 105 | ERROR   | Missing function doc comment
+ 114 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 117 | ERROR   | You must use "/**" style comments for a function comment
+ 119 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 120 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 121 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 122 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
 --------------------------------------------------------------------------------
 
 
@@ -1058,16 +1079,18 @@ FOUND 13 ERROR(S) AND 24 WARNING(S) AFFECTING 32 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/views/main.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 7 WARNING(S) AFFECTING 7 LINE(S)
+FOUND 2 ERROR(S) AND 8 WARNING(S) AFFECTING 8 LINE(S)
 --------------------------------------------------------------------------------
   4 | ERROR   | Missing file doc comment
   4 | WARNING | Line exceeds 85 characters; contains 120 characters
   6 | WARNING | Line exceeds 85 characters; contains 88 characters
   8 | WARNING | Line exceeds 85 characters; contains 112 characters
   9 | WARNING | Line exceeds 85 characters; contains 219 characters
- 29 | WARNING | Line exceeds 85 characters; contains 92 characters
- 32 | WARNING | Line exceeds 85 characters; contains 95 characters
- 34 | WARNING | Line exceeds 85 characters; contains 100 characters
+ 29 | WARNING | Line exceeds 85 characters; contains 127 characters
+ 30 | ERROR   | No space found after comma in function call
+ 30 | WARNING | Line exceeds 85 characters; contains 125 characters
+ 33 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 35 | WARNING | Line exceeds 85 characters; contains 100 characters
 --------------------------------------------------------------------------------
 
 

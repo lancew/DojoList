@@ -25,8 +25,9 @@
         mapstraction.setCenterAndZoom(myPoint, 2);
         mapstraction.addControls({zoom: 'large'});
      
-        // Add url to the URL of your online KML dojo.kml file here      
-        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>/data/dojo.kml");
+        // Add url to the URL of your online KML dojo.kml file here  
+        // Note: The php that adds ?v= and a random number stops google caching the kml file, so updates appear right away.    
+        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>/data/dojo.kml<?php echo "?v=".rand(1,1000); ?>");
       
     </script> 
 	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 

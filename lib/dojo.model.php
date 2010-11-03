@@ -253,4 +253,35 @@ function clean_name($name)
     return $name;
 }
 
+function geoAddress($address = null)
+{
+    //Three parts to the querystring: q is address, output is the format (
+    $lat = null;
+    $lng = null;
+    $key = option('GoogleKey');
+    $address2 = urlencode($address);
+    $mapurl = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+    $ch2 = curl_init();
+    curl_setopt($ch2, CURLOPT_URL, $mapurl);
+    curl_setopt($ch2, CURLOPT_HEADER, 0);
+    curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+    curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+    $data = curl_exec($ch2);
+    //echo $data;
+    curl_close($ch2);
+    $status = get_string_between($data, '"code": ', ',');
+    if ($status === '200') {
+        $point = get_string_between($data, 'coordinates": [', ']');
+        $latlong = explode(',', $point);
+        $lat = trim($latlong[1]);
+        $lng = trim($latlong[0]);
+
+	       }
+
+    $aLatLng[0]=$lat;
+    $aLatLng[1]=$lng;
+    return $aLatLng;    
+}
+
 ?>

@@ -781,6 +781,91 @@ for ( $id = 16; $id <= 23; $id++) {
 }
 
 
+function Admin_importNSW()
+{
+    echo '<h1>Import Judo NSW Dojo</h1>';
+    // http://www.judonsw.com.au./index.php?option=com_content&view=article&id=49&Itemid=57
+    $url = 'http://www.judonsw.com.au./index.php?option=com_content&view=article&id=49&Itemid=57';
+    $data = file_get_contents($url);
+    //print_r($data);
+    $data = iconv("UTF-8", "ISO-8859-1//IGNORE", $data);
+    //print_r($data);
+    
+    $data = get_string_between(
+        $data, 
+        'Judo Federation Of Australia (NSW) Member Clubs',
+        '</body>'
+        );
+        print_r($data);
+        $aData = explode('<tr>', $data);
+        array_shift($aData);
+        array_shift($aData);
+        //print_r($aData);
+        foreach($aData as $dojo)
+        {
+            
+            //print_r($dojo);
+            $details = explode('<br />',$dojo);    
+            // print_r($details);   
+            $name = clean_name(trim(strip_tags($details[0])));
+            
+           
+            if(!find_dojo($name))
+            {
+                $address = $details[1].', NSW, Australia';
+            
+                $latlng = geoAddress($address);
+            
+                $email = get_string_between($dojo, '"mailto:', '"');
+                $website = get_string_between($dojo, '<a href="http://','"');
+                $website = rtrim($website, "/");
+            
+                /*
+                echo '<br />';
+                echo $name;
+                echo '<br />';
+                echo $latlng[0];
+                echo '<br />';
+                echo $latlng[1];
+                echo '<br />';
+                echo $email;
+                echo '<br />';
+                echo $website;
+                echo '<hr>'; 
+                */ 
+
+                if($latlng[0] && $latlng[1])
+                {
+                    $dojo_array = array(
+                    'DojoName' => $name, 
+                    'DojoAddress' => $address, 
+                    'URL' => $url, 
+                    'Latitude' => $latlng[0], 
+                    'Longitude' => $latlng[1], 
+                    'ClubWebsite' => $website,
+                    'GUID' => guid() 
+                    );
+                
+				    //print_r($dojo_array);
+				    //Create_dojo($dojo_array);
+				    echo "$name created<br>";
+				}
+
+
+            
+            } else {
+                echo "$name exists already<br>";            
+            }
+           
+          }
+        
+        
+        
+
+
+}
+
+
 function Admin_importJudoBC()
 {
 	// http://174.120.241.98/~judobc/locator/store_info.php?store=1

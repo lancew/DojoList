@@ -25,9 +25,11 @@ class TestOfDojolist extends UnitTestCase {
 	function testFind_Dojo_all() {
 		$this->assertTrue(Find_Dojo_all());
 	}
+	/*
 	function testFind_dojo_empty() {
 		$this->assertFalse(Find_dojo());
 	} 
+	*/
 	function testFind_dojo_doesnotexist() {
 		$this->assertFalse(Find_dojo('fake'));
 	} 
@@ -37,7 +39,8 @@ class TestOfDojolist extends UnitTestCase {
 	function testFind_dojo_AlresfordDetails() {
 		$xml = Find_dojo('Alresford Judo Club');
 		$text = $xml->DojoName;
-		$this->assertEqual($text,'Alresford Judo Club');
+		//print_r($text);
+		$this->assertEqual($text,'ALRESFORD JUDO CLUB');
 	}		
 	
 	
@@ -111,10 +114,12 @@ class TestOfDojolist extends UnitTestCase {
 		$this->assertFalse($result, 'The test for <Dojo/> tags at the end of the file failed');
 	}
 	
-	function testCount_dojo ()
+	function testGeoAddress()
 	{
-	
-        $this->assertTrue(Count_dojo());
+	   $latlng = geoAddress('25 Kauri Road, whenuapai, Auckland, New Zealand');
+	   //print_r($latlng);
+	   $this->assertEqual($latlng[0], (float)'-36.7959750', 'Latitude found');
+	   $this->assertEqual($latlng[1], (float)'174.6368070', 'Longitude found');
 	}
 	
 	
