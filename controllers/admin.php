@@ -794,9 +794,9 @@ function Admin_importNSW()
     $data = get_string_between(
         $data, 
         'Judo Federation Of Australia (NSW) Member Clubs',
-        '</body>'
+        '<td class="modifydate">'
         );
-        print_r($data);
+        //print_r($data);
         $aData = explode('<tr>', $data);
         array_shift($aData);
         array_shift($aData);
@@ -805,14 +805,17 @@ function Admin_importNSW()
         {
             
             //print_r($dojo);
+            $dojo = str_ireplace('&#xD;','',$dojo);
             $details = explode('<br />',$dojo);    
             // print_r($details);   
             $name = clean_name(trim(strip_tags($details[0])));
+            $name = str_ireplace('&#xD;','',$name);
             
            
             if(!find_dojo($name))
             {
                 $address = $details[1].', NSW, Australia';
+                $address = str_ireplace('&#xD;','',$address);
             
                 $latlng = geoAddress($address);
             
