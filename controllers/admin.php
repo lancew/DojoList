@@ -886,34 +886,43 @@ function Admin_import_JudoSA(){
 	   $fields = explode('<FONT CLASS="field">', $dojo);
 	   
 	   $name = trim(clean_name(strip_tags($fields[0])));
-	   $address = trim($fields[1]).', Australia';
+	   
+	   $dojo = Find_dojo($name);
+	   
+	   if(!$dojo) {
+   
+	   $address = trim($fields[1]).' Australia';
 	   $address = str_ireplace('Location:', '', $address);
+	   $address = str_ireplace("/r", ",", $address);
+	   $address = str_ireplace("/n", ",", $address);
+	   $address = str_ireplace('<br>', ',', $address);	
+	   $address = strip_tags($address);   
+	   $address = ltrim($address, ',');
 	   
 	   $email_address = get_string_between($dojo, 'mailto:', '"');
 	   $web_address = get_string_between($dojo, 'http://', '"');
 	   $web_address = rtrim($web_address, '/');
 	   
-	   echo $name;
-	   echo '<br>';
-	   echo $address;
-	   echo '<br>';
-	   echo $email_address;
-	   echo '<br>';
-	   echo $web_address;
-	   
-	   
-	   
-	   //print_r($fields);
-	   
-	   
-	   
-	   	   echo '
-	   
-	   
-	   <hr>';
+	   $aLatLng = geoAddress($address);
+	   if($aLatLng){	   
+	   	   echo " $name ";
+               $dojo_array = array(
+                    'DojoName' => $name, 
+                    'DojoAddress' => $address, 
+                    'URL' => $url, 
+                    'Latitude' => $aLatLng[0], 
+                    'Longitude' => $aLatLng[1], 
+                    'GUID' => guid() 
+                    );
+				//print_r($dojo_array);
+				Create_dojo($dojo_array);
+				echo '<br>';
+				}
+        } else {
+            echo ".";
+        }
+	   }
 	
-	}
-
 }
 
 
