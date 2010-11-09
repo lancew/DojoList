@@ -9,13 +9,45 @@
  */
  
 /**
- * It will be called when app is launched (at the begining og the run function).
+ * It will be called when app is launched (at the begining of the run function).
  * You can define options inside it, a connection to a database ...
  *
  * @abstract this function might be redefined by user
  * @return void 
  */
 function configure()
+{
+  return;
+}
+
+/**
+ * Called in run() just after session start, and before checking request method
+ * and output buffer start.  
+ *
+ * @abstract this function might be redefined by user
+ * @return void 
+ */
+function initialize()
+{
+  return;
+}
+
+/**
+ * Called in run() just after the route matching, in order to load controllers. 
+ * If not specfied, the default function is called:
+ * 
+ * <code>
+ * function autoload_controller($callback)
+ * {
+ *   require_once_dir(option('controllers_dir'));
+ * }
+ * </code>
+ * 
+ *
+ * @param string $callback the callback defined in matching route
+ * @return void
+ */
+function autoload_controller($callback)
 {
   return;
 }
@@ -26,9 +58,11 @@ function configure()
  * to the templates.
  *
  * @abstract this function might be redefined by user
+ * @param array() $route array (like returned by {@link route_build()},
+ *   with keys "method", "pattern", "names", "callback", "options")
  * @return void 
  */
-function before()
+function before($route)
 {
   
 }
@@ -41,9 +75,11 @@ function before()
  *
  * @abstract this function might be redefined by user
  * @param string $output 
+ * @param array() $route array (like returned by {@link route_find()},
+ *   with keys "method", "pattern", "names", "callback", "params", "options")
  * @return string 
  */
-function after($output)
+function after($output, $route)
 {
   # Call functions...
   # .. modifies $output...
@@ -98,9 +134,46 @@ function route_missing($request_method, $request_uri)
  * Called before stoppping and exiting application.
  *
  * @abstract this function might be redefined by user
+ * @param boolean exit or not
  * @return void 
  */
-function before_exit()
+function before_exit($exit)
 {
   
+}
+
+/**
+ * Rendering prefilter.
+ * Useful if you want to transform your views before rendering.
+ * The first three parameters are the same as those provided 
+ * to the `render` function.
+ *
+ * @abstract this function might be redefined by user
+ * @param string $content_or_func a function, a file in current views dir or a string
+ * @param string $layout 
+ * @param array $locals 
+ * @param array $view_path (by default <code>file_path(option('views_dir'),$content_or_func);</code>)
+ * @return array with, in order, $content_or_func, $layout, $locals vars
+ *  and the calculated $view_path
+ */
+function before_render($content_or_func, $layout, $locals, $view_path)
+{
+  # transform $content_or_func, $layout, $locals or $view_path…
+  return array($content_or_func, $layout, $locals, $view_path);
+}
+
+
+/**
+ * Called only if rendering $output is_null,
+ * like in a controller with no return statement.
+ *
+ * @abstract this function might be defined by user
+ * @param array() $route array (like returned by {@link route_build()},
+ *   with keys "method", "pattern", "names", "callback", "options")
+ * @return string
+ */
+function autorender($route)
+{
+  # process output depending on $route
+  return $output;
 }

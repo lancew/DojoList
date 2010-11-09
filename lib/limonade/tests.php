@@ -319,7 +319,7 @@ function test_cli_format($text, $format) {
  * @return string
  * @author Nando Vieira
  */
-function test_request($url, $method="GET", $include_header=false) {
+function test_request($url, $method="GET", $include_header=false, $post_data=array(), $http_header=array()) {
     $method = strtoupper($method);
     $allowed_methods = array("GET", "PUT", "POST", "DELETE", "HEAD");
     if(!in_array($method, $allowed_methods))
@@ -331,7 +331,17 @@ function test_request($url, $method="GET", $include_header=false) {
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($curl, CURLOPT_HEADER, $include_header);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $http_header);
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
+    if($method == 'POST')
+    {
+      curl_setopt($curl, CURLOPT_POST, 1);
+      curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+    }
+    if($method == 'HEAD')
+    {
+      curl_setopt($curl, CURLOPT_NOBODY, true);
+    }
     $response = curl_exec($curl);
     curl_close($curl);
 
