@@ -213,7 +213,20 @@ function Validate_form($_POST = null)
 
 	}
 	// return an array of validation errors
-	return $aErrors;
+	//print_r($aErrors);
+	$ret = null;
+	foreach($aErrors as $error){
+	   if($error){
+	       $ret = 1;
+	   }
+	}
+	if($ret != null){
+	   return $aErrors;
+	} else {
+	   return null;
+	}
+	
+	
 }
 
 

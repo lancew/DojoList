@@ -3,8 +3,15 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 22:03:59 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 23:15:30 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>GLOSSOP JUDO CLUB Dojo was updated. <a href="http://dev.dojolist/dojo/GLOSSOP JUDO CLUB">GLOSSOP JUDO CLUB</a></title>
+			<description>GLOSSOP JUDO CLUB Dojo was updated. <a href="http://dev.dojolist/dojo/GLOSSOP JUDO CLUB">GLOSSOP JUDO CLUB</a></description>
+			<pubDate>Tue, 09 Nov 10 23:15:30 +0000</pubDate>
+			<guid>Tue09Nov1023:15:30+0000</guid>
+    </item>
+            
             <item>
 			<title>Whyalla Judo Club Dojo was created. <a href="/dojo/Whyalla Judo Club">Whyalla Judo Club</a></title>
 			<description>Whyalla Judo Club Dojo was created. <a href="/dojo/Whyalla Judo Club">Whyalla Judo Club</a></description>
@@ -136,12 +143,5 @@
 			<description>Adelaide Aikijitsu  and  Judo Club Dojo was created. <a href="/dojo/Adelaide Aikijitsu  and  Judo Club">Adelaide Aikijitsu  and  Judo Club</a></description>
 			<pubDate>Tue, 09 Nov 10 22:03:52 +0000</pubDate>
 			<guid>Tue09Nov1022:03:52+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Tue, 09 Nov 10 15:21:49 +0000</pubDate>
-			<guid>Tue09Nov1015:21:49+0000</guid>
     </item>
             </channel></rss>
