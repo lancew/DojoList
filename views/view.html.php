@@ -51,13 +51,9 @@ print '<p>&nbsp;</p>';
 
   <body onload="initialize()">
     <div id="mapstraction"></div>
-    <script src="http://maps.google.com/maps?file=api&v=2&key=
-    <?php echo option('GoogleKey') ?>
-    " type="text/javascript">
+    <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript">
     </script>
-    <script type="text/javascript" src="/
-    <?php echo option('js_dir') ?>
-    /mapstraction.js">
+    <script type="text/javascript" src="/<?php echo option('js_dir') ?>/mapstraction.js">
     </script>
     <style type="text/css">
         #mapstraction {
@@ -70,14 +66,12 @@ print '<p>&nbsp;</p>';
       // initialise the map with your choice of API
         var mapstraction = new Mapstraction('mapstraction','openstreetmap');
 
-        var myPoint = new LatLonPoint(<?php echo $Dojo->Latitude
-                                        .','
-                                        .$Dojo->Longitude; ?>);
+        var myPoint = new LatLonPoint(<?php echo $Dojo->Latitude.','.$Dojo->Longitude; ?>);
         // display the map centered on a latitude and longitude (Google zoom levels)
         mapstraction.setCenterAndZoom(myPoint, 9);
         mapstraction.addControls({zoom: 'small'});
 
-        	     mapstraction.setCenterAndZoom(myPoint, 12);
+        mapstraction.setCenterAndZoom(myPoint, 12);
 
         // create a marker positioned at a lat/lon
         var marker = new Marker(myPoint);
