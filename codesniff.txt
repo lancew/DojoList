@@ -332,11 +332,11 @@ FOUND 24 ERROR(S) AND 2 WARNING(S) AFFECTING 12 LINE(S)
  107 | ERROR   | Missing comment for param "$data" at position 1
  108 | ERROR   | Last parameter comment requires a blank newline after it
  108 | ERROR   | Missing comment for param "$type" at position 2
- 179 | ERROR   | Last parameter comment requires a blank newline after it
- 179 | ERROR   | Parameters must appear immediately after the comment
- 179 | ERROR   | Doc comment for var $_POST. does not match actual variable
+ 182 | ERROR   | Last parameter comment requires a blank newline after it
+ 182 | ERROR   | Parameters must appear immediately after the comment
+ 182 | ERROR   | Doc comment for var $_POST. does not match actual variable
      |         | name $_POST at position 1
- 179 | ERROR   | Expected 1 space after the longest type
+ 182 | ERROR   | Expected 1 space after the longest type
 --------------------------------------------------------------------------------
 
 
