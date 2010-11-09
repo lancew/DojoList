@@ -1,12 +1,28 @@
 
 <body onload="initialize()">
     <div id="mapstraction" style="width: 100%;"></div>
-    <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript">
+    <script src="http://maps.google.com/maps?file=api&v=2&key=
+    <?php echo option('GoogleKey') ?>
+    " type="text/javascript">
     </script>
-    <script type="text/javascript" src="<?php echo option('js_dir') ?>/mapstraction.js">
+    <script type="text/javascript" src="
+    <?php echo option('js_dir') ?>
+    /mapstraction.js">
     </script>
-    <form action="javascript:document.search.s.focus();return false;" onSubmit="showAddress(this.form.s.value)">
-    <input type="text" name="s" id="search-postcode" size="45" value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" onBlur="showAddress(this.form.s.value)" onFocus="this.form.s.value = '';" />
+    <form 
+        action="javascript:document.search.s.focus();return false;"
+        onSubmit="showAddress(this.form.s.value)"
+    >
+    <input 
+        type="text" 
+        name="s" 
+        id="search-postcode"
+        size="45" 
+        value="
+        <?php echo _("Enter your address or Postcode to find a local club"); ?>" 
+        onBlur="showAddress(this.form.s.value)" 
+        onFocus="this.form.s.value = '';" 
+    />
      
     </form>
     <style type="text/css">
@@ -26,13 +42,19 @@
         mapstraction.addControls({zoom: 'large'});
      
         // Add url to the URL of your online KML dojo.kml file here  
-        // Note: The php that adds ?v= and a random number stops google caching the kml file, so updates appear right away.    
-        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>/data/dojo.kml<?php echo "?v=".rand(1,1000); ?>");
+        // Note: The php that adds ?v= and a random number stops google
+        // caching the kml file, so updates appear right away.    
+        mapstraction.addOverlay("http://<?php echo $_SERVER['HTTP_HOST'] ?>
+        /data/dojo.kml
+        <?php echo "?v=".rand(1, 1000); ?>");
       
     </script> 
-	<p><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a> - <a href="html">HTML</a> - 
+	<p>
+	<a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a>
+    - <a href="html">HTML</a> - 
 	<a href="<?php echo option('data_dir') ?>/dojo.xml" rel="nofollow">XML</a>
-	 -> <?php echo Count_dojo(); ?> <?php echo _("Dojo listed on this site and in these files."); ?>
+    -> <?php echo Count_dojo(); ?> 
+    <?php echo _("Dojo listed on this site and in these files."); ?>
 	</p>
 	
 <script type="text/javascript">

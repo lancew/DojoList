@@ -98,8 +98,10 @@ function Create_dojo($dojo, $file = null)
 	}
     
     $flag_url_present = '0';
-   foreach ($dojo as $key => $value) {
-	   if ($key === 'URL') { $flag_url_present = '1';}
+    foreach ($dojo as $key => $value) {
+        if ($key === 'URL') {
+            $flag_url_present = '1';
+        }
 	}
     
 
@@ -110,7 +112,8 @@ function Create_dojo($dojo, $file = null)
 		    && $key != 'recaptcha_response_field' 
 		    && $key !='MAX_FILE_SIZE'
         ) {
-			// If we are up to the DojoName entry, create the appropriate URL and add it to the XML.
+			// If we are up to the DojoName entry, 
+			// create the appropriate URL and add it to the XML.
 			if ($key === 'DojoName' and $flag_url_present != '1') {
 			     $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
                  $new1->addChild('URL', $source_url);
@@ -127,11 +130,17 @@ function Create_dojo($dojo, $file = null)
 
     // Add field for update date and time
     date_default_timezone_set("UTC");
-    $time = date("l, F d, Y h:i" ,time()); 
+    $time = date("l, F d, Y h:i", time()); 
     $new1->addChild('Updated', $time);
     
 	Save_Xml_data($xml->asXML());
-	$description = $dojo['DojoName'].' Dojo was created. <a href="'.$source_url.'/dojo/'.$dojo['DojoName'].'">'.$dojo['DojoName'].'</a>';
+	$description = $dojo['DojoName']
+	               .' Dojo was created. <a href="'
+	               .$source_url.'/dojo/'
+	               .$dojo['DojoName']
+	               .'">'
+	               .$dojo['DojoName']
+	               .'</a>';
 	//print_r($dojo);
 	//echo $description;
 	$rss_array = array('description' => $description);
@@ -238,7 +247,8 @@ function Sorted_dojo()
 
 }
 
-function clean_name($name)
+
+function Clean_name($name)
 {
     
 	$name = str_replace('&', ' and ', $name);
@@ -253,6 +263,8 @@ function clean_name($name)
     return $name;
 }
 
+
+
 function geoAddress($address = null)
 {
     //Three parts to the querystring: q is address, output is the format (
@@ -260,7 +272,10 @@ function geoAddress($address = null)
     $lng = null;
     $key = option('GoogleKey');
     $address2 = urlencode($address);
-    $mapurl = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+    $mapurl = "http://maps.google.com/maps/geo?q="
+                .$address2
+                ."&amp;output=json&amp;key="
+                .$key;
     $ch2 = curl_init();
     curl_setopt($ch2, CURLOPT_URL, $mapurl);
     curl_setopt($ch2, CURLOPT_HEADER, 0);
@@ -277,7 +292,7 @@ function geoAddress($address = null)
         $lat = trim($latlong[1]);
         $lng = trim($latlong[0]);
 
-	       }
+    }
 
     $aLatLng[0]=$lat;
     $aLatLng[1]=$lng;

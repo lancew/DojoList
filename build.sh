@@ -9,7 +9,7 @@ php tests/all_tests.php > test.html
 #echo "Exporting bugs..."
 #git sd publish --to ./bugs --html
 echo "Running codeSniffer"
-phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium ./ > codesniff.txt
+phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium,./lib/recaptchalib.php ./ > codesniff.txt
 echo "Running GitStats"
 ~/Desktop/gitstats/gitstats/gitstats ~/Documents/Dev_Projects/DojoList/ ~/Desktop/gitstats/gitstats/dojolist
 echo "Finished"
