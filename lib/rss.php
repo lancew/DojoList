@@ -59,22 +59,21 @@ function RSS_header()
 
 }
 
-function Delete_oldest_rss($max_items='20')
+function Delete_Oldest_rss($max_items='20')
 {
     $new_rss = RSS_header();
     $item_count = 0;
     $rss = Load_RSS_data();
     foreach ($rss->channel->item as $item) {
-	  if ($item_count < $max_items)
-	  {
-	       $new_rss .= '
-	       ';
-	       $new_rss .= $item->asXML();
-	       $new_rss .= '
-	       ';
-	  }
-	  //echo $item_count.':'.$max_items; 
-      $item_count++;
+        if ($item_count < $max_items) {
+            $new_rss .= '
+            ';
+            $new_rss .= $item->asXML();
+            $new_rss .= '
+            ';
+        }
+        //echo $item_count.':'.$max_items; 
+        $item_count++;
 	}
 	$new_rss .= '</channel></rss>';
 	return(Save_RSS_data($new_rss));
@@ -82,7 +81,7 @@ function Delete_oldest_rss($max_items='20')
  
 
 
-function Add_rss_item($item_array = null)
+function Add_Rss_item($item_array = null)
 {
     $new_rss = RSS_header();
     $item_count = 0;
@@ -109,8 +108,8 @@ function Add_rss_item($item_array = null)
 	       $new_rss .= '
 	       ';
 	 
-	  //echo $item_count.':'.$max_items; 
-      $item_count++;
+        //echo $item_count.':'.$max_items; 
+        $item_count++;
 	}
 	$new_rss .= '</channel></rss>';
 	Save_RSS_data($new_rss);

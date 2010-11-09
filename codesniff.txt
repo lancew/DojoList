@@ -422,190 +422,111 @@ FOUND 2 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/rss.php
 --------------------------------------------------------------------------------
-FOUND 16 ERROR(S) AND 0 WARNING(S) AFFECTING 13 LINE(S)
+FOUND 5 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 --------------------------------------------------------------------------------
-  21 | ERROR | Missing function doc comment
-  34 | ERROR | Missing function doc comment
-  43 | ERROR | Missing function doc comment
-  62 | ERROR | Missing function doc comment
-  62 | ERROR | Function name "Delete_oldest_rss" is invalid; consider
-     |       | "Delete_Oldest_rss" instead
-  68 | ERROR | Expected "if (...) {\n"; found "if (...)\n      {\n"
-  68 | ERROR | Line indented incorrectly; expected 8 spaces, found 6
-  70 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 11
-  72 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 11
-  73 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 11
-  76 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 6
-  77 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 6
-  85 | ERROR | You must use "/**" style comments for a function comment
-  85 | ERROR | Function name "Add_rss_item" is invalid; consider "Add_Rss_item"
-     |       | instead
- 112 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 6
- 113 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 6
+ 21 | ERROR | Missing function doc comment
+ 34 | ERROR | Missing function doc comment
+ 43 | ERROR | Missing function doc comment
+ 62 | ERROR | Missing function doc comment
+ 84 | ERROR | You must use "/**" style comments for a function comment
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/all_tests.php
 --------------------------------------------------------------------------------
-FOUND 6 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 4 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
 --------------------------------------------------------------------------------
  2 | ERROR | Missing file doc comment
- 2 | ERROR | "require_once" is a statement, not a function; no parentheses are
-   |       | required
  4 | ERROR | Missing class doc comment
  4 | ERROR | Opening brace of a class must be on the line after the definition
  5 | ERROR | Missing function doc comment
- 5 | ERROR | Opening brace should be on a new line
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/data_test.php
 --------------------------------------------------------------------------------
-FOUND 24 ERROR(S) AND 1 WARNING(S) AFFECTING 13 LINE(S)
+FOUND 12 ERROR(S) AND 0 WARNING(S) AFFECTING 7 LINE(S)
 --------------------------------------------------------------------------------
-  2 | ERROR   | Missing file doc comment
-  2 | ERROR   | "require_once" is a statement, not a function; no parentheses
-    |         | are required
-  3 | ERROR   | "require_once" is a statement, not a function; no parentheses
-    |         | are required
-  4 | ERROR   | "require_once" is a statement, not a function; no parentheses
-    |         | are required
-  6 | ERROR   | Missing class doc comment
-  6 | ERROR   | Opening brace of a class must be on the line after the
-    |         | definition
-  9 | ERROR   | Missing function doc comment
-  9 | ERROR   | Method name "TestOfDataModel::testLoad_wrong_file" is not in
-    |         | camel caps format
-  9 | ERROR   | Opening brace should be on a new line
- 10 | ERROR   | No space found after comma in function call
- 12 | ERROR   | Missing function doc comment
- 12 | ERROR   | Method name "TestOfDataModel::testLoad_specific_xml_data" is
-    |         | not in camel caps format
- 12 | ERROR   | Opening brace should be on a new line
- 15 | ERROR   | Missing function doc comment
- 15 | ERROR   | Method name "TestOfDataModel::testLoad_default_xml_data" is not
-    |         | in camel caps format
- 15 | ERROR   | Opening brace should be on a new line
- 19 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 2
- 31 | ERROR   | You must use "/**" style comments for a function comment
- 31 | ERROR   | Method name "TestOfDataModel::testSave_data" is not in camel
-    |         | caps format
- 31 | ERROR   | Opening brace should be on a new line
- 32 | ERROR   | "require_once" is a statement, not a function; no parentheses
-    |         | are required
- 32 | ERROR   | File is being conditionally included; use "include_once"
-    |         | instead
- 34 | ERROR   | No space found after comma in function call
- 35 | WARNING | Line exceeds 85 characters; contains 94 characters
- 35 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
-    |         | comment */" instead.
+  2 | ERROR | Missing file doc comment
+  6 | ERROR | Missing class doc comment
+  6 | ERROR | Opening brace of a class must be on the line after the definition
+  9 | ERROR | Missing function doc comment
+  9 | ERROR | Method name "TestOfDataModel::testLoad_wrong_file" is not in
+    |       | camel caps format
+ 13 | ERROR | Missing function doc comment
+ 13 | ERROR | Method name "TestOfDataModel::testLoad_specific_xml_data" is not
+    |       | in camel caps format
+ 17 | ERROR | Missing function doc comment
+ 17 | ERROR | Method name "TestOfDataModel::testLoad_default_xml_data" is not
+    |       | in camel caps format
+ 34 | ERROR | You must use "/**" style comments for a function comment
+ 34 | ERROR | Method name "TestOfDataModel::testSave_data" is not in camel caps
+    |       | format
+ 36 | ERROR | File is being conditionally included; use "include_once" instead
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/dojo_test.php
 --------------------------------------------------------------------------------
-FOUND 50 ERROR(S) AND 4 WARNING(S) AFFECTING 32 LINE(S)
+FOUND 28 ERROR(S) AND 0 WARNING(S) AFFECTING 20 LINE(S)
 --------------------------------------------------------------------------------
-   2 | ERROR   | Missing file doc comment
-   2 | ERROR   | "require_once" is a statement, not a function; no parentheses
-     |         | are required
-   3 | ERROR   | "require_once" is a statement, not a function; no parentheses
-     |         | are required
-   4 | ERROR   | "require_once" is a statement, not a function; no parentheses
-     |         | are required
-  10 | WARNING | Line exceeds 85 characters; contains 127 characters
-  14 | ERROR   | Last parameter comment requires a blank newline after it
-  14 | ERROR   | Parameters must appear immediately after the comment
-  14 | ERROR   | Missing comment for param "$var" at position 1
-  22 | ERROR   | Missing class doc comment
-  22 | ERROR   | Opening brace of a class must be on the line after the
-     |         | definition
-  25 | ERROR   | Missing function doc comment
-  25 | ERROR   | Method name "TestOfDojolist::testFind_Dojo_all" is not in
-     |         | camel caps format
-  25 | ERROR   | Opening brace should be on a new line
-  33 | ERROR   | You must use "/**" style comments for a function comment
-  33 | ERROR   | Method name "TestOfDojolist::testFind_dojo_doesnotexist" is
-     |         | not in camel caps format
-  33 | ERROR   | Opening brace should be on a new line
-  36 | ERROR   | Missing function doc comment
-  36 | ERROR   | Method name "TestOfDojolist::testFind_dojo_Alresford" is not
-     |         | in camel caps format
-  36 | ERROR   | Opening brace should be on a new line
-  39 | ERROR   | Missing function doc comment
-  39 | ERROR   | Method name "TestOfDojolist::testFind_dojo_AlresfordDetails"
-     |         | is not in camel caps format
-  39 | ERROR   | Opening brace should be on a new line
-  43 | ERROR   | No space found after comma in function call
-  47 | ERROR   | You must use "/**" style comments for a function comment
-  47 | ERROR   | Method name "TestOfDojolist::testCreate_dojo" is not in camel
-     |         | caps format
-  47 | ERROR   | Opening brace should be on a new line
-  48 | ERROR   | Expected "if (...) {\n"; found "if (...) \n        {\n"
-  48 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 2
-     |         | spaces
-  51 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  51 | WARNING | Line exceeds 85 characters; contains 137 characters
-  52 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  53 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  54 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  55 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 8
-  55 | ERROR   | No space found after comma in function call
-  59 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-     |         | 11
-  64 | ERROR   | Missing function doc comment
-  64 | ERROR   | Opening brace should be on a new line
-  67 | WARNING | Line exceeds 85 characters; contains 111 characters
-  71 | ERROR   | Missing function doc comment
-  71 | ERROR   | Opening brace should be on a new line
-  79 | ERROR   | You must use "/**" style comments for a function comment
-  79 | ERROR   | Opening brace should be on a new line
-  94 | ERROR   | You must use "/**" style comments for a function comment
-  94 | ERROR   | Method name "TestOfDojolist::testDelete_dojo" is not in camel
-     |         | caps format
-  94 | ERROR   | Opening brace should be on a new line
-  95 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
- 105 | ERROR   | Missing function doc comment
- 114 | WARNING | Line exceeds 85 characters; contains 95 characters
- 117 | ERROR   | You must use "/**" style comments for a function comment
- 119 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 120 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 121 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 122 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+   2 | ERROR | Missing file doc comment
+  15 | ERROR | Last parameter comment requires a blank newline after it
+  15 | ERROR | Parameters must appear immediately after the comment
+  15 | ERROR | Missing comment for param "$var" at position 1
+  23 | ERROR | Missing class doc comment
+  24 | ERROR | Expected 0 spaces before opening brace; 1 found
+  27 | ERROR | Missing function doc comment
+  27 | ERROR | Method name "TestOfDojolist::testFind_Dojo_all" is not in camel
+     |       | caps format
+  36 | ERROR | You must use "/**" style comments for a function comment
+  36 | ERROR | Method name "TestOfDojolist::testFind_dojo_doesnotexist" is not
+     |       | in camel caps format
+  40 | ERROR | Missing function doc comment
+  40 | ERROR | Method name "TestOfDojolist::testFind_dojo_Alresford" is not in
+     |       | camel caps format
+  44 | ERROR | Missing function doc comment
+  44 | ERROR | Method name "TestOfDojolist::testFind_dojo_AlresfordDetails" is
+     |       | not in camel caps format
+  53 | ERROR | You must use "/**" style comments for a function comment
+  53 | ERROR | Method name "TestOfDojolist::testCreate_dojo" is not in camel
+     |       | caps format
+  76 | ERROR | Missing function doc comment
+  81 | ERROR | Multi-line function call not indented correctly; expected 12
+     |       | spaces but found 8
+  82 | ERROR | Multi-line function call not indented correctly; expected 12
+     |       | spaces but found 8
+  87 | ERROR | Missing function doc comment
+  96 | ERROR | You must use "/**" style comments for a function comment
+ 112 | ERROR | You must use "/**" style comments for a function comment
+ 112 | ERROR | Method name "TestOfDojolist::testDelete_dojo" is not in camel
+     |       | caps format
+ 123 | ERROR | Missing function doc comment
+ 133 | ERROR | Multi-line function call not indented correctly; expected 12
+     |       | spaces but found 22
+ 134 | ERROR | Multi-line function call not indented correctly; expected 12
+     |       | spaces but found 22
+ 135 | ERROR | Multi-line function call not indented correctly; expected 8
+     |       | spaces but found 22
+ 138 | ERROR | You must use "/**" style comments for a function comment
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/rss_test.php
 --------------------------------------------------------------------------------
-FOUND 15 ERROR(S) AND 0 WARNING(S) AFFECTING 7 LINE(S)
+FOUND 8 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 --------------------------------------------------------------------------------
   2 | ERROR | Missing file doc comment
-  2 | ERROR | "require_once" is a statement, not a function; no parentheses are
-    |       | required
-  3 | ERROR | "require_once" is a statement, not a function; no parentheses are
-    |       | required
-  4 | ERROR | "require_once" is a statement, not a function; no parentheses are
-    |       | required
   7 | ERROR | Missing class doc comment
-  7 | ERROR | Opening brace of a class must be on the line after the definition
- 10 | ERROR | Missing function doc comment
- 10 | ERROR | Method name "TestOfRSS::testLoad_RSS_file" is not in camel caps
+ 11 | ERROR | Missing function doc comment
+ 11 | ERROR | Method name "TestOfRSS::TestLoadRssFile" is not in camel caps
     |       | format
- 10 | ERROR | Opening brace should be on a new line
- 15 | ERROR | Missing function doc comment
- 15 | ERROR | Method name "TestOfRSS::testDelete_oldest_rss" is not in camel
-    |       | caps format
- 15 | ERROR | Opening brace should be on a new line
- 21 | ERROR | Missing function doc comment
- 21 | ERROR | Method name "TestOfRSS::testAdd_rss_item" is not in camel caps
+ 17 | ERROR | Missing function doc comment
+ 17 | ERROR | Method name "TestOfRSS::TestDeleteOldestRss" is not in camel caps
     |       | format
- 21 | ERROR | Opening brace should be on a new line
+ 24 | ERROR | Missing function doc comment
+ 24 | ERROR | Method name "TestOfRSS::TestAddRssItem" is not in camel caps
+    |       | format
 --------------------------------------------------------------------------------
 
 
