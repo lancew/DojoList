@@ -26,7 +26,7 @@
 <table>
     <tr>
         <td>
-            <?php echo _("Club/Dojo Name:"); ?>
+            <?php echo _("* Club/Dojo Name:"); ?>
         </td>
         <td>
             <input 
