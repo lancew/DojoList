@@ -41,8 +41,26 @@ class TestOfDataModel extends UnitTestCase {
 		unlink('data/test1.xml');
 	}
 
+    function testGet_string_between()
+	{
+		//require_once 'lib/data.model.php';
+		$result = Get_string_between('addda', 'a', 'a');
+		$this->assertEqual($result, 'ddd', 'test Get_string_between'); 
+		
+	}
+	
+	function testValidate_fields_Dojoname()
+	{
+		$result = Validate_field('1Lwtest', 'DojoName');
+		//echo '-'.$result.'-';
+		$this->assertEqual($result, 'Dojo Name: Must be alphanumeric only', 'test Validate_field Dojoname'); 
+		$result = Validate_field('Lwtest', 'DojoName');
+		//echo '-'.$result.'-';
+		$this->assertEqual($result, '0', 'test Validate_field Dojoname 2'); 
+		
+	}
 
-
+   
 
 
 }

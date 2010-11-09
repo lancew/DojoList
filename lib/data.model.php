@@ -108,7 +108,7 @@ function guid()
  * @param mixed   $type
  * @return INT 0 or 1
  */
-function validate_field($data, $type)
+function Validate_field($data, $type)
 {
 	// This function checks fields and returns the number of errors found.
 	// Check if the parameters have been sent.
@@ -128,40 +128,43 @@ function validate_field($data, $type)
     [GUID] => {F6E3B62D-EE41-7213-D7DF-EFFFB9139F16}
     */
 
+	//echo $type.':'.$data.'<br>';
 	switch ($type) {
 	case "DojoName":
-		if (ereg('[^A-Za-z ]', $data)) {
-            return 1;
+		if (ereg('[^A-Za-z ]', $data)) {   
+            return 'Dojo Name: Must be alphanumeric only';
         }
-		break;
+		return null;
 	case "MembershipID":
 		if (ereg('[^0-9]', $data)) {
-            return 1;
+            return 'Membership ID: Must be numbers only';
         }
 		break;
 	case "CoachName":
 		if (ereg('[^A-Za-z ]', $data)) {
-            return 1;
+            return 'Coach Name: Must be letters a-z or A-Z only';
         }
-		break;
+		return null;
 	case "DojoAddress":
 		if (ereg('[^A-Za-z0-9,. ]', $data)) {
-            return 1;
+            return 'Dojo Address: Must be alphanumeric or a comma, or fullstop only';
         }
-		break;
+		return null;
 	case "ContactName":
 		if (ereg('[^A-Za-z ]', $data)) {
-            return 1;
+            return 'Contact Name: Must be letters a-z or A-Z only';
         }
-		break;
+		return null;
 	case "ContactPhone":
 		if (ereg('[^0-9() ]', $data)) {
-            return 1;
+            return 'Contact telephone number: Must be numbers 0-9 only';
         }
-		break;
+		return null;
+		
+
 
 	default:
-		return 0;
+		return null;
 
 
 	}
@@ -184,32 +187,33 @@ function Validate_form($_POST = null)
 	// echo '<pre>';
 	// print_r($_POST);
 	// echo '</pre>';
-	//set error_count to 0, should stay 0 if all forms validate
-	$error_count = 0;
+	
+	//create the error array
+	$aErrors = null;
+	
+	
+	// Cycle through all variables. If no dojoname then fail
+	// else use the validate_field function
 	foreach ($_POST as $field => $value) {
 
 		if ($field==="DojoName") {
 			if (!$value) {
-				$error_count++;
-				//echo $error_count;
+				$aErrors[] = 'Dojo name not present';
+				
 
 			}
 		}
 		if ($value) {
-			$result = validate_field($value, $field);
+			$result = Validate_field($value, $field);
 			//  echo  $field.": ".$result;
-			$error_count = $error_count + $result;
+			$aErrors[] = $result;
 			//  echo "COUNT: $error_count<br>";
 		}
 
 
 	}
-	// check the error count and return 1 if no errors 0 if any errors
-	if ($error_count < 1) {
-		return 1;
-	} else {
-		return 0;
-	}
+	// return an array of validation errors
+	return $aErrors;
 }
 
 

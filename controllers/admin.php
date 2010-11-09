@@ -81,7 +81,8 @@ function Admin_create()
 function Admin_Create_add()
 {
 
-	if (Validate_form($_POST)) {
+
+	if (!Validate_form($_POST)) {
 		$resp = recaptcha_check_answer(
             option('recaptcha_private_key'),
             $_SERVER["REMOTE_ADDR"],
@@ -103,7 +104,8 @@ function Admin_Create_add()
 
 		}
 	} else {
-		halt('Data failed to validate, please try again, click back button');
+		set('Errors',Validate_form($_POST));
+		return render('admin/validation_error.html.php');
 	}
 
 }
@@ -149,7 +151,7 @@ function Admin_editform()
  */
 function Admin_Editform_end()
 {
-	if (Validate_form($_POST)) {
+	if (!Validate_form($_POST)) {
 		$resp = recaptcha_check_answer(
 		    option('recaptcha_private_key'),
 			$_SERVER["REMOTE_ADDR"],
