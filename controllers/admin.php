@@ -263,7 +263,8 @@ function Admin_Editform_end()
 
 		}
 	} else {
-		halt('Failed to validate');
+		set('Errors',Validate_form($_POST));
+		return render('admin/validation_error.html.php');
 	}
 }
 

@@ -14,8 +14,7 @@
         name="s" 
         id="search-postcode"
         size="45" 
-        value="
-        <?php echo _("Enter your address or Postcode to find a local club"); ?>" 
+        value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" 
         onBlur="showAddress(this.form.s.value)" 
         onFocus="this.form.s.value = '';" 
     />

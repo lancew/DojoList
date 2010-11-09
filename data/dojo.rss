@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 15:08:22 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 15:21:49 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Tue, 09 Nov 10 15:21:49 +0000</pubDate>
+			<guid>Tue09Nov1015:21:49+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Tue, 09 Nov 10 15:21:48 +0000</pubDate>
+			<guid>Tue09Nov1015:21:48+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Tue, 09 Nov 10 15:21:48 +0000</pubDate>
+			<guid>Tue09Nov1015:21:48+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Tue, 09 Nov 10 15:21:47 +0000</pubDate>
+			<guid>Tue09Nov1015:21:47+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Tue, 09 Nov 10 15:21:46 +0000</pubDate>
+			<guid>Tue09Nov1015:21:46+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Tue, 09 Nov 10 15:21:45 +0000</pubDate>
+			<guid>Tue09Nov1015:21:45+0000</guid>
+    </item>
+            
             <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -101,47 +143,5 @@
 			<description>test_dojo Dojo was deleted</description>
 			<pubDate>Tue, 09 Nov 10 14:47:56 +0000</pubDate>
 			<guid>Tue09Nov1014:47:56+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
-			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
-			<pubDate>Tue, 09 Nov 10 14:47:56 +0000</pubDate>
-			<guid>Tue09Nov1014:47:56+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Tue, 09 Nov 10 14:47:55 +0000</pubDate>
-			<guid>Tue09Nov1014:47:55+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was deleted</title>
-			<description>test_dojo Dojo was deleted</description>
-			<pubDate>Tue, 09 Nov 10 14:47:54 +0000</pubDate>
-			<guid>Tue09Nov1014:47:54+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
-			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
-			<pubDate>Tue, 09 Nov 10 14:47:53 +0000</pubDate>
-			<guid>Tue09Nov1014:47:53+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Tue, 09 Nov 10 14:38:59 +0000</pubDate>
-			<guid>Tue09Nov1014:38:59+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was deleted</title>
-			<description>test_dojo Dojo was deleted</description>
-			<pubDate>Tue, 09 Nov 10 14:38:58 +0000</pubDate>
-			<guid>Tue09Nov1014:38:58+0000</guid>
     </item>
             </channel></rss>
