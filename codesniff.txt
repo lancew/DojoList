@@ -1,7 +1,7 @@
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/admin.php
 --------------------------------------------------------------------------------
-FOUND 102 ERROR(S) AND 43 WARNING(S) AFFECTING 123 LINE(S)
+FOUND 130 ERROR(S) AND 43 WARNING(S) AFFECTING 146 LINE(S)
 --------------------------------------------------------------------------------
    91 | ERROR   | Multi-line function call not indented correctly; expected 8
       |         | spaces but found 12
@@ -205,18 +205,68 @@ FOUND 102 ERROR(S) AND 43 WARNING(S) AFFECTING 123 LINE(S)
   863 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
   867 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
       |         | 10
-  876 | ERROR   | You must use "/**" style comments for a function comment
-  887 | WARNING | Line exceeds 85 characters; contains 98 characters
-  905 | WARNING | Line exceeds 85 characters; contains 95 characters
-  927 | WARNING | Line exceeds 85 characters; contains 159 characters
-  936 | WARNING | Inline control structures are discouraged
-  945 | ERROR   | You must use "/**" style comments for a function comment
-  945 | ERROR   | Function name "Admin_import_judo_alberta" is invalid;
+  873 | ERROR   | You must use "/**" style comments for a function comment
+  873 | ERROR   | Function name "Admin_import_JudoSA" is invalid; consider
+      |         | "Admin_Import_judoSA" instead
+  873 | ERROR   | Opening brace should be on a new line
+  885 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
+  886 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+      |         | 7
+  888 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+      |         | 7
+  890 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+      |         | 7
+  892 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
+  892 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
+  894 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  895 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  896 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  897 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  898 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  899 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  900 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  902 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  903 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  904 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  906 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+      |         | 7
+  907 | ERROR   | Expected "if (...) {\n"; found "if(...){      \n"
+  907 | ERROR   | Line indented incorrectly; expected 12 spaces, found 7
+  907 | ERROR   | There must be a single space between the closing parenthesis
+      |         | and the opening brace of a multi-line IF statement; found 0
+      |         | spaces
+  908 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+      |         | 11
+  909 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+      |         | 15
+  920 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
+      |         | 16
+  921 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
+      |         | 8
+  924 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found
+      |         | 7
+  929 | ERROR   | You must use "/**" style comments for a function comment
+  940 | WARNING | Line exceeds 85 characters; contains 98 characters
+  958 | WARNING | Line exceeds 85 characters; contains 95 characters
+  980 | WARNING | Line exceeds 85 characters; contains 159 characters
+  989 | WARNING | Inline control structures are discouraged
+  998 | ERROR   | You must use "/**" style comments for a function comment
+  998 | ERROR   | Function name "Admin_import_judo_alberta" is invalid;
       |         | consider "Admin_Import_Judo_alberta" instead
-  949 | WARNING | Line exceeds 85 characters; contains 88 characters
-  981 | WARNING | Line exceeds 85 characters; contains 95 characters
- 1003 | WARNING | Line exceeds 85 characters; contains 227 characters
- 1012 | WARNING | Inline control structures are discouraged
+ 1002 | WARNING | Line exceeds 85 characters; contains 88 characters
+ 1034 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 1056 | WARNING | Line exceeds 85 characters; contains 227 characters
+ 1065 | WARNING | Inline control structures are discouraged
 --------------------------------------------------------------------------------
 
 
@@ -230,7 +280,7 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 59 ERROR(S) AND 4 WARNING(S) AFFECTING 42 LINE(S)
+FOUND 60 ERROR(S) AND 4 WARNING(S) AFFECTING 43 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
   35 | ERROR   | You must use "/**" style comments for a function comment
@@ -293,17 +343,18 @@ FOUND 59 ERROR(S) AND 4 WARNING(S) AFFECTING 42 LINE(S)
  100 | ERROR   | Expected 1 space after comma in function call; 5 found
  100 | ERROR   | Space before opening parenthesis of function call prohibited
  101 | ERROR   | Space before opening parenthesis of function call prohibited
- 104 | ERROR   | Expected 1 space after comma in function call; 3 found
- 104 | ERROR   | Space before opening parenthesis of function call prohibited
- 106 | ERROR   | Space before opening parenthesis of function call prohibited
- 109 | ERROR   | Expected 1 space after comma in function call; 11 found
- 109 | ERROR   | Space before opening parenthesis of function call prohibited
+ 102 | ERROR   | Space before opening parenthesis of function call prohibited
+ 105 | ERROR   | Expected 1 space after comma in function call; 3 found
+ 105 | ERROR   | Space before opening parenthesis of function call prohibited
+ 107 | ERROR   | Space before opening parenthesis of function call prohibited
+ 110 | ERROR   | Expected 1 space after comma in function call; 11 found
+ 110 | ERROR   | Space before opening parenthesis of function call prohibited
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/data.model.php
 --------------------------------------------------------------------------------
-FOUND 24 ERROR(S) AND 2 WARNING(S) AFFECTING 12 LINE(S)
+FOUND 33 ERROR(S) AND 2 WARNING(S) AFFECTING 18 LINE(S)
 --------------------------------------------------------------------------------
   23 | ERROR   | Parameters must appear immediately after the comment
   23 | ERROR   | Doc comment for var $file. does not match actual variable name
@@ -338,6 +389,20 @@ FOUND 24 ERROR(S) AND 2 WARNING(S) AFFECTING 12 LINE(S)
  182 | ERROR   | Doc comment for var $_POST. does not match actual variable
      |         | name $_POST at position 1
  182 | ERROR   | Expected 1 space after the longest type
+ 218 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
+ 219 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+ 219 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
+ 219 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
+ 220 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+     |         | 11
+ 223 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+ 223 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
+ 224 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 226 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
 --------------------------------------------------------------------------------
 
 
@@ -577,7 +642,7 @@ FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
 
 FILE: ...ers/lancewicks/Documents/Dev_Projects/DojoList/views/default_layout.php
 --------------------------------------------------------------------------------
-FOUND 8 ERROR(S) AND 27 WARNING(S) AFFECTING 31 LINE(S)
+FOUND 8 ERROR(S) AND 28 WARNING(S) AFFECTING 32 LINE(S)
 --------------------------------------------------------------------------------
    1 | WARNING | Line exceeds 85 characters; contains 109 characters
   13 | ERROR   | You must use "/**" style comments for a file comment
@@ -615,10 +680,11 @@ FOUND 8 ERROR(S) AND 27 WARNING(S) AFFECTING 31 LINE(S)
  134 | WARNING | Line exceeds 85 characters; contains 182 characters
  135 | WARNING | Line exceeds 85 characters; contains 303 characters
  136 | WARNING | Line exceeds 85 characters; contains 387 characters
- 137 | WARNING | Line exceeds 85 characters; contains 255 characters
- 138 | WARNING | Line exceeds 85 characters; contains 133 characters
- 143 | WARNING | Line exceeds 85 characters; contains 137 characters
- 144 | WARNING | Line exceeds 85 characters; contains 852 characters
+ 137 | WARNING | Line exceeds 85 characters; contains 138 characters
+ 138 | WARNING | Line exceeds 85 characters; contains 259 characters
+ 139 | WARNING | Line exceeds 85 characters; contains 133 characters
+ 144 | WARNING | Line exceeds 85 characters; contains 137 characters
+ 145 | WARNING | Line exceeds 85 characters; contains 852 characters
 --------------------------------------------------------------------------------
 
 

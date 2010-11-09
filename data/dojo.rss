@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 23:15:30 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 23:22:57 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Tue, 09 Nov 10 23:22:57 +0000</pubDate>
+			<guid>Tue09Nov1023:22:57+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Tue, 09 Nov 10 23:22:56 +0000</pubDate>
+			<guid>Tue09Nov1023:22:56+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Tue, 09 Nov 10 23:22:55 +0000</pubDate>
+			<guid>Tue09Nov1023:22:55+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Tue, 09 Nov 10 23:22:54 +0000</pubDate>
+			<guid>Tue09Nov1023:22:54+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Tue, 09 Nov 10 23:22:53 +0000</pubDate>
+			<guid>Tue09Nov1023:22:53+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Tue, 09 Nov 10 23:22:53 +0000</pubDate>
+			<guid>Tue09Nov1023:22:53+0000</guid>
+    </item>
+            
             <item>
 			<title>GLOSSOP JUDO CLUB Dojo was updated. <a href="http://dev.dojolist/dojo/GLOSSOP JUDO CLUB">GLOSSOP JUDO CLUB</a></title>
 			<description>GLOSSOP JUDO CLUB Dojo was updated. <a href="http://dev.dojolist/dojo/GLOSSOP JUDO CLUB">GLOSSOP JUDO CLUB</a></description>
@@ -101,47 +143,5 @@
 			<description>Kangaroo Judo Club inc. Dojo was created. <a href="/dojo/Kangaroo Judo Club inc.">Kangaroo Judo Club inc.</a></description>
 			<pubDate>Tue, 09 Nov 10 22:03:54 +0000</pubDate>
 			<guid>Tue09Nov1022:03:54+0000</guid>
-    </item>
-            
-            <item>
-			<title>Gawler Judo Club Dojo was created. <a href="/dojo/Gawler Judo Club">Gawler Judo Club</a></title>
-			<description>Gawler Judo Club Dojo was created. <a href="/dojo/Gawler Judo Club">Gawler Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:54 +0000</pubDate>
-			<guid>Tue09Nov1022:03:54+0000</guid>
-    </item>
-            
-            <item>
-			<title>Flinders University Judo Club Dojo was created. <a href="/dojo/Flinders University Judo Club">Flinders University Judo Club</a></title>
-			<description>Flinders University Judo Club Dojo was created. <a href="/dojo/Flinders University Judo Club">Flinders University Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:54 +0000</pubDate>
-			<guid>Tue09Nov1022:03:54+0000</guid>
-    </item>
-            
-            <item>
-			<title>Elizabeth Special Needs Judo Club Dojo was created. <a href="/dojo/Elizabeth Special Needs Judo Club">Elizabeth Special Needs Judo Club</a></title>
-			<description>Elizabeth Special Needs Judo Club Dojo was created. <a href="/dojo/Elizabeth Special Needs Judo Club">Elizabeth Special Needs Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:53 +0000</pubDate>
-			<guid>Tue09Nov1022:03:53+0000</guid>
-    </item>
-            
-            <item>
-			<title>Burside Youth Club-Judo inc. Dojo was created. <a href="/dojo/Burside Youth Club-Judo inc.">Burside Youth Club-Judo inc.</a></title>
-			<description>Burside Youth Club-Judo inc. Dojo was created. <a href="/dojo/Burside Youth Club-Judo inc.">Burside Youth Club-Judo inc.</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:53 +0000</pubDate>
-			<guid>Tue09Nov1022:03:53+0000</guid>
-    </item>
-            
-            <item>
-			<title>Adelaide University Judo Club Dojo was created. <a href="/dojo/Adelaide University Judo Club">Adelaide University Judo Club</a></title>
-			<description>Adelaide University Judo Club Dojo was created. <a href="/dojo/Adelaide University Judo Club">Adelaide University Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:53 +0000</pubDate>
-			<guid>Tue09Nov1022:03:53+0000</guid>
-    </item>
-            
-            <item>
-			<title>Adelaide Aikijitsu  and  Judo Club Dojo was created. <a href="/dojo/Adelaide Aikijitsu  and  Judo Club">Adelaide Aikijitsu  and  Judo Club</a></title>
-			<description>Adelaide Aikijitsu  and  Judo Club Dojo was created. <a href="/dojo/Adelaide Aikijitsu  and  Judo Club">Adelaide Aikijitsu  and  Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:52 +0000</pubDate>
-			<guid>Tue09Nov1022:03:52+0000</guid>
     </item>
             </channel></rss>
