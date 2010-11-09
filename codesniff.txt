@@ -659,9 +659,12 @@ FOUND 13 ERROR(S) AND 24 WARNING(S) AFFECTING 32 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/views/main.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+FOUND 1 ERROR(S) AND 3 WARNING(S) AFFECTING 3 LINE(S)
 --------------------------------------------------------------------------------
- 5 | ERROR | Missing file doc comment
+  4 | ERROR   | Missing file doc comment
+  4 | WARNING | Line exceeds 85 characters; contains 120 characters
+  6 | WARNING | Line exceeds 85 characters; contains 88 characters
+ 43 | WARNING | Line exceeds 85 characters; contains 126 characters
 --------------------------------------------------------------------------------
 
 
@@ -675,8 +678,11 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/views/view.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+FOUND 1 ERROR(S) AND 3 WARNING(S) AFFECTING 4 LINE(S)
 --------------------------------------------------------------------------------
- 4 | ERROR | Missing file doc comment
+  4 | ERROR   | Missing file doc comment
+ 54 | WARNING | Line exceeds 85 characters; contains 120 characters
+ 56 | WARNING | Line exceeds 85 characters; contains 89 characters
+ 69 | WARNING | Line exceeds 85 characters; contains 91 characters
 --------------------------------------------------------------------------------
 
