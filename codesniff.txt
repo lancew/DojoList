@@ -228,7 +228,7 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 59 ERROR(S) AND 3 WARNING(S) AFFECTING 42 LINE(S)
+FOUND 59 ERROR(S) AND 4 WARNING(S) AFFECTING 42 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
   35 | ERROR   | You must use "/**" style comments for a function comment
@@ -240,6 +240,7 @@ FOUND 59 ERROR(S) AND 3 WARNING(S) AFFECTING 42 LINE(S)
   39 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
      |         | comment */" instead.
   40 | ERROR   | No space found after comma in function call
+  40 | WARNING | Line exceeds 85 characters; contains 113 characters
   44 | ERROR   | Expected 1 space after comma in function call; 7 found
   46 | ERROR   | No space found after comma in function call
   46 | ERROR   | No space found after comma in function call
@@ -300,114 +301,43 @@ FOUND 59 ERROR(S) AND 3 WARNING(S) AFFECTING 42 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/data.model.php
 --------------------------------------------------------------------------------
-FOUND 81 ERROR(S) AND 3 WARNING(S) AFFECTING 46 LINE(S)
+FOUND 25 ERROR(S) AND 2 WARNING(S) AFFECTING 13 LINE(S)
 --------------------------------------------------------------------------------
   23 | ERROR   | Parameters must appear immediately after the comment
   23 | ERROR   | Doc comment for var $file. does not match actual variable name
      |         | $file at position 1
+  23 | ERROR   | Expected 1 space after the longest type
   43 | ERROR   | Parameters must appear immediately after the comment
   43 | ERROR   | Missing comment for param "$xml" at position 1
-  44 | ERROR   | Last parameter comment requires a blank newline after it
-  44 | ERROR   | The variable names for parameters $xml (1) and $file. (2) do
-     |         | not align
   44 | ERROR   | The comments for parameters $xml (1) and $file. (2) do not
      |         | align
   44 | ERROR   | Doc comment for var $file. does not match actual variable name
      |         | $file at position 2
-  60 | ERROR   | Parameters must appear immediately after the comment
-  60 | ERROR   | Missing comment for param "$string" at position 1
-  61 | ERROR   | The comments for parameters $string (1) and $start (2) do not
+  44 | ERROR   | Expected 1 space after the longest type
+  61 | ERROR   | Parameters must appear immediately after the comment
+  61 | ERROR   | Missing comment for param "$string" at position 1
+  62 | ERROR   | The comments for parameters $string (1) and $start (2) do not
      |         | align
-  61 | ERROR   | Missing comment for param "$start" at position 2
-  62 | ERROR   | Last parameter comment requires a blank newline after it
-  62 | ERROR   | The comments for parameters $start (2) and $end (3) do not
+  62 | ERROR   | Missing comment for param "$start" at position 2
+  63 | ERROR   | Last parameter comment requires a blank newline after it
+  63 | ERROR   | The comments for parameters $start (2) and $end (3) do not
      |         | align
-  62 | ERROR   | Missing comment for param "$end" at position 3
-  65 | ERROR   | Function name "get_string_between" is prefixed with a package
-     |         | name but does not begin with a capital letter
-  69 | WARNING | Inline control structures are discouraged
-  81 | ERROR   | Opening brace should be on a new line
-  82 | ERROR   | Expected "if (...) {\n"; found "if (...){\n"
-  82 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 0
-     |         | spaces
-  84 | ERROR   | Expected "} else {\n"; found "}else{\n"
-  91 | ERROR   | No space found after comma in function call
-  92 | ERROR   | No space found after comma in function call
-  93 | ERROR   | No space found after comma in function call
-  93 | ERROR   | No space found after comma in function call
- 102 | WARNING | Line exceeds 85 characters; contains 95 characters
- 105 | ERROR   | Parameters must appear immediately after the comment
- 105 | ERROR   | Missing comment for param "$data" at position 1
- 106 | ERROR   | Last parameter comment requires a blank newline after it
- 106 | ERROR   | Missing comment for param "$type" at position 2
- 109 | ERROR   | Function name "validate_field" is prefixed with a package name
+  63 | ERROR   | Missing comment for param "$end" at position 3
+  66 | ERROR   | Function name "Get_string_between" is invalid; consider
+     |         | "Get_String_between" instead
+  70 | WARNING | Inline control structures are discouraged
+ 104 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 107 | ERROR   | Parameters must appear immediately after the comment
+ 107 | ERROR   | Missing comment for param "$data" at position 1
+ 108 | ERROR   | Last parameter comment requires a blank newline after it
+ 108 | ERROR   | Missing comment for param "$type" at position 2
+ 111 | ERROR   | Function name "validate_field" is prefixed with a package name
      |         | but does not begin with a capital letter
- 130 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 131 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 131 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 131 | ERROR   | No space found after comma in function call
- 131 | ERROR   | Closing brace must be on a line by itself
- 133 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 134 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 134 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 134 | ERROR   | No space found after comma in function call
- 134 | ERROR   | Closing brace must be on a line by itself
- 136 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 137 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 137 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 137 | ERROR   | No space found after comma in function call
- 137 | ERROR   | Closing brace must be on a line by itself
- 139 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 140 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 140 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 140 | ERROR   | No space found after comma in function call
- 140 | ERROR   | Closing brace must be on a line by itself
- 142 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 143 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 143 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 143 | ERROR   | No space found after comma in function call
- 143 | ERROR   | Closing brace must be on a line by itself
- 145 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 146 | ERROR   | Expected "if (...) {\n"; found "if(...) {"
- 146 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
- 146 | ERROR   | No space found after comma in function call
- 146 | ERROR   | Closing brace must be on a line by itself
- 149 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
- 161 | WARNING | Line exceeds 85 characters; contains 118 characters
- 164 | ERROR   | Last parameter comment requires a blank newline after it
- 164 | ERROR   | Parameters must appear immediately after the comment
- 164 | ERROR   | Doc comment for var $_POST. does not match actual variable
+ 179 | ERROR   | Last parameter comment requires a blank newline after it
+ 179 | ERROR   | Parameters must appear immediately after the comment
+ 179 | ERROR   | Doc comment for var $_POST. does not match actual variable
      |         | name $_POST at position 1
- 169 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 3
- 170 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 3
- 171 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 3
- 174 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...)\n    {\n"
- 177 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 177 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 0
-     |         | spaces
- 178 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 178 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 0
-     |         | spaces
- 182 | ERROR   | Closing brace indented incorrectly; expected 12 spaces, found
-     |         | 16
- 183 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
-     |         | 12
- 184 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 184 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 0
-     |         | spaces
- 185 | ERROR   | No space found after comma in function call
- 189 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
-     |         | 16
- 194 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 194 | ERROR   | There must be a single space between the closing parenthesis
-     |         | and the opening brace of a multi-line IF statement; found 0
-     |         | spaces
- 196 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 8
- 196 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
+ 179 | ERROR   | Expected 1 space after the longest type
 --------------------------------------------------------------------------------
 
 

@@ -42,6 +42,7 @@ function Load_Xml_data($file = 'data/dojo.xml')
  * @access public
  * @param mixed   $xml
  * @param string  $file. (default: 'data/dojo.xml')
+ *
  * @return void
  */
 function Save_Xml_data($xml, $file = 'data/dojo.xml')
@@ -62,7 +63,7 @@ function Save_Xml_data($xml, $file = 'data/dojo.xml')
  * @param mixed   $end
  * @return void
  */
-function get_string_between($string, $start, $end)
+function Get_string_between($string, $start, $end)
 {
 	$string = " ".$string;
 	$ini = strpos($string, $start);
@@ -82,7 +83,7 @@ function guid()
 {
 	if (function_exists('com_create_guid')) {
 		return com_create_guid();
-	}else {
+	} else {
 		mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
 		$charid = strtoupper(md5(uniqid(rand(), true)));
 		$hyphen = chr(45);// "-"
@@ -129,22 +130,34 @@ function validate_field($data, $type)
 
 	switch ($type) {
 	case "DojoName":
-		if (ereg('[^A-Za-z ]', $data)) {return 1;}
+		if (ereg('[^A-Za-z ]', $data)) {
+            return 1;
+        }
 		break;
 	case "MembershipID":
-		if (ereg('[^0-9]', $data)) {return 1;}
+		if (ereg('[^0-9]', $data)) {
+            return 1;
+        }
 		break;
 	case "CoachName":
-		if (ereg('[^A-Za-z ]', $data)) {return 1;}
+		if (ereg('[^A-Za-z ]', $data)) {
+            return 1;
+        }
 		break;
 	case "DojoAddress":
-		if (ereg('[^A-Za-z0-9,. ]', $data)) {return 1;}
+		if (ereg('[^A-Za-z0-9,. ]', $data)) {
+            return 1;
+        }
 		break;
 	case "ContactName":
-		if (ereg('[^A-Za-z ]', $data)) {return 1;}
+		if (ereg('[^A-Za-z ]', $data)) {
+            return 1;
+        }
 		break;
 	case "ContactPhone":
-		if (ereg('[^0-9() ]', $data)) {return 1;}
+		if (ereg('[^0-9() ]', $data)) {
+            return 1;
+        }
 		break;
 
 	default:
@@ -159,7 +172,8 @@ function validate_field($data, $type)
 /**
  * Validate_create function.
  *
- * This function is used to check all fields in the create form. returns the number of errors, hopefully it shold be 0
+ * This function is used to check all fields in the create form.
+ * returns the number of errors, hopefully it should be 0
  *
  * @access public
  * @param mixed   $_POST. (default: null)
