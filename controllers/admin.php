@@ -865,10 +865,54 @@ function Admin_importNSW()
             }
            
           }
-        
-        
-        
 
+
+}
+
+
+function Admin_import_JudoSA(){
+    // http://www.judosa.com.au/html/clubloc.cfm
+    // Australian South Australia website
+    
+    echo '<h1>Import Judo SA Dojo</h1>';
+    
+    $url = 'http://www.judosa.com.au/html/clubloc.cfm';
+	$data = file_get_contents($url);
+	$data = get_string_between($data, 'Download in Word Format:', '</BODY>');
+	$data = explode('<I><B>', $data);
+	// Shift the junk off the top of the array first.
+	array_shift($data);
+	foreach($data as $dojo){
+	   $fields = explode('<FONT CLASS="field">', $dojo);
+	   
+	   $name = trim(clean_name(strip_tags($fields[0])));
+	   $address = trim($fields[1]).', Australia';
+	   $address = str_ireplace('Location:', '', $address);
+	   
+	   $email_address = get_string_between($dojo, 'mailto:', '"');
+	   $web_address = get_string_between($dojo, 'http://', '"');
+	   $web_address = rtrim($web_address, '/');
+	   
+	   echo $name;
+	   echo '<br>';
+	   echo $address;
+	   echo '<br>';
+	   echo $email_address;
+	   echo '<br>';
+	   echo $web_address;
+	   
+	   
+	   
+	   //print_r($fields);
+	   
+	   
+	   
+	   	   echo '
+	   
+	   
+	   <hr>';
+	
+	}
 
 }
 
