@@ -237,8 +237,9 @@ function Admin_Editform_end()
 			fclose($fh);
 
 			$to      = $DojoOrigEmail;
-			$subject =  _("A change has been made to ") .$dojo->DojoName;
-			$message = _("Hello, a change has been made to the listing for the dojo ") . $dojo->DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $dojo->DojoName ;
+			$subject =  _("A change has been made to ") .$DojoName;
+			$html_dojoname = str_ireplace(' ', '%20', $DojoName);
+			$message = _("Hello, a change has been made to the listing for the dojo ") . $DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $html_dojoname;
 			$headers = 'From: noreply@dojolist.org' . "\r\n";
 			$message = wordwrap($message, 70);
 

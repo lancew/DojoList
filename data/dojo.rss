@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Wed, 03 Nov 10 22:54:21 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 05 Nov 10 11:25:14 +0000</lastBuildDate><generator>DojoList</generator>
 	
+	       <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 05 Nov 10 11:25:14 +0000</pubDate>
+			<guid>Fri05Nov1011:25:14+0000</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Fri, 05 Nov 10 11:25:13 +0000</pubDate>
+			<guid>Fri05Nov1011:25:13+0000</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Fri, 05 Nov 10 11:25:12 +0000</pubDate>
+			<guid>Fri05Nov1011:25:12+0000</guid>
+    </item>
+	       
+	       <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 05 Nov 10 11:25:11 +0000</pubDate>
+			<guid>Fri05Nov1011:25:11+0000</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Fri, 05 Nov 10 11:25:09 +0000</pubDate>
+			<guid>Fri05Nov1011:25:09+0000</guid>
+    </item>
+	       
+	       <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Fri, 05 Nov 10 11:25:08 +0000</pubDate>
+			<guid>Fri05Nov1011:25:08+0000</guid>
+    </item>
+	       
 	       <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -137,79 +179,5 @@ Snowy Mountains Judo Club Dojo was created. <a href="/dojo/ Snowy Mountains Judo
 Snowy Mountains Judo Club</a></description>
 			<pubDate>Wed, 03 Nov 10 22:45:06 +0000</pubDate>
 			<guid>Wed03Nov1022:45:06+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-Seven Hills Judo Club Dojo was created. <a href="/dojo/ Seven Hills Judo Club">
-Seven Hills Judo Club</a></title>
-			<description>
-Seven Hills Judo Club Dojo was created. <a href="/dojo/ Seven Hills Judo Club">
-Seven Hills Judo Club</a></description>
-			<pubDate>Wed, 03 Nov 10 22:45:06 +0000</pubDate>
-			<guid>Wed03Nov1022:45:06+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-
-Samurai Judo Academy, Newcastle PCYC Dojo was created. <a href="/dojo/  Samurai Judo Academy, Newcastle PCYC">
-
-Samurai Judo Academy, Newcastle PCYC</a></title>
-			<description>
-
-Samurai Judo Academy, Newcastle PCYC Dojo was created. <a href="/dojo/  Samurai Judo Academy, Newcastle PCYC">
-
-Samurai Judo Academy, Newcastle PCYC</a></description>
-			<pubDate>Wed, 03 Nov 10 22:45:05 +0000</pubDate>
-			<guid>Wed03Nov1022:45:05+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-Ren Shin Do Judo Academy Dojo was created. <a href="/dojo/ Ren Shin Do Judo Academy">
-Ren Shin Do Judo Academy</a></title>
-			<description>
-Ren Shin Do Judo Academy Dojo was created. <a href="/dojo/ Ren Shin Do Judo Academy">
-Ren Shin Do Judo Academy</a></description>
-			<pubDate>Wed, 03 Nov 10 22:45:05 +0000</pubDate>
-			<guid>Wed03Nov1022:45:05+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-Phoenix Judo Club, PCYC Dubbo Dojo was created. <a href="/dojo/ Phoenix Judo Club, PCYC Dubbo">
-Phoenix Judo Club, PCYC Dubbo</a></title>
-			<description>
-Phoenix Judo Club, PCYC Dubbo Dojo was created. <a href="/dojo/ Phoenix Judo Club, PCYC Dubbo">
-Phoenix Judo Club, PCYC Dubbo</a></description>
-			<pubDate>Wed, 03 Nov 10 22:44:58 +0000</pubDate>
-			<guid>Wed03Nov1022:44:58+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-
-Maitland PCYC Judo Club Dojo was created. <a href="/dojo/  Maitland PCYC Judo Club">
-
-Maitland PCYC Judo Club</a></title>
-			<description>
-
-Maitland PCYC Judo Club Dojo was created. <a href="/dojo/  Maitland PCYC Judo Club">
-
-Maitland PCYC Judo Club</a></description>
-			<pubDate>Wed, 03 Nov 10 22:44:57 +0000</pubDate>
-			<guid>Wed03Nov1022:44:57+0000</guid>
-    </item>
-	       
-	       <item>
-			<title>
-Macquarie Uni Judo Club Dojo was created. <a href="/dojo/ Macquarie Uni Judo Club">
-Macquarie Uni Judo Club</a></title>
-			<description>
-Macquarie Uni Judo Club Dojo was created. <a href="/dojo/ Macquarie Uni Judo Club">
-Macquarie Uni Judo Club</a></description>
-			<pubDate>Wed, 03 Nov 10 22:44:56 +0000</pubDate>
-			<guid>Wed03Nov1022:44:56+0000</guid>
     </item>
 	       </channel></rss>

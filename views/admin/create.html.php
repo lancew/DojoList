@@ -28,7 +28,7 @@
     <tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName"></td></tr>
     <tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone"></td></tr>
     <tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail" class="email"></td></tr>
-    <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite" class="url"></td></tr>
+    <tr><td><?php echo _("Club website:"); ?></td><td>http://<input type="text" name="ClubWebsite"></td></tr>
     <tr><td><input type="hidden" name="MAX_FILE_SIZE" value="20000" />Upload Dojo Logo: <input type="file" name="DojoLogo"></td></tr>
     <tr><td><?php echo _("Coordinates:"); ?></td><td>
             <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude"><br />

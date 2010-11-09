@@ -30,7 +30,7 @@
 <tr><td><?php echo _("Club/Dojo Name:"); ?></td><td><input type="text" name="DojoName" value="<?=h($Dojo->DojoName)?>" class="required"></td></tr>
 <tr><td><?php echo _("NGB Membership ID:"); ?></td><td><input type="text" name="MembershipID" value="<?=h($Dojo->MembershipID)?>"></td></tr>
 <tr><td><?php echo _("Head Coach Name:"); ?></td><td><input type="text" name="CoachName" value="<?=h($Dojo->CoachName)?>"></td></tr>
-<tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>" class="required"></td></tr>
+<tr><td><?php echo _("Dojo Address:"); ?></td><td><input type="text" name="DojoAddress" class="required" id="DojoAddress" onBlur="moveMarker(this.form.DojoAddress.value)" value="<?=h($Dojo->DojoAddress)?>" class="required"></td></tr>
 <tr><td><?php echo _("Training Sessions:"); ?></td><td></td></tr>
 
 <?php
@@ -54,7 +54,7 @@ foreach ($Dojo AS $field => $value) {
 
 <tr><td><?php echo _("Contact Name:"); ?></td><td><input type="text" name="ContactName" value="<?=h($Dojo->ContactName)?>"></td></tr>
 <tr><td><?php echo _("Contact Phone Number:"); ?></td><td><input type="text" name="ContactPhone" value="<?=h($Dojo->ContactPhone)?>"></td></tr>
-<tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail" value="<?=h($Dojo->ContactEmail)?>"></td></tr>
+<tr><td><?php echo _("Contact Email:"); ?></td><td><input type="text" name="ContactEmail" class="email" value="<?=h($Dojo->ContactEmail)?>"></td></tr>
 <tr><td><?php echo _("Club website:"); ?></td><td>Http://<input type="text" name="ClubWebsite" value="<?=h($Dojo->ClubWebsite)?>"></td></tr>
 <tr><td><?php echo _("Coordinates:"); ?></td><td>
 <?php echo _("Latitude:"); ?> <input type="text" id='lat' name="Latitude" value="<?=h($Dojo->Latitude)?>"><br />
