@@ -611,38 +611,17 @@ FOUND 15 ERROR(S) AND 0 WARNING(S) AFFECTING 7 LINE(S)
 
 FILE: .../lancewicks/Documents/Dev_Projects/DojoList/views/admin/create.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 16 WARNING(S) AFFECTING 17 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 15 | ERROR   | Missing file doc comment
- 17 | WARNING | Line exceeds 85 characters; contains 90 characters
- 19 | WARNING | Line exceeds 85 characters; contains 118 characters
- 20 | WARNING | Line exceeds 85 characters; contains 108 characters
- 21 | WARNING | Line exceeds 85 characters; contains 103 characters
- 22 | WARNING | Line exceeds 85 characters; contains 188 characters
- 26 | WARNING | Line exceeds 85 characters; contains 94 characters
- 28 | WARNING | Line exceeds 85 characters; contains 102 characters
- 29 | WARNING | Line exceeds 85 characters; contains 111 characters
- 30 | WARNING | Line exceeds 85 characters; contains 118 characters
- 31 | WARNING | Line exceeds 85 characters; contains 109 characters
- 32 | WARNING | Line exceeds 85 characters; contains 133 characters
- 34 | WARNING | Line exceeds 85 characters; contains 92 characters
- 35 | WARNING | Line exceeds 85 characters; contains 89 characters
- 37 | WARNING | Line exceeds 85 characters; contains 102 characters
- 42 | WARNING | Line exceeds 85 characters; contains 86 characters
- 52 | WARNING | Line exceeds 85 characters; contains 125 characters
+ 16 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...cewicks/Documents/Dev_Projects/DojoList/views/admin/create_add.html.php
 --------------------------------------------------------------------------------
-FOUND 4 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 1 | ERROR | Missing file doc comment
- 3 | ERROR | Short PHP opening tag used with echo. Found "<?= h ..." but
-   |       | expected "<?php echo h ...".
- 5 | ERROR | Short PHP opening tag used with echo. Found "<?= url_for ..." but
-   |       | expected "<?php echo url_for ...".
- 5 | ERROR | No space found after comma in function call
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
@@ -664,124 +643,49 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: .../lancewicks/Documents/Dev_Projects/DojoList/views/admin/delete.html.php
 --------------------------------------------------------------------------------
-FOUND 8 ERROR(S) AND 1 WARNING(S) AFFECTING 5 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 2 | ERROR   | Missing file doc comment
- 3 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 2
- 4 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
-   |         | but expected "<?php echo url_for ...".
- 4 | ERROR   | No space found after comma in function call
- 4 | ERROR   | No space found after comma in function call
- 4 | WARNING | Line exceeds 85 characters; contains 110 characters
- 7 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 2
- 8 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 0
- 8 | ERROR   | Closing brace must be on a line by itself
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...cewicks/Documents/Dev_Projects/DojoList/views/admin/delete_end.html.php
 --------------------------------------------------------------------------------
-FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 1 | ERROR | Missing file doc comment
- 3 | ERROR | Short PHP opening tag used with echo. Found "<?= h ..." but
-   |       | expected "<?php echo h ...".
- 5 | ERROR | Short PHP opening tag used with echo. Found "<?= url_for ..." but
-   |       | expected "<?php echo url_for ...".
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...s/Documents/Dev_Projects/DojoList/views/admin/delete_recaptcha.html.php
 --------------------------------------------------------------------------------
-FOUND 3 ERROR(S) AND 1 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 1 | ERROR   | Missing file doc comment
- 3 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-   |         | expected "<?php echo h ...".
- 3 | WARNING | Line exceeds 85 characters; contains 89 characters
- 6 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-   |         | expected "<?php echo h ...".
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...rs/lancewicks/Documents/Dev_Projects/DojoList/views/admin/edit.html.php
 --------------------------------------------------------------------------------
-FOUND 8 ERROR(S) AND 1 WARNING(S) AFFECTING 5 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 2 | ERROR   | Missing file doc comment
- 3 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 2
- 4 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
-   |         | but expected "<?php echo url_for ...".
- 4 | ERROR   | No space found after comma in function call
- 4 | ERROR   | No space found after comma in function call
- 4 | WARNING | Line exceeds 85 characters; contains 124 characters
- 5 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 2
- 6 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 0
- 6 | ERROR   | Closing brace must be on a line by itself
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...ancewicks/Documents/Dev_Projects/DojoList/views/admin/edit_end.html.php
 --------------------------------------------------------------------------------
-FOUND 4 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 1 | ERROR | Missing file doc comment
- 3 | ERROR | Short PHP opening tag used with echo. Found "<?= h ..." but
-   |       | expected "<?php echo h ...".
- 5 | ERROR | Short PHP opening tag used with echo. Found "<?= url_for ..." but
-   |       | expected "<?php echo url_for ...".
- 5 | ERROR | No space found after comma in function call
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
 FILE: ...ncewicks/Documents/Dev_Projects/DojoList/views/admin/edit_form.html.php
 --------------------------------------------------------------------------------
-FOUND 15 ERROR(S) AND 18 WARNING(S) AFFECTING 21 LINE(S)
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 16 | ERROR   | Missing file doc comment
- 18 | WARNING | Line exceeds 85 characters; contains 90 characters
- 21 | ERROR   | Expected "if (...) {\n"; found "if (...) { "
- 21 | WARNING | Line exceeds 85 characters; contains 149 characters
- 22 | ERROR   | Closing brace must be on a line by itself
- 22 | WARNING | Line exceeds 85 characters; contains 103 characters
- 23 | WARNING | Line exceeds 85 characters; contains 105 characters
- 30 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 30 | WARNING | Line exceeds 85 characters; contains 146 characters
- 31 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 31 | WARNING | Line exceeds 85 characters; contains 140 characters
- 32 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 32 | WARNING | Line exceeds 85 characters; contains 132 characters
- 33 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 33 | WARNING | Line exceeds 85 characters; contains 233 characters
- 40 | WARNING | Line exceeds 85 characters; contains 99 characters
- 41 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 8
- 55 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 55 | WARNING | Line exceeds 85 characters; contains 133 characters
- 56 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 56 | WARNING | Line exceeds 85 characters; contains 143 characters
- 57 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 57 | WARNING | Line exceeds 85 characters; contains 150 characters
- 58 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 58 | WARNING | Line exceeds 85 characters; contains 140 characters
- 60 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 60 | WARNING | Line exceeds 85 characters; contains 112 characters
- 61 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 61 | WARNING | Line exceeds 85 characters; contains 110 characters
- 63 | WARNING | Line exceeds 85 characters; contains 116 characters
- 66 | ERROR   | Short PHP opening tag used with echo. Found "<?= h ..." but
-    |         | expected "<?php echo h ...".
- 74 | WARNING | Line exceeds 85 characters; contains 125 characters
- 87 | WARNING | Line exceeds 85 characters; contains 111 characters
+ 16 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
