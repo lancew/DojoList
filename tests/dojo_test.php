@@ -139,8 +139,8 @@ class TestOfDojolist extends UnitTestCase
 	{
 		$latlng = geoAddress('25 Kauri Road, whenuapai, Auckland, New Zealand');
 		//print_r($latlng);
-		$this->assertEqual($latlng[0], (float)'-36.7959750', 'Latitude found');
-		$this->assertEqual($latlng[1], (float)'174.6368070', 'Longitude found');
+		$this->assertEqual($latlng[0], (float)'-36.7960173', 'Latitude found');
+		$this->assertEqual($latlng[1], (float)'174.6370523', 'Longitude found');
 	}
 
 

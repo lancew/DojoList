@@ -40,6 +40,14 @@ foreach ($Dojo as $key => $value) {
 
 		continue;
 	}
+	
+	if ($key =='CoachPhoto') {
+
+		echo '<img alt="'.$Dojo->CoachPhoto.'"
+  src="'.$Dojo->CoachPhoto.'" />';
+
+		continue;
+	}
 
 	// Default: Display the key and Value for the fields
 	print "<li>&nbsp; $key: $value</li>";

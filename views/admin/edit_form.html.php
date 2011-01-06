@@ -97,6 +97,42 @@
     </td>
 </tr>
 
+
+<tr>
+    <td>
+        <?php echo  _("Head Coach Photo:"); ?></td>
+        <td>
+        <?php if ($Dojo->CoachPhoto) {
+	echo '<img alt="'.$Dojo->CoachPhoto.'" src="'.$Dojo->CoachPhoto.'" />'; ?>
+            <br />
+            <br />Delete Photo
+            <input
+                type=checkbox
+                name="delete_photo"
+                value="delete_photo"
+            />
+        <?php 
+} 
+        ?>
+
+        <br />
+        <input
+            type="hidden"
+            name="MAX_FILE_SIZE"
+            value="20000"
+        />
+        <input
+            type="file"
+            name="CoachPhoto"
+        />
+
+	   </td>
+    </tr>
+</td>
+</tr>
+
+
+
 <tr>
     <td>
         <?php echo _("Dojo Address:"); ?>

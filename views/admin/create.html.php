@@ -58,6 +58,24 @@
             >
         </td>
     </tr>
+    <!--
+    <tr>
+        <td>
+            <input 
+                type="hidden" 
+                name="MAX_FILE_SIZE" 
+                value="20000" 
+            />
+            Upload Photo of Head Coach: 
+            <input 
+                type="file" 
+                name="CoachPhoto"
+            >
+        </td>
+
+    </tr>
+     -->
+
     <tr>
         <td>
             <?php echo _("* Dojo Address:"); ?>

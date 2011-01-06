@@ -96,6 +96,8 @@ function Create_dojo($dojo, $file = null)
 			return 0;
 		}
 	}
+	
+
     
     $flag_url_present = '0';
     foreach ($dojo as $key => $value) {

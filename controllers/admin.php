@@ -220,6 +220,28 @@ function Admin_Editform_end()
 					}
 
 					// end of if ($_FILES... section.
+					
+					// Coach Photo section.
+					if ($_FILES["CoachPhoto"]["name"]){
+						unset($dojo->CoachPhoto);
+						if ((($_FILES["CoachPhoto"]["type"] == "image/gif")
+								|| ($_FILES["CoachPhoto"]["type"] == "image/jpeg")
+								|| ($_FILES["CoachPhoto"]["type"] == "image/pjpeg")
+								|| ($_FILES["CoachPhoto"]["type"] == "image/png"))
+							&& ($_FILES["CoachPhoto"]["size"] < 20000)
+							) {
+							if ($_FILES["CoachPhoto"]["error"] > 0){
+								halt("Error: " . $_FILES["CoachPhoto"]["error"] . "<br />");
+							} else {
+
+								$dojo->addChild('CoachPhoto', 'data:'.$_FILES["CoachPhoto"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['CoachPhoto']['tmp_name'])));
+
+							}
+						}
+					}
+
+					// Coach Photo section
+					
 
 					// update the Updated field
 					date_default_timezone_set("UTC");
