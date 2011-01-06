@@ -3,8 +3,22 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Nov 10 23:22:57 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Wed, 10 Nov 10 10:42:26 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>lwtest Dojo was deleted</title>
+			<description>lwtest Dojo was deleted</description>
+			<pubDate>Wed, 10 Nov 10 10:42:26 +0000</pubDate>
+			<guid>Wed10Nov1010:42:26+0000</guid>
+    </item>
+            
+            <item>
+			<title>lwtest Dojo was created. <a href="http://dev.dojolist/dojo/lwtest/dojo/lwtest">lwtest</a></title>
+			<description>lwtest Dojo was created. <a href="http://dev.dojolist/dojo/lwtest/dojo/lwtest">lwtest</a></description>
+			<pubDate>Wed, 10 Nov 10 10:42:01 +0000</pubDate>
+			<guid>Wed10Nov1010:42:01+0000</guid>
+    </item>
+            
             <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -129,19 +143,5 @@
 			<description>Parafield Gardens Judo Club Dojo was created. <a href="/dojo/Parafield Gardens Judo Club">Parafield Gardens Judo Club</a></description>
 			<pubDate>Tue, 09 Nov 10 22:03:55 +0000</pubDate>
 			<guid>Tue09Nov1022:03:55+0000</guid>
-    </item>
-            
-            <item>
-			<title>Leopard Judo Club Dojo was created. <a href="/dojo/Leopard Judo Club">Leopard Judo Club</a></title>
-			<description>Leopard Judo Club Dojo was created. <a href="/dojo/Leopard Judo Club">Leopard Judo Club</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:55 +0000</pubDate>
-			<guid>Tue09Nov1022:03:55+0000</guid>
-    </item>
-            
-            <item>
-			<title>Kangaroo Judo Club inc. Dojo was created. <a href="/dojo/Kangaroo Judo Club inc.">Kangaroo Judo Club inc.</a></title>
-			<description>Kangaroo Judo Club inc. Dojo was created. <a href="/dojo/Kangaroo Judo Club inc.">Kangaroo Judo Club inc.</a></description>
-			<pubDate>Tue, 09 Nov 10 22:03:54 +0000</pubDate>
-			<guid>Tue09Nov1022:03:54+0000</guid>
     </item>
             </channel></rss>

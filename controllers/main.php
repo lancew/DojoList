@@ -61,6 +61,12 @@ function view()
 }
 
 
+function Websites_list() 
+{
+    //set('DojoList', Find_Dojo_all());
+    set('DojoList', Websites());
+    return html('websites_list.html.php');
+}
 
 
 ?>

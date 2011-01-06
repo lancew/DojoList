@@ -299,4 +299,21 @@ function geoAddress($address = null)
     return $aLatLng;    
 }
 
+
+function Websites()
+{
+	$xml = Find_Dojo_all();
+	$websites = array();
+	foreach ($xml->Dojo as $dojo) {
+	       //echo $dojo->ClubWebsite;
+	       if($dojo->ClubWebsite > '') {
+                $websites[] = (string)$dojo->ClubWebsite;
+		   }
+	}
+	sort($websites);
+	return $websites;
+
+}
+
+
 ?>
