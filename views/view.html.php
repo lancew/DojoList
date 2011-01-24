@@ -1,9 +1,16 @@
-<body>
+<body onload="initialize()">
 
 
 
 
-<h1><?php echo $Dojo->DojoName; ?></h1>
+<h1>
+            <?php 
+            if($Dojo->DojoLogo) {
+            echo '<span style="float:right;"><img alt="'.$Dojo->DojoName.'" src="'.$Dojo->DojoLogo.'" border="1px" /></span>';
+            }
+            echo $Dojo->DojoName; 
+            ?>
+</h1>
 <table>
     <tr>
         <td>
@@ -62,76 +69,49 @@
              ?>
         </td>
     </tr> 
+    <tr>
+    <td>
+        National Governing Body ID #
+    </td>
+    <td>
+        <?php echo $Dojo->MembershipID; ?>
+    </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>
+            Head Coach:
+        </td>
+        <td>
+            <?php 
+        	if ($Dojo->CoachName) {
+		      print "$Dojo->CoachName";
+		      		     
+		    }
+
+            
+             ?>
+        </td>
+    </tr> 
+    <tr>
+    <td></td>
+    <td>
+        <?php
+        if($Dojo->CoachPhoto){
+        echo '<span style="float:left;"><img alt="'.$Dojo->CoachPhoto.'" src="'.$Dojo->CoachPhoto.'" border="1px" /></span>';
+        }
+        ?>
+    </td>
+    </tr>    
 
 
 
 
 
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<?php
-
-foreach ($Dojo as $key => $value) {
-	// The following line skips fields if they are blank.
-	if (!$value) {
-	    continue;
-    }
-
-	// Skip display of the GUID
-	if ($key =='GUID' or $key =='URL') {
-		continue;
-
-	}
-
-	// Display the email address as HTML link.
-	if ($key =='DojoName') {
-		print "<h1>$value</h1>";
-		continue;
-
-	}
-
-	
-	// Display the email address as HTML link.
-	if ($key =='ClubWebsite') {
-		print "<li>&nbsp; $key: <a href='http://$value'>$value</a></li>";
-		continue;
-	}
-
-	if ($key =='DojoLogo') {
-
-		echo '<img alt="'.$Dojo->DojoName.'"
-  src="'.$Dojo->DojoLogo.'" />';
-
-		continue;
-	}
-	
-	if ($key =='CoachPhoto') {
-
-		echo '<img alt="'.$Dojo->CoachPhoto.'"
-  src="'.$Dojo->CoachPhoto.'" />';
-
-		continue;
-	}
-
-	// Default: Display the key and Value for the fields
-	print "<li>&nbsp; $key: $value</li>";
-
-
-}
-print '<p>&nbsp;</p>';
-?>
-
-  <body onload="initialize()">
+    <tr>
+    <td>Map of Dojo Location:</td>
+    <td>
+    
     <div id="mapstraction"></div>
     <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript">
     </script>
@@ -164,6 +144,20 @@ print '<p>&nbsp;</p>';
 
 
     </script>
+    </td>
+    </tr>
+
+    
+       <tr>
+    <td><h3>Training Sessions</h3></td>
+    <td></td>
+    </tr> 
+    
+</table>
+
+
+    
+    
 
     <p />&nbsp;<p />
     <a href="<?php echo url_for('dojo', $Dojo->DojoName, 'edit'); ?>">
@@ -171,3 +165,14 @@ print '<p>&nbsp;</p>';
     - <a href="<?php echo url_for('dojo', $Dojo->DojoName, 'delete'); ?>">
     <?php echo _("[DELETE DOJO]"); ?>
     </a>
+    <p>
+        <?php echo "Last Updated: $Dojo->Updated."; ?>
+    </p>
+    <?php
+        if($Dojo->GUID){
+            echo "<p>Dojo ID# $Dojo->GUID<//p>";
+        
+        }
+    ?>
+    
+    
