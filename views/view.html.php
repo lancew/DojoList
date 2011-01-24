@@ -1,5 +1,84 @@
 <body>
 
+
+
+
+<h1><?php echo $Dojo->DojoName; ?></h1>
+<table>
+    <tr>
+        <td>
+            Address:
+        </td>
+        <td>
+            <?php echo $Dojo->DojoAddress; ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Contact:
+        </td>
+        <td>
+            <?php echo $Dojo->ContactName; ?>
+        </td>
+    </tr>    
+    <tr>
+        <td>
+            Telephone:
+        </td>
+        <td>
+            <?php
+            if ($Dojo->ContactPhone) {
+		          print"<a href='callto:$Dojo->ContactPhone'>$Dojo->ContactPhone</a>";
+		    }
+            ?>
+        </td>
+    </tr> 
+    <tr>
+        <td>
+            email:
+        </td>
+        <td>
+            <?php 
+            if ($Dojo->ContactEmail) {
+		          print"<a href='mailto:$Dojo->ContactEmail'>$Dojo->ContactEmail</a>";
+		    }
+
+            
+             ?>
+        </td>
+    </tr>     
+    <tr>
+        <td>
+            Website:
+        </td>
+        <td>
+            <?php 
+        	if ($Dojo->ClubWebsite) {
+		      print "<a href='http://$Dojo->ClubWebsite'>$Dojo->ClubWebsite</a>";
+		     
+		    }
+
+            
+             ?>
+        </td>
+    </tr> 
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
 <?php
 
 foreach ($Dojo as $key => $value) {
@@ -21,12 +100,7 @@ foreach ($Dojo as $key => $value) {
 
 	}
 
-	if ($key =='ContactEmail') {
-		print "<li>&nbsp; $key: <a href='mailto:$value'>$value</a></li>";
-		continue;
-
-	}
-
+	
 	// Display the email address as HTML link.
 	if ($key =='ClubWebsite') {
 		print "<li>&nbsp; $key: <a href='http://$value'>$value</a></li>";

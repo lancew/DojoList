@@ -97,6 +97,34 @@ function Create_dojo($dojo, $file = null)
 		}
 	}
 	
+	
+	
+	// Code for adding the coach photo
+	// ------------------------------------------
+	
+	if ($file["CoachPhoto"]["name"]) {
+        if ((($file["CoachPhoto"]["type"] == "image/gif")
+            || ($file["CoachPhoto"]["type"] == "image/jpeg")
+            || ($file["CoachPhoto"]["type"] == "image/pjpeg")
+            || ($file["CoachPhoto"]["type"] == "image/png"))
+			&& ($file["CoachPhoto"]["size"] < 20000)
+		) {
+			if ($file["CoachPhoto"]["error"] > 0) {
+				halt("Error: " . $file["CoachPhoto"]["error"] . "<br />");
+			} else {
+				$new_child = 'data:'.$file["CoachPhoto"]["type"].';base64,';
+				$file = file_get_contents($file['CoachPhoto']['tmp_name']);
+				$new_child .= base64_encode($file);
+				$new1->addChild('CoachPhoto', $new_child);
+			}
+		} else {
+			return 0;
+		}
+	}
+
+    
+    // *** end of code adding coach photo.
+    // ------------------------------------------------
 
     
     $flag_url_present = '0';
