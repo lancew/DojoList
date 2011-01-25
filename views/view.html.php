@@ -152,6 +152,100 @@
     <td></td>
     </tr> 
     
+    
+    <tr>
+    <td></td>
+    <td>
+        <?php
+        
+        
+          
+                    if($Dojo->TrainingSession1Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession1Day".", "
+                            ."$Dojo->TrainingSession1Time".", "
+                            ."$Dojo->TrainingSession1Age";
+                        
+                        }
+                    if($Dojo->TrainingSession2Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession2Day".", "
+                            ."$Dojo->TrainingSession2Time".", "
+                            ."$Dojo->TrainingSession2Age";
+                        
+                        }
+                     if($Dojo->TrainingSession3Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession3Day".", "
+                            ."$Dojo->TrainingSession3Time".", "
+                            ."$Dojo->TrainingSession3Age";
+                        
+                        }
+                      if($Dojo->TrainingSession4Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession4Day".", "
+                            ."$Dojo->TrainingSession4Time".", "
+                            ."$Dojo->TrainingSession4Age";
+                        
+                        }
+                     if($Dojo->TrainingSession5Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession5Day".", "
+                            ."$Dojo->TrainingSession5Time".", "
+                            ."$Dojo->TrainingSession5Age";
+                        
+                        }
+                      if($Dojo->TrainingSession6Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession6Day".", "
+                            ."$Dojo->TrainingSession6Time".", "
+                            ."$Dojo->TrainingSession6Age";
+                        
+                        }   
+                      if($Dojo->TrainingSession7Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession7Day".", "
+                            ."$Dojo->TrainingSession7Time".", "
+                            ."$Dojo->TrainingSession7Age";
+                        
+                        }   
+                      if($Dojo->TrainingSession8Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession8Day".", "
+                            ."$Dojo->TrainingSession8Time".", "
+                            ."$Dojo->TrainingSession8Age";
+                        
+                        }    
+                      if($Dojo->TrainingSession9Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession9Day".", "
+                            ."$Dojo->TrainingSession9Time".", "
+                            ."$Dojo->TrainingSession9Age";
+                        
+                        }                  
+                      if($Dojo->TrainingSession10Day)
+                        {
+                        echo '<tr><td></td><td>';
+                        echo "$Dojo->TrainingSession10Day".", "
+                            ."$Dojo->TrainingSession10Time".", "
+                            ."$Dojo->TrainingSession10Age";
+                        
+                        }   
+                
+                
+        ?>
+    </td>
+    </tr>
+    
 </table>
 
 

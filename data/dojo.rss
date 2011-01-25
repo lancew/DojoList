@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 24 Jan 11 15:28:35 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 24 Jan 11 15:42:18 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 24 Jan 11 15:42:18 +0000</pubDate>
+			<guid>Mon24Jan1115:42:18+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Mon, 24 Jan 11 15:42:11 +0000</pubDate>
+			<guid>Mon24Jan1115:42:11+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Mon, 24 Jan 11 15:41:37 +0000</pubDate>
+			<guid>Mon24Jan1115:41:37+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 24 Jan 11 15:41:28 +0000</pubDate>
+			<guid>Mon24Jan1115:41:28+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Mon, 24 Jan 11 15:41:16 +0000</pubDate>
+			<guid>Mon24Jan1115:41:16+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Mon, 24 Jan 11 15:41:08 +0000</pubDate>
+			<guid>Mon24Jan1115:41:08+0000</guid>
+    </item>
+            
             <item>
 			<title>lwtest Dojo was updated. <a href="http://dev.dojolist/dojo/lwtest">lwtest</a></title>
 			<description>lwtest Dojo was updated. <a href="http://dev.dojolist/dojo/lwtest">lwtest</a></description>
@@ -101,47 +143,5 @@
 			<description>Nokian Judo Dojo was created. <a href="/dojo/Nokian Judo">Nokian Judo</a></description>
 			<pubDate>Mon, 24 Jan 11 11:34:05 +0000</pubDate>
 			<guid>Mon24Jan1111:34:05+0000</guid>
-    </item>
-            
-            <item>
-			<title>Akagi Dojo was created. <a href="/dojo/Akagi">Akagi</a></title>
-			<description>Akagi Dojo was created. <a href="/dojo/Akagi">Akagi</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:05 +0000</pubDate>
-			<guid>Mon24Jan1111:34:05+0000</guid>
-    </item>
-            
-            <item>
-			<title>Jigotai Jyväskylä Dojo was created. <a href="/dojo/Jigotai Jyv&#xE4;skyl&#xE4;">Jigotai Jyväskylä</a></title>
-			<description>Jigotai Jyväskylä Dojo was created. <a href="/dojo/Jigotai Jyv&#xE4;skyl&#xE4;">Jigotai Jyväskylä</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:04 +0000</pubDate>
-			<guid>Mon24Jan1111:34:04+0000</guid>
-    </item>
-            
-            <item>
-			<title>Hyvinkään judoseura Dojo was created. <a href="/dojo/Hyvink&#xE4;&#xE4;n judoseura">Hyvinkään judoseura</a></title>
-			<description>Hyvinkään judoseura Dojo was created. <a href="/dojo/Hyvink&#xE4;&#xE4;n judoseura">Hyvinkään judoseura</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:04 +0000</pubDate>
-			<guid>Mon24Jan1111:34:04+0000</guid>
-    </item>
-            
-            <item>
-			<title>Judojaosto, Kauhajoen Karhu Dojo was created. <a href="/dojo/Judojaosto, Kauhajoen Karhu">Judojaosto, Kauhajoen Karhu</a></title>
-			<description>Judojaosto, Kauhajoen Karhu Dojo was created. <a href="/dojo/Judojaosto, Kauhajoen Karhu">Judojaosto, Kauhajoen Karhu</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:04 +0000</pubDate>
-			<guid>Mon24Jan1111:34:04+0000</guid>
-    </item>
-            
-            <item>
-			<title>ESTON JUDO CLUB Dojo was created. <a href="/dojo/ESTON JUDO CLUB">ESTON JUDO CLUB</a></title>
-			<description>ESTON JUDO CLUB Dojo was created. <a href="/dojo/ESTON JUDO CLUB">ESTON JUDO CLUB</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:04 +0000</pubDate>
-			<guid>Mon24Jan1111:34:04+0000</guid>
-    </item>
-            
-            <item>
-			<title>Meido-Kan Dojo was created. <a href="/dojo/Meido-Kan">Meido-Kan</a></title>
-			<description>Meido-Kan Dojo was created. <a href="/dojo/Meido-Kan">Meido-Kan</a></description>
-			<pubDate>Mon, 24 Jan 11 11:34:04 +0000</pubDate>
-			<guid>Mon24Jan1111:34:04+0000</guid>
     </item>
             </channel></rss>

@@ -431,12 +431,12 @@ FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php
 --------------------------------------------------------------------------------
 FOUND 6 ERROR(S) AND 0 WARNING(S) AFFECTING 4 LINE(S)
 --------------------------------------------------------------------------------
- 253 | ERROR | Missing function doc comment
- 270 | ERROR | Missing function doc comment
- 305 | ERROR | You must use "/**" style comments for a function comment
- 305 | ERROR | Function name "Websites" is invalid; consider "websites" instead
- 311 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
- 311 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
+ 281 | ERROR | Missing function doc comment
+ 298 | ERROR | Missing function doc comment
+ 333 | ERROR | You must use "/**" style comments for a function comment
+ 333 | ERROR | Function name "Websites" is invalid; consider "websites" instead
+ 339 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
+ 339 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
 --------------------------------------------------------------------------------
 
 
@@ -789,12 +789,32 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/views/view.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 3 WARNING(S) AFFECTING 4 LINE(S)
+FOUND 13 ERROR(S) AND 7 WARNING(S) AFFECTING 15 LINE(S)
 --------------------------------------------------------------------------------
-  4 | ERROR   | Missing file doc comment
- 62 | WARNING | Line exceeds 85 characters; contains 120 characters
- 64 | WARNING | Line exceeds 85 characters; contains 89 characters
- 77 | WARNING | Line exceeds 85 characters; contains 91 characters
+   6 | ERROR   | Missing file doc comment
+   7 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
+   7 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+   8 | WARNING | Line exceeds 85 characters; contains 126 characters
+  36 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+  37 | WARNING | Line exceeds 85 characters; contains 86 characters
+  48 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+  49 | WARNING | Line exceeds 85 characters; contains 86 characters
+  62 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+  86 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+  99 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  99 | ERROR   | Line indented incorrectly; expected 0 spaces, found 8
+  99 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
+ 100 | WARNING | Line exceeds 85 characters; contains 125 characters
+ 115 | WARNING | Line exceeds 85 characters; contains 120 characters
+ 117 | WARNING | Line exceeds 85 characters; contains 89 characters
+ 130 | WARNING | Line exceeds 85 characters; contains 91 characters
+ 171 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+ 171 | ERROR   | Line indented incorrectly; expected 0 spaces, found 8
+ 171 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
 --------------------------------------------------------------------------------
 
 
