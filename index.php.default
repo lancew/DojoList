@@ -36,9 +36,11 @@ function configure()
 {
 	#option('base_uri', '/'); 	# '/' or same as the RewriteBase in your .htaccess
 								# comment out the above line if you don't have the .htaccess file and rewrite setup.
-	option('version', '0.7.0'); #DojoList version.
-	option('GoogleKey','');
-	
+	option('version', '0.8.0'); #DojoList version.
+	option('GoogleKey','');     # This field must be completed for maps to work. See the project Wiki for details
+		
+	option('recaptcha_public_key',			 '');    # This field must be filled in.
+	option('recaptcha_private_key',			 '');    # This field must be filled in.
 
 	
 	option('limonade_dir',       file_path('lib'));
@@ -55,9 +57,7 @@ function configure()
 	option('data_dir',		     file_path('data'));
 	
 	option('site_url',			 'http://'.$_SERVER['SERVER_NAME']);
-	
-	option('recaptcha_public_key',			 '');
-	option('recaptcha_private_key',			 '');
+
 	
 	option('password',			 'passw0rd');
 	
