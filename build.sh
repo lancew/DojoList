@@ -13,4 +13,5 @@ phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium,./lib/rec
 echo "Running GitStats"
 ~/Desktop/gitstats/gitstats/gitstats ~/Documents/Dev_Projects/DojoList/ ~/Desktop/gitstats/gitstats/dojolist
 open test.html
+open codesniff.txt
 echo "Finished"

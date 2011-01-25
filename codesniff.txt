@@ -431,12 +431,12 @@ FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php
 --------------------------------------------------------------------------------
 FOUND 6 ERROR(S) AND 0 WARNING(S) AFFECTING 4 LINE(S)
 --------------------------------------------------------------------------------
- 281 | ERROR | Missing function doc comment
- 298 | ERROR | Missing function doc comment
- 333 | ERROR | You must use "/**" style comments for a function comment
- 333 | ERROR | Function name "Websites" is invalid; consider "websites" instead
- 339 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
- 339 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
+ 280 | ERROR | Missing function doc comment
+ 297 | ERROR | Missing function doc comment
+ 332 | ERROR | You must use "/**" style comments for a function comment
+ 332 | ERROR | Function name "Websites" is invalid; consider "websites" instead
+ 338 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
+ 338 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
 --------------------------------------------------------------------------------
 
 
