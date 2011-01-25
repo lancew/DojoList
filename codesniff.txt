@@ -789,7 +789,7 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/views/view.html.php
 --------------------------------------------------------------------------------
-FOUND 13 ERROR(S) AND 7 WARNING(S) AFFECTING 15 LINE(S)
+FOUND 43 ERROR(S) AND 7 WARNING(S) AFFECTING 35 LINE(S)
 --------------------------------------------------------------------------------
    6 | ERROR   | Missing file doc comment
    7 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
@@ -810,9 +810,59 @@ FOUND 13 ERROR(S) AND 7 WARNING(S) AFFECTING 15 LINE(S)
  115 | WARNING | Line exceeds 85 characters; contains 120 characters
  117 | WARNING | Line exceeds 85 characters; contains 89 characters
  130 | WARNING | Line exceeds 85 characters; contains 91 characters
- 171 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 171 | ERROR   | Line indented incorrectly; expected 0 spaces, found 8
- 171 | ERROR   | There must be a single space between the closing parenthesis
+ 163 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 163 | ERROR   | Line indented incorrectly; expected 0 spaces, found 20
+ 170 | ERROR   | Closing brace indented incorrectly; expected 20 spaces, found
+     |         | 24
+ 171 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 171 | ERROR   | Line indented incorrectly; expected 0 spaces, found 20
+ 178 | ERROR   | Closing brace indented incorrectly; expected 20 spaces, found
+     |         | 24
+ 179 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 179 | ERROR   | Line indented incorrectly; expected 0 spaces, found 21
+ 186 | ERROR   | Closing brace indented incorrectly; expected 21 spaces, found
+     |         | 24
+ 187 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 187 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 194 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 195 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 195 | ERROR   | Line indented incorrectly; expected 0 spaces, found 21
+ 202 | ERROR   | Closing brace indented incorrectly; expected 21 spaces, found
+     |         | 24
+ 203 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 203 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 210 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 211 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 211 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 218 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 219 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 219 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 226 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 227 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 227 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 234 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 235 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                     
+     |         |   {\n"
+ 235 | ERROR   | Line indented incorrectly; expected 0 spaces, found 22
+ 242 | ERROR   | Closing brace indented incorrectly; expected 22 spaces, found
+     |         | 24
+ 265 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+ 265 | ERROR   | Line indented incorrectly; expected 0 spaces, found 8
+ 265 | ERROR   | There must be a single space between the closing parenthesis
      |         | and the opening brace of a multi-line IF statement; found 0
      |         | spaces
 --------------------------------------------------------------------------------

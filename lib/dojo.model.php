@@ -51,7 +51,6 @@ function Find_dojo($target=null)
 			$return_value = $dojo;
 		}
 	}
-
 	return $return_value;
 }
 
