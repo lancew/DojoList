@@ -290,11 +290,23 @@ FOUND 138 ERROR(S) AND 45 WARNING(S) AFFECTING 154 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/main.php
 --------------------------------------------------------------------------------
-FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 9 ERROR(S) AND 3 WARNING(S) AFFECTING 12 LINE(S)
 --------------------------------------------------------------------------------
- 32 | ERROR | Missing function doc comment
- 64 | ERROR | Missing function doc comment
- 72 | ERROR | You must use "/**" style comments for a function comment
+  32 | ERROR   | Missing function doc comment
+  64 | ERROR   | Missing function doc comment
+  72 | ERROR   | You must use "/**" style comments for a function comment
+  81 | WARNING | Line exceeds 85 characters; contains 87 characters
+  87 | ERROR   | Expected "if (...) {\n"; found "if\n    (...)\n    {\n"
+  91 | WARNING | Line exceeds 85 characters; contains 100 characters
+  94 | ERROR   | Expected "} else {\n"; found "} else\n    {\n"
+  99 | ERROR   | Expected "foreach (...) {\n"; found "foreach\n        (...)\n 
+     |         |       {\n"
+ 104 | ERROR   | Expected "if (...) {\n"; found "if\n            (...)\n       
+     |         |     {\n"
+ 109 | ERROR   | Expected "} else {\n"; found "}\n            else\n           
+     |         | {\n"
+ 112 | WARNING | Line exceeds 85 characters; contains 86 characters
+ 119 | ERROR   | Expected "if (...) {\n"; found "if\n    (...)\n    {\n"
 --------------------------------------------------------------------------------
 
 
