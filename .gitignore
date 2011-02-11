@@ -1,2 +1,5 @@
+.externalToolBuilders
+.project
+.settings
 .DS_Store
 index.php
