@@ -69,4 +69,53 @@ function Websites_list()
 }
 
 
+function search()
+{
+    $term = params('term');
+    set('term', $term);
+    $term = strtolower($term);
+    
+    // Things to do, search the names of dojo forst, needs to be fuzzy
+    // then search address fields
+    
+    // Set the result by default to nothing found, overwritten later if anything found.
+    $result = "";
+    
+    
+    
+    //Identical dojo name match
+    if(Find_dojo($term))
+    {
+        
+        $result .= '<a href="'.url_for('dojo', $term).'">'.$term.'</a> (Identical Dojo Name match)';
+        
+        //echo $result;
+    } else {
+    
+    //Find partial matches
+    $Dojo = Sorted_dojo();
+    foreach($Dojo as $item)
+    {
+        $pos = strpos(strtolower($item),$term);
+
+    if($pos === false) {
+        // string needle NOT found in haystack
+    }
+    else {
+        
+        $result .= '<a href="'.url_for('dojo', $item).'">'.$item.'</a><br />';
+    // string needle found in haystack
+    }
+    
+    }
+    }
+    
+    
+    
+    
+    set('results', $result);    
+    return html('search_results.html.php');
+}
+
+
 ?>

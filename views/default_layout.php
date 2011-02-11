@@ -70,7 +70,7 @@ putenv ("LC_ALL=en");
 			<ul>
 				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
 				
-				<li><a href="DojoList-070.zip"><?php echo _("Download"); ?></a></li>
+				<li><a href="https://github.com/lancew/DojoList/archives/master"><?php echo _("Download"); ?></a></li>
 				
 				<li><a href="<?=url_for('/about')?>"><?php echo _("About"); ?></a></li>
 
@@ -82,10 +82,27 @@ putenv ("LC_ALL=en");
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-			<form method="get" action="" name="search">
+		
+			<form 
+			 method="get" 
+			 action="<?=url_for('search')?>/" 
+			 name="search"
+            >
 				<fieldset>
-				<input type="text" name="s" id="search-text" size="15" value="<?php echo _("Search not yet working"); ?>"/>
-				<input type="submit" id="search-submit" value="<?php echo _("GO"); ?>" />
+				<input 
+				    type="text" 
+				    name="s" 
+				    id="search-text" 
+				    size="15" 
+				    value = "<?php echo _("Search"); ?>" 
+				    onFocus="this.form.s.value = '';"
+				    onChange="this.form.action += this.form.s.value"; 
+				/>
+				<input 
+				    type="submit" 
+				    id="search-submit" 
+				    value="<?php echo _("GO"); ?>" 
+				/>
 				</fieldset>
 			</form>
 		</div>

@@ -290,16 +290,17 @@ FOUND 138 ERROR(S) AND 45 WARNING(S) AFFECTING 154 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/main.php
 --------------------------------------------------------------------------------
-FOUND 2 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
+FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
 --------------------------------------------------------------------------------
  32 | ERROR | Missing function doc comment
  64 | ERROR | Missing function doc comment
+ 72 | ERROR | You must use "/**" style comments for a function comment
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 62 ERROR(S) AND 4 WARNING(S) AFFECTING 44 LINE(S)
+FOUND 64 ERROR(S) AND 4 WARNING(S) AFFECTING 45 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
   35 | ERROR   | You must use "/**" style comments for a function comment
@@ -365,8 +366,10 @@ FOUND 62 ERROR(S) AND 4 WARNING(S) AFFECTING 44 LINE(S)
  101 | ERROR   | Space before opening parenthesis of function call prohibited
  102 | ERROR   | Space before opening parenthesis of function call prohibited
  103 | ERROR   | Space before opening parenthesis of function call prohibited
- 106 | ERROR   | Expected 1 space after comma in function call; 3 found
- 106 | ERROR   | Space before opening parenthesis of function call prohibited
+ 105 | ERROR   | Expected 1 space after comma in function call; 4 found
+ 105 | ERROR   | Space before opening parenthesis of function call prohibited
+ 107 | ERROR   | Expected 1 space after comma in function call; 3 found
+ 107 | ERROR   | Space before opening parenthesis of function call prohibited
  108 | ERROR   | Space before opening parenthesis of function call prohibited
  111 | ERROR   | Expected 1 space after comma in function call; 11 found
  111 | ERROR   | Space before opening parenthesis of function call prohibited
@@ -667,7 +670,7 @@ FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
 
 FILE: ...ers/lancewicks/Documents/Dev_Projects/DojoList/views/default_layout.php
 --------------------------------------------------------------------------------
-FOUND 8 ERROR(S) AND 28 WARNING(S) AFFECTING 32 LINE(S)
+FOUND 9 ERROR(S) AND 27 WARNING(S) AFFECTING 32 LINE(S)
 --------------------------------------------------------------------------------
    1 | WARNING | Line exceeds 85 characters; contains 109 characters
   13 | ERROR   | You must use "/**" style comments for a file comment
@@ -683,33 +686,34 @@ FOUND 8 ERROR(S) AND 28 WARNING(S) AFFECTING 32 LINE(S)
   64 | WARNING | Line exceeds 85 characters; contains 122 characters
   71 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
      |         | but expected "<?php echo url_for ...".
+  73 | WARNING | Line exceeds 85 characters; contains 118 characters
   75 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
      |         | but expected "<?php echo url_for ...".
   75 | WARNING | Line exceeds 85 characters; contains 87 characters
-  87 | WARNING | Line exceeds 85 characters; contains 123 characters
-  88 | WARNING | Line exceeds 85 characters; contains 89 characters
- 103 | ERROR   | Short PHP opening tag used with echo. Found "<?= $content ..."
+  88 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
+     |         | but expected "<?php echo url_for ...".
+ 120 | ERROR   | Short PHP opening tag used with echo. Found "<?= $content ..."
      |         | but expected "<?php echo $content ...".
- 116 | WARNING | Line exceeds 85 characters; contains 117 characters
- 120 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
+ 133 | WARNING | Line exceeds 85 characters; contains 117 characters
+ 137 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
      |         | but expected "<?php echo url_for ...".
- 120 | WARNING | Line exceeds 85 characters; contains 89 characters
- 121 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
+ 137 | WARNING | Line exceeds 85 characters; contains 89 characters
+ 138 | ERROR   | Short PHP opening tag used with echo. Found "<?= url_for ..."
      |         | but expected "<?php echo url_for ...".
- 121 | WARNING | Line exceeds 85 characters; contains 100 characters
- 122 | WARNING | Line exceeds 85 characters; contains 92 characters
- 123 | WARNING | Line exceeds 85 characters; contains 107 characters
- 124 | WARNING | Line exceeds 85 characters; contains 92 characters
- 126 | ERROR   | No space found after comma in function call
- 126 | WARNING | Line exceeds 85 characters; contains 127 characters
- 134 | WARNING | Line exceeds 85 characters; contains 182 characters
- 135 | WARNING | Line exceeds 85 characters; contains 303 characters
- 136 | WARNING | Line exceeds 85 characters; contains 387 characters
- 137 | WARNING | Line exceeds 85 characters; contains 138 characters
- 138 | WARNING | Line exceeds 85 characters; contains 259 characters
- 139 | WARNING | Line exceeds 85 characters; contains 133 characters
- 144 | WARNING | Line exceeds 85 characters; contains 137 characters
- 145 | WARNING | Line exceeds 85 characters; contains 852 characters
+ 138 | WARNING | Line exceeds 85 characters; contains 100 characters
+ 139 | WARNING | Line exceeds 85 characters; contains 92 characters
+ 140 | WARNING | Line exceeds 85 characters; contains 107 characters
+ 141 | WARNING | Line exceeds 85 characters; contains 92 characters
+ 143 | ERROR   | No space found after comma in function call
+ 143 | WARNING | Line exceeds 85 characters; contains 127 characters
+ 151 | WARNING | Line exceeds 85 characters; contains 182 characters
+ 152 | WARNING | Line exceeds 85 characters; contains 303 characters
+ 153 | WARNING | Line exceeds 85 characters; contains 387 characters
+ 154 | WARNING | Line exceeds 85 characters; contains 138 characters
+ 155 | WARNING | Line exceeds 85 characters; contains 259 characters
+ 156 | WARNING | Line exceeds 85 characters; contains 133 characters
+ 161 | WARNING | Line exceeds 85 characters; contains 137 characters
+ 162 | WARNING | Line exceeds 85 characters; contains 852 characters
 --------------------------------------------------------------------------------
 
 
@@ -784,6 +788,14 @@ FILE: ...ancewicks/Documents/Dev_Projects/DojoList/views/main.html_list.html.php
 FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
  3 | ERROR | Missing file doc comment
+--------------------------------------------------------------------------------
+
+
+FILE: ...ancewicks/Documents/Dev_Projects/DojoList/views/search_results.html.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+--------------------------------------------------------------------------------
+ 2 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
