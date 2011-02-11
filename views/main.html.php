@@ -1,6 +1,6 @@
 
 <body onload="initialize()">
-    <div id="mapstraction" style="width: 100%;"></div>
+    
     <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo option('GoogleKey') ?>" type="text/javascript">
     </script>
     <script type="text/javascript" src="<?php echo option('js_dir') ?>/mapstraction.js">
@@ -14,12 +14,17 @@
         name="s" 
         id="search-postcode"
         size="45" 
-        value="<?php echo _("Enter your address or Postcode to find a local club"); ?>" 
+        value="<?php echo _("Enter your address or Postcode"); ?>" 
         onBlur="showAddress(this.form.s.value)" 
         onFocus="this.form.s.value = '';" 
     />
-     
+    <input 
+				    type="submit" 
+				    id="search-submit" 
+				    value="<?php echo _("GO"); ?>" 
+				/> 
     </form>
+    <div id="mapstraction" style="width: 100%;"></div>
     <style type="text/css">
         #mapstraction {
             height: 450px;
