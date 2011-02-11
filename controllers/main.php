@@ -139,9 +139,45 @@ function search()
 		
 	}
 
+    //use same array to search on coach name
+    foreach ($xml->Dojo as $dojo) {
+		
+		$pos = strpos(strtolower($dojo->CoachName), $term);
+		
+		if
+			($pos === false)
+			{
+				// string needle NOT found in haystack
+			}
+			else
+			{
 
+				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on coach name)<br />';
+				// string needle found in haystack
+			}
+		
+		
+	}
 
+    //use same array to search on contact name
+    foreach ($xml->Dojo as $dojo) {
+		
+		$pos = strpos(strtolower($dojo->ContactName), $term);
+		
+		if
+			($pos === false)
+			{
+				// string needle NOT found in haystack
+			}
+			else
+			{
 
+				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on contact name)<br />';
+				// string needle found in haystack
+			}
+		
+		
+	}
 
 
 
