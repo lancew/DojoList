@@ -109,14 +109,36 @@ function search()
 			else
 			{
 
-				$result .= '<a href="'.url_for('dojo', $item).'">'.$item.'</a><br />';
+				$result .= '<a href="'.url_for('dojo', $item).'">'.$item.'</a> (partial match on name)<br />';
 				// string needle found in haystack
 			}
 
 		}
 	}
-
     
+
+    //Search the address for the term
+    $xml = Find_Dojo_all();
+    
+    foreach ($xml->Dojo as $dojo) {
+		
+		$pos = strpos(strtolower($dojo->DojoAddress), $term);
+		
+		if
+			($pos === false)
+			{
+				// string needle NOT found in haystack
+			}
+			else
+			{
+
+				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on address)<br />';
+				// string needle found in haystack
+			}
+		
+		
+	}
+
 
 
 
