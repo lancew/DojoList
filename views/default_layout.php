@@ -59,7 +59,7 @@ putenv ("LC_ALL=en");
 <body>
 
 <div id="wrapper">
-<div id="logo">
+<div id="logo" style="background:red" >
 		<h1><a href="#">DojoList</a></h1>
 		<p><em><?php echo _("A free Open Source Dojo Listing system for Judo (and other martial art) clubs"); ?>.</em></p>
 	</div>

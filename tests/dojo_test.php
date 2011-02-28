@@ -45,7 +45,7 @@ class TestOfDojolist extends UnitTestCase
 	{
 		$xml = Find_dojo('Alresford Judo Club');
 		$text = $xml->DojoName;
-		//print_r($text);
+		print_r($text);
 		$this->assertEqual($text, 'Alresford Judo Club');
 	}
 

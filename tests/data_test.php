@@ -18,6 +18,10 @@ class TestOfDataModel extends UnitTestCase {
 	{
 		$this->assertTrue(Load_Xml_data('data/data.xml'));
 	}
+	
+		
+	
+	
 
 	/*
     function testLoad_test_xml_data() {
