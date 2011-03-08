@@ -36,10 +36,22 @@
 </head>
 <body>
 <h1>TestOfSyncModel</h1>
-<div style="padding: 8px; margin-top: 1em; background-color: green; color: white;">1/1 test cases complete:
-<strong>5</strong> passes, <strong>0</strong> fails and <strong>0</strong> exceptions.</div>
+<span class="fail">Fail</span>: testDojoNotInLocal -&gt; DojoNotInLocal returned 5 not 1 at [/Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php line 63]<br />
+<span class="fail">Fail</span>: testDojoUpdatedInFar -&gt; NewerFarDojo returned 0 not 1 at [/Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php line 70]<br />
+<div style="padding: 8px; margin-top: 1em; background-color: red; color: white;">1/1 test cases complete:
+<strong>3</strong> passes, <strong>2</strong> fails and <strong>0</strong> exceptions.</div>
 </body>
 </html>
 all_tests.php
-OK
-Test cases run: 3/3, Passes: 14, Failures: 0, Exceptions: 0
+1) DojoNotInLocal returned 5 not 1 at [/Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php line 63]
+	in testDojoNotInLocal
+	in TestOfSyncModel
+	in tests/sync_test.php
+	in All tests
+2) NewerFarDojo returned 0 not 1 at [/Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php line 70]
+	in testDojoUpdatedInFar
+	in TestOfSyncModel
+	in tests/sync_test.php
+	in All tests
+FAILURES!!!
+Test cases run: 3/3, Passes: 12, Failures: 2, Exceptions: 0

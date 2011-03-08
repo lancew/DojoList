@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 28 Feb 11 23:22:11 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 07 Mar 11 23:59:47 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:59:47 +0000</pubDate>
+			<guid>Mon07Mar1123:59:47+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:59:45 +0000</pubDate>
+			<guid>Mon07Mar1123:59:45+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:59:12 +0000</pubDate>
+			<guid>Mon07Mar1123:59:12+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:59:11 +0000</pubDate>
+			<guid>Mon07Mar1123:59:11+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:58:26 +0000</pubDate>
+			<guid>Mon07Mar1123:58:26+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Mar 11 23:58:24 +0000</pubDate>
+			<guid>Mon07Mar1123:58:24+0000</guid>
+    </item>
+            
             <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -101,47 +143,5 @@
 			<description>test_add</description>
 			<pubDate>Mon, 28 Feb 11 23:07:02 +0000</pubDate>
 			<guid>Mon28Feb1123:07:02+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 23:06:08 +0000</pubDate>
-			<guid>Mon28Feb1123:06:08+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 23:06:08 +0000</pubDate>
-			<guid>Mon28Feb1123:06:08+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 23:02:52 +0000</pubDate>
-			<guid>Mon28Feb1123:02:52+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 23:02:51 +0000</pubDate>
-			<guid>Mon28Feb1123:02:51+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 22:58:20 +0000</pubDate>
-			<guid>Mon28Feb1122:58:20+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Mon, 28 Feb 11 22:58:19 +0000</pubDate>
-			<guid>Mon28Feb1122:58:19+0000</guid>
     </item>
             </channel></rss>
