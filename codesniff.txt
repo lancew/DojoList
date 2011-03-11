@@ -337,58 +337,59 @@ FOUND 22 ERROR(S) AND 6 WARNING(S) AFFECTING 25 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 65 ERROR(S) AND 4 WARNING(S) AFFECTING 46 LINE(S)
+FOUND 64 ERROR(S) AND 4 WARNING(S) AFFECTING 45 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
-  35 | ERROR   | You must use "/**" style comments for a function comment
+  34 | ERROR   | You must use "/**" style comments for a function comment
+  36 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
+     |         | comment */" instead.
+  37 | WARNING | Line exceeds 85 characters; contains 116 characters
   37 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
      |         | comment */" instead.
-  38 | WARNING | Line exceeds 85 characters; contains 116 characters
   38 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
      |         | comment */" instead.
-  39 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
-     |         | comment */" instead.
-  40 | ERROR   | No space found after comma in function call
-  40 | WARNING | Line exceeds 85 characters; contains 113 characters
-  44 | ERROR   | Expected 1 space after comma in function call; 7 found
-  46 | ERROR   | No space found after comma in function call
-  46 | ERROR   | No space found after comma in function call
-  47 | ERROR   | Expected 1 space after comma in function call; 9 found
-  48 | ERROR   | Expected 1 space after comma in function call; 10 found
-  49 | ERROR   | Expected 1 space after comma in function call; 4 found
-  50 | ERROR   | Expected 1 space after comma in function call; 12 found
-  52 | ERROR   | Expected 1 space after comma in function call; 11 found
-  53 | ERROR   | Expected 1 space after comma in function call; 12 found
-  54 | ERROR   | Expected 1 space after comma in function call; 8 found
-  55 | ERROR   | Expected 1 space after comma in function call; 10 found
-  57 | ERROR   | Expected 1 space after comma in function call; 10 found
-  59 | ERROR   | Expected 1 space after comma in function call; 10 found
-  59 | WARNING | Line exceeds 85 characters; contains 88 characters
-  60 | ERROR   | Expected 1 space after comma in function call; 13 found
-  60 | WARNING | Line exceeds 85 characters; contains 92 characters
-  62 | ERROR   | Expected 1 space after comma in function call; 10 found
-  63 | ERROR   | Expected 1 space after comma in function call; 9 found
-  78 | ERROR   | Space before opening parenthesis of function call prohibited
-  80 | ERROR   | Expected 1 space after comma in function call; 11 found
+  39 | ERROR   | No space found after comma in function call
+  39 | WARNING | Line exceeds 85 characters; contains 113 characters
+  43 | ERROR   | Expected 1 space after comma in function call; 7 found
+  45 | ERROR   | No space found after comma in function call
+  45 | ERROR   | No space found after comma in function call
+  46 | ERROR   | Expected 1 space after comma in function call; 9 found
+  47 | ERROR   | Expected 1 space after comma in function call; 10 found
+  48 | ERROR   | Expected 1 space after comma in function call; 4 found
+  49 | ERROR   | Expected 1 space after comma in function call; 12 found
+  51 | ERROR   | Expected 1 space after comma in function call; 11 found
+  52 | ERROR   | Expected 1 space after comma in function call; 12 found
+  53 | ERROR   | Expected 1 space after comma in function call; 8 found
+  54 | ERROR   | Expected 1 space after comma in function call; 10 found
+  56 | ERROR   | Expected 1 space after comma in function call; 10 found
+  58 | ERROR   | Expected 1 space after comma in function call; 10 found
+  58 | WARNING | Line exceeds 85 characters; contains 88 characters
+  59 | ERROR   | Expected 1 space after comma in function call; 13 found
+  59 | WARNING | Line exceeds 85 characters; contains 92 characters
+  61 | ERROR   | Expected 1 space after comma in function call; 10 found
+  77 | ERROR   | Space before opening parenthesis of function call prohibited
+  79 | ERROR   | Expected 1 space after comma in function call; 11 found
+  79 | ERROR   | Space before opening parenthesis of function call prohibited
+  80 | ERROR   | Expected 1 space after comma in function call; 7 found
   80 | ERROR   | Space before opening parenthesis of function call prohibited
-  81 | ERROR   | Expected 1 space after comma in function call; 7 found
-  81 | ERROR   | Space before opening parenthesis of function call prohibited
+  82 | ERROR   | Expected 1 space after comma in function call; 3 found
+  82 | ERROR   | Space before opening parenthesis of function call prohibited
   83 | ERROR   | Expected 1 space after comma in function call; 3 found
   83 | ERROR   | Space before opening parenthesis of function call prohibited
-  84 | ERROR   | Expected 1 space after comma in function call; 3 found
-  84 | ERROR   | Space before opening parenthesis of function call prohibited
-  87 | ERROR   | Expected 1 space after comma in function call; 10 found
-  87 | ERROR   | Space before opening parenthesis of function call prohibited
-  89 | ERROR   | Expected 1 space after comma in function call; 3 found
+  86 | ERROR   | Expected 1 space after comma in function call; 10 found
+  86 | ERROR   | Space before opening parenthesis of function call prohibited
+  88 | ERROR   | Expected 1 space after comma in function call; 3 found
+  88 | ERROR   | Space before opening parenthesis of function call prohibited
   89 | ERROR   | Space before opening parenthesis of function call prohibited
-  90 | ERROR   | Space before opening parenthesis of function call prohibited
+  91 | ERROR   | Space before opening parenthesis of function call prohibited
   92 | ERROR   | Space before opening parenthesis of function call prohibited
-  93 | ERROR   | Space before opening parenthesis of function call prohibited
+  94 | ERROR   | Expected 1 space after comma in function call; 3 found
+  94 | ERROR   | Space before opening parenthesis of function call prohibited
   95 | ERROR   | Expected 1 space after comma in function call; 3 found
   95 | ERROR   | Space before opening parenthesis of function call prohibited
   96 | ERROR   | Expected 1 space after comma in function call; 3 found
   96 | ERROR   | Space before opening parenthesis of function call prohibited
-  97 | ERROR   | Expected 1 space after comma in function call; 3 found
+  97 | ERROR   | Expected 1 space after comma in function call; 5 found
   97 | ERROR   | Space before opening parenthesis of function call prohibited
   98 | ERROR   | Expected 1 space after comma in function call; 5 found
   98 | ERROR   | Space before opening parenthesis of function call prohibited
@@ -400,17 +401,15 @@ FOUND 65 ERROR(S) AND 4 WARNING(S) AFFECTING 46 LINE(S)
  101 | ERROR   | Space before opening parenthesis of function call prohibited
  102 | ERROR   | Expected 1 space after comma in function call; 5 found
  102 | ERROR   | Space before opening parenthesis of function call prohibited
- 103 | ERROR   | Expected 1 space after comma in function call; 5 found
  103 | ERROR   | Space before opening parenthesis of function call prohibited
  104 | ERROR   | Space before opening parenthesis of function call prohibited
- 105 | ERROR   | Space before opening parenthesis of function call prohibited
- 107 | ERROR   | Expected 1 space after comma in function call; 4 found
- 107 | ERROR   | Space before opening parenthesis of function call prohibited
- 109 | ERROR   | Expected 1 space after comma in function call; 3 found
+ 106 | ERROR   | Expected 1 space after comma in function call; 4 found
+ 106 | ERROR   | Space before opening parenthesis of function call prohibited
+ 108 | ERROR   | Expected 1 space after comma in function call; 3 found
+ 108 | ERROR   | Space before opening parenthesis of function call prohibited
  109 | ERROR   | Space before opening parenthesis of function call prohibited
- 110 | ERROR   | Space before opening parenthesis of function call prohibited
- 113 | ERROR   | Expected 1 space after comma in function call; 11 found
- 113 | ERROR   | Space before opening parenthesis of function call prohibited
+ 112 | ERROR   | Expected 1 space after comma in function call; 11 found
+ 112 | ERROR   | Space before opening parenthesis of function call prohibited
 --------------------------------------------------------------------------------
 
 

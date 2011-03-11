@@ -59,14 +59,14 @@ class TestOfSyncModel extends UnitTestCase {
     function testDojoNotInLocal()
     {
         
-        $result = DojoNotInLocal('http://hampshirejudo.org.uk/dojolist/data/dojo.xml');
+        $result = DojoNotInLocal('data/dojo_test.xml');
         $this->assertEqual($result, 1, 'DojoNotInLocal returned '.$result.' not 1');
         
     }
 	   
 	function testDojoUpdatedInFar()
 	{
-	   $result = NewerFarDojo('http://hampshirejudo.org.uk/dojolist/data/dojo.xml');
+	   $result = NewerFarDojo('data/dojo_test.xml');
 	   $this->assertEqual($result, 1, 'NewerFarDojo returned '.$result.' not 1');
 	
 	}
