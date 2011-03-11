@@ -1100,15 +1100,31 @@ function sync()
 {
  
  $NewInFar = DojoNotInLocal(option('sync_site'));
- $Newlist = ListDojoNotInLocal('data/dojo_test.xml');
-
+ $Newlist[]='No new in far site data';
  $UpdatedInFar = NewerFarDojo(option('sync_site'));
  set('NewInFar', $NewInFar);
- set('Newlist', $Newlist);
  set('UpdatedInFar', $UpdatedInFar);
  
  return html('admin/sync.html.php');
 
 }
+
+function sync_new()
+{
+    $Newlist = ListDojoNotInLocal(option('sync_site'));
+    set('Newlist', $Newlist); 
+    return html('admin/sync_new.html.php');
+
+}
+
+
+function sync_updated()
+{
+    $Newlist = ListNewerFarDojo(option('sync_site'));
+    set('Newlist', $Newlist); 
+    return html('admin/sync_updated.html.php');
+
+}
+
 
 ?>

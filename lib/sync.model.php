@@ -130,4 +130,54 @@ function NewerFarDojo($file)
     return $flag;
 }
 
+function ListNewerFarDojo($file)
+{
+    $farxml = LoadFarXML($file);
+    $localxml = Load_Xml_data();
+    
+    $fardojolist = array();
+    $fardojolist_up = array();
+    $localdojolist = array();
+    $localdojolist_up = array();
+    
+    $newlist = array();
+    
+    $count = 0;
+    
+	foreach ($farxml->Dojo as $fardojo) {
+    // ===============================   
+        $fardojolist[$count] = (string)$fardojo->DojoName; 
+        $fardojolist_up[$count] = (string)$fardojo->Updated;        
+        $count++;
+    // ================================    
+    }
+    
+    $count = 0;
+    foreach ($localxml->Dojo as $localdojo) {
+    // ===============================   
+        $localdojolist[$count] = (string)$localdojo->DojoName;   
+        $localdojolist_up[$count] = (string)$localdojo->Updated;    
+        $count++;
+    // ================================    
+    }
+
+    //echo $localdojolist[0].' - '.$localdojolist_up[0].'<br />'; 
+    
+    
+    $count = 0;
+    foreach ($fardojolist_up as $update)
+    {
+        if(strtotime($fardojolist_up[$count]) > strtotime($localdojolist_up[$count]))
+        {
+            //echo $fardojolist[$count].' - far:'.$fardojolist_up[$count].' local:'.$localdojolist_up[$count].'<br />'; 
+            //echo $fardojolist[$count].'<br />';
+            $newlist[]=$localdojolist[$count];
+        }
+        $count++;
+    }
+    return $newlist;
+}
+
+
+
 ?>
