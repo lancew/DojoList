@@ -3,8 +3,22 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 11 Mar 11 22:22:10 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 11 Mar 11 23:12:27 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:12:27 +0000</pubDate>
+			<guid>Fri11Mar1123:12:27+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:12:25 +0000</pubDate>
+			<guid>Fri11Mar1123:12:25+0000</guid>
+    </item>
+            
             <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -129,19 +143,5 @@
 			<description>test_add</description>
 			<pubDate>Fri, 11 Mar 11 22:15:12 +0000</pubDate>
 			<guid>Fri11Mar1122:15:12+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:11:22 +0000</pubDate>
-			<guid>Fri11Mar1122:11:22+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:11:20 +0000</pubDate>
-			<guid>Fri11Mar1122:11:20+0000</guid>
     </item>
             </channel></rss>

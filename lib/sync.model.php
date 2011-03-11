@@ -17,11 +17,16 @@
  */
 
 
-function LoadFarXML($file)
+function loadfarxml($file = 'data/dojo.xml')
 {
-    return simplexml_load_file($file);
-}
 
+	if (file_exists($file)) {
+		$xml = simplexml_load_file($file);
+	} else {
+		return 'Failed to load XML';
+	}
+	return $xml;
+}
 
 function DojoNotInLocal($file)
 {
@@ -77,6 +82,37 @@ function ListDojoNotInLocal($file)
     
     $result = array_diff($fardojolist, $localdojolist);
     
+	
+	return $result;	
+}
+
+function ImportDojoNotInLocal($file)
+{
+    $farxml = LoadFarXML($file);
+    $localxml = Load_Xml_data();
+    
+    $fardojolist = array();
+    $localdojolist = array();
+    
+	foreach ($farxml->Dojo as $fardojo) {
+    // ===============================   
+        $fardojolist[] = (string)$fardojo->DojoName;        
+        
+    // ================================    
+    }
+    
+    foreach ($localxml->Dojo as $localdojo) {
+    // ===============================   
+        $localdojolist[] = (string)$localdojo->DojoName;        
+        
+    // ================================    
+    }
+    
+    
+    $result = array_diff($fardojolist, $localdojolist);
+    
+	
+	
 	
 	return $result;	
 }

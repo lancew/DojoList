@@ -6,8 +6,21 @@
 <h3><a href="<?php
                 if($NewInFar){
                     echo url_for('admin', 'sync_new');
-                } else {
+                } elseif ($UpdatedInFar) {
                     echo url_for('admin', 'sync_updated');
+                } else {
+                    echo url_for('admin', 'sync');
+                
                 }
             ?>
-            ">NEXT</a></h3>
+            ">
+            
+            <?php
+            if($NewInFar+$UpdatedInFar == 0) {
+                echo 'NO UPDATES - Return to main';
+            } else {
+            
+                echo 'NEXT';
+                }
+                ?>
+                </a></h3>
