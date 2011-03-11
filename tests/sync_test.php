@@ -63,6 +63,18 @@ class TestOfSyncModel extends UnitTestCase {
         $this->assertEqual($result, 1, 'DojoNotInLocal returned '.$result.' not 1');
         
     }
+    
+     function testListDojoNotInLocal()
+    {
+        
+        $result = ListDojoNotInLocal('data/dojo_test.xml');
+        //print_r($result);
+        foreach($result as $dojo) {
+            $this->assertEqual($dojo, 'testtttt', 'ListDojoNotInLocal returned '.$result.' not testtt');
+        }
+    }
+    
+    
 	   
 	function testDojoUpdatedInFar()
 	{
@@ -70,6 +82,9 @@ class TestOfSyncModel extends UnitTestCase {
 	   $this->assertEqual($result, 1, 'NewerFarDojo returned '.$result.' not 1');
 	
 	}
+	
+	
+	
 	
 
 }

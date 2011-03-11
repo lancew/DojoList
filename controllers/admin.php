@@ -1096,6 +1096,19 @@ function Admin_import_judo_alberta()
 }
 
 
+function sync()
+{
+ 
+ $NewInFar = DojoNotInLocal(option('sync_site'));
+ $Newlist = ListDojoNotInLocal('data/dojo_test.xml');
 
+ $UpdatedInFar = NewerFarDojo(option('sync_site'));
+ set('NewInFar', $NewInFar);
+ set('Newlist', $Newlist);
+ set('UpdatedInFar', $UpdatedInFar);
+ 
+ return html('admin/sync.html.php');
+
+}
 
 ?>

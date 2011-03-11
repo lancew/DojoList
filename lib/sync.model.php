@@ -52,6 +52,36 @@ function DojoNotInLocal($file)
 	return count($result);	
 }
 
+function ListDojoNotInLocal($file)
+{
+    $farxml = LoadFarXML($file);
+    $localxml = Load_Xml_data();
+    
+    $fardojolist = array();
+    $localdojolist = array();
+    
+	foreach ($farxml->Dojo as $fardojo) {
+    // ===============================   
+        $fardojolist[] = (string)$fardojo->DojoName;        
+        
+    // ================================    
+    }
+    
+    foreach ($localxml->Dojo as $localdojo) {
+    // ===============================   
+        $localdojolist[] = (string)$localdojo->DojoName;        
+        
+    // ================================    
+    }
+    
+    
+    $result = array_diff($fardojolist, $localdojolist);
+    
+	
+	return $result;	
+}
+
+
 
 function NewerFarDojo($file)
 {
@@ -62,6 +92,8 @@ function NewerFarDojo($file)
     $fardojolist_up = array();
     $localdojolist = array();
     $localdojolist_up = array();
+    
+    
     $count = 0;
     $flag = 0;
 	foreach ($farxml->Dojo as $fardojo) {
