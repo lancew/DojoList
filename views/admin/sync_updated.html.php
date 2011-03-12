@@ -1,6 +1,6 @@
 <h2><?php echo _("Sync"); ?></h2>
 
-<h2>Dojo in far to be updated:</h2>
+<h2>Dojo in far updated:</h2>
 <ul>
 <?php
     foreach($Newlist as $dojo) {
