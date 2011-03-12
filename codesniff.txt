@@ -714,60 +714,65 @@ FOUND 8 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php
 --------------------------------------------------------------------------------
-FOUND 40 ERROR(S) AND 3 WARNING(S) AFFECTING 36 LINE(S)
+FOUND 42 ERROR(S) AND 4 WARNING(S) AFFECTING 38 LINE(S)
 --------------------------------------------------------------------------------
-  2 | ERROR   | Missing file doc comment
-  9 | ERROR   | Missing class doc comment
-  9 | ERROR   | Opening brace of a class must be on the line after the
-    |         | definition
- 12 | ERROR   | Missing function doc comment
- 14 | WARNING | Line exceeds 85 characters; contains 114 characters
- 19 | ERROR   | Missing function doc comment
- 21 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 23 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 24 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 25 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
- 26 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 26 | ERROR   | Line indented incorrectly; expected 12 spaces, found 8
- 26 | ERROR   | There must be a single space between the closing parenthesis
-    |         | and the opening brace of a multi-line IF statement; found 0
-    |         | spaces
- 27 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-    |         | 10
- 28 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-    |         | 10
- 29 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found 10
- 30 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found 8
- 32 | WARNING | Line exceeds 85 characters; contains 109 characters
- 35 | ERROR   | Missing function doc comment
- 35 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
- 36 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
- 37 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 39 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 40 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 41 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
- 42 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
- 42 | ERROR   | Line indented incorrectly; expected 12 spaces, found 8
- 42 | ERROR   | There must be a single space between the closing parenthesis
-    |         | and the opening brace of a multi-line IF statement; found 0
-    |         | spaces
- 43 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-    |         | 10
- 44 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-    |         | 10
- 45 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found 10
- 46 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found 8
- 53 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
- 59 | ERROR   | You must use "/**" style comments for a function comment
- 67 | ERROR   | Missing function doc comment
- 67 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
- 68 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
- 72 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...) {\n"
- 73 | WARNING | Line exceeds 85 characters; contains 104 characters
- 75 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
- 79 | ERROR   | You must use "/**" style comments for a function comment
- 81 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 82 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+   2 | ERROR   | Missing file doc comment
+  10 | WARNING | Line exceeds 85 characters; contains 103 characters
+  11 | ERROR   | You must use "/**" style comments for a function comment
+  11 | ERROR   | Line indented incorrectly; expected 0 spaces, found 4
+  17 | ERROR   | Missing class doc comment
+  17 | ERROR   | Opening brace of a class must be on the line after the
+     |         | definition
+  22 | ERROR   | Missing function doc comment
+  24 | WARNING | Line exceeds 85 characters; contains 114 characters
+  29 | ERROR   | Missing function doc comment
+  31 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  33 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  34 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  35 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
+  36 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  36 | ERROR   | Line indented incorrectly; expected 12 spaces, found 8
+  36 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
+  37 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+     |         | 10
+  38 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+     |         | 10
+  39 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
+     |         | 10
+  40 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found 8
+  42 | WARNING | Line exceeds 85 characters; contains 109 characters
+  45 | ERROR   | Missing function doc comment
+  45 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
+  46 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
+  47 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  49 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  50 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+  51 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
+  52 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  52 | ERROR   | Line indented incorrectly; expected 12 spaces, found 8
+  52 | ERROR   | There must be a single space between the closing parenthesis
+     |         | and the opening brace of a multi-line IF statement; found 0
+     |         | spaces
+  53 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+     |         | 10
+  54 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+     |         | 10
+  55 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
+     |         | 10
+  56 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found 8
+  63 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
+  69 | ERROR   | You must use "/**" style comments for a function comment
+  88 | ERROR   | Missing function doc comment
+  88 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
+  89 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
+ 101 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...) {\n"
+ 102 | WARNING | Line exceeds 85 characters; contains 108 characters
+ 105 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
+ 109 | ERROR   | You must use "/**" style comments for a function comment
+ 111 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 112 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
 --------------------------------------------------------------------------------
 
 

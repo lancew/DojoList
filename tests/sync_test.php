@@ -8,7 +8,8 @@ require_once 'lib/dojo.model.php';
 
 
 	// option function dummy to solve issue in tests of sync as we are not loading the entire framework
-	function option($name){
+	function option()
+	{
 	   return 'http://dev.dojolist/data/dojo.xml';
 	
 	}
@@ -68,6 +69,17 @@ class TestOfSyncModel extends UnitTestCase {
     function testDojoNotInLocal()
     {
         
+        unlink('data/dojo_test.xml');
+        $dojo_array = array(
+			                    'DojoName' => 'test_dojo', 
+			                    'ClubWebsite' => 'url', 
+			                    'Latitude' => '0', 
+			                    'Longitude' => '0', 
+			                    'GUID' => guid() 
+			                    );
+        Create_dojo($dojo_array);
+        copy('data/dojo.xml', 'data/dojo_test.xml');
+        Delete_dojo('test_dojo');
         $result = DojoNotInLocal('data/dojo_test.xml');
         $this->assertEqual($result, 1, 'DojoNotInLocal returned '.$result.' not 1');
         
@@ -76,11 +88,20 @@ class TestOfSyncModel extends UnitTestCase {
      function testListDojoNotInLocal()
     {
         
+        $dojo_array = array(
+			                    'DojoName' => 'test_dojo', 
+			                    'ClubWebsite' => 'url', 
+			                    'Latitude' => '0', 
+			                    'Longitude' => '0', 
+			                    'GUID' => guid() 
+			                    );
+        Create_dojo($dojo_array);
         $result = ListDojoNotInLocal('data/dojo_test.xml');
         //print_r($result);
         foreach($result as $dojo) {
-            $this->assertEqual($dojo, 'testtttt', 'ListDojoNotInLocal returned '.$result.' not testtt');
+            $this->assertEqual($dojo, 'test_dojo', 'ListDojoNotInLocal returned '.$result.' not test_dojo');
         }
+        Delete_dojo('test_dojo');
     }
     
     
