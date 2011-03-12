@@ -9,7 +9,7 @@
                 } elseif ($UpdatedInFar) {
                     echo url_for('admin', 'sync_updated');
                 } else {
-                    echo url_for('admin', 'sync');
+                    echo url_for('/');
                 
                 }
             ?>
