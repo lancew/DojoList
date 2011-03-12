@@ -17,15 +17,9 @@
  */
 
 
-function loadfarxml($file = 'data/dojo.xml')
+function LoadFarXML($file = 'data/dojo.xml')
 {
-
-	if (file_exists($file)) {
-		$xml = simplexml_load_file($file);
-	} else {
-		return 'Failed to load XML';
-	}
-	return $xml;
+	return simplexml_load_file($file);
 }
 
 function DojoNotInLocal($file)
@@ -83,6 +77,9 @@ function ListDojoNotInLocal($file)
     $result = array_diff($fardojolist, $localdojolist);
     
 	
+	
+	ImportDojoNotInLocal($file);
+	
 	return $result;	
 }
 
@@ -110,7 +107,19 @@ function ImportDojoNotInLocal($file)
     
     
     $result = array_diff($fardojolist, $localdojolist);
-    
+    $url = str_ireplace('data/dojo.xml','', option('sync_site'));
+    //echo $url;
+    foreach($result as $dojo){
+        
+        $link = $url.'api/dojo/'.str_ireplace(' ','%20',$dojo);
+        //echo $link.'<br />';
+        $json_data =  file_get_contents($link);
+        //echo $json_data;
+        $data = json_decode($json_data,TRUE);
+        //print_r($data);
+        Create_dojo($data);
+        
+    }
 	
 	
 	

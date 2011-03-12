@@ -3,8 +3,85 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 11 Mar 11 23:12:27 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sat, 12 Mar 11 00:28:03 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>lwtemp Dojo was created. <a href="/dojo/lwtemp">lwtemp</a></title>
+			<description>lwtemp Dojo was created. <a href="/dojo/lwtemp">lwtemp</a></description>
+			<pubDate>Sat, 12 Mar 11 00:28:03 +0000</pubDate>
+			<guid>Sat12Mar1100:28:03+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:46:00 +0000</pubDate>
+			<guid>Fri11Mar1123:46:00+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:45:59 +0000</pubDate>
+			<guid>Fri11Mar1123:45:59+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:43:45 +0000</pubDate>
+			<guid>Fri11Mar1123:43:45+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:43:43 +0000</pubDate>
+			<guid>Fri11Mar1123:43:43+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:42:27 +0000</pubDate>
+			<guid>Fri11Mar1123:42:27+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:42:26 +0000</pubDate>
+			<guid>Fri11Mar1123:42:26+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:41:51 +0000</pubDate>
+			<guid>Fri11Mar1123:41:51+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:41:50 +0000</pubDate>
+			<guid>Fri11Mar1123:41:50+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:40:00 +0000</pubDate>
+			<guid>Fri11Mar1123:40:00+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 11 Mar 11 23:40:00 +0000</pubDate>
+			<guid>Fri11Mar1123:40:00+0000</guid>
+    </item>
+            
             <item>
 			<title>test_add</title>
 			<description>test_add</description>
@@ -66,82 +143,5 @@
 			<description>test_add</description>
 			<pubDate>Fri, 11 Mar 11 22:20:12 +0000</pubDate>
 			<guid>Fri11Mar1122:20:12+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:20:11 +0000</pubDate>
-			<guid>Fri11Mar1122:20:11+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:18:34 +0000</pubDate>
-			<guid>Fri11Mar1122:18:34+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:18:33 +0000</pubDate>
-			<guid>Fri11Mar1122:18:33+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:18:16 +0000</pubDate>
-			<guid>Fri11Mar1122:18:16+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:18:15 +0000</pubDate>
-			<guid>Fri11Mar1122:18:15+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:16:45 +0000</pubDate>
-			<guid>Fri11Mar1122:16:45+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:16:43 +0000</pubDate>
-			<guid>Fri11Mar1122:16:43+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:16:10 +0000</pubDate>
-			<guid>Fri11Mar1122:16:10+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:16:09 +0000</pubDate>
-			<guid>Fri11Mar1122:16:09+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:15:13 +0000</pubDate>
-			<guid>Fri11Mar1122:15:13+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 11 Mar 11 22:15:12 +0000</pubDate>
-			<guid>Fri11Mar1122:15:12+0000</guid>
     </item>
             </channel></rss>
