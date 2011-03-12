@@ -1,7 +1,7 @@
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/admin.php
 --------------------------------------------------------------------------------
-FOUND 144 ERROR(S) AND 45 WARNING(S) AFFECTING 160 LINE(S)
+FOUND 149 ERROR(S) AND 45 WARNING(S) AFFECTING 163 LINE(S)
 --------------------------------------------------------------------------------
    91 | ERROR   | Multi-line function call not indented correctly; expected 8
       |         | spaces but found 12
@@ -294,8 +294,26 @@ FOUND 144 ERROR(S) AND 45 WARNING(S) AFFECTING 160 LINE(S)
       |         | 1
  1105 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1107 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1106 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
+ 1108 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+      |         | 1
+ 1112 | ERROR   | Missing function doc comment
+ 1112 | ERROR   | Function name "sync_new" is prefixed with a package name but
+      |         | does not begin with a capital letter
+ 1121 | ERROR   | Missing function doc comment
+ 1121 | ERROR   | Function name "sync_updated" is prefixed with a package name
+      |         | but does not begin with a capital letter
+--------------------------------------------------------------------------------
+
+
+FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/api.php
+--------------------------------------------------------------------------------
+FOUND 2 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
+--------------------------------------------------------------------------------
+ 22 | ERROR | You must use "/**" style comments for a function comment
+ 22 | ERROR | Function name "api_read" is prefixed with a package name but does
+    |       | not begin with a capital letter
 --------------------------------------------------------------------------------
 
 
@@ -348,7 +366,7 @@ FOUND 22 ERROR(S) AND 6 WARNING(S) AFFECTING 25 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 67 ERROR(S) AND 4 WARNING(S) AFFECTING 47 LINE(S)
+FOUND 73 ERROR(S) AND 5 WARNING(S) AFFECTING 50 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | You must use "/**" style comments for a file comment
   34 | ERROR   | You must use "/**" style comments for a function comment
@@ -379,6 +397,7 @@ FOUND 67 ERROR(S) AND 4 WARNING(S) AFFECTING 47 LINE(S)
   59 | WARNING | Line exceeds 85 characters; contains 92 characters
   61 | ERROR   | Expected 1 space after comma in function call; 10 found
   63 | ERROR   | Expected 1 space after comma in function call; 10 found
+  63 | WARNING | Line exceeds 85 characters; contains 92 characters
   79 | ERROR   | Space before opening parenthesis of function call prohibited
   81 | ERROR   | Expected 1 space after comma in function call; 11 found
   81 | ERROR   | Space before opening parenthesis of function call prohibited
@@ -424,6 +443,12 @@ FOUND 67 ERROR(S) AND 4 WARNING(S) AFFECTING 47 LINE(S)
  114 | ERROR   | Space before opening parenthesis of function call prohibited
  116 | ERROR   | Expected 1 space after comma in function call; 11 found
  116 | ERROR   | Space before opening parenthesis of function call prohibited
+ 117 | ERROR   | Expected 1 space after comma in function call; 7 found
+ 117 | ERROR   | Space before opening parenthesis of function call prohibited
+ 118 | ERROR   | Expected 1 space after comma in function call; 7 found
+ 118 | ERROR   | Space before opening parenthesis of function call prohibited
+ 120 | ERROR   | Expected 1 space after comma in function call; 10 found
+ 120 | ERROR   | Space before opening parenthesis of function call prohibited
 --------------------------------------------------------------------------------
 
 
@@ -508,28 +533,59 @@ FOUND 5 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/sync.model.php
 --------------------------------------------------------------------------------
-FOUND 16 ERROR(S) AND 1 WARNING(S) AFFECTING 14 LINE(S)
+FOUND 42 ERROR(S) AND 2 WARNING(S) AFFECTING 36 LINE(S)
 --------------------------------------------------------------------------------
- 20 | ERROR   | Missing function doc comment
- 20 | ERROR   | Function name "LoadFarXML" is invalid; consider "loadFarXML"
-    |         | instead
- 26 | ERROR   | Missing function doc comment
- 26 | ERROR   | Function name "DojoNotInLocal" is invalid; consider
-    |         | "dojoNotInLocal" instead
- 35 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 38 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 42 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 45 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 56 | ERROR   | You must use "/**" style comments for a function comment
- 56 | ERROR   | Function name "NewerFarDojo" is invalid; consider
-    |         | "newerFarDojo" instead
- 70 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 74 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 79 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 83 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 90 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n    {\n"
- 92 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
- 94 | WARNING | Line exceeds 85 characters; contains 120 characters
+  20 | ERROR   | Missing function doc comment
+  20 | ERROR   | Function name "LoadFarXML" is invalid; consider "loadFarXML"
+     |         | instead
+  25 | ERROR   | Missing function doc comment
+  25 | ERROR   | Function name "DojoNotInLocal" is invalid; consider
+     |         | "dojoNotInLocal" instead
+  34 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  37 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  41 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  44 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  54 | ERROR   | You must use "/**" style comments for a function comment
+  54 | ERROR   | Function name "ListDojoNotInLocal" is invalid; consider
+     |         | "listDojoNotInLocal" instead
+  63 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  66 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  70 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  73 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  86 | ERROR   | You must use "/**" style comments for a function comment
+  86 | ERROR   | Function name "ImportDojoNotInLocal" is invalid; consider
+     |         | "importDojoNotInLocal" instead
+  95 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+  98 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 102 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 105 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 110 | ERROR   | No space found after comma in function call
+ 112 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
+ 114 | ERROR   | No space found after comma in function call
+ 114 | ERROR   | No space found after comma in function call
+ 118 | ERROR   | No space found after comma in function call
+ 118 | ERROR   | TRUE, FALSE and NULL must be lowercase; expected "true" but
+     |         | found "TRUE"
+ 131 | ERROR   | You must use "/**" style comments for a function comment
+ 131 | ERROR   | Function name "NewerFarDojo" is invalid; consider
+     |         | "newerFarDojo" instead
+ 145 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 149 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 154 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 158 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 165 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n    {\n"
+ 167 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
+ 169 | WARNING | Line exceeds 85 characters; contains 120 characters
+ 178 | ERROR   | You must use "/**" style comments for a function comment
+ 178 | ERROR   | Function name "ListNewerFarDojo" is invalid; consider
+     |         | "listNewerFarDojo" instead
+ 193 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 197 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 202 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 206 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 213 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n    {\n"
+ 215 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
+ 217 | WARNING | Line exceeds 85 characters; contains 120 characters
 --------------------------------------------------------------------------------
 
 
@@ -642,7 +698,7 @@ FOUND 8 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/tests/sync_test.php
 --------------------------------------------------------------------------------
-FOUND 35 ERROR(S) AND 2 WARNING(S) AFFECTING 31 LINE(S)
+FOUND 40 ERROR(S) AND 3 WARNING(S) AFFECTING 36 LINE(S)
 --------------------------------------------------------------------------------
   2 | ERROR   | Missing file doc comment
   9 | ERROR   | Missing class doc comment
@@ -688,8 +744,14 @@ FOUND 35 ERROR(S) AND 2 WARNING(S) AFFECTING 31 LINE(S)
  53 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
  59 | ERROR   | You must use "/**" style comments for a function comment
  67 | ERROR   | Missing function doc comment
- 69 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
- 70 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 67 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
+ 68 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
+ 72 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...) {\n"
+ 73 | WARNING | Line exceeds 85 characters; contains 104 characters
+ 75 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
+ 79 | ERROR   | You must use "/**" style comments for a function comment
+ 81 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
+ 82 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 7
 --------------------------------------------------------------------------------
 
 
@@ -791,11 +853,43 @@ FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: ...rs/lancewicks/Documents/Dev_Projects/DojoList/views/admin/sync.html.php
 --------------------------------------------------------------------------------
-FOUND 1 ERROR(S) AND 2 WARNING(S) AFFECTING 3 LINE(S)
+FOUND 10 ERROR(S) AND 2 WARNING(S) AFFECTING 9 LINE(S)
 --------------------------------------------------------------------------------
- 1 | ERROR   | Missing file doc comment
- 3 | WARNING | Line exceeds 85 characters; contains 97 characters
- 4 | WARNING | Line exceeds 85 characters; contains 115 characters
+  1 | ERROR   | Missing file doc comment
+  3 | WARNING | Line exceeds 85 characters; contains 97 characters
+  4 | WARNING | Line exceeds 85 characters; contains 115 characters
+  7 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  7 | ERROR   | Line indented incorrectly; expected 0 spaces, found 16
+  7 | ERROR   | There must be a single space between the closing parenthesis
+    |         | and the opening brace of a multi-line IF statement; found 0
+    |         | spaces
+  9 | ERROR   | Line indented incorrectly; expected 0 spaces, found 16
+ 11 | ERROR   | Line indented incorrectly; expected 0 spaces, found 16
+ 19 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
+ 19 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+ 21 | ERROR   | Line indented incorrectly; expected 0 spaces, found 12
+ 24 | ERROR   | Closing brace indented incorrectly; expected 12 spaces, found
+    |         | 16
+--------------------------------------------------------------------------------
+
+
+FILE: ...ancewicks/Documents/Dev_Projects/DojoList/views/admin/sync_new.html.php
+--------------------------------------------------------------------------------
+FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
+--------------------------------------------------------------------------------
+ 1 | ERROR | Missing file doc comment
+ 6 | ERROR | Expected "foreach (...) {\n"; found "foreach(...) {\n"
+ 6 | ERROR | Line indented incorrectly; expected 0 spaces, found 4
+--------------------------------------------------------------------------------
+
+
+FILE: ...wicks/Documents/Dev_Projects/DojoList/views/admin/sync_updated.html.php
+--------------------------------------------------------------------------------
+FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
+--------------------------------------------------------------------------------
+ 1 | ERROR | Missing file doc comment
+ 6 | ERROR | Expected "foreach (...) {\n"; found "foreach(...) {\n"
+ 6 | ERROR | Line indented incorrectly; expected 0 spaces, found 4
 --------------------------------------------------------------------------------
 
 

@@ -220,9 +220,66 @@ function ListNewerFarDojo($file)
         }
         $count++;
     }
+    ImportNewerFarDojo($file);
     return $newlist;
 }
 
+function ImportNewerFarDojo($file)
+{
+    $farxml = LoadFarXML($file);
+    $localxml = Load_Xml_data();
+    
+    $fardojolist = array();
+    $fardojolist_up = array();
+    $localdojolist = array();
+    $localdojolist_up = array();
+    
+    $newlist = array();
+    
+    $count = 0;
+    
+	foreach ($farxml->Dojo as $fardojo) {
+    // ===============================   
+        $fardojolist[$count] = (string)$fardojo->DojoName; 
+        $fardojolist_up[$count] = (string)$fardojo->Updated;        
+        $count++;
+    // ================================    
+    }
+    
+    $count = 0;
+    foreach ($localxml->Dojo as $localdojo) {
+    // ===============================   
+        $localdojolist[$count] = (string)$localdojo->DojoName;   
+        $localdojolist_up[$count] = (string)$localdojo->Updated;    
+        $count++;
+    // ================================    
+    }
 
+    //echo $localdojolist[0].' - '.$localdojolist_up[0].'<br />'; 
+    
+    $url = str_ireplace('data/dojo.xml','', option('sync_site'));
+    $count = 0;
+    foreach ($fardojolist_up as $update)
+    {
+        if(strtotime($fardojolist_up[$count]) > strtotime($localdojolist_up[$count]))
+        {
+            //echo $fardojolist[$count].' - far:'.$fardojolist_up[$count].' local:'.$localdojolist_up[$count].'<br />'; 
+            //echo $fardojolist[$count].'<br />';
+            $newlist[]=$localdojolist[$count];
+            Delete_dojo($localdojolist[$count]);
+            
+            $link = $url.'api/dojo/'.str_ireplace(' ','%20',$localdojolist[$count]);
+            echo $link.'<br />';
+            $json_data =  file_get_contents($link);
+            //echo $json_data.'<br />';
+            $data = json_decode($json_data,TRUE);
+            //print_r($data);
+            Create_dojo($data);
+            
+        }
+        $count++;
+    }
+    return $newlist;
+}
 
 ?>
