@@ -3,8 +3,78 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Sat, 12 Mar 11 16:37:11 +0000</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sat, 12 Mar 11 16:57:18 +0000</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sat, 12 Mar 11 16:57:18 +0000</pubDate>
+			<guid>Sat12Mar1116:57:18+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Sat, 12 Mar 11 16:57:17 +0000</pubDate>
+			<guid>Sat12Mar1116:57:17+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sat, 12 Mar 11 16:57:16 +0000</pubDate>
+			<guid>Sat12Mar1116:57:16+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Sat, 12 Mar 11 16:57:16 +0000</pubDate>
+			<guid>Sat12Mar1116:57:16+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sat, 12 Mar 11 16:57:15 +0000</pubDate>
+			<guid>Sat12Mar1116:57:15+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sat, 12 Mar 11 16:57:15 +0000</pubDate>
+			<guid>Sat12Mar1116:57:15+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Sat, 12 Mar 11 16:57:15 +0000</pubDate>
+			<guid>Sat12Mar1116:57:15+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was deleted</title>
+			<description>test_dojo Dojo was deleted</description>
+			<pubDate>Sat, 12 Mar 11 16:57:14 +0000</pubDate>
+			<guid>Sat12Mar1116:57:14+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
+			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
+			<pubDate>Sat, 12 Mar 11 16:57:14 +0000</pubDate>
+			<guid>Sat12Mar1116:57:14+0000</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sat, 12 Mar 11 16:57:12 +0000</pubDate>
+			<guid>Sat12Mar1116:57:12+0000</guid>
+    </item>
+            
             <item>
 			<title>test_dojo Dojo was deleted</title>
 			<description>test_dojo Dojo was deleted</description>
@@ -73,75 +143,5 @@
 			<description>test_add</description>
 			<pubDate>Sat, 12 Mar 11 16:37:05 +0000</pubDate>
 			<guid>Sat12Mar1116:37:05+0000</guid>
-    </item>
-            
-            <item>
-			<title>lwtest Dojo was deleted</title>
-			<description>lwtest Dojo was deleted</description>
-			<pubDate>Sat, 12 Mar 11 16:36:41 +0000</pubDate>
-			<guid>Sat12Mar1116:36:41+0000</guid>
-    </item>
-            
-            <item>
-			<title>lwtest Dojo was created. <a href="/dojo/lwtest">lwtest</a></title>
-			<description>lwtest Dojo was created. <a href="/dojo/lwtest">lwtest</a></description>
-			<pubDate>Sat, 12 Mar 11 16:35:55 +0000</pubDate>
-			<guid>Sat12Mar1116:35:55+0000</guid>
-    </item>
-            
-            <item>
-			<title>lwtest Dojo was deleted</title>
-			<description>lwtest Dojo was deleted</description>
-			<pubDate>Sat, 12 Mar 11 16:35:52 +0000</pubDate>
-			<guid>Sat12Mar1116:35:52+0000</guid>
-    </item>
-            
-            <item>
-			<title>lwtest Dojo was created. <a href="/dojo/lwtest">lwtest</a></title>
-			<description>lwtest Dojo was created. <a href="/dojo/lwtest">lwtest</a></description>
-			<pubDate>Sat, 12 Mar 11 16:33:12 +0000</pubDate>
-			<guid>Sat12Mar1116:33:12+0000</guid>
-    </item>
-            
-            <item>
-			<title>Tyrvään Juro Dojo was created. <a href="/dojo/Tyrv&#xE4;&#xE4;n Juro">Tyrvään Juro</a></title>
-			<description>Tyrvään Juro Dojo was created. <a href="/dojo/Tyrv&#xE4;&#xE4;n Juro">Tyrvään Juro</a></description>
-			<pubDate>Sat, 12 Mar 11 16:29:14 +0000</pubDate>
-			<guid>Sat12Mar1116:29:14+0000</guid>
-    </item>
-            
-            <item>
-			<title>Tyrvään Juro Dojo was deleted</title>
-			<description>Tyrvään Juro Dojo was deleted</description>
-			<pubDate>Sat, 12 Mar 11 16:29:14 +0000</pubDate>
-			<guid>Sat12Mar1116:29:14+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was deleted</title>
-			<description>test_dojo Dojo was deleted</description>
-			<pubDate>Sat, 12 Mar 11 16:27:50 +0000</pubDate>
-			<guid>Sat12Mar1116:27:50+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
-			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
-			<pubDate>Sat, 12 Mar 11 16:27:49 +0000</pubDate>
-			<guid>Sat12Mar1116:27:49+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was deleted</title>
-			<description>test_dojo Dojo was deleted</description>
-			<pubDate>Sat, 12 Mar 11 16:27:48 +0000</pubDate>
-			<guid>Sat12Mar1116:27:48+0000</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></title>
-			<description>test_dojo Dojo was created. <a href="http:///dojo/test_dojo/dojo/test_dojo">test_dojo</a></description>
-			<pubDate>Sat, 12 Mar 11 16:27:48 +0000</pubDate>
-			<guid>Sat12Mar1116:27:48+0000</guid>
     </item>
             </channel></rss>
