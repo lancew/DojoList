@@ -6,8 +6,17 @@ require_once 'lib/data.model.php';
 require_once 'lib/dojo.model.php';
 
 
+
+	// option function dummy to solve issue in tests of sync as we are not loading the entire framework
+	function option($name){
+	   return 'http://dev.dojolist/data/dojo.xml';
+	
+	}
+
 class TestOfSyncModel extends UnitTestCase {
 
+
+	
 	
 	function testLoadFarXMLHTTP()
 	{

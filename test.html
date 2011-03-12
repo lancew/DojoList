@@ -36,5 +36,24 @@
 </head>
 <body>
 <h1>TestOfSyncModel</h1>
-
-Fatal error: Call to undefined function option() in /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/sync.model.php on line 110
+<span class="fail">Exception</span>: testListDojoNotInLocal -&gt; <strong>Unexpected PHP error [Invalid argument supplied for foreach()] severity [E_WARNING] in [/Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php line 130]</strong><br />
+<span class="fail">Exception</span>: testListDojoNotInLocal -&gt; <strong>Unexpected PHP error [Invalid argument supplied for foreach()] severity [E_WARNING] in [/Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php line 138]</strong><br />
+<div style="padding: 8px; margin-top: 1em; background-color: red; color: white;">1/1 test cases complete:
+<strong>6</strong> passes, <strong>0</strong> fails and <strong>2</strong> exceptions.</div>
+</body>
+</html>
+all_tests.php
+Exception 1!
+Unexpected PHP error [Invalid argument supplied for foreach()] severity [E_WARNING] in [/Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php line 130]
+	in testListDojoNotInLocal
+	in TestOfSyncModel
+	in tests/sync_test.php
+	in All tests
+Exception 2!
+Unexpected PHP error [Invalid argument supplied for foreach()] severity [E_WARNING] in [/Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php line 138]
+	in testListDojoNotInLocal
+	in TestOfSyncModel
+	in tests/sync_test.php
+	in All tests
+FAILURES!!!
+Test cases run: 3/3, Passes: 15, Failures: 0, Exceptions: 2

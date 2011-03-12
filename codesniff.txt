@@ -533,7 +533,7 @@ FOUND 5 ERROR(S) AND 0 WARNING(S) AFFECTING 5 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/sync.model.php
 --------------------------------------------------------------------------------
-FOUND 42 ERROR(S) AND 2 WARNING(S) AFFECTING 36 LINE(S)
+FOUND 55 ERROR(S) AND 3 WARNING(S) AFFECTING 47 LINE(S)
 --------------------------------------------------------------------------------
   20 | ERROR   | Missing function doc comment
   20 | ERROR   | Function name "LoadFarXML" is invalid; consider "loadFarXML"
@@ -586,6 +586,22 @@ FOUND 42 ERROR(S) AND 2 WARNING(S) AFFECTING 36 LINE(S)
  213 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n    {\n"
  215 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
  217 | WARNING | Line exceeds 85 characters; contains 120 characters
+ 227 | ERROR   | You must use "/**" style comments for a function comment
+ 227 | ERROR   | Function name "ImportNewerFarDojo" is invalid; consider
+     |         | "importNewerFarDojo" instead
+ 242 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 246 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 251 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 255 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 260 | ERROR   | No space found after comma in function call
+ 262 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n    {\n"
+ 264 | ERROR   | Expected "if (...) {\n"; found "if(...)\n        {\n"
+ 266 | WARNING | Line exceeds 85 characters; contains 120 characters
+ 271 | ERROR   | No space found after comma in function call
+ 271 | ERROR   | No space found after comma in function call
+ 275 | ERROR   | No space found after comma in function call
+ 275 | ERROR   | TRUE, FALSE and NULL must be lowercase; expected "true" but
+     |         | found "TRUE"
 --------------------------------------------------------------------------------
 
 
