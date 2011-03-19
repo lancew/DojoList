@@ -12,6 +12,20 @@
         }
 </script>
 
+
+<!-- The following Javascript disables the enter key on a page with a form -->
+<script type="text/javascript"> 
+
+function stopRKey(evt) { 
+  var evt = (evt) ? evt : ((event) ? event : null); 
+  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+} 
+
+document.onkeypress = stopRKey; 
+
+</script>
+
 <h1>
     <?php echo _("Dojo Management System"); ?>
 </h1>
