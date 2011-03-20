@@ -19,7 +19,13 @@
 //require_once 'lib/dojo.model.php';
 
 
-function api_read()
+/**
+ * api_read function.
+ * 
+ * @access public
+ * @return $target
+ */
+function Api_read()
 {
 	$target = params('dojo');
 	$target = str_replace('%20', ' ', $target);

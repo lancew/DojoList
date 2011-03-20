@@ -918,8 +918,7 @@ function Admin_importNSW()
         array_shift($aData);
         array_shift($aData);
         //print_r($aData);
-        foreach ($aData as $dojo)
-        {
+    foreach ($aData as $dojo) {
             
             //print_r($dojo);
             $dojo = str_ireplace('&#xD;', '', $dojo);
@@ -929,15 +928,14 @@ function Admin_importNSW()
             $name = str_ireplace('&#xD;', '', $name);
             
            
-            if(!find_dojo($name))
-            {
+        if (!find_dojo($name)) {
                 $address = $details[1].', NSW, Australia';
-                $address = str_ireplace('&#xD;','',$address);
+                $address = str_ireplace('&#xD;', '', $address);
             
                 $latlng = geoAddress($address);
             
                 $email = get_string_between($dojo, '"mailto:', '"');
-                $website = get_string_between($dojo, '<a href="http://','"');
+                $website = get_string_between($dojo, '<a href="http://', '"');
                 $website = rtrim($website, "/");
             
                 /*
@@ -954,8 +952,7 @@ function Admin_importNSW()
                 echo '<hr>'; 
                 */ 
 
-                if($latlng[0] && $latlng[1])
-                {
+            if ($latlng[0] && $latlng[1]) {
                     $dojo_array = array(
                     'DojoName' => $name, 
                     'DojoAddress' => $address, 
@@ -969,21 +966,25 @@ function Admin_importNSW()
 				    //print_r($dojo_array);
 				    Create_dojo($dojo_array);
 				    echo "$name created<br>";
-				}
+            }
 
 
             
-            } else {
+        } else {
                 echo "$name exists already<br>";            
-            }
-           
-          }
-
-
+        }      
+    }
 }
 
 
-function Admin_import_JudoSA(){
+/**
+ * Admin_import_JudoSA function.
+ * 
+ * @access public
+ * @return void
+ */
+function Admin_Import_judoSA()
+{
     // http://www.judosa.com.au/html/clubloc.cfm
     // Australian South Australia website
     
@@ -995,31 +996,31 @@ function Admin_import_JudoSA(){
 	$data = explode('<I><B>', $data);
 	// Shift the junk off the top of the array first.
 	array_shift($data);
-	foreach($data as $dojo){
-	   $fields = explode('<FONT CLASS="field">', $dojo);
+	foreach ($data as $dojo) {
+        $fields = explode('<FONT CLASS="field">', $dojo);
+
+        $name = trim(clean_name(strip_tags($fields[0])));
 	   
-	   $name = trim(clean_name(strip_tags($fields[0])));
+        $dojo = Find_dojo($name);
 	   
-	   $dojo = Find_dojo($name);
-	   
-	   if(!$dojo) {
+        if (!$dojo) {
    
-	   $address = trim($fields[1]).' Australia';
-	   $address = str_ireplace('Location:', '', $address);
-	   $address = str_ireplace("/r", ",", $address);
-	   $address = str_ireplace("/n", ",", $address);
-	   $address = str_ireplace('<br>', ',', $address);	
-	   $address = strip_tags($address);   
-	   $address = ltrim($address, ',');
+            $address = trim($fields[1]).' Australia';
+            $address = str_ireplace('Location:', '', $address);
+            $address = str_ireplace("/r", ",", $address);
+            $address = str_ireplace("/n", ",", $address);
+            $address = str_ireplace('<br>', ',', $address);	
+            $address = strip_tags($address);   
+            $address = ltrim($address, ',');
 	   
-	   $email_address = get_string_between($dojo, 'mailto:', '"');
-	   $web_address = get_string_between($dojo, 'http://', '"');
-	   $web_address = rtrim($web_address, '/');
+            $email_address = get_string_between($dojo, 'mailto:', '"');
+            $web_address = get_string_between($dojo, 'http://', '"');
+            $web_address = rtrim($web_address, '/');
 	   
-	   $aLatLng = geoAddress($address);
-	   if($aLatLng){	   
-	   	   echo " $name ";
-               $dojo_array = array(
+            $aLatLng = geoAddress($address);
+            if ($aLatLng) {	   
+                echo " $name ";
+                $dojo_array = array(
                     'DojoName' => $name, 
                     'DojoAddress' => $address, 
                     'URL' => $url, 
@@ -1030,15 +1031,22 @@ function Admin_import_JudoSA(){
 				//print_r($dojo_array);
 				Create_dojo($dojo_array);
 				echo '<br>';
-				}
+            }
         } else {
             echo ".";
         }
-	   }
+    }
 	
 }
 
 
+
+/**
+ * Admin_importJudoBC function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importJudoBC()
 {
 	// http://174.120.241.98/~judobc/locator/store_info.php?store=1
@@ -1099,8 +1107,9 @@ function Admin_importJudoBC()
 				echo ".";
 
 			}
-		} else
+		} else {
 			echo 'x';
+        }
 
 
 	}
@@ -1108,7 +1117,13 @@ function Admin_importJudoBC()
 }
 
 
-function Admin_import_judo_alberta()
+/**
+ * Admin_import_judo_alberta function.
+ * 
+ * @access public
+ * @return void
+ */
+function Admin_Import_Judo_alberta()
 {
 	$url = 'http://www.judoalberta.com/clubdirectory.shtml';
 	$data = file_get_contents($url);
@@ -1175,8 +1190,9 @@ function Admin_import_judo_alberta()
 				echo ".";
 
 			}
-		} else
+		} else {
 			echo 'x';
+        }
 
 
 
@@ -1187,20 +1203,31 @@ function Admin_import_judo_alberta()
 }
 
 
+/**
+ * sync function.
+ * 
+ * @access public
+ * @return void
+ */
 function sync()
 {
+    $NewInFar = DojoNotInLocal(option('sync_site'));
+    $Newlist[]='No new in far site data';
+    $UpdatedInFar = NewerFarDojo(option('sync_site'));
+    set('NewInFar', $NewInFar);
+    set('UpdatedInFar', $UpdatedInFar);
  
- $NewInFar = DojoNotInLocal(option('sync_site'));
- $Newlist[]='No new in far site data';
- $UpdatedInFar = NewerFarDojo(option('sync_site'));
- set('NewInFar', $NewInFar);
- set('UpdatedInFar', $UpdatedInFar);
- 
- return html('admin/sync.html.php');
+    return html('admin/sync.html.php');
 
 }
 
-function sync_new()
+/**
+ * sync_new function.
+ * 
+ * @access public
+ * @return void
+ */
+function Sync_new()
 {
     $Newlist = ListDojoNotInLocal(option('sync_site'));
     set('Newlist', $Newlist); 
@@ -1209,7 +1236,13 @@ function sync_new()
 }
 
 
-function sync_updated()
+/**
+ * sync_updated function.
+ * 
+ * @access public
+ * @return void
+ */
+function Sync_updated()
 {
     $Newlist = ListNewerFarDojo(option('sync_site'));
     set('Newlist', $Newlist); 

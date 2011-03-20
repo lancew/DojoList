@@ -29,6 +29,12 @@ function Main_page()
 }
 
 
+/**
+ * About_page function.
+ * 
+ * @access public
+ * @return void
+ */
 function About_page()
 {
 	return html('about.html.php');
@@ -61,6 +67,12 @@ function view()
 }
 
 
+/**
+ * Websites_list function.
+ * 
+ * @access public
+ * @return void
+ */
 function Websites_list()
 {
 	//set('DojoList', Find_Dojo_all());
@@ -69,6 +81,12 @@ function Websites_list()
 }
 
 
+/**
+ * search function.
+ * 
+ * @access public
+ * @return void
+ */
 function search()
 {
 	$term = params('term');
@@ -77,39 +95,39 @@ function search()
 
 	// Things to do, search the names of dojo forst, needs to be fuzzy
 	// then search address fields
-
-	// Set the result by default to nothing found, overwritten later if anything found.
+	// Set the result by default to nothing found, 
+	// overwritten later if anything found.
 	$result = "";
 
 
 
 	//Identical dojo name match
-	if
-	(Find_dojo($term))
-	{
+	if (Find_dojo($term)) {
 
-		$result .= '<a href="'.url_for('dojo', $term).'">'.$term.'</a> (Identical Dojo Name match)';
+		$result 
+            .= '<a href="'.
+            url_for('dojo', $term).
+            '">'.
+            $term.
+            '</a> (Identical Dojo Name match)';
 
 		//echo $result;
-	} else
-	{
+	} else {
 
-    //Find partial matches
+        //Find partial matches
 		$Dojo = Sorted_dojo();
-		foreach
-		($Dojo as $item)
-		{
+		foreach ($Dojo as $item) {
 			$pos = strpos(strtolower($item), $term);
 
-			if
-			($pos === false)
-			{
+			if ($pos === false) {
 				// string needle NOT found in haystack
-			}
-			else
-			{
-
-				$result .= '<a href="'.url_for('dojo', $item).'">'.$item.'</a> (partial match on name)<br />';
+			} else {
+				$result 
+				    .= '<a href="'.
+				    url_for('dojo', $item).
+				    '">'.
+				    $item.
+				    '</a> (partial match on name)<br />';
 				// string needle found in haystack
 			}
 
@@ -124,17 +142,18 @@ function search()
 		
 		$pos = strpos(strtolower($dojo->DojoAddress), $term);
 		
-		if
-			($pos === false)
-			{
+		if ($pos === false) {
 				// string needle NOT found in haystack
-			}
-			else
-			{
+        } else {
 
-				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on address)<br />';
-				// string needle found in haystack
-			}
+				$result 
+				    .= '<a href="'.
+				    url_for('dojo', $dojo->DojoName).
+				    '">'.
+				    $dojo->DojoName.
+				    '</a> (partial match on address)<br />';
+				    // string needle found in haystack
+        }
 		
 		
 	}
@@ -144,17 +163,17 @@ function search()
 		
 		$pos = strpos(strtolower($dojo->CoachName), $term);
 		
-		if
-			($pos === false)
-			{
+		if ($pos === false) {
 				// string needle NOT found in haystack
-			}
-			else
-			{
-
-				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on coach name)<br />';
+        } else {
+            $result 
+                .= '<a href="'.
+                url_for('dojo', $dojo->DojoName).
+                '">'.
+                $dojo->DojoName.
+                '</a> (partial match on coach name)<br />';
 				// string needle found in haystack
-			}
+        }
 		
 		
 	}
@@ -164,17 +183,17 @@ function search()
 		
 		$pos = strpos(strtolower($dojo->ContactName), $term);
 		
-		if
-			($pos === false)
-			{
+		if ($pos === false) {
 				// string needle NOT found in haystack
-			}
-			else
-			{
-
-				$result .= '<a href="'.url_for('dojo', $dojo->DojoName).'">'.$dojo->DojoName.'</a> (partial match on contact name)<br />';
+        } else {
+            $result 
+                .= '<a href="'.
+                url_for('dojo', $dojo->DojoName).
+                '">'.
+                $dojo->DojoName.
+                '</a> (partial match on contact name)<br />';
 				// string needle found in haystack
-			}
+        }
 		
 		
 	}
@@ -185,9 +204,7 @@ function search()
 
 
     // If no results found say so.
-	if
-	($result == '')
-	{
+	if ($result == '') {
 		$result = 'No results found';
 	}
 

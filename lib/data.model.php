@@ -18,10 +18,10 @@
 
 /**
  * Load_Xml_data function.
- *
+ * 
  * @access public
- * @param string  $file. (default: 'data/dojo.xml')
- *
+ * @param string $file. (default: 'data/dojo.xml')
+ * 
  * @return void
  */
 function Load_Xml_data($file = 'data/dojo.xml')
