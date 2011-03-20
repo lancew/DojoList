@@ -88,7 +88,7 @@ function Admin_Create_add()
             $_SERVER["REMOTE_ADDR"],
             $_POST["recaptcha_challenge_field"],
             $_POST["recaptcha_response_field"]
-            );
+        );
 
 		if ($resp->is_valid) {
 
@@ -104,7 +104,7 @@ function Admin_Create_add()
 
 		}
 	} else {
-		set('Errors',Validate_form($_POST));
+		set('Errors', Validate_form($_POST));
 		return render('admin/validation_error.html.php');
 	}
 
@@ -157,7 +157,7 @@ function Admin_Editform_end()
 			$_SERVER["REMOTE_ADDR"],
 			$_POST["recaptcha_challenge_field"],
 			$_POST["recaptcha_response_field"]
-			);
+        );
 		if ($resp->is_valid) {
 
 			$DojoName = params('dojo');
@@ -185,11 +185,10 @@ function Admin_Editform_end()
 						$DojoOrigEmail = $dojo->ContactEmail;
 						unset($dojo->$field);
 						if ($field != 'recaptcha_challenge_field' 
-						&& $field != 'recaptcha_response_field' 
-						&& $field != 'MAX_FILE_SIZE' 
-						&& $field != 'delete_logo'
-						) 
-						{
+						    && $field != 'recaptcha_response_field' 
+						    && $field != 'MAX_FILE_SIZE' 
+						    && $field != 'delete_logo'
+						) {
 							$clean_field = strip_tags(addslashes($field));
 							$clean_value = strip_tags(addslashes($value));
 							$dojo->addChild($clean_field, $clean_value);
@@ -199,21 +198,36 @@ function Admin_Editform_end()
 						}
 					}
 
-					// start of if ($_FILES... section, encodes and adds an upload logo file
+                    // start of if ($_FILES... section, 
+                    // encodes and adds an upload logo file
 
-					if ($_FILES["DojoLogo"]["name"]){
+					if ($_FILES["DojoLogo"]["name"]) {
 						unset($dojo->DojoLogo);
 						if ((($_FILES["DojoLogo"]["type"] == "image/gif")
-								|| ($_FILES["DojoLogo"]["type"] == "image/jpeg")
-								|| ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
-								|| ($_FILES["DojoLogo"]["type"] == "image/png"))
-							&& ($_FILES["DojoLogo"]["size"] < 20000)
-							) {
-							if ($_FILES["DojoLogo"]["error"] > 0){
-								halt("Error: " . $_FILES["DojoLogo"]["error"] . "<br />");
+				            || ($_FILES["DojoLogo"]["type"] == "image/jpeg")
+				            || ($_FILES["DojoLogo"]["type"] == "image/pjpeg")
+				            || ($_FILES["DojoLogo"]["type"] == "image/png"))
+				            && ($_FILES["DojoLogo"]["size"] < 20000)
+				        ) {
+							if ($_FILES["DojoLogo"]["error"] > 0) {
+								halt(
+								    "Error: " . 
+								    $_FILES["DojoLogo"]["error"] . 
+								    "<br />"
+								);
 							} else {
 
-								$dojo->addChild('DojoLogo', 'data:'.$_FILES["DojoLogo"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['DojoLogo']['tmp_name'])));
+								$dojo->addChild(
+								    'DojoLogo', 
+								    'data:'.
+								    $_FILES["DojoLogo"]["type"].
+								    ';base64,'.
+								    base64_encode(
+								        file_get_contents(
+								            $_FILES['DojoLogo']['tmp_name']
+								        )
+								    )
+								);
 
 							}
 						}
@@ -222,19 +236,33 @@ function Admin_Editform_end()
 					// end of if ($_FILES... section.
 					
 					// Coach Photo section.
-					if ($_FILES["CoachPhoto"]["name"]){
+					if ($_FILES["CoachPhoto"]["name"]) {
 						unset($dojo->CoachPhoto);
 						if ((($_FILES["CoachPhoto"]["type"] == "image/gif")
-								|| ($_FILES["CoachPhoto"]["type"] == "image/jpeg")
-								|| ($_FILES["CoachPhoto"]["type"] == "image/pjpeg")
-								|| ($_FILES["CoachPhoto"]["type"] == "image/png"))
+				            || ($_FILES["CoachPhoto"]["type"] == "image/jpeg")
+				            || ($_FILES["CoachPhoto"]["type"] == "image/pjpeg")
+				            || ($_FILES["CoachPhoto"]["type"] == "image/png"))
 							&& ($_FILES["CoachPhoto"]["size"] < 20000)
-							) {
-							if ($_FILES["CoachPhoto"]["error"] > 0){
-								halt("Error: " . $_FILES["CoachPhoto"]["error"] . "<br />");
+				        ) {
+							if ($_FILES["CoachPhoto"]["error"] > 0) {
+								halt(
+								    "Error: " .
+								    $_FILES["CoachPhoto"]["error"].
+								    "<br />"
+								);
 							} else {
 
-								$dojo->addChild('CoachPhoto', 'data:'.$_FILES["CoachPhoto"]["type"].';base64,'.base64_encode(file_get_contents($_FILES['CoachPhoto']['tmp_name'])));
+								$dojo->addChild(
+								    'CoachPhoto', 
+								    'data:'.
+								    $_FILES["CoachPhoto"]["type"].
+								    ';base64,'.
+								    base64_encode(
+								        file_get_contents(
+								            $_FILES['CoachPhoto']['tmp_name']
+								        )
+								    )
+								);
 
 							}
 						}
@@ -245,7 +273,7 @@ function Admin_Editform_end()
 
 					// update the Updated field
 					date_default_timezone_set("UTC");
-					$time = date("l, F d, Y h:i" ,time());
+					$time = date("l, F d, Y h:i", time());
 					$dojo->Updated = $time;
 
 
@@ -263,7 +291,15 @@ function Admin_Editform_end()
 			$to      = $DojoOrigEmail;
 			$subject =  _("A change has been made to ") .$DojoName;
 			$html_dojoname = str_ireplace(' ', '%20', $DojoName);
-			$message = _("Hello, a change has been made to the listing for the dojo ") . $DojoName . _(' which this email address was/is associated with. You can check the details by visiting ') . option('site_url').'/dojo/'. $html_dojoname;
+			
+			$message 
+                = _("Hello, a change has been made to the listing for the dojo ").
+            $DojoName.
+            _(' which this email address was/is associated with. You can check the details by visiting '). 
+            option('site_url').
+            '/dojo/'.
+            $html_dojoname;
+			
 			$headers = 'From: noreply@dojolist.org' . "\r\n";
 			$message = wordwrap($message, 70);
 
@@ -274,7 +310,13 @@ function Admin_Editform_end()
 			set('DojoName', $DojoName);
 
 			$source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$DojoName;
-			$description = $DojoName.' Dojo was updated. <a href="'.$source_url.'">'.$DojoName.'</a>';
+			$description 
+                = $DojoName.
+                ' Dojo was updated. <a href="'.
+                $source_url.
+                '">'.
+                $DojoName.
+                '</a>';
 			$rss_array = array('description' => $description);
 			Add_rss_item($rss_array);
 
@@ -285,7 +327,7 @@ function Admin_Editform_end()
 
 		}
 	} else {
-		set('Errors',Validate_form($_POST));
+		set('Errors', Validate_form($_POST));
 		return render('admin/validation_error.html.php');
 	}
 }
@@ -354,9 +396,12 @@ function Admin_Create_kml()
 		$newKML .= '<name>'.$dojo->DojoName.'</name>';
 		$newKML .= '<description><![CDATA[';
 
-		//$newKML .= '<h1>'.$dojo->DojoName.'</h1>';
-		//if ($dojo->DojoLogo) {$newKML .= '<img alt="'.$dojo->DojoName.'" src="'.$dojo->DojoLogo.'" width="250px"/>'; }
-		$newKML .= '<a href="'.option('site_url').'/dojo/'.$dojo->DojoName.'">View Details</a>';
+		$newKML 
+            .= '<a href="'.
+            option('site_url').
+            '/dojo/'.
+            $dojo->DojoName.
+            '">View Details</a>';
 
 		$newKML .= ']]></description>';
 		$newKML .= '<Point><coordinates>';
@@ -372,6 +417,13 @@ function Admin_Create_kml()
 	return html('admin/create_kml.html.php');
 }
 
+
+/**
+ * Admin_importjwm function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importjwm()
 {
 
@@ -441,6 +493,12 @@ function Admin_importjwm()
 }
 
 
+/**
+ * Admin_importBJA function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importBJA()
 {
 
@@ -525,10 +583,14 @@ function Admin_importBJA()
 }
 
 
+/**
+ * Admin_importUSJA function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importUSJA()
 {
-	// http://usjamanagement.com/public/charteredClubs/
-	// http://usjamanagement.com/public/charteredClubs/clubDetail.asp?clubID=682 1929
 	set_time_limit(0);
 
 
@@ -603,14 +665,22 @@ function Admin_importUSJA()
 				echo ".";
 
 			}
-		} else
+		} else {
 			echo 'x';
+        }
 
 
 	}
 
 }
 
+
+/**
+ * Admin_importUSAJUDO function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importUSAJUDO()
 {
 	// http://www.usjudo.org/documents/websiteclubs.pdf
@@ -669,12 +739,14 @@ function Admin_importUSAJUDO()
             echo ':';
             if($address){echo $address;}
             echo '<br />';
-           */
+            */
 
 
-			// Now we have all the data, lets check if the dojo exists and add it if it does not.
+			// Now we have all the data, 
+			// lets check if the dojo exists and add it if it does not.
 
-			//Three parts to the querystring: q is address, output is the format (
+			//Three parts to the querystring: q is address, 
+			// output is the format (
 			$key = option('GoogleKey');
 			$address2 = urlencode($address);
 			$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
@@ -708,9 +780,9 @@ function Admin_importUSAJUDO()
 					echo ".";
 
 				}
-			} else
+			} else {
 				echo 'x';
-
+            }
 
 
 
@@ -725,88 +797,107 @@ function Admin_importUSAJUDO()
 	}
 }
 
-function Admin_import_NZJF()
+/**
+ * Admin_import_NZJF function.
+ * 
+ * @access public
+ * @return void
+ */
+function Admin_Import_nzjf()
 {
-// http://judonz.org/front/index.php?option=com_content&view=article&id=18
-// id ranges from 16 through to 23.
-// Start of clubs: <div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>
-// End of clubs: <!--EOF content section -->
-echo '<h1>Import NZJF</h1>';
+    // http://judonz.org/front/index.php?option=com_content&view=article&id=18
+    // id ranges from 16 through to 23.
+    // Start of clubs: <div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>
+    // End of clubs: <!--EOF content section -->
+    echo '<h1>Import NZJF</h1>';
 
-for ( $id = 16; $id <= 23; $id++) {
-    $url = 'http://judonz.org/front/index.php?option=com_content&view=article&id='.$id;
-	$html = file_get_contents($url);
-	$data = get_string_between($html, '<div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>', '<!--EOF content section -->');
+    for ( $id = 16; $id <= 23; $id++) {
+        $url = 'http://judonz.org/front/index.php?option=com_content&view=article&id='.$id;
+	    $html = file_get_contents($url);
+	    $data 
+	        = get_string_between(
+	            $html,
+	            '<div>ONLY THE CLUBS LISTED BELOW ARE CURRENTLY AFFILIATED TO JUDO NEW ZEALAND</div>',
+	            '<!--EOF content section -->'
+	        );
 	
 	
-	// Having got data for the area, explode out each club then loop through them.
-	$aClub = explode('<div style="width:100%;background-color:#999;">', $data);
-	array_shift($aClub);
-	foreach($aClub as $club){
-	   //echo $club;
-	  
-	
-	   $name = clean_name(get_string_between($club, '<div style="float:left;margin-left:5px;"><strong>','</strong></div>'));
+	    // Having got data for the area, explode out each club then loop through them.
+	    $aClub = explode('<div style="width:100%;background-color:#999;">', $data);
+	    array_shift($aClub);
+	    foreach ($aClub as $club) {
+	        $name 
+                = clean_name(
+                    get_string_between(
+	                    $club,
+	                    '<div style="float:left;margin-left:5px;"><strong>',
+	                    '</strong></div>'
+                    )
+                );
 	   
-	   $dojo = Find_dojo($name);
-	   if(!$dojo){
+	        $dojo = Find_dojo($name);
+	        if (!$dojo) {
 	   
 	   
-	       $address = trim(strip_tags(get_string_between($club, '<div style="float:left;width:37px;">dojo:</div>','</div>')));
+	            $address 
+	                = trim(
+	                    strip_tags(
+	                        get_string_between(
+	                            $club, 
+	                            '<div style="float:left;width:37px;">dojo:</div>',
+	                            '</div>'
+                            )
+                        )
+                    );
 	   
-	       $address .= ', New Zealand';
+                $address .= ', New Zealand';
 	       
-	       //Three parts to the querystring: q is address, output is the format (
-			$key = option('GoogleKey');
-			$address2 = urlencode($address);
-			$mapurl = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
-			$ch2 = curl_init();
-			curl_setopt($ch2, CURLOPT_URL, $mapurl);
-			curl_setopt($ch2, CURLOPT_HEADER, 0);
-			curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
-			curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
-			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
-			$data = curl_exec($ch2);
-			//echo $data;
-			curl_close($ch2);
-			$status = get_string_between($data, '"code": ', ',');
-			if ($status === '200') {
-				$point = get_string_between($data, 'coordinates": [', ']');
-				$latlong = explode(',', $point);
-				$lat = trim($latlong[1]);
-				$lng = trim($latlong[0]);
+                //Three parts to the querystring: q is address, output is the format (
+                $key = option('GoogleKey');
+                $address2 = urlencode($address);
+                $mapurl = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+                $ch2 = curl_init();
+                curl_setopt($ch2, CURLOPT_URL, $mapurl);
+                curl_setopt($ch2, CURLOPT_HEADER, 0);
+                curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+                curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+                curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+                $data = curl_exec($ch2);
+                //echo $data;
+                curl_close($ch2);
+                $status = get_string_between($data, '"code": ', ',');
+                if ($status === '200') {
+				    $point = get_string_between($data, 'coordinates": [', ']');
+				    $latlong = explode(',', $point);
+				    $lat = trim($latlong[1]);
+				    $lng = trim($latlong[0]);
+	            }
 
-	       }
-	       	
-	   
-
-	       
-	       $dojo_array = array(
-	       'DojoName' => $name, 
-	       'DojoAddress' => $address, 
-	       'URL' => $url,  
-	       'Latitude' => $lat, 
-	       'Longitude' => $lng, 
-	       'GUID' => guid() 
-	       );
-					//print_r($dojo_array);
-					Create_dojo($dojo_array);
-					echo "$name<br>";
-
-	       
-	   
-	   } else {
-	       echo "* $name exists in database<br>";
-	       }
-	}
-	
-
+	            $dojo_array = array(
+                'DojoName' => $name, 
+                'DojoAddress' => $address, 
+                'URL' => $url,  
+                'Latitude' => $lat, 
+                'Longitude' => $lng, 
+                'GUID' => guid() 
+                );
+			
+                Create_dojo($dojo_array);
+			
+            } else {
+                echo "* $name exists in database<br>";
+            }
+        }
+    }
 }
 
 
-}
-
-
+/**
+ * Admin_importNSW function.
+ * 
+ * @access public
+ * @return void
+ */
 function Admin_importNSW()
 {
     echo '<h1>Import Judo NSW Dojo</h1>';
@@ -821,21 +912,21 @@ function Admin_importNSW()
         $data, 
         'Judo Federation Of Australia (NSW) Member Clubs',
         '<td class="modifydate">'
-        );
+    );
         //print_r($data);
         $aData = explode('<tr>', $data);
         array_shift($aData);
         array_shift($aData);
         //print_r($aData);
-        foreach($aData as $dojo)
+        foreach ($aData as $dojo)
         {
             
             //print_r($dojo);
-            $dojo = str_ireplace('&#xD;','',$dojo);
-            $details = explode('<br />',$dojo);    
+            $dojo = str_ireplace('&#xD;', '', $dojo);
+            $details = explode('<br />', $dojo);    
             // print_r($details);   
             $name = clean_name(trim(strip_tags($details[0])));
-            $name = str_ireplace('&#xD;','',$name);
+            $name = str_ireplace('&#xD;', '', $name);
             
            
             if(!find_dojo($name))

@@ -1,308 +1,127 @@
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/admin.php
 --------------------------------------------------------------------------------
-FOUND 149 ERROR(S) AND 45 WARNING(S) AFFECTING 163 LINE(S)
+FOUND 53 ERROR(S) AND 34 WARNING(S) AFFECTING 75 LINE(S)
 --------------------------------------------------------------------------------
-   91 | ERROR   | Multi-line function call not indented correctly; expected 8
-      |         | spaces but found 12
-  107 | ERROR   | No space found after comma in function call
-  160 | ERROR   | Multi-line function call not indented correctly; expected 8
-      |         | spaces but found 12
-  187 | ERROR   | Expected "if (...) {\n"; found "if (...) \n                  
-      |         |      {\n"
-  188 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 24
-  189 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 24
-  190 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 24
-  191 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 2
-      |         | spaces
-  202 | WARNING | Line exceeds 85 characters; contains 92 characters
-  204 | ERROR   | Expected "if (...) {\n"; found "if (...){\n"
-  204 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 0
-      |         | spaces
-  207 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  208 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  209 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  211 | ERROR   | Multi-line IF statement not indented correctly; expected 24
-      |         | spaces but found 28
-  212 | ERROR   | Expected "if (...) {\n"; found "if (...){\n"
-  212 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 0
-      |         | spaces
-  213 | WARNING | Line exceeds 85 characters; contains 90 characters
-  216 | WARNING | Line exceeds 85 characters; contains 174 characters
-  225 | ERROR   | Expected "if (...) {\n"; found "if (...){\n"
-  225 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 0
-      |         | spaces
-  228 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  229 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  230 | ERROR   | Multi-line IF statement not indented correctly; expected 28
-      |         | spaces but found 32
-  232 | ERROR   | Multi-line IF statement not indented correctly; expected 24
-      |         | spaces but found 28
-  233 | ERROR   | Expected "if (...) {\n"; found "if (...){\n"
-  233 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 0
-      |         | spaces
-  234 | WARNING | Line exceeds 85 characters; contains 92 characters
-  237 | WARNING | Line exceeds 85 characters; contains 180 characters
-  248 | ERROR   | Space found before comma in function call
-  248 | ERROR   | No space found after comma in function call
-  266 | WARNING | Line exceeds 85 characters; contains 241 characters
-  277 | WARNING | Line exceeds 85 characters; contains 102 characters
-  288 | ERROR   | No space found after comma in function call
-  358 | WARNING | Line exceeds 85 characters; contains 120 characters
-  359 | WARNING | Line exceeds 85 characters; contains 96 characters
-  375 | ERROR   | You must use "/**" style comments for a function comment
-  394 | WARNING | Line exceeds 85 characters; contains 162 characters
-  405 | WARNING | Line exceeds 85 characters; contains 88 characters
-  422 | WARNING | Line exceeds 85 characters; contains 159 characters
-  444 | ERROR   | You must use "/**" style comments for a function comment
-  450 | WARNING | Line exceeds 85 characters; contains 492 characters
-  468 | WARNING | Line exceeds 85 characters; contains 136 characters
-  476 | WARNING | Line exceeds 85 characters; contains 106 characters
-  478 | WARNING | Line exceeds 85 characters; contains 88 characters
-  480 | WARNING | Line exceeds 85 characters; contains 92 characters
-  494 | WARNING | Line exceeds 85 characters; contains 99 characters
-  511 | WARNING | Line exceeds 85 characters; contains 322 characters
-  528 | ERROR   | You must use "/**" style comments for a function comment
-  537 | WARNING | Line exceeds 85 characters; contains 97 characters
-  558 | WARNING | Line exceeds 85 characters; contains 90 characters
-  575 | WARNING | Line exceeds 85 characters; contains 95 characters
-  597 | WARNING | Line exceeds 85 characters; contains 218 characters
-  606 | WARNING | Inline control structures are discouraged
-  614 | ERROR   | You must use "/**" style comments for a function comment
-  649 | WARNING | Line exceeds 85 characters; contains 116 characters
-  672 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-      |         | 11
-  675 | WARNING | Line exceeds 85 characters; contains 97 characters
-  680 | WARNING | Line exceeds 85 characters; contains 99 characters
-  702 | WARNING | Line exceeds 85 characters; contains 235 characters
-  711 | WARNING | Inline control structures are discouraged
-  728 | ERROR   | You must use "/**" style comments for a function comment
-  728 | ERROR   | Function name "Admin_import_NZJF" is invalid; consider
-      |         | "Admin_Import_nZJF" instead
-  730 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
-      |         | 0
-  731 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
-      |         | 0
-  732 | WARNING | Line exceeds 85 characters; contains 102 characters
-  732 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
-      |         | 0
-  733 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
-      |         | 0
-  734 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
-      |         | 0
-  736 | ERROR   | Line indented incorrectly; expected 4 spaces, found 0
-  737 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  737 | WARNING | Line exceeds 85 characters; contains 87 characters
-  738 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  739 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  739 | WARNING | Line exceeds 85 characters; contains 156 characters
-  742 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  743 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  744 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
-      |         | 4
-  745 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
-  745 | ERROR   | Line indented incorrectly; expected 8 spaces, found 4
-  746 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-      |         | 7
-  749 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-      |         | 7
-  749 | ERROR   | No space found after comma in function call
-  749 | WARNING | Line exceeds 85 characters; contains 124 characters
-  751 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
-      |         | 7
-  752 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
-  752 | ERROR   | Line indented incorrectly; expected 12 spaces, found 7
-  752 | ERROR   | There must be a single space between the closing parenthesis
-      |         | and the opening brace of a multi-line IF statement; found 0
-      |         | spaces
-  755 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  755 | ERROR   | No space found after comma in function call
-  755 | WARNING | Line exceeds 85 characters; contains 126 characters
-  757 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  759 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  760 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  761 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  762 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  762 | WARNING | Line exceeds 85 characters; contains 102 characters
-  763 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  764 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  765 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  766 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  767 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  768 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  769 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  770 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  771 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  772 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 12
-  773 | ERROR   | Line indented incorrectly; expected 16 spaces, found 12
-  774 | ERROR   | Line indented incorrectly; expected at least 20 spaces, found
-      |         | 16
-  775 | ERROR   | Line indented incorrectly; expected at least 20 spaces, found
-      |         | 16
-  776 | ERROR   | Line indented incorrectly; expected at least 20 spaces, found
-      |         | 16
-  777 | ERROR   | Line indented incorrectly; expected at least 20 spaces, found
-      |         | 16
-  779 | ERROR   | Closing brace indented incorrectly; expected 12 spaces, found
-      |         | 11
-  784 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  785 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  786 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  787 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  788 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  789 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  790 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  791 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  798 | ERROR   | Line indented incorrectly; expected 12 spaces, found 7
-  799 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-      |         | 11
-  800 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
-      |         | 11
-  810 | ERROR   | You must use "/**" style comments for a function comment
-  813 | WARNING | Line exceeds 85 characters; contains 91 characters
-  814 | WARNING | Line exceeds 85 characters; contains 98 characters
-  824 | ERROR   | Multi-line function call not indented correctly; expected 4
-      |         | spaces but found 8
-  830 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...)\n       
+  298 | WARNING | Line exceeds 85 characters; contains 107 characters
+  446 | WARNING | Line exceeds 85 characters; contains 162 characters
+  457 | WARNING | Line exceeds 85 characters; contains 88 characters
+  474 | WARNING | Line exceeds 85 characters; contains 159 characters
+  508 | WARNING | Line exceeds 85 characters; contains 492 characters
+  526 | WARNING | Line exceeds 85 characters; contains 136 characters
+  534 | WARNING | Line exceeds 85 characters; contains 106 characters
+  536 | WARNING | Line exceeds 85 characters; contains 88 characters
+  538 | WARNING | Line exceeds 85 characters; contains 92 characters
+  552 | WARNING | Line exceeds 85 characters; contains 99 characters
+  569 | WARNING | Line exceeds 85 characters; contains 322 characters
+  599 | WARNING | Line exceeds 85 characters; contains 97 characters
+  620 | WARNING | Line exceeds 85 characters; contains 90 characters
+  637 | WARNING | Line exceeds 85 characters; contains 95 characters
+  659 | WARNING | Line exceeds 85 characters; contains 218 characters
+  719 | WARNING | Line exceeds 85 characters; contains 116 characters
+  752 | WARNING | Line exceeds 85 characters; contains 99 characters
+  774 | WARNING | Line exceeds 85 characters; contains 235 characters
+  810 | WARNING | Line exceeds 85 characters; contains 106 characters
+  815 | WARNING | Line exceeds 85 characters; contains 91 characters
+  820 | WARNING | Line exceeds 85 characters; contains 102 characters
+  825 | WARNING | Line exceeds 85 characters; contains 86 characters
+  855 | WARNING | Line exceeds 85 characters; contains 86 characters
+  858 | WARNING | Line exceeds 85 characters; contains 106 characters
+  904 | WARNING | Line exceeds 85 characters; contains 91 characters
+  905 | WARNING | Line exceeds 85 characters; contains 98 characters
+  921 | ERROR   | Expected "foreach (...) {\n"; found "foreach (...)\n       
       |         | {\n"
-  830 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
-  834 | ERROR   | No space found after comma in function call
-  834 | ERROR   | No space found after comma in function call
-  835 | ERROR   | No space found after comma in function call
-  838 | ERROR   | No space found after comma in function call
-  838 | ERROR   | No space found after comma in function call
-  841 | ERROR   | Expected "if (...) {\n"; found "if(...)\n            {\n"
-  841 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
-  844 | ERROR   | No space found after comma in function call
-  844 | ERROR   | No space found after comma in function call
-  849 | ERROR   | No space found after comma in function call
-  866 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                {\n"
-  866 | ERROR   | Line indented incorrectly; expected 12 spaces, found 16
-  885 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
-  889 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
+  921 | ERROR   | Line indented incorrectly; expected 4 spaces, found 8
+  932 | ERROR   | Expected "if (...) {\n"; found "if(...)\n            {\n"
+  932 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
+  935 | ERROR   | No space found after comma in function call
+  935 | ERROR   | No space found after comma in function call
+  940 | ERROR   | No space found after comma in function call
+  957 | ERROR   | Expected "if (...) {\n"; found "if(...)\n                {\n"
+  957 | ERROR   | Line indented incorrectly; expected 12 spaces, found 16
+  976 | ERROR   | Line indented incorrectly; expected 8 spaces, found 12
+  980 | ERROR   | Closing brace indented incorrectly; expected 8 spaces, found
       |         | 10
-  895 | ERROR   | You must use "/**" style comments for a function comment
-  895 | ERROR   | Function name "Admin_import_JudoSA" is invalid; consider
+  986 | ERROR   | You must use "/**" style comments for a function comment
+  986 | ERROR   | Function name "Admin_import_JudoSA" is invalid; consider
       |         | "Admin_Import_judoSA" instead
-  895 | ERROR   | Opening brace should be on a new line
-  907 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
-  908 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+  986 | ERROR   | Opening brace should be on a new line
+  998 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...){\n"
+  999 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
       |         | 7
-  910 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+ 1001 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
       |         | 7
-  912 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
+ 1003 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found
       |         | 7
-  914 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
-  914 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
-  916 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1005 | ERROR   | Expected "if (...) {\n"; found "if(...) {\n"
+ 1005 | ERROR   | Line indented incorrectly; expected 8 spaces, found 7
+ 1007 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  917 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1008 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  918 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1009 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  919 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1010 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  920 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1011 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  921 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1012 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  922 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1013 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  924 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1015 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  925 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1016 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  926 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1017 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  928 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
+ 1019 | ERROR   | Line indented incorrectly; expected at least 12 spaces, found
       |         | 7
-  929 | ERROR   | Expected "if (...) {\n"; found "if(...){      \n"
-  929 | ERROR   | Line indented incorrectly; expected 12 spaces, found 7
-  929 | ERROR   | There must be a single space between the closing parenthesis
+ 1020 | ERROR   | Expected "if (...) {\n"; found "if(...){      \n"
+ 1020 | ERROR   | Line indented incorrectly; expected 12 spaces, found 7
+ 1020 | ERROR   | There must be a single space between the closing parenthesis
       |         | and the opening brace of a multi-line IF statement; found 0
       |         | spaces
-  930 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+ 1021 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
       |         | 11
-  931 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+ 1022 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
       |         | 15
-  942 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
+ 1033 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
       |         | 16
-  943 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
+ 1034 | ERROR   | Closing brace indented incorrectly; expected 7 spaces, found
       |         | 8
-  946 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found
+ 1037 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found
       |         | 7
-  951 | ERROR   | You must use "/**" style comments for a function comment
-  962 | WARNING | Line exceeds 85 characters; contains 98 characters
-  980 | WARNING | Line exceeds 85 characters; contains 95 characters
- 1002 | WARNING | Line exceeds 85 characters; contains 159 characters
- 1011 | WARNING | Inline control structures are discouraged
- 1020 | ERROR   | You must use "/**" style comments for a function comment
- 1020 | ERROR   | Function name "Admin_import_judo_alberta" is invalid;
+ 1042 | ERROR   | You must use "/**" style comments for a function comment
+ 1053 | WARNING | Line exceeds 85 characters; contains 98 characters
+ 1071 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 1093 | WARNING | Line exceeds 85 characters; contains 159 characters
+ 1102 | WARNING | Inline control structures are discouraged
+ 1111 | ERROR   | You must use "/**" style comments for a function comment
+ 1111 | ERROR   | Function name "Admin_import_judo_alberta" is invalid;
       |         | consider "Admin_Import_Judo_alberta" instead
- 1024 | WARNING | Line exceeds 85 characters; contains 88 characters
- 1056 | WARNING | Line exceeds 85 characters; contains 95 characters
- 1078 | WARNING | Line exceeds 85 characters; contains 227 characters
- 1087 | WARNING | Inline control structures are discouraged
- 1099 | ERROR   | You must use "/**" style comments for a function comment
- 1102 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1115 | WARNING | Line exceeds 85 characters; contains 88 characters
+ 1147 | WARNING | Line exceeds 85 characters; contains 95 characters
+ 1169 | WARNING | Line exceeds 85 characters; contains 227 characters
+ 1178 | WARNING | Inline control structures are discouraged
+ 1190 | ERROR   | You must use "/**" style comments for a function comment
+ 1193 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1103 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1194 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1104 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1195 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1105 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1196 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1106 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1197 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1108 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
+ 1199 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found
       |         | 1
- 1112 | ERROR   | Missing function doc comment
- 1112 | ERROR   | Function name "sync_new" is prefixed with a package name but
+ 1203 | ERROR   | Missing function doc comment
+ 1203 | ERROR   | Function name "sync_new" is prefixed with a package name but
       |         | does not begin with a capital letter
- 1121 | ERROR   | Missing function doc comment
- 1121 | ERROR   | Function name "sync_updated" is prefixed with a package name
+ 1212 | ERROR   | Missing function doc comment
+ 1212 | ERROR   | Function name "sync_updated" is prefixed with a package name
       |         | but does not begin with a capital letter
 --------------------------------------------------------------------------------
 
@@ -780,7 +599,7 @@ FILE: .../lancewicks/Documents/Dev_Projects/DojoList/views/admin/create.html.php
 --------------------------------------------------------------------------------
 FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 16 | ERROR | Missing file doc comment
+ 30 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
@@ -852,7 +671,7 @@ FILE: ...ncewicks/Documents/Dev_Projects/DojoList/views/admin/edit_form.html.php
 --------------------------------------------------------------------------------
 FOUND 1 ERROR(S) AND 0 WARNING(S) AFFECTING 1 LINE(S)
 --------------------------------------------------------------------------------
- 16 | ERROR | Missing file doc comment
+ 32 | ERROR | Missing file doc comment
 --------------------------------------------------------------------------------
 
 
