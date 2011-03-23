@@ -48,12 +48,11 @@ FOUND 0 ERROR(S) AND 1 WARNING(S) AFFECTING 1 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/data.model.php
 --------------------------------------------------------------------------------
-FOUND 33 ERROR(S) AND 2 WARNING(S) AFFECTING 18 LINE(S)
+FOUND 32 ERROR(S) AND 2 WARNING(S) AFFECTING 18 LINE(S)
 --------------------------------------------------------------------------------
   23 | ERROR   | Parameters must appear immediately after the comment
   23 | ERROR   | Doc comment for var $file. does not match actual variable name
      |         | $file at position 1
-  23 | ERROR   | Expected 1 space after the longest type
   43 | ERROR   | Parameters must appear immediately after the comment
   43 | ERROR   | Missing comment for param "$xml" at position 1
   44 | ERROR   | The comments for parameters $xml (1) and $file. (2) do not

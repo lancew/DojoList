@@ -29,7 +29,7 @@
 <p></p>
 <p>This project is designed to be used by area, national and international bodies. It will provide an easy to implement, open solution to ensure that the public can find local Judo club information that is accurate, up to date and easy to find.</p>
 
-<h3>The goal is NOT to create a single "silo" of data about Judo clubs rather to allow data to be collected, maintained and shared easily.</h3>
+<h3>The goal is NOT to create a single "silo" of data about Judo clubs rather to allow data to be collected, maintained and shared easily. This was highlighted in the recent article about our project in the ORGzine (The UK equivalent of the EFF) <a href="http://zine.openrightsgroup.org/features/2011/fusing-open-source-with-judo">http://zine.openrightsgroup.org/features/2011/fusing-open-source-with-judo</a></h3>
 
 <p>Currently all code is available on GitHub and feature planning and management done on Pivotal Tracker. Documentation is included in the project or on the GitHub wiki (<a href="http://wiki.github.com/lancew/DojoList/">http://wiki.github.com/lancew/DojoList/</a>). Discussion is on (moving to) <a href="http://groups.google.com/group/dojolist">http://groups.google.com/group/dojolist</a> via dojolist@googlegroups.com <br />All discussion about the project is done on this mailing list to ensure transparency. Bugs are tracked using the GitHub bug tracker.</p>
 
@@ -43,4 +43,4 @@
 <h1>Getting Involved</h1>
 <p>The project needs users, developers, testers, subject experts, documentation writers and more. Please browse the GitHub site to learn about the project and browse and join the mailing list (<a href="http://groups.google.com/group/dojolist">http://groups.google.com/group/dojolist</a>) to ask questions.</p>
 
-<p><em>This page last updated: 20 August 2010</em></p>
+<p><em>This page last updated: 23 March 2011</em></p>
