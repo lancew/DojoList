@@ -48,7 +48,7 @@
       
     </script> 
 	<p>
-	<a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a>
+	<a href="<?php echo option('data_dir') ?>/dojo.kml" rel="nofollow">KML</a>
     - <a href="html">HTML</a> - 
 	<a href="<?php echo option('data_dir') ?>/dojo.xml" rel="nofollow">XML</a>
     -> <?php echo Count_dojo(); ?> 

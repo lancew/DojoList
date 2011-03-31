@@ -1204,6 +1204,35 @@ function Admin_Import_Judo_alberta()
 
 
 /**
+ * Admin_import_sjf function.
+ * 
+ * @access public
+ * @return void
+ */
+function Admin_Import_sjf()
+{
+	$url = 'http://www.judoscotland.com/sites/all/themes/judoscotland_theme/js/data.js';
+	$data = file_get_contents($url);
+    $data = ltrim($data);
+    $data = rtrim($data);
+    $data = rtrim($data, ']');
+	
+	$data = str_ireplace('MAP_POINTS = [','',$data);
+	$data = json_encode($data);
+	var_dump($data);
+	
+	
+	
+
+
+}
+
+
+
+
+
+
+/**
  * sync function.
  * 
  * @access public

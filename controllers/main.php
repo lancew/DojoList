@@ -80,6 +80,19 @@ function Websites_list()
 	return html('websites_list.html.php');
 }
 
+/**
+ * Websites_list function.
+ * 
+ * @access public
+ * @return void
+ */
+function Emails_list()
+{
+	//set('DojoList', Find_Dojo_all());
+	set('DojoList', Emails());
+	return html('emails_list.html.php');
+}
+
 
 /**
  * search function.

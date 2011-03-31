@@ -344,5 +344,20 @@ function Websites()
 
 }
 
+function Emails()
+{
+	$xml = Find_Dojo_all();
+	$emails = array();
+	foreach ($xml->Dojo as $dojo) {
+	       //echo $dojo->ClubWebsite;
+	       if($dojo->ContactEmail > '') {
+                $emails[] = (string)$dojo->ContactEmail;
+		   }
+	}
+	sort($emails);
+	return $emails;
+
+}
+
 
 ?>
