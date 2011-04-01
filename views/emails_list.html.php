@@ -5,7 +5,7 @@
 
 <?php
  $DojoList = array_unique($DojoList);
- echo count($DojoList).'<br />';
+ echo '<h2>'.count($DojoList).' emails in the data.</h2>';
 
  foreach ($DojoList as $dojo) {
 
