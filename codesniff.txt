@@ -1,7 +1,7 @@
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/controllers/admin.php
 --------------------------------------------------------------------------------
-FOUND 0 ERROR(S) AND 32 WARNING(S) AFFECTING 32 LINE(S)
+FOUND 2 ERROR(S) AND 33 WARNING(S) AFFECTING 34 LINE(S)
 --------------------------------------------------------------------------------
   298 | WARNING | Line exceeds 85 characters; contains 107 characters
   446 | WARNING | Line exceeds 85 characters; contains 162 characters
@@ -35,6 +35,9 @@ FOUND 0 ERROR(S) AND 32 WARNING(S) AFFECTING 32 LINE(S)
  1130 | WARNING | Line exceeds 85 characters; contains 88 characters
  1162 | WARNING | Line exceeds 85 characters; contains 95 characters
  1184 | WARNING | Line exceeds 85 characters; contains 227 characters
+ 1214 | WARNING | Line exceeds 85 characters; contains 88 characters
+ 1220 | ERROR   | No space found after comma in function call
+ 1220 | ERROR   | No space found after comma in function call
 --------------------------------------------------------------------------------
 
 
@@ -101,7 +104,7 @@ FOUND 32 ERROR(S) AND 2 WARNING(S) AFFECTING 18 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/lib/dojo.model.php
 --------------------------------------------------------------------------------
-FOUND 6 ERROR(S) AND 0 WARNING(S) AFFECTING 4 LINE(S)
+FOUND 10 ERROR(S) AND 0 WARNING(S) AFFECTING 6 LINE(S)
 --------------------------------------------------------------------------------
  280 | ERROR | Missing function doc comment
  297 | ERROR | Missing function doc comment
@@ -109,6 +112,10 @@ FOUND 6 ERROR(S) AND 0 WARNING(S) AFFECTING 4 LINE(S)
  332 | ERROR | Function name "Websites" is invalid; consider "websites" instead
  338 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
  338 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
+ 347 | ERROR | You must use "/**" style comments for a function comment
+ 347 | ERROR | Function name "Emails" is invalid; consider "emails" instead
+ 353 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
+ 353 | ERROR | Line indented incorrectly; expected 8 spaces, found 11
 --------------------------------------------------------------------------------
 
 
@@ -563,6 +570,16 @@ FOUND 9 ERROR(S) AND 27 WARNING(S) AFFECTING 32 LINE(S)
  156 | WARNING | Line exceeds 85 characters; contains 133 characters
  161 | WARNING | Line exceeds 85 characters; contains 137 characters
  162 | WARNING | Line exceeds 85 characters; contains 852 characters
+--------------------------------------------------------------------------------
+
+
+FILE: ...s/lancewicks/Documents/Dev_Projects/DojoList/views/emails_list.html.php
+--------------------------------------------------------------------------------
+FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 3 LINE(S)
+--------------------------------------------------------------------------------
+  7 | ERROR | Missing file doc comment
+ 10 | ERROR | Line indented incorrectly; expected 0 spaces, found 1
+ 16 | ERROR | Closing brace indented incorrectly; expected 1 spaces, found 0
 --------------------------------------------------------------------------------
 
 
