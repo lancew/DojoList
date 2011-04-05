@@ -173,7 +173,7 @@ putenv ("LC_ALL=en");
 	</div>
 	<!-- end #page -->
 	<div id="footer">
-	<p>DojoList v.<?php echo option('version');?></p>
+	<p>DojoList v.<?php echo option('version');?> - <a href="bugs">Bugs</a> - <a href="stats">Statistics</a> - <a href="codesniff.txt">CodeSniffer</a> - <a href="test.html">Test coverage.</a></p>
 	
 	
 	

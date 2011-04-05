@@ -6,12 +6,12 @@ echo "CTRL+C to cancel or wait 10 seconds for the script to run"
 sleep 10
 echo "Running tests..."
 php tests/all_tests.php > test.html
-#echo "Exporting bugs..."
-#git sd publish --to ./bugs --html
+echo "Exporting bugs..."
+git sd publish --to ./bugs --html
 echo "Running codeSniffer"
 phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium,./lib/recaptchalib.php ./ > codesniff.txt
 echo "Running GitStats"
-~/Desktop/gitstats/gitstats/gitstats ~/Documents/Dev_Projects/DojoList/ ~/Desktop/gitstats/gitstats/dojolist
+~/Documents/gitstats/gitstats/gitstats ~/Documents/Dev_Projects/DojoList/ ~/Documents/Dev_Projects/DojoList/stats
 open test.html
 open codesniff.txt
 echo "Finished"
