@@ -43,9 +43,11 @@ FOUND 2 ERROR(S) AND 33 WARNING(S) AFFECTING 34 LINE(S)
 
 FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/index.php
 --------------------------------------------------------------------------------
-FOUND 0 ERROR(S) AND 1 WARNING(S) AFFECTING 1 LINE(S)
+FOUND 0 ERROR(S) AND 3 WARNING(S) AFFECTING 3 LINE(S)
 --------------------------------------------------------------------------------
  46 | WARNING | Line exceeds 85 characters; contains 96 characters
+ 50 | WARNING | Line exceeds 85 characters; contains 96 characters
+ 51 | WARNING | Line exceeds 85 characters; contains 105 characters
 --------------------------------------------------------------------------------
 
 
@@ -202,6 +204,25 @@ FOUND 55 ERROR(S) AND 3 WARNING(S) AFFECTING 47 LINE(S)
  275 | ERROR   | No space found after comma in function call
  275 | ERROR   | TRUE, FALSE and NULL must be lowercase; expected "true" but
      |         | found "TRUE"
+--------------------------------------------------------------------------------
+
+
+FILE: /Users/lancewicks/Documents/Dev_Projects/DojoList/stats/sortable.js
+--------------------------------------------------------------------------------
+FOUND 0 ERROR(S) AND 12 WARNING(S) AFFECTING 12 LINE(S)
+--------------------------------------------------------------------------------
+  27 | WARNING | Inline control structures are discouraged
+  46 | WARNING | Inline control structures are discouraged
+  62 | WARNING | Inline control structures are discouraged
+  64 | WARNING | Inline control structures are discouraged
+  85 | WARNING | Inline control structures are discouraged
+  92 | WARNING | Inline control structures are discouraged
+ 103 | WARNING | Inline control structures are discouraged
+ 105 | WARNING | Inline control structures are discouraged
+ 106 | WARNING | Inline control structures are discouraged
+ 107 | WARNING | Inline control structures are discouraged
+ 109 | WARNING | Inline control structures are discouraged
+ 149 | WARNING | Inline control structures are discouraged
 --------------------------------------------------------------------------------
 
 
@@ -526,7 +547,7 @@ FOUND 3 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
 
 FILE: ...ers/lancewicks/Documents/Dev_Projects/DojoList/views/default_layout.php
 --------------------------------------------------------------------------------
-FOUND 9 ERROR(S) AND 27 WARNING(S) AFFECTING 32 LINE(S)
+FOUND 9 ERROR(S) AND 28 WARNING(S) AFFECTING 33 LINE(S)
 --------------------------------------------------------------------------------
    1 | WARNING | Line exceeds 85 characters; contains 109 characters
   13 | ERROR   | You must use "/**" style comments for a file comment
@@ -570,6 +591,7 @@ FOUND 9 ERROR(S) AND 27 WARNING(S) AFFECTING 32 LINE(S)
  156 | WARNING | Line exceeds 85 characters; contains 133 characters
  161 | WARNING | Line exceeds 85 characters; contains 137 characters
  162 | WARNING | Line exceeds 85 characters; contains 852 characters
+ 176 | WARNING | Line exceeds 85 characters; contains 195 characters
 --------------------------------------------------------------------------------
 
 
