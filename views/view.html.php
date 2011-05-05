@@ -146,15 +146,10 @@
     </td>
     </tr>
 
-    
-       <tr>
-    <td><h3>Training Sessions</h3></td>
-    <td></td>
-    </tr> 
-    
-    
+    <tr>&nbsp;</tr>
     <tr>
-    <td></td>
+    <td>Training Sessions</td>
+   
     <td>
         <?php
         
@@ -245,6 +240,19 @@
         ?>
     </td>
     </tr>
+    <tr>&nbsp;</tr>
+    <tr>
+    <td>Notes:</td>
+    <td>
+        <p>
+        <?php
+        if($Dojo->Notes){
+            echo $Dojo->Notes;
+        }
+        ?>
+        </p>
+    </td>
+    </tr>  
     
 </table>
 

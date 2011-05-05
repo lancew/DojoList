@@ -300,6 +300,22 @@ foreach ($Dojo as $field => $value) {
 
 <tr>
     <td>
+        <p>Notes:</p>
+    </td>
+    <td>
+        <textarea
+            rows="10" 
+            cols="30"
+            id='Notes'
+            name='Notes'
+            
+        ><?php echo h($Dojo->Notes)?></textarea>
+            
+    </td>
+</tr>
+
+<tr>
+    <td>
         <em>
             <?php 
             echo _(

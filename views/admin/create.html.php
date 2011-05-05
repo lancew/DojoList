@@ -200,19 +200,50 @@ document.onkeypress = stopRKey;
             >
         </td>
     </tr>
+    
+    <tr>
+    <td>
+        <p>Notes:</p>
+    </td>
+    <td>
+        <textarea
+            rows="10" 
+            cols="30"
+            id='Notes'
+            name='Notes'
+            
+        ></textarea>
+            
+    </td>
+</tr>
+    
+    
     <tr>
         <td>
-        </td>
-        <td>
+        
             <div 
                 id="map" 
                 style="width: 250px;
                        height: 250px; 
-                       float: right;
+                       
                        ">
             </div>
+            </td>
+        <td>
+         <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
+            <input 
+                type="submit" 
+                value="submit"
+            >
+
         </td>
     </tr>
+    
+    
+    
+    
+    
+    
     <input 
         type="hidden" 
         name="GUID" 
@@ -222,12 +253,7 @@ document.onkeypress = stopRKey;
         <td>
         </td>
         <td>
-            <?php echo recaptcha_get_html(option('recaptcha_public_key')); ?>
-            <input 
-                type="submit" 
-                value="submit"
-            >
-            <br />
+                       <br />
         </td>
     </tr>
 </table>
