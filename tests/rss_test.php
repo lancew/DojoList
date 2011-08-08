@@ -44,7 +44,7 @@ class TestOfRSS extends UnitTestCase
 			                    'GUID' => guid() 
 			                    );
 			Create_dojo($dojo_array);
-			 
+			     
 			Delete_dojo('test_dojo_rss_test');
 
 	}

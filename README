@@ -13,3 +13,7 @@ http://www.dojolist.org
 
 ** NB: The index.php.default file needs to have some option 
 fields entered and then needs to be renamed to index.php
+
+Specifically you need to obtain a Google maps API key
+and a public and private key for reCaptcha. 
+Links and instructions will follow.
