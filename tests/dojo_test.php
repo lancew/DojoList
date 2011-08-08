@@ -56,7 +56,7 @@ class TestOfDojolist extends UnitTestCase
 
 			$dojo_array = array(
 			                    'DojoName' => 'test_dojo', 
-			                    'ClubWebsite' => 'url', 
+			                    'ClubWebsite' => 'http://test.here/link', 
 			                    'Latitude' => '0', 
 			                    'Longitude' => '0', 
 			                    'GUID' => guid() 
@@ -65,6 +65,9 @@ class TestOfDojolist extends UnitTestCase
 			$xml = Find_dojo('test_dojo');
 			$text = $xml->DojoName;
 			$this->assertEqual($text, 'test_dojo');
+			
+			//test that the url given is correct
+			$this->assertEqual($xml->ClubWebsite, 'url');
 
 
 		} else {
@@ -107,10 +110,9 @@ class TestOfDojolist extends UnitTestCase
 	// --------------------------------------
 	// *** test_dojo is deleted at this point
 	// --------------------------------------
-
-
 	function testDelete_dojo()
 	{
+		
 		if (Find_dojo('test_dojo')) {
 			Delete_dojo('test_dojo');
 			$this->assertFalse(Find_dojo('test_dojo'), 'test_dojo was not deleted');

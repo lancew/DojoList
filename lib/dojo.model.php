@@ -163,16 +163,20 @@ function Create_dojo($dojo, $file = null)
     $new1->addChild('Updated', $time);
     
 	Save_Xml_data($xml->asXML());
+	
+	$source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$dojo['DojoName'];
+	
 	$description = $dojo['DojoName']
-	               .' Dojo was created. <a href="'
-	               .$source_url.'/dojo/'
-	               .$dojo['DojoName']
+	               .' Dojo was created.'
+	               .' <a href="'
+	               .$source_url
 	               .'">'
 	               .$dojo['DojoName']
 	               .'</a>';
 	//print_r($dojo);
 	//echo $description;
 	$rss_array = array('description' => $description);
+	print_r($rss_array);
 	Add_rss_item($rss_array);
 
 	return 'Dojo Created';
