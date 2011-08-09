@@ -2196,9 +2196,9 @@ FOUND 43 ERROR(S) AND 4 WARNING(S) AFFECTING 43 LINE(S)
    2 | ERROR   | You must use "/**" style comments for a file comment
   35 | ERROR   | You must use "/**" style comments for a function comment
   37 | ERROR   | Line indented incorrectly; expected at least 4 spaces, found 1
+  37 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   37 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
      |         | comment */" instead.
-  37 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   38 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   38 | WARNING | Line exceeds 85 characters; contains 92 characters
   38 | ERROR   | Perl-style comments are not allowed. Use "// Comment." or "/*
@@ -2540,7 +2540,7 @@ FOUND 114 ERROR(S) AND 2 WARNING(S) AFFECTING 115 LINE(S)
 
 FILE: /Users/lancewicks/Sites/DojoList/lib/dojo.model.php
 --------------------------------------------------------------------------------
-FOUND 146 ERROR(S) AND 0 WARNING(S) AFFECTING 146 LINE(S)
+FOUND 147 ERROR(S) AND 0 WARNING(S) AFFECTING 147 LINE(S)
 --------------------------------------------------------------------------------
   30 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
   30 | ERROR | Spaces must be used to indent lines; tabs are not allowed
@@ -2671,6 +2671,7 @@ FOUND 146 ERROR(S) AND 0 WARNING(S) AFFECTING 146 LINE(S)
  165 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  165 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  166 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 167 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  167 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  168 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  169 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
@@ -2689,32 +2690,32 @@ FOUND 146 ERROR(S) AND 0 WARNING(S) AFFECTING 146 LINE(S)
  178 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  179 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  179 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 181 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 181 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 195 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 195 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 180 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 180 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 182 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 182 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  196 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  196 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 210 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 210 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
+ 197 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 197 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  211 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 211 | ERROR | Line indented incorrectly; expected 8 spaces, found 2
- 212 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 3
+ 211 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  212 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 214 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 214 | ERROR | Line indented incorrectly; expected 8 spaces, found 2
- 215 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 3
+ 212 | ERROR | Line indented incorrectly; expected 8 spaces, found 2
+ 213 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 3
+ 213 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  215 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 215 | ERROR | Line indented incorrectly; expected 8 spaces, found 2
  216 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 3
  216 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 218 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 217 | ERROR | Line indented incorrectly; expected at least 12 spaces, found 3
+ 217 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  219 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 220 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  220 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  221 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  221 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 222 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  222 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 223 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  223 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  224 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  224 | ERROR | Spaces must be used to indent lines; tabs are not allowed
@@ -2722,33 +2723,33 @@ FOUND 146 ERROR(S) AND 0 WARNING(S) AFFECTING 146 LINE(S)
  225 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  226 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  226 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 253 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 253 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 227 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 227 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  254 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  254 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 255 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  255 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 255 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
- 256 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  256 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 256 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
+ 257 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  257 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 259 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 259 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 271 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 271 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 258 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 260 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 260 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  272 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  272 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 273 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  273 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 273 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
- 274 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  274 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 276 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 277 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 274 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
+ 275 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 275 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  277 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  278 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  278 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 283 | ERROR | Missing function doc comment
- 286 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 286 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 279 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 279 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 284 | ERROR | Missing function doc comment
  287 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  287 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  288 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
@@ -2763,43 +2764,45 @@ FOUND 146 ERROR(S) AND 0 WARNING(S) AFFECTING 146 LINE(S)
  292 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  293 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  293 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 300 | ERROR | Missing function doc comment
- 335 | ERROR | You must use "/**" style comments for a function comment
- 335 | ERROR | Function name "Websites" is invalid; consider "websites" instead
- 337 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 337 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 294 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 294 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 301 | ERROR | Missing function doc comment
+ 336 | ERROR | You must use "/**" style comments for a function comment
+ 336 | ERROR | Function name "Websites" is invalid; consider "websites" instead
  338 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  338 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 339 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  339 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 339 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  340 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 340 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  341 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 341 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
- 343 | ERROR | Closing brace indented incorrectly; expected 8 spaces, found 5
- 343 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 342 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 342 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
+ 344 | ERROR | Closing brace indented incorrectly; expected 8 spaces, found 5
  344 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 345 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  345 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  346 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  346 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 350 | ERROR | You must use "/**" style comments for a function comment
- 350 | ERROR | Function name "Emails" is invalid; consider "emails" instead
- 352 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
- 352 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 347 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 347 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 351 | ERROR | You must use "/**" style comments for a function comment
+ 351 | ERROR | Function name "Emails" is invalid; consider "emails" instead
  353 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  353 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 354 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  354 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 354 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  355 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 355 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  356 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 356 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
- 358 | ERROR | Closing brace indented incorrectly; expected 8 spaces, found 5
- 358 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 357 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 357 | ERROR | Expected "if (...) {\n"; found "if(...) {\n"
+ 359 | ERROR | Closing brace indented incorrectly; expected 8 spaces, found 5
  359 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 360 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  360 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  361 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
  361 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 362 | ERROR | Line indented incorrectly; expected at least 4 spaces, found 1
+ 362 | ERROR | Spaces must be used to indent lines; tabs are not allowed
 --------------------------------------------------------------------------------
 
 
@@ -3314,26 +3317,44 @@ FOUND 255 ERROR(S) AND 12 WARNING(S) AFFECTING 255 LINE(S)
 
 FILE: /Users/lancewicks/Sites/DojoList/tests/all_tests.php
 --------------------------------------------------------------------------------
-FOUND 10 ERROR(S) AND 0 WARNING(S) AFFECTING 10 LINE(S)
+FOUND 19 ERROR(S) AND 1 WARNING(S) AFFECTING 19 LINE(S)
 --------------------------------------------------------------------------------
-  2 | ERROR | Missing file doc comment
-  4 | ERROR | Opening brace of a class must be on the line after the definition
-  4 | ERROR | Missing class doc comment
-  5 | ERROR | Spaces must be used to indent lines; tabs are not allowed
-  5 | ERROR | Missing function doc comment
-  5 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
-  6 | ERROR | Spaces must be used to indent lines; tabs are not allowed
-  7 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
-  7 | ERROR | Spaces must be used to indent lines; tabs are not allowed
-  8 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
-  8 | ERROR | Spaces must be used to indent lines; tabs are not allowed
-  9 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
-  9 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 10 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 10 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 11 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 11 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 12 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+  2 | ERROR   | Missing file doc comment
+  6 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  6 | WARNING | Line exceeds 85 characters; contains 100 characters
+  7 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  7 | ERROR   | You must use "/**" style comments for a function comment
+  7 | ERROR   | Line indented incorrectly; expected 0 spaces, found 1
+  8 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  9 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  9 | ERROR   | Line indented incorrectly; expected 4 spaces, found 3
+ 10 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 10 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 11 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 11 | ERROR   | Line indented incorrectly; expected 4 spaces, found 3
+ 12 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 3
+ 12 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 13 | ERROR   | Closing brace indented incorrectly; expected 3 spaces, found 1
+ 13 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 14 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 16 | ERROR   | Opening brace of a class must be on the line after the
+    |         | definition
+ 16 | ERROR   | Missing class doc comment
+ 17 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 17 | ERROR   | Missing function doc comment
+ 17 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
+ 18 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 19 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+ 19 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 20 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+ 20 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 21 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+ 21 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 22 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+ 22 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 23 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+ 23 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 24 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
 --------------------------------------------------------------------------------
 
 
@@ -3656,208 +3677,200 @@ FOUND 106 ERROR(S) AND 0 WARNING(S) AFFECTING 106 LINE(S)
 
 FILE: /Users/lancewicks/Sites/DojoList/tests/rss_test.php
 --------------------------------------------------------------------------------
-FOUND 32 ERROR(S) AND 0 WARNING(S) AFFECTING 32 LINE(S)
+FOUND 33 ERROR(S) AND 0 WARNING(S) AFFECTING 33 LINE(S)
 --------------------------------------------------------------------------------
   2 | ERROR | Missing file doc comment
-  7 | ERROR | Missing class doc comment
- 11 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 11 | ERROR | Missing function doc comment
- 11 | ERROR | Method name "TestOfRSS::TestLoadRssFile" is not in camel caps
-    |       | format
- 11 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
- 12 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 13 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 13 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 10 | ERROR | Missing class doc comment
  14 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 15 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 15 | ERROR | Missing function doc comment
+ 15 | ERROR | Method name "TestOfRSS::TestLoadRssFile" is not in camel caps
+    |       | format
+ 15 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
+ 16 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 17 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  17 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 17 | ERROR | Missing function doc comment
- 17 | ERROR | Method name "TestOfRSS::TestDeleteOldestRss" is not in camel caps
-    |       | format
- 17 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  18 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 19 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 19 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 20 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 20 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 22 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 24 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 24 | ERROR | Missing function doc comment
- 24 | ERROR | Method name "TestOfRSS::TestAddRssItem" is not in camel caps
+ 21 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 21 | ERROR | Missing function doc comment
+ 21 | ERROR | Method name "TestOfRSS::TestDeleteOldestRss" is not in camel caps
     |       | format
- 24 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
- 25 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 26 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 21 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
+ 22 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 23 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 23 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 24 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 24 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  26 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 27 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 27 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 28 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  28 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 28 | ERROR | Missing function doc comment
+ 28 | ERROR | Method name "TestOfRSS::TestAddRssItem" is not in camel caps
+    |       | format
+ 28 | ERROR | Line indented incorrectly; expected 4 spaces, found 1
  29 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  30 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  30 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  31 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
- 31 | ERROR | File is being conditionally included; use "include_once" instead
  31 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 32 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
  32 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  33 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 35 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
+ 34 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 34 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 35 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 2
+ 35 | ERROR | File is being conditionally included; use "include_once" instead
  35 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  36 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  37 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 38 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 39 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
  39 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  40 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  41 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 42 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
  42 | ERROR | Spaces must be used to indent lines; tabs are not allowed
  43 | ERROR | Spaces must be used to indent lines; tabs are not allowed
- 44 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
  44 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 45 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 46 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
  46 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 47 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 48 | ERROR | Line indented incorrectly; expected at least 8 spaces, found 3
+ 48 | ERROR | Spaces must be used to indent lines; tabs are not allowed
+ 50 | ERROR | Spaces must be used to indent lines; tabs are not allowed
 --------------------------------------------------------------------------------
 
 
 FILE: /Users/lancewicks/Sites/DojoList/tests/sync_test.php
 --------------------------------------------------------------------------------
-FOUND 81 ERROR(S) AND 4 WARNING(S) AFFECTING 82 LINE(S)
+FOUND 75 ERROR(S) AND 3 WARNING(S) AFFECTING 76 LINE(S)
 --------------------------------------------------------------------------------
    2 | ERROR   | Missing file doc comment
-  10 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  10 | WARNING | Line exceeds 85 characters; contains 100 characters
-  11 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  11 | ERROR   | You must use "/**" style comments for a function comment
-  11 | ERROR   | Line indented incorrectly; expected 0 spaces, found 1
-  12 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  10 | ERROR   | Opening brace of a class must be on the line after the
+     |         | definition
+  10 | ERROR   | Missing class doc comment
   13 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   14 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   15 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  17 | ERROR   | Opening brace of a class must be on the line after the
-     |         | definition
-  17 | ERROR   | Missing class doc comment
+  15 | ERROR   | Missing function doc comment
+  15 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
+  16 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  17 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  17 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  17 | WARNING | Line exceeds 85 characters; contains 108 characters
+  18 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  19 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   20 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   21 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   22 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   22 | ERROR   | Missing function doc comment
   22 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
   23 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  24 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  24 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   24 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  24 | WARNING | Line exceeds 85 characters; contains 108 characters
   25 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  26 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   26 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  27 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   27 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   28 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  28 | ERROR   | Line indented incorrectly; expected 8 spaces, found 4
   29 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  29 | ERROR   | Missing function doc comment
-  29 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
-  30 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  31 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  31 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  32 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  33 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  33 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  34 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  34 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  35 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  35 | ERROR   | Line indented incorrectly; expected 8 spaces, found 4
-  36 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  36 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
-  36 | ERROR   | Line indented incorrectly; expected 12 spaces, found 2
-  36 | ERROR   | There must be a single space between the closing parenthesis
+  29 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  29 | ERROR   | Line indented incorrectly; expected 12 spaces, found 2
+  29 | ERROR   | There must be a single space between the closing parenthesis
      |         | and the opening brace of a multi-line IF statement; found 0
      |         | spaces
-  37 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+  30 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
      |         | 4
-  37 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  38 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+  30 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  31 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
      |         | 4
+  31 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  32 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 4
+  32 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  33 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 2
+  33 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  34 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  35 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  35 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  35 | WARNING | Line exceeds 85 characters; contains 103 characters
+  36 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   38 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  39 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 4
+  38 | ERROR   | Missing function doc comment
+  38 | ERROR   | Line indented incorrectly; expected 4 spaces, found 2
+  39 | ERROR   | Opening brace indented incorrectly; expected 2 spaces, found 1
   39 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  40 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 2
+  40 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   40 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   41 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  42 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  42 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   42 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  42 | WARNING | Line exceeds 85 characters; contains 103 characters
+  43 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
   43 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  44 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  44 | ERROR   | Line indented incorrectly; expected 8 spaces, found 4
   45 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  45 | ERROR   | Missing function doc comment
-  45 | ERROR   | Line indented incorrectly; expected 4 spaces, found 2
-  46 | ERROR   | Opening brace indented incorrectly; expected 2 spaces, found 1
-  46 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  47 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  47 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  48 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  49 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  49 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  50 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
-  50 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  51 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  51 | ERROR   | Line indented incorrectly; expected 8 spaces, found 4
-  52 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  52 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
-  52 | ERROR   | Line indented incorrectly; expected 12 spaces, found 2
-  52 | ERROR   | There must be a single space between the closing parenthesis
+  45 | ERROR   | Expected "if (...) {\n"; found "if(...){\n"
+  45 | ERROR   | Line indented incorrectly; expected 12 spaces, found 2
+  45 | ERROR   | There must be a single space between the closing parenthesis
      |         | and the opening brace of a multi-line IF statement; found 0
      |         | spaces
-  53 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+  46 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
      |         | 4
+  46 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  47 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
+     |         | 4
+  47 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  48 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 4
+  48 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  49 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 2
+  49 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  50 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  51 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  51 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  52 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
+  52 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   53 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  54 | ERROR   | Line indented incorrectly; expected at least 16 spaces, found
-     |         | 4
   54 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  55 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 4
+  55 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
   55 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  56 | ERROR   | Closing brace indented incorrectly; expected 4 spaces, found 2
+  56 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 1
   56 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
   57 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  58 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
   58 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  59 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
-  59 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  60 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  61 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  62 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 2
-  62 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  63 | ERROR   | Closing brace indented incorrectly; expected 2 spaces, found 1
-  63 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  64 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  65 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  69 | ERROR   | You must use "/**" style comments for a function comment
-  74 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  75 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  76 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  77 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  78 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  79 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  88 | ERROR   | Missing function doc comment
-  88 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
-  89 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
-  92 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  93 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  94 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  95 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  96 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
-  97 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 101 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...) {\n"
- 102 | WARNING | Line exceeds 85 characters; contains 108 characters
- 105 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
+  62 | ERROR   | You must use "/**" style comments for a function comment
+  67 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  68 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  69 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  70 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  71 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  72 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  81 | ERROR   | Missing function doc comment
+  81 | ERROR   | Line indented incorrectly; expected 4 spaces, found 5
+  82 | ERROR   | Opening brace indented incorrectly; expected 5 spaces, found 4
+  85 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  86 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  87 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  88 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  89 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  90 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+  94 | ERROR   | Expected "foreach (...) {\n"; found "foreach(...) {\n"
+  95 | WARNING | Line exceeds 85 characters; contains 108 characters
+  98 | ERROR   | Closing brace indented incorrectly; expected 5 spaces, found 4
+ 101 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 102 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 102 | ERROR   | You must use "/**" style comments for a function comment
+ 102 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
+ 103 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 104 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 104 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 105 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
+ 105 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 106 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
+ 107 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
  108 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
  109 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 109 | ERROR   | You must use "/**" style comments for a function comment
- 109 | ERROR   | Line indented incorrectly; expected 4 spaces, found 1
  110 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 111 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
  111 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 112 | ERROR   | Line indented incorrectly; expected at least 8 spaces, found 4
- 112 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 113 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 114 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 115 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 116 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 117 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
- 118 | ERROR   | Spaces must be used to indent lines; tabs are not allowed
 --------------------------------------------------------------------------------
 
 
@@ -4029,7 +4042,7 @@ FOUND 2 ERROR(S) AND 0 WARNING(S) AFFECTING 2 LINE(S)
 
 FILE: /Users/lancewicks/Sites/DojoList/views/default_layout.php
 --------------------------------------------------------------------------------
-FOUND 3 ERROR(S) AND 23 WARNING(S) AFFECTING 25 LINE(S)
+FOUND 3 ERROR(S) AND 25 WARNING(S) AFFECTING 27 LINE(S)
 --------------------------------------------------------------------------------
    1 | WARNING | Line exceeds 85 characters; contains 109 characters
   13 | ERROR   | You must use "/**" style comments for a file comment
@@ -4045,7 +4058,9 @@ FOUND 3 ERROR(S) AND 23 WARNING(S) AFFECTING 25 LINE(S)
   64 | WARNING | Line exceeds 85 characters; contains 116 characters
   73 | WARNING | Line exceeds 85 characters; contains 106 characters
  133 | WARNING | Line exceeds 85 characters; contains 105 characters
- 140 | WARNING | Line exceeds 85 characters; contains 89 characters
+ 139 | WARNING | Line exceeds 85 characters; contains 91 characters
+ 140 | WARNING | Line exceeds 85 characters; contains 106 characters
+ 141 | WARNING | Line exceeds 85 characters; contains 91 characters
  143 | ERROR   | No space found after comma in function call
  143 | WARNING | Line exceeds 85 characters; contains 106 characters
  151 | WARNING | Line exceeds 85 characters; contains 167 characters
