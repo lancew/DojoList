@@ -136,9 +136,9 @@ putenv ("LC_ALL=en");
 					<ul>
 						<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
 						<li><a href="<?=url_for('dojo')?>"><?php echo _("List of Dojo"); ?></a></li>
-						<li><a href="<?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
-						<li><a href="<?php echo option('data_dir') ?>/dojo.xml" rel="nofollow">XML</a></li>
-						<li><a href="<?php echo option('data_dir') ?>/dojo.rss">RSS</a></li>
+						<li><a href="<?=url_for('/')?><?php echo option('data_dir') ?>/dojo.kml">KML</a></li>
+						<li><a href="<?=url_for('/')?><?php echo option('data_dir') ?>/dojo.xml" rel="nofollow">XML</a></li>
+						<li><a href="<?=url_for('/')?><?php echo option('data_dir') ?>/dojo.rss">RSS</a></li>
 						<br />
 							<li><a href="<?php echo url_for('dojo','create'); ?>"> <?php echo _("Create new Dojo"); ?></a></li>
 						
