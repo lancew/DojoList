@@ -4,7 +4,7 @@
  <span class="fn n">
 <h1>
             <?php 
-            if($Dojo->DojoLogo) {
+            if($Dojo->DojoLogo != null) {
             echo '<span style="float:right;"><img alt="'.$Dojo->DojoName.'" src="'.$Dojo->DojoLogo.'" border="1px" /></span>';
             }
             echo $Dojo->DojoName; 

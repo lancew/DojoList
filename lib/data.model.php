@@ -131,7 +131,7 @@ function Validate_field($data, $type)
 	//echo $type.':'.$data.'<br>';
 	switch ($type) {
 	case "DojoName":
-		if (ereg('[^A-Za-z ]', $data)) {   
+		if (ereg('[^A-Za-z -]', $data)) {   
             return 'Dojo Name: Must be alphanumeric only';
         }
 		return null;

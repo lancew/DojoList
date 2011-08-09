@@ -176,7 +176,7 @@ function Create_dojo($dojo, $file = null)
 	//print_r($dojo);
 	//echo $description;
 	$rss_array = array('description' => $description);
-	print_r($rss_array);
+	//print_r($rss_array);
 	Add_rss_item($rss_array);
 
 	return 'Dojo Created';

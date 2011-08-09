@@ -3,8 +3,15 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 08 Aug 11 22:16:38 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Tue, 09 Aug 11 16:03:02 +0100</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>lwtestt Dojo was created. <a href="http://dev.dojolist/dojo/lwtestt">lwtestt</a></title>
+			<description>lwtestt Dojo was created. <a href="http://dev.dojolist/dojo/lwtestt">lwtestt</a></description>
+			<pubDate>Tue, 09 Aug 11 16:03:02 +0100</pubDate>
+			<guid>Tue09Aug1116:03:02+0100</guid>
+    </item>
+            
             <item>
 			<title>test_dojo_rss_test Dojo was deleted</title>
 			<description>test_dojo_rss_test Dojo was deleted</description>
@@ -134,13 +141,6 @@
             <item>
 			<title>test_dojo_rss_test Dojo was deleted</title>
 			<description>test_dojo_rss_test Dojo was deleted</description>
-			<pubDate>Mon, 08 Aug 11 22:12:20 +0100</pubDate>
-			<guid>Mon08Aug1122:12:20+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
-			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
 			<pubDate>Mon, 08 Aug 11 22:12:20 +0100</pubDate>
 			<guid>Mon08Aug1122:12:20+0100</guid>
     </item>
