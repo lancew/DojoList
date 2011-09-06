@@ -534,6 +534,7 @@ function Admin_importBJA()
 			$name = strip_tags(stripslashes(get_string_between($d, 'colspan="3"><strong>', '</strong>')));
 			$club_url = get_string_between($d, '><a href="http://', '">http:');
 			$address = trim(get_string_between($d, 'Location:</strong></td>', '</td>'));
+			$address = str_ireplace('-', '', $address);
 			$phone = trim(get_string_between($d, 'Phone:</strong></td>', '</td>'));
 			$contact = trim(get_string_between($d, 'Contact name:</strong></td>', '</td>'));
 			$email = get_string_between($d, '<a href="mailto:', '">');
