@@ -1205,30 +1205,94 @@ function Admin_Import_Judo_alberta()
 
 
 /**
- * Admin_import_sjf function.
+ * Admin_Import_slo imports slovenian Judo clubs function.
  * 
  * @access public
  * @return void
  */
-function Admin_Import_sjf()
+function Admin_Import_slo()
 {
-	$url = 'http://www.judoscotland.com/sites/all/themes/judoscotland_theme/js/data.js';
-	$data = file_get_contents($url);
-    $data = ltrim($data);
-    $data = rtrim($data);
-    $data = rtrim($data, ']');
+	$main_url = 'http://www.judo-zveza.si/?page=clubs';
+	$base_url = 'http://www.judo-zveza.si/';
 	
-	$data = str_ireplace('MAP_POINTS = [','',$data);
-	$data = json_encode($data);
-	var_dump($data);
-	
-	
-	
+	$data = file_get_contents($main_url);
+	$data = get_string_between($data, '<h2>Klubi</h2><ul>', '</ul>');
+	$data = explode('</li>', $data);
+	foreach($data as $item)
+	{
+	   $link = get_string_between($item, '<a href="', '"');
+	   $link = ltrim($link, '.');
+	   $link = ltrim($link, '/');
+	   $link = $base_url.$link;
+	   //echo $link.'<br />';
+	   $club = file_get_contents($link);
+	   //echo "<pre>".$club;
+	   $name = strip_tags(get_string_between($club, '<h1 class="title">','</a>'));
+	   $address = strip_tags(get_string_between($club, '<td>Naslov</td><td>','</td>'));
+	   $website = strip_tags(get_string_between($club, 'Spletna stran</td><td>','</a>'));
+	   $email = strip_tags(get_string_between($club, '<td>E-pošta</td><td>','</a>'));
+	   $telephone = strip_tags(get_string_between($club, '<td>Telefon</td><td>','</td>'));
+	   $url = $link;
+	   $lat = '';
+	   $lng = '';
+	   
+	   $dojo = Find_dojo($name);
 
+			if (!$dojo) {
+
+	   
+	   
+	   // Geocode the address
+	    $key = option('GoogleKey');
+		$address2 = urlencode($address.' slovenia');
+		$url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+		$ch2 = curl_init();
+		curl_setopt($ch2, CURLOPT_URL, $url);
+		curl_setopt($ch2, CURLOPT_HEADER, 0);
+		curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+		curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+		$data = curl_exec($ch2);
+		//echo $data;
+		curl_close($ch2);
+		$status = get_string_between($data, '"code": ', ',');
+		if ($status === '200') {
+			$point = get_string_between($data, 'coordinates": [', ']');
+			$latlong = explode(',', $point);
+			$lat = trim($latlong[1]);
+			$lng = trim($latlong[0]);
+
+	   
+	   echo "<li>Club name: $name";
+	   //echo "<li>Club address: $address";
+	   //echo "<li>Club website: $website";
+	   //echo "<li>Club email: $email";
+	   
+	   $dojo_array = array(
+	       'DojoName' => $name, 
+	       'DojoAddress' => $address, 
+	       'ClubWebsite' => $website, 
+	       'ContactEmail' => $email, 
+	       'ContactPhone' => $telephone,
+	       'URL' => 'http://judonz.org', 
+	       'Latitude' => $lat, 
+	       'Longitude' => $lng, 
+	       'GUID' => guid() 
+	   );
+	   //print_r($dojo_array);
+	   
+	   Create_dojo($dojo_array);
+	   }
+	   }
+	   
+	   	   echo '<p>';
+	   
+	
+	   
+	}
+	
 
 }
-
-
 
 
 
