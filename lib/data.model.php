@@ -47,6 +47,7 @@ function Load_Xml_data($file = 'data/dojo.xml')
  */
 function Save_Xml_data($xml, $file = 'data/dojo.xml')
 {
+	Backup_data();
 	$fh = fopen($file, 'w') or die("can't open file");
 	fwrite($fh, $xml);
 	fclose($fh);

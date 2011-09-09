@@ -3,8 +3,50 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 09 Sep 11 18:18:22 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 09 Sep 11 21:35:00 +0100</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Fri, 09 Sep 11 21:35:00 +0100</pubDate>
+			<guid>Fri09Sep1121:35:00+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Fri, 09 Sep 11 21:35:00 +0100</pubDate>
+			<guid>Fri09Sep1121:35:00+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
+			<guid>Fri09Sep1121:34:56+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
+			<guid>Fri09Sep1121:34:56+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
+			<guid>Fri09Sep1121:34:56+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Fri, 09 Sep 11 21:34:52 +0100</pubDate>
+			<guid>Fri09Sep1121:34:52+0100</guid>
+    </item>
+            
             <item>
 			<title>RANDORI VENDEUVROIS Dojo was created. <a href="http://dev.dojolist/dojo/RANDORI VENDEUVROIS">RANDORI VENDEUVROIS</a></title>
 			<description>RANDORI VENDEUVROIS Dojo was created. <a href="http://dev.dojolist/dojo/RANDORI VENDEUVROIS">RANDORI VENDEUVROIS</a></description>
@@ -101,47 +143,5 @@
 			<description>MJC MARIGNY CHATEL Dojo was created. <a href="http://dev.dojolist/dojo/MJC MARIGNY CHATEL">MJC MARIGNY CHATEL</a></description>
 			<pubDate>Fri, 09 Sep 11 18:17:57 +0100</pubDate>
 			<guid>Fri09Sep1118:17:57+0100</guid>
-    </item>
-            
-            <item>
-			<title>L ETOILE DE MAIZIERES Dojo was created. <a href="http://dev.dojolist/dojo/L ETOILE DE MAIZIERES">L ETOILE DE MAIZIERES</a></title>
-			<description>L ETOILE DE MAIZIERES Dojo was created. <a href="http://dev.dojolist/dojo/L ETOILE DE MAIZIERES">L ETOILE DE MAIZIERES</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:55 +0100</pubDate>
-			<guid>Fri09Sep1118:17:55+0100</guid>
-    </item>
-            
-            <item>
-			<title>A.S. MACEY MONTGUEUX Dojo was created. <a href="http://dev.dojolist/dojo/A.S. MACEY MONTGUEUX">A.S. MACEY MONTGUEUX</a></title>
-			<description>A.S. MACEY MONTGUEUX Dojo was created. <a href="http://dev.dojolist/dojo/A.S. MACEY MONTGUEUX">A.S. MACEY MONTGUEUX</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:54 +0100</pubDate>
-			<guid>Fri09Sep1118:17:54+0100</guid>
-    </item>
-            
-            <item>
-			<title>BUDO CLUB DE LUSIGNY Dojo was created. <a href="http://dev.dojolist/dojo/BUDO CLUB DE LUSIGNY">BUDO CLUB DE LUSIGNY</a></title>
-			<description>BUDO CLUB DE LUSIGNY Dojo was created. <a href="http://dev.dojolist/dojo/BUDO CLUB DE LUSIGNY">BUDO CLUB DE LUSIGNY</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:53 +0100</pubDate>
-			<guid>Fri09Sep1118:17:53+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB DES NOES Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB DES NOES">JUDO CLUB DES NOES</a></title>
-			<description>JUDO CLUB DES NOES Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB DES NOES">JUDO CLUB DES NOES</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:52 +0100</pubDate>
-			<guid>Fri09Sep1118:17:52+0100</guid>
-    </item>
-            
-            <item>
-			<title>JC DE LA RIVIERE DE CORPS Dojo was created. <a href="http://dev.dojolist/dojo/JC DE LA RIVIERE DE CORPS">JC DE LA RIVIERE DE CORPS</a></title>
-			<description>JC DE LA RIVIERE DE CORPS Dojo was created. <a href="http://dev.dojolist/dojo/JC DE LA RIVIERE DE CORPS">JC DE LA RIVIERE DE CORPS</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:51 +0100</pubDate>
-			<guid>Fri09Sep1118:17:51+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB JASSEINES Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB JASSEINES">JUDO CLUB JASSEINES</a></title>
-			<description>JUDO CLUB JASSEINES Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB JASSEINES">JUDO CLUB JASSEINES</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:49 +0100</pubDate>
-			<guid>Fri09Sep1118:17:49+0100</guid>
     </item>
             </channel></rss>

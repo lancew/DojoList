@@ -194,6 +194,7 @@ function Create_dojo($dojo, $file = null)
  */
 function Delete_dojo($Dojoname)
 {
+	Backup_data();
 	$xml = Load_Xml_data();
 	$newxml = '<xml>
     <!-- The data created by DojoList by
