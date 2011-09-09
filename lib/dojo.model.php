@@ -66,7 +66,8 @@ function Find_dojo($target=null)
  */
 function Create_dojo($dojo, $file = null)
 {
-
+    Backup_data();
+    
 	$xml = Load_Xml_data();
 	$new1 = $xml->addChild("Dojo");
 	//print_r($dojo);

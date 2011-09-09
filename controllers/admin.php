@@ -427,7 +427,7 @@ function Admin_Create_kml()
 function Admin_importjwm()
 {
 
-
+    set_time_limit();
     $ch = curl_init("http://judoworldmap.com/");
     $fp = fopen("data/jwm.txt", "w");
 
@@ -1294,13 +1294,16 @@ function Admin_Import_slo()
 
 }
 
+
+
+
 /**
  * Admin_Import_fra imports French Judo clubs function.
  *
  * @access public
  * @return void
  */
-function Admin_Import_fra()
+function Admin_Import_frax()
 {
     set_time_limit(60);
     echo '.';
@@ -1345,9 +1348,14 @@ function Admin_Import_fra()
     }
 
 
+    foreach($aAreas as $area)
+    {
+        echo $area;
+        echo ',<br />';
+    
+    }
 
-
-     print_r($aAreas);
+     //print_r($aAreas);
 
 
     $list_url = 'http://www.ffjudo.org/Extranet/rechercheclub/result.asp?a=l&departement=';
@@ -1450,13 +1458,138 @@ function Admin_Import_fra()
                         //print_r($dojo_array);
                         
 
-                        Create_dojo($dojo_array);
+                       // Create_dojo($dojo_array);
                     }
                 }
             }
         }
     }
 }
+
+
+
+/**
+ * Admin_Import_fra imports French Judo clubs function.
+ *
+ * @access public
+ * @return void
+ */
+function Admin_Import_fra()
+{
+    set_time_limit(0);
+    $data = file_get_contents('data/fra.txt');
+    $data = explode(',', $data);
+   
+   
+
+    $list_url = 'http://www.ffjudo.org/Extranet/rechercheclub/result.asp?a=l&departement=';
+    foreach($data as $area)
+    {
+        $area = ltrim($area);
+        //for each area get a list of dojo
+        $url = $list_url . $area;
+        echo "$url <br />";
+        $dojo_list = file_get_contents($url);
+        $dojo_list = explode('<td', $dojo_list);
+        //print_r($dojo_list);
+
+        //now loop through the list of Dojo and find the links
+        foreach($dojo_list as $dojo)
+        {
+            @ob_flush();
+            
+            @flush();
+            @ob_end_flush();
+            //echo '.';
+            $link = get_string_between($dojo, 'href=', '>');
+            $link = str_ireplace("'", '', $link);
+
+            if(!preg_match("/^result/", $link))
+            {
+                //bad link
+                echo '.';
+            } else {
+                //good link
+
+                $base_dojo = 'http://www.ffjudo.org/Extranet/rechercheclub/';
+                $link = $base_dojo . $link;
+                //echo "$link <br />";
+
+                // Now get the club page and go from there
+                // P.s. I should so do this as sub routines!
+
+                $data = file_get_contents($link);
+
+                $discipline = get_string_between($data, 'Discipline :', '<');
+                if(!preg_match("/judo/i", $discipline))
+                {
+                    //echo "Not Judo: $discipline <br />";
+                } else {
+
+                    //echo "Judo: $discipline <br />";
+
+                    $data = get_string_between($data, 'des clubs..','</body>');
+                    $data = explode('<td', $data);
+                    //print_r($data);
+
+                    $name = get_string_between($data[1], "#FFFFFF'>",'</b>');
+                    $address = get_string_between($data[7], 'Adresse :','</b>');
+                    $website = get_string_between($data[11], "href='","'");
+                    $email = get_string_between($data[8], 'mailto:',"'");
+                    $telephone = get_string_between($data[9], 'phone :','</b>');
+
+                    echo $name;
+                        
+
+                    $dojo = Find_dojo($name);
+
+                    if (!$dojo) {
+
+                        // Geocode the address
+                        $key = option('GoogleKey');
+                        $address2 = urlencode($address.' france');
+                        $url = "http://maps.google.com/maps/geo?q=".$address2."&amp;output=json&amp;key=".$key;
+                        $ch2 = curl_init();
+                        curl_setopt($ch2, CURLOPT_URL, $url);
+                        curl_setopt($ch2, CURLOPT_HEADER, 0);
+                        curl_setopt($ch2, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+                        curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
+                        curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+                        $data = curl_exec($ch2);
+                        //echo $data;
+                        curl_close($ch2);
+                        $status = get_string_between($data, '"code": ', ',');
+                        if ($status === '200') {
+                            $point = get_string_between($data, 'coordinates": [', ']');
+                            $latlong = explode(',', $point);
+                            $lat = trim($latlong[1]);
+                            $lng = trim($latlong[0]);
+                        }
+
+                        $dojo_array = array(
+                            'DojoName' => $name,
+                            'DojoAddress' => $address,
+                            'ClubWebsite' => $website,
+                            'ContactEmail' => $email,
+                            'ContactPhone' => $telephone,
+                            'URL' => $link,
+                            'Latitude' => $lat,
+                            'Longitude' => $lng,
+                            'GUID' => guid()
+                        );
+                        //print_r($dojo_array);
+                        
+                        echo ' * ';
+                        
+                        Create_dojo($dojo_array);
+                    }
+                    echo '<br />';
+                }
+            }
+        }
+    }
+}
+
 
 
 

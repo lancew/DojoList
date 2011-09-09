@@ -229,5 +229,25 @@ function Validate_form($_POST = null)
 	
 }
 
+function Backup_data()
+{
+    // Backup the XML file in case we mess things up.
+    // Five versions.
+    
+    for ($i = 4; $i >= 1; $i--) 
+    {
+        //echo $i;
+        $filename = 'data/dojo_'.$i.'.xml';
+        $newfile = 'data/dojo_'.($i+1).'.xml';
+        if (file_exists($filename))
+        //echo $filename;
+        {
+            //echo '.';
+            copy($filename, $newfile);
+        }
+
+    }
+    copy('data/dojo.xml', 'data/dojo_1.xml');
+}
 
 ?>
