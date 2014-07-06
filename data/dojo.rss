@@ -3,8 +3,64 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Fri, 09 Sep 11 21:35:00 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 06 Jul 14 22:51:17 +0100</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Sun, 06 Jul 14 22:51:17 +0100</pubDate>
+			<guid>Sun06Jul1422:51:17+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Sun, 06 Jul 14 22:51:16 +0100</pubDate>
+			<guid>Sun06Jul1422:51:16+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 22:51:16 +0100</pubDate>
+			<guid>Sun06Jul1422:51:16+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Sun, 06 Jul 14 22:51:15 +0100</pubDate>
+			<guid>Sun06Jul1422:51:15+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Sun, 06 Jul 14 22:51:15 +0100</pubDate>
+			<guid>Sun06Jul1422:51:15+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 22:51:14 +0100</pubDate>
+			<guid>Sun06Jul1422:51:14+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 22:50:39 +0100</pubDate>
+			<guid>Sun06Jul1422:50:39+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 22:42:58 +0100</pubDate>
+			<guid>Sun06Jul1422:42:58+0100</guid>
+    </item>
+            
             <item>
 			<title>test_dojo_rss_test Dojo was deleted</title>
 			<description>test_dojo_rss_test Dojo was deleted</description>
@@ -87,61 +143,5 @@
 			<description>U.S. DE ST LYE Dojo was created. <a href="http://dev.dojolist/dojo/U.S. DE ST LYE">U.S. DE ST LYE</a></description>
 			<pubDate>Fri, 09 Sep 11 18:18:13 +0100</pubDate>
 			<guid>Fri09Sep1118:18:13+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB SANCEEN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB SANCEEN">JUDO CLUB SANCEEN</a></title>
-			<description>JUDO CLUB SANCEEN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB SANCEEN">JUDO CLUB SANCEEN</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:11 +0100</pubDate>
-			<guid>Fri09Sep1118:18:11+0100</guid>
-    </item>
-            
-            <item>
-			<title>CERCLE AUBOIS AM Dojo was created. <a href="http://dev.dojolist/dojo/CERCLE AUBOIS AM">CERCLE AUBOIS AM</a></title>
-			<description>CERCLE AUBOIS AM Dojo was created. <a href="http://dev.dojolist/dojo/CERCLE AUBOIS AM">CERCLE AUBOIS AM</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:07 +0100</pubDate>
-			<guid>Fri09Sep1118:18:07+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB LE LAVOIR Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB LE LAVOIR">JUDO CLUB LE LAVOIR</a></title>
-			<description>JUDO CLUB LE LAVOIR Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB LE LAVOIR">JUDO CLUB LE LAVOIR</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:05 +0100</pubDate>
-			<guid>Fri09Sep1118:18:05+0100</guid>
-    </item>
-            
-            <item>
-			<title>ROSIERES OMNI-SPORTS Dojo was created. <a href="http://dev.dojolist/dojo/ROSIERES OMNI-SPORTS">ROSIERES OMNI-SPORTS</a></title>
-			<description>ROSIERES OMNI-SPORTS Dojo was created. <a href="http://dev.dojolist/dojo/ROSIERES OMNI-SPORTS">ROSIERES OMNI-SPORTS</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:04 +0100</pubDate>
-			<guid>Fri09Sep1118:18:04+0100</guid>
-    </item>
-            
-            <item>
-			<title>ASFR ARTS MARTIAUX Dojo was created. <a href="http://dev.dojolist/dojo/ASFR ARTS MARTIAUX">ASFR ARTS MARTIAUX</a></title>
-			<description>ASFR ARTS MARTIAUX Dojo was created. <a href="http://dev.dojolist/dojo/ASFR ARTS MARTIAUX">ASFR ARTS MARTIAUX</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:03 +0100</pubDate>
-			<guid>Fri09Sep1118:18:03+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB MAILLOTIN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB MAILLOTIN">JUDO CLUB MAILLOTIN</a></title>
-			<description>JUDO CLUB MAILLOTIN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB MAILLOTIN">JUDO CLUB MAILLOTIN</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:00 +0100</pubDate>
-			<guid>Fri09Sep1118:18:00+0100</guid>
-    </item>
-            
-            <item>
-			<title>MERY NOUVELLE GENERATION Dojo was created. <a href="http://dev.dojolist/dojo/MERY NOUVELLE GENERATION">MERY NOUVELLE GENERATION</a></title>
-			<description>MERY NOUVELLE GENERATION Dojo was created. <a href="http://dev.dojolist/dojo/MERY NOUVELLE GENERATION">MERY NOUVELLE GENERATION</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:59 +0100</pubDate>
-			<guid>Fri09Sep1118:17:59+0100</guid>
-    </item>
-            
-            <item>
-			<title>MJC MARIGNY CHATEL Dojo was created. <a href="http://dev.dojolist/dojo/MJC MARIGNY CHATEL">MJC MARIGNY CHATEL</a></title>
-			<description>MJC MARIGNY CHATEL Dojo was created. <a href="http://dev.dojolist/dojo/MJC MARIGNY CHATEL">MJC MARIGNY CHATEL</a></description>
-			<pubDate>Fri, 09 Sep 11 18:17:57 +0100</pubDate>
-			<guid>Fri09Sep1118:17:57+0100</guid>
     </item>
             </channel></rss>

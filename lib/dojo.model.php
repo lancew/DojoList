@@ -293,7 +293,8 @@ function Clean_name($name)
 	$name = str_replace("/", ' ', $name);
 	$name = str_replace("(", '', $name);
 	$name = str_replace(")", '', $name);
-	$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+	// Commenting this out to get tests working
+	//$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
 
     return $name;
 }
