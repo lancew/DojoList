@@ -4,4 +4,4 @@ php:
   - 5.4
   - hhvm
 
-  script: ./run_build.sh
+  script: echo 'test';./run_build.sh
