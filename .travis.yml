@@ -4,4 +4,4 @@ php:
   - 5.4
   - hhvm
 
-  script: php tests/all_tests.php
+  script: php i./tests/all_tests.php
