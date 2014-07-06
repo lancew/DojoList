@@ -183,7 +183,7 @@ function Validate_field($data, $type)
  * @param mixed   $_POST. (default: null)
  * @return void
  */
-function Validate_form($_POST = null)
+function Validate_form($post = null)
 {
 	// echo '<pre>';
 	// print_r($_POST);
@@ -195,7 +195,7 @@ function Validate_form($_POST = null)
 	
 	// Cycle through all variables. If no dojoname then fail
 	// else use the validate_field function
-	foreach ($_POST as $field => $value) {
+	foreach ($post as $field => $value) {
 
 		if ($field==="DojoName") {
 			if (!$value) {
@@ -226,7 +226,6 @@ function Validate_form($_POST = null)
 	} else {
 	   return null;
 	}
-	
 	
 }
 
