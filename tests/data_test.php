@@ -56,7 +56,7 @@ class TestOfDataModel extends UnitTestCase {
 	function testValidate_fields_Dojoname()
 	{
 		$result = Validate_field('1Lwtest', 'DojoName');
-		//echo '-'.$result.'-';
+		echo '-'.$result.'-';
 		$this->assertEqual($result, 'Dojo Name: Must be alphanumeric only', 'test Validate_field Dojoname'); 
 		$result = Validate_field('Lwtest', 'DojoName');
 		//echo '-'.$result.'-';

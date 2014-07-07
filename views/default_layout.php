@@ -154,6 +154,7 @@ putenv ("LC_ALL=en");
 					<p>Discussion about the project is hosted on <a href="https://groups.google.com/group/dojolist">Google groups</a>.</p>
 					<p>The DojoList project is licensed under a <a href="/<?php echo option('data_dir') ?>/agpl-3.0.txt">AGPL license.<br /><img src="/<?php echo option('images_dir') ?>/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script></p>
+					<p><a href = 'https://travis-ci.org/lancew/DojoList'><img src="https://travis-ci.org/lancew/DojoList.svg?branch=master"></img></a></p>
 					
 				</li>
 				<li>
