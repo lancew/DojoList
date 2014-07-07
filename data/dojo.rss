@@ -3,8 +3,92 @@
 	<channel>
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
-		<description>Updates to Dojo listings</description><lastBuildDate>Sun, 06 Jul 14 22:51:17 +0100</lastBuildDate><generator>DojoList</generator>
+		<description>Updates to Dojo listings</description><lastBuildDate>Mon, 07 Jul 14 20:20:02 +0100</lastBuildDate><generator>DojoList</generator>
 	
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Mon, 07 Jul 14 20:20:02 +0100</pubDate>
+			<guid>Mon07Jul1420:20:02+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Mon, 07 Jul 14 20:20:02 +0100</pubDate>
+			<guid>Mon07Jul1420:20:02+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Jul 14 20:20:01 +0100</pubDate>
+			<guid>Mon07Jul1420:20:01+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Mon, 07 Jul 14 20:20:01 +0100</pubDate>
+			<guid>Mon07Jul1420:20:01+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Mon, 07 Jul 14 20:20:00 +0100</pubDate>
+			<guid>Mon07Jul1420:20:00+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Mon, 07 Jul 14 20:19:59 +0100</pubDate>
+			<guid>Mon07Jul1420:19:59+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Sun, 06 Jul 14 23:25:57 +0100</pubDate>
+			<guid>Sun06Jul1423:25:57+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Sun, 06 Jul 14 23:25:56 +0100</pubDate>
+			<guid>Sun06Jul1423:25:56+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 23:25:56 +0100</pubDate>
+			<guid>Sun06Jul1423:25:56+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was deleted</title>
+			<description>test_dojo_rss_test Dojo was deleted</description>
+			<pubDate>Sun, 06 Jul 14 23:25:55 +0100</pubDate>
+			<guid>Sun06Jul1423:25:55+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
+			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
+			<pubDate>Sun, 06 Jul 14 23:25:55 +0100</pubDate>
+			<guid>Sun06Jul1423:25:55+0100</guid>
+    </item>
+            
+            <item>
+			<title>test_add</title>
+			<description>test_add</description>
+			<pubDate>Sun, 06 Jul 14 23:25:54 +0100</pubDate>
+			<guid>Sun06Jul1423:25:54+0100</guid>
+    </item>
+            
             <item>
 			<title>test_dojo_rss_test Dojo was deleted</title>
 			<description>test_dojo_rss_test Dojo was deleted</description>
@@ -59,89 +143,5 @@
 			<description>test_add</description>
 			<pubDate>Sun, 06 Jul 14 22:42:58 +0100</pubDate>
 			<guid>Sun06Jul1422:42:58+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo_rss_test Dojo was deleted</title>
-			<description>test_dojo_rss_test Dojo was deleted</description>
-			<pubDate>Fri, 09 Sep 11 21:35:00 +0100</pubDate>
-			<guid>Fri09Sep1121:35:00+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
-			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
-			<pubDate>Fri, 09 Sep 11 21:35:00 +0100</pubDate>
-			<guid>Fri09Sep1121:35:00+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
-			<guid>Fri09Sep1121:34:56+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo_rss_test Dojo was deleted</title>
-			<description>test_dojo_rss_test Dojo was deleted</description>
-			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
-			<guid>Fri09Sep1121:34:56+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></title>
-			<description>test_dojo_rss_test Dojo was created. <a href="http://dev.dojolist/dojo/test_dojo_rss_test">test_dojo_rss_test</a></description>
-			<pubDate>Fri, 09 Sep 11 21:34:56 +0100</pubDate>
-			<guid>Fri09Sep1121:34:56+0100</guid>
-    </item>
-            
-            <item>
-			<title>test_add</title>
-			<description>test_add</description>
-			<pubDate>Fri, 09 Sep 11 21:34:52 +0100</pubDate>
-			<guid>Fri09Sep1121:34:52+0100</guid>
-    </item>
-            
-            <item>
-			<title>RANDORI VENDEUVROIS Dojo was created. <a href="http://dev.dojolist/dojo/RANDORI VENDEUVROIS">RANDORI VENDEUVROIS</a></title>
-			<description>RANDORI VENDEUVROIS Dojo was created. <a href="http://dev.dojolist/dojo/RANDORI VENDEUVROIS">RANDORI VENDEUVROIS</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:22 +0100</pubDate>
-			<guid>Fri09Sep1118:18:22+0100</guid>
-    </item>
-            
-            <item>
-			<title>DOJO DE VALLENTIGNY Dojo was created. <a href="http://dev.dojolist/dojo/DOJO DE VALLENTIGNY">DOJO DE VALLENTIGNY</a></title>
-			<description>DOJO DE VALLENTIGNY Dojo was created. <a href="http://dev.dojolist/dojo/DOJO DE VALLENTIGNY">DOJO DE VALLENTIGNY</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:21 +0100</pubDate>
-			<guid>Fri09Sep1118:18:21+0100</guid>
-    </item>
-            
-            <item>
-			<title>LES JUDOGIS TROYENS Dojo was created. <a href="http://dev.dojolist/dojo/LES JUDOGIS TROYENS">LES JUDOGIS TROYENS</a></title>
-			<description>LES JUDOGIS TROYENS Dojo was created. <a href="http://dev.dojolist/dojo/LES JUDOGIS TROYENS">LES JUDOGIS TROYENS</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:18 +0100</pubDate>
-			<guid>Fri09Sep1118:18:18+0100</guid>
-    </item>
-            
-            <item>
-			<title>ASPTT TROYES JUDO Dojo was created. <a href="http://dev.dojolist/dojo/ASPTT TROYES JUDO">ASPTT TROYES JUDO</a></title>
-			<description>ASPTT TROYES JUDO Dojo was created. <a href="http://dev.dojolist/dojo/ASPTT TROYES JUDO">ASPTT TROYES JUDO</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:17 +0100</pubDate>
-			<guid>Fri09Sep1118:18:17+0100</guid>
-    </item>
-            
-            <item>
-			<title>JUDO CLUB SAVINIEN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB SAVINIEN">JUDO CLUB SAVINIEN</a></title>
-			<description>JUDO CLUB SAVINIEN Dojo was created. <a href="http://dev.dojolist/dojo/JUDO CLUB SAVINIEN">JUDO CLUB SAVINIEN</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:14 +0100</pubDate>
-			<guid>Fri09Sep1118:18:14+0100</guid>
-    </item>
-            
-            <item>
-			<title>U.S. DE ST LYE Dojo was created. <a href="http://dev.dojolist/dojo/U.S. DE ST LYE">U.S. DE ST LYE</a></title>
-			<description>U.S. DE ST LYE Dojo was created. <a href="http://dev.dojolist/dojo/U.S. DE ST LYE">U.S. DE ST LYE</a></description>
-			<pubDate>Fri, 09 Sep 11 18:18:13 +0100</pubDate>
-			<guid>Fri09Sep1118:18:13+0100</guid>
     </item>
             </channel></rss>
