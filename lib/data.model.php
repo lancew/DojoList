@@ -132,32 +132,32 @@ function Validate_field($data, $type)
 	//echo $type.':'.$data.'<br>';
 	switch ($type) {
 	case "DojoName":
-		if (preg_match('[^A-Za-z -]', $data)) {   
+		if (preg_match('/[^A-Za-z -]/', $data)) {   
             return 'Dojo Name: Must be alphanumeric only';
         }
 		return null;
 	case "MembershipID":
-		if (preg_match('[^0-9]', $data)) {
+		if (preg_match('/[^0-9]/', $data)) {
             return 'Membership ID: Must be numbers only';
         }
 		break;
 	case "CoachName":
-		if (preg_match('[^A-Za-z ]', $data)) {
+		if (preg_match('/[^A-Za-z ]/', $data)) {
             return 'Coach Name: Must be letters a-z or A-Z only';
         }
 		return null;
 	case "DojoAddress":
-		if (preg_match('[^A-Za-z0-9,. ]', $data)) {
+		if (preg_match('/[^A-Za-z0-9,. ]/', $data)) {
             return 'Dojo Address: Must be alphanumeric or a comma, or fullstop only';
         }
 		return null;
 	case "ContactName":
-		if (preg_match('[^A-Za-z ]', $data)) {
+		if (preg_match('/[^A-Za-z ]/', $data)) {
             return 'Contact Name: Must be letters a-z or A-Z only';
         }
 		return null;
 	case "ContactPhone":
-		if (preg_match('[^0-9() ]', $data)) {
+		if (preg_match('/[^0-9() ]/', $data)) {
             return 'Contact telephone number: Must be numbers 0-9 only';
         }
 		return null;
