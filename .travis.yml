@@ -1,7 +1,6 @@
 language: php
-php:
+php: 
   - 5.5
   - 5.4
   - hhvm
-
-  script: php tests/all_tests.php
+script: "php tests/all_tests.php"
