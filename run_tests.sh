@@ -5,6 +5,6 @@ echo 'This script runs the test scripts then publishes the bug database to the b
 echo "CTRL+C to cancel or wait 10 seconds for the script to run"
 #sleep 10
 echo "Running tests..."
-//php tests/all_tests.php > test.html
-php tests/all_tests.php
+php tests/all_tests.php > test.html
+#php tests/all_tests.php
 echo "Finished"
