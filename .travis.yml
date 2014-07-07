@@ -1,14 +1,11 @@
-after_success: "curl --ftp-create-dirs -T test.html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/"
-env: 
-  global: 
-    - 
-      secure: U4iYNPrXr7ltpcgLfdkON6VNN8y7DQyKbWisatHf4s4LNr8x/Wrf7SAtY8+Fsv9zjNMNCShi5OApB1DRxf1TpnY/CBC37Ic/1YrsBzvDXKNsSzJsVVUpG7mIFAZjKydjxRX03kCMOj+2o3Pb6bu8Anx7p5+o68/r4QaOj43d6Bc=
-    - 
-      secure: JLttImUvKxwbN/RpqZBHJMrD9603kKPVZF5njq2i0Qw6euE590PP4VcjWWOvQdXhQrrjUBO0nYyhAWxNs4CeHUfE/Q3a2Hr75LAtcLZ/ifH2GWC9fLNZTbW6VvxbC6OsK97LZAXONZm5LdFWipriYQJBmPwGsfZ9D79srVVjSnk=
+after_success: curl --ftp-create-dirs -T test.html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/
 language: php
-php: 
-  - 5.5
-  - 5.4
-  - hhvm
-script: "php tests/all_tests.php"
-
+php:
+- 5.5
+- 5.4
+- hhvm
+script: php tests/all_tests.php
+env:
+  global:
+  - secure: cSUjO4SY34PObLbaQO1W09An4CrbyhpCCYsOYRh1FTgoM5DmpQUU4cG3dDiauxw3vCx3AtmIUbHll9P91P7PzxM5kIbBCl8DBHQszuZ5GuZHA0YhLOBhbLIdSZtcduUy0q0VOiYv6Zhn17gYN4LXjLGmsUEKNuZ6cWbvtAMaRX8=
+  - secure: bOC+tbKNbbkxIKwTCo9ntz8BOUKFrsAGtjqWl7lCn3zpuG7ymEaxuoNKKiSSC2vmPFG7/WQ8R9Kp7/cRoHGgynbapC5Z0msYonSrHWATI6uoBX/3MEeeyGHM/svzwhF+0s3r0huX+2k1b8BzYY67qffHKyaYxU/ARhHS3HZznlA=
