@@ -1,4 +1,4 @@
-after_success: curl --ftp-create-dirs -T * -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/
+after_success: find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/{} \;
 language: php
 php:
 - 5.5
