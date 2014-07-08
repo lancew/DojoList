@@ -96,6 +96,10 @@ dispatch_get   ('/admin/sortxml',   'Admin_Sort_xml');
 
 dispatch	   ('/dojo/:dojo/image', 'DojoLogo');
 
+dispatch 	   ('/judoka/create', 'Judoka_Create');
+dispatch 	   ('/judoka/:judoka/edit', 'Judoka_Edit');
+dispatch 	   ('/judoka/:judoka/delete', 'Judoka_Delete');
+dispatch 	   ('/judoka/:judoka/', 'Judoka_View');
 
 dispatch_get   ('/html',           'Html_list');
 
