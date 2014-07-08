@@ -23,7 +23,7 @@ require_once 'lib/rss.php';
 function Judoka_Create()
 {
 
-
+	return('Create Judoka');
 }
 
 function Judoka_Edit()
@@ -38,7 +38,7 @@ function Judoka_Delete()
 
 function Judoka_View()
 {
-	
+
 }
 
 
