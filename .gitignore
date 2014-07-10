@@ -3,3 +3,10 @@
 .settings
 .DS_Store
 index.php
+data/dojo.kml
+data/dojo.rss
+data/dojo_1.xml
+data/dojo_2.xml
+data/dojo_3.xml
+data/dojo_4.xml
+data/dojo_5.xml

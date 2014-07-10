@@ -15,12 +15,8 @@ require_once 'lib/dojo.model.php';
  * @param mixed $var
  * @return void
  */
-function option($var)
-{
-	return '0.7.0';
-}
 
-class TestOfDojolist extends UnitTestCase 
+class TestOfDojoModel extends UnitTestCase 
 {
 
 
@@ -45,14 +41,14 @@ class TestOfDojolist extends UnitTestCase
 	{
 		$xml = Find_dojo('Alresford Judo Club');
 		$text = $xml->DojoName;
-		print_r($text);
 		$this->assertEqual($text, 'Alresford Judo Club');
 	}
 
-
+/*
 	function testCreate_dojo()
 	{
-		if (Find_dojo('test_dojo')->DojoName != 'test_dojo') {
+
+		if ( Find_dojo('test_dojo')->DojoName != 'test_dojo') {
 
 			$dojo_array = array(
 			                    'DojoName' => 'test_dojo', 
@@ -85,7 +81,6 @@ class TestOfDojolist extends UnitTestCase
 		$text
 		);
 	}
-
 
 	function testUpdatedisPresent()
 	{
@@ -120,7 +115,7 @@ class TestOfDojolist extends UnitTestCase
 			$this->fail('test_dojo did not exist prior to delete test');
 		}
 	}
-
+*/
 
 	function testNoExtraDojoTagInTest()
 	{
@@ -152,6 +147,6 @@ class TestOfDojolist extends UnitTestCase
 
 }
 
-$test = &new TestOfDojolist();
+$test = &new TestOfDojoModel();
 $test->run(new HtmlReporter());
 ?>
