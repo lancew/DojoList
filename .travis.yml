@@ -1,6 +1,4 @@
-after_success: curl --ftp-create-dirs -T lib/dojo.model.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/lib/; curl --ftp-create-dirs -T lib/data.model.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/lib/; curl --ftp-create-dirs -T lib/judoka.model.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/lib/;curl --ftp-create-dirs -T views/default_layout.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
-
-
+after_success: upload.sh
 language: php
 php:
 - 5.5
