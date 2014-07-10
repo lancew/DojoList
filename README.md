@@ -10,7 +10,7 @@ Started by Lance Wicks in 2009.
 http://www.dojolist.org
 
 [![Build Status](https://travis-ci.org/lancew/DojoList.svg?branch=master)](https://travis-ci.org/lancew/DojoList)
-
+[![Code Climate](https://codeclimate.com/github/lancew/DojoList.png)](https://codeclimate.com/github/lancew/DojoList)
 
 =========================================
 
