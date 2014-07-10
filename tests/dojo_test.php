@@ -15,10 +15,10 @@ require_once 'lib/dojo.model.php';
  * @param mixed $var
  * @return void
  */
-function option($var)
-{
-	return '0.7.0';
-}
+//function option($var)
+//{
+//	return '0.7.0';
+//}
 
 class TestOfDojolist extends UnitTestCase 
 {
