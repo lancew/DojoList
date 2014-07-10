@@ -115,7 +115,7 @@ class TestOfDojoModel extends UnitTestCase
 			$this->fail('test_dojo did not exist prior to delete test');
 		}
 	}
-*/
+
 
 	function testNoExtraDojoTagInTest()
 	{
@@ -140,7 +140,7 @@ class TestOfDojoModel extends UnitTestCase
 		$this->assertEqual($latlng[1], (float)'174.6370523', 'Longitude found');
 	}
 
-
+*/
 
 
 
