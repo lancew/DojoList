@@ -155,7 +155,7 @@ putenv ("LC_ALL=en");
 					<p>The DojoList project is licensed under a <a href="/<?php echo option('data_dir') ?>/agpl-3.0.txt">AGPL license.<br /><img src="/<?php echo option('images_dir') ?>/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script></p>
 					<p><a href = 'https://travis-ci.org/lancew/DojoList'><img src="https://travis-ci.org/lancew/DojoList.svg?branch=master"></img></a></p>
-					<p><a href="https://codeclimate.com/github/lancew/DojoList"><img src="https://codeclimate.com/github/lancew/DojoList.png" /></a></p>
+					
 				</li>
 				<li>
 				<h2>Copyright</h2>
