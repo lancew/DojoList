@@ -20,28 +20,37 @@ require_once 'lib/data.model.php';
 require_once 'lib/rss.php';
 
 
-function Judoka_Create()
-{
+class Judoka {
 
-	return('Create Judoka');
+	public $email;
+	public $family_name;
+	public $given_name;
+	public $uuid;
+
+	public function __construct()
+	{
+		$this->uuid = guid();
+	}
+
+
+	private function guid()
+	{
+		mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
+		$charid = strtoupper(md5(uniqid(rand(), true)));
+		$hyphen = chr(45);// "-"
+		$uuid = chr(123)// "{"
+		.substr($charid, 0, 8).$hyphen
+			.substr($charid, 8, 4).$hyphen
+			.substr($charid, 12, 4).$hyphen
+			.substr($charid, 16, 4).$hyphen
+			.substr($charid, 20, 12)
+			.chr(125);// "}"
+		return $uuid;
+	}
+
+
+
 }
-
-function Judoka_Edit()
-{
-
-}
-
-function Judoka_Delete()
-{
-
-}
-
-function Judoka_View()
-{
-
-}
-
-
 
 
 ?>
