@@ -1,0 +1,8 @@
+{
+name: "lancew/DojoList",
+description: "A judo club database system",
+homepage: "https://dojolist.org",
+keywords: [
+"judo"
+],
+}
