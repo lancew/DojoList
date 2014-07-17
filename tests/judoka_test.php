@@ -25,13 +25,15 @@ class TestOfJudoka extends UnitTestCase
 		$j = new Judoka();
 		$this->assertIsA($j, 'Judoka');
 
+		$j->nickname = 'TheBoss';
 		$j->given_name ='Matthias';
 		$j->family_name = 'Fischer';
 		$j->email = 'fake@ippon.org';
 
-		$this->assertEqual($j->given_name, 'Matthias');
-		$this->assertEqual($j->family_name, 'Fischer');
-		$this->assertEqual($j->email, 'fake@ippon.org');
+		$this->assertEqual('TheBoss', 		 $j->nickname);
+		$this->assertEqual('Matthias',		 $j->given_name);
+		$this->assertEqual('Fischer', 		 $j->family_name);
+		$this->assertEqual('fake@ippon.org', $j->email);
 		// {91CD7910-26DC-058A-853A-06F31266A86F}
 		$this->assertPattern('/^\{\d|\w{8}-\d|\w{4}-\d|\w{4}-\d|\w{4}-\d|\w{8}\}$/', $j->uuid);
 

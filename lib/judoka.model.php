@@ -22,6 +22,7 @@ require_once 'lib/rss.php';
 
 class Judoka {
 
+	public $display_name;
 	public $email;
 	public $family_name;
 	public $given_name;
