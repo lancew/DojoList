@@ -1420,7 +1420,7 @@ function Sync_updated()
 function process_image($mode)
 {
     print $mode;
-    unset($dojo->$mode);
+    unset($dojo->"$mode");
     if ((($_FILES["$mode"]["type"] == "image/gif")
             || ($_FILES["$mode"]["type"] == "image/jpeg")
             || ($_FILES["$mode"]["type"] == "image/pjpeg")
