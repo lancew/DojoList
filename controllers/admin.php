@@ -1436,13 +1436,13 @@ function process_image($mode)
         } else {
 
             $dojo->addChild(
-                "$mode",
+                $mode,
                 'data:'.
-                $_FILES["$mode"]["type"].
+                $_FILES[$mode]["type"].
                 ';base64,'.
                 base64_encode(
                     file_get_contents(
-                        $_FILES["$mode"]['tmp_name']
+                        $_FILES[$mode]['tmp_name']
                     )
                 )
             );
