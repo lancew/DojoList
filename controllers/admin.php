@@ -203,9 +203,9 @@ function Admin_Editform_end()
 
 
 
-                    if ($_FILES["DojoLogo"]["name"]) {
-                        save_image('DojoLogo'); 
-                    }
+                  //  if ($_FILES["DojoLogo"]["name"]) {
+                  //      save_image('DojoLogo'); 
+                  //  }
 
                     // end of if ($_FILES... section.
 
@@ -213,9 +213,9 @@ function Admin_Editform_end()
 
 
 
-                    if ($_FILES["CoachPhoto"]["name"]) {
-                        save_image('CoachPhoto'); 
-                    }
+                    //if ($_FILES["CoachPhoto"]["name"]) {
+                    //    save_image('CoachPhoto'); 
+                    //}
 
                     // Coach Photo section
 
