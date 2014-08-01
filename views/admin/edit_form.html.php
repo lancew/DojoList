@@ -58,7 +58,7 @@ document.onkeypress = stopRKey;
         ?>
 
         <br />
-        <input
+<!--        <input
             type="hidden"
             name="MAX_FILE_SIZE"
             value="20000"
@@ -67,7 +67,7 @@ document.onkeypress = stopRKey;
             type="file"
             name="DojoLogo"
         />
-
+-->
 	   </td>
     </tr>
 </td>
@@ -118,7 +118,7 @@ document.onkeypress = stopRKey;
     <td>
         <?php echo  _("Head Coach Photo:"); ?></td>
         <td>
-        <?php if ($Dojo->CoachPhoto) {
+  <      <?php if ($Dojo->CoachPhoto) {
 	echo '<img alt="'.$Dojo->CoachPhoto.'" src="'.$Dojo->CoachPhoto.'" />'; ?>
             <br />
             <br />Delete Photo
@@ -130,7 +130,7 @@ document.onkeypress = stopRKey;
         <?php 
 } 
         ?>
-
+<!--
         <br />
         <input
             type="hidden"
@@ -141,7 +141,7 @@ document.onkeypress = stopRKey;
             type="file"
             name="CoachPhoto"
         />
-
+-->
 	   </td>
     </tr>
 </td>
