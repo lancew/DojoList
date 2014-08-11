@@ -20,7 +20,7 @@ require_once 'lib/rss.php';
 require_once 'lib/dojo.model.php';
 
 
-layout('default_layout.php');
+
 
 /**
  * Dojo Create - Displays create new dojo page
@@ -239,6 +239,38 @@ function Dojo_Editform_end()
     }
 }
 
+
+/**
+ * Admin Delete - Displays list of Dojo so user can choose one to delete.
+ *
+ * @return unknown
+ */
+function Dojo_delete()
+{
+    $DojoName = params('dojo');
+    set('DojoName', $DojoName);
+    return html('dojo/delete_recaptcha.html.php');
+}
+
+
+/**
+ * Admin Delete End - Once dojo selected to be deleted, write changes to XML
+ *
+ * @return unknown
+ */
+function Dojo_Delete_end()
+{
+    if ($_POST["recaptcha_response_field"]) {
+        $DojoName = params('dojo');
+        Delete_dojo($DojoName);
+        set('DojoName', $DojoName);
+        admin_create_kml();
+        return html('dojo/delete_end.html.php');
+    } else {
+        halt('no recaptcha provided');
+    }
+
+}
 
 
 ?>

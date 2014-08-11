@@ -64,38 +64,6 @@ function Admin_logout()
 
 
 
-/**
- * Admin Delete - Displays list of Dojo so user can choose one to delete.
- *
- * @return unknown
- */
-function Admin_delete()
-{
-    $DojoName = params('dojo');
-    set('DojoName', $DojoName);
-    return html('admin/delete_recaptcha.html.php');
-}
-
-
-/**
- * Admin Delete End - Once dojo selected to be deleted, write changes to XML
- *
- * @return unknown
- */
-function Admin_Delete_end()
-{
-    if ($_POST["recaptcha_response_field"]) {
-        $DojoName = params('dojo');
-        Delete_dojo($DojoName);
-        set('DojoName', $DojoName);
-        admin_create_kml();
-        return html('admin/delete_end.html.php');
-    } else {
-        halt('no recaptcha provided');
-    }
-
-}
-
 
 /**
  * Admin Create KML - Create the dojo.kml file
