@@ -29,6 +29,7 @@ curl --ftp-create-dirs -T views/dojo/edit.html.php -u $FTP_USER:$FTP_PASSWORD ft
 curl --ftp-create-dirs -T views/dojo/edit_end.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/dojo
 curl --ftp-create-dirs -T views/dojo/edit_form.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/dojo
 curl --ftp-create-dirs -T views/dojo/validation_error.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/dojo
+curl --ftp-create-dirs -T views/dojo/view.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/dojo
 #
 curl --ftp-create-dirs -T test.html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/
 

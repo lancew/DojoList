@@ -81,7 +81,7 @@ dispatch_get   ('/dojo/create',   'Dojo_create');
 dispatch_post  ('/dojo/create',   'Dojo_Create_add');
 
 // The dojo/create paths have to be above the  view path to work.
-dispatch	   ('/dojo/:dojo',          'View');
+dispatch	   ('/dojo/:dojo',          'Dojo_view');
 
 dispatch_get   ('/dojo/:dojo/delete',   'Dojo_Delete');
 dispatch_post   ('/dojo/:dojo/delete', 'Dojo_Delete_end');

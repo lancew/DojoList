@@ -272,5 +272,17 @@ function Dojo_Delete_end()
 
 }
 
+/**
+ * view - Displays a single Dojo in a HTML page
+ *
+ * @return dojo html page
+ */
+function Dojo_view()
+{
+    $target = params('dojo');
+    $target = str_replace('%20', ' ', $target);
+    set('Dojo', Find_dojo($target));
+    return html('dojo/view.html.php');
+}
 
 ?>

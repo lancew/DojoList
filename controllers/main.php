@@ -52,21 +52,6 @@ function Html_list()
 	return html('main.html_list.html.php');
 }
 
-
-/**
- * view - Displays a single Dojo in a HTML page
- *
- * @return dojo html page
- */
-function view()
-{
-	$target = params('dojo');
-	$target = str_replace('%20', ' ', $target);
-	set('Dojo', Find_dojo($target));
-	return html('view.html.php');
-}
-
-
 /**
  * Websites_list function.
  * 
