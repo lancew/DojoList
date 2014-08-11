@@ -77,17 +77,17 @@ dispatch	   ('/', 'Main_page');
 
 dispatch_get   ('/dojo/',           'Html_list');
 
-dispatch_get   ('/dojo/create',   'Admin_create');
-dispatch_post  ('/dojo/create',   'Admin_Create_add');
+dispatch_get   ('/dojo/create',   'Dojo_create');
+dispatch_post  ('/dojo/create',   'Dojo_Create_add');
 
 // The dojo/create paths have to be above the  view path to work.
 dispatch	   ('/dojo/:dojo',          'View');
 
-dispatch_get   ('/dojo/:dojo/delete',   'Admin_Delete');
-dispatch_post   ('/dojo/:dojo/delete', 'Admin_Delete_end');
+dispatch_get   ('/dojo/:dojo/delete',   'Dojo_Delete');
+dispatch_post   ('/dojo/:dojo/delete', 'Dojo_Delete_end');
 
-dispatch	   ('/dojo/:dojo/edit', 'Admin_editform');
-dispatch_post  ('/dojo/:dojo/edit', 'Admin_Editform_end');
+dispatch	   ('/dojo/:dojo/edit', 'Dojo_editform');
+dispatch_post  ('/dojo/:dojo/edit', 'Dojo_Editform_end');
 
 dispatch_get   ('/admin/createkml',   'Admin_Create_kml');
 dispatch_get   ('/admin/createhtml',   'Admin_Create_html');
