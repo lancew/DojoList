@@ -17,7 +17,6 @@ curl --ftp-create-dirs -T views/error_layout.php -u $FTP_USER:$FTP_PASSWORD ftp:
 curl --ftp-create-dirs -T views/main.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
 curl --ftp-create-dirs -T views/main.html_list.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
 curl --ftp-create-dirs -T views/search_results.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
-curl --ftp-create-dirs -T views/view.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
 curl --ftp-create-dirs -T views/websites_list.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/
 # Upload Dojo views
 curl --ftp-create-dirs -T views/dojo/create.html.php -u $FTP_USER:$FTP_PASSWORD ftp://ftp.dojolist.org/www/views/dojo
