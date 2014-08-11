@@ -77,7 +77,7 @@ function Dojo_Create_add()
 function Dojo_edit()
 {
     set('DojoList', Find_Dojo_all());
-    return html('admin/edit.html.php');
+    return html('dojo/edit.html.php');
 }
 
 
@@ -98,7 +98,7 @@ function Dojo_editform()
             print($dojo);
         }
     }
-    return html('admin/edit_form.html.php');
+    return html('dojo/edit_form.html.php');
 }
 
 
@@ -227,7 +227,7 @@ function Dojo_Editform_end()
             $rss_array = array('description' => $description);
             Add_rss_item($rss_array);
 
-            return html('admin/edit_end.html.php');
+            return html('dojo/edit_end.html.php');
         } else {
             // set the error code so that we can display it
             halt('Failed to edit Dojo: '.$resp->error);
@@ -235,7 +235,7 @@ function Dojo_Editform_end()
         }
     } else {
         set('Errors', Validate_form($_POST));
-        return render('admin/validation_error.html.php');
+        return render('dojo/validation_error.html.php');
     }
 }
 
