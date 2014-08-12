@@ -138,8 +138,7 @@ function Create_dojo($dojo, $file = null)
     // Go through all the data passed to us and add the items to the XML
 	foreach ($dojo as $key => $value) {
 		
-		if ($key != 'recaptcha_challenge_field' 
-		    && $key != 'recaptcha_response_field' 
+		if ($key != 'recaptcha_challenge_field'		    && $key != 'recaptcha_response_field' 
 		    && $key !='MAX_FILE_SIZE'
         ) {
 			// If we are up to the DojoName entry, 

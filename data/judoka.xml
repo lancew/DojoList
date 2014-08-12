@@ -1,0 +1,18 @@
+<xml>
+<Judoka>
+ <DisplayName>Lance</DisplayName>
+ <Email>lw@judocoach.com</Email>
+ <FamilyName>Wicks</FamilyName>
+ <GivenName>Lance</GivenName>
+ <Dojo>{AE20266D-41CF-2DCF-D0F1-F398D7B8CC63}</Dojo>
+ <uuid>1</uuid>
+</Judoka>
+<Judoka>
+ <DisplayName>John</DisplayName>
+ <Email>lw@judocoach.com</Email>
+ <FamilyName>Wicks</FamilyName>
+ <GivenName>Lance</GivenName>
+ <Dojo>{AE20266D-41CF-2DCF-D0F1-F398D7B8CC63}</Dojo>
+ <uuid>2</uuid>
+</Judoka>
+</xml>

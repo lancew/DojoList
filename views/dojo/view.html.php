@@ -276,7 +276,13 @@
         }
     ?>
     
-   
+       <p>Judoka Count:
+        <?php
+        if($Judoka){
+            echo sizeof($Judoka);
+        }
+        ?>
+        </p>
    
    
    

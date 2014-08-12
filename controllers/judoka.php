@@ -16,3 +16,17 @@
  * @license   http://www.gnu.org/licenses/agpl.html  AGPL License 3.0
  * @link      http://github.com/lancew/DojoList
  */
+
+require_once 'lib/judoka.model.php';
+
+/**
+ * view - Displays a single Judoka in a HTML page
+ *
+ * @return Judoka html page
+ */
+function Judoka_View() {
+    $target = params( 'judoka' );
+    $target = str_replace( '%20', ' ', $target );
+    set( 'Judoka', Find_judoka( $target ) );
+    return html( 'judoka/view.html.php' );
+}

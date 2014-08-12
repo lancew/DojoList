@@ -18,9 +18,7 @@
 
 require_once 'lib/rss.php';
 require_once 'lib/dojo.model.php';
-
-
-
+require_once 'lib/judoka.model.php';
 
 /**
  * Dojo Create - Displays create new dojo page
@@ -273,7 +271,13 @@ function Dojo_Delete_end() {
 function Dojo_view() {
     $target = params( 'dojo' );
     $target = str_replace( '%20', ' ', $target );
+
+    $dojo = Find_dojo($target);
+    $dojo->judoka = Find_judoka_by_dojo($dojo->GUID);
+  
     set( 'Dojo', Find_dojo( $target ) );
+    set( 'Judoka', Find_judoka_by_dojo($dojo->GUID));
+
     return html( 'dojo/view.html.php' );
 }
 
