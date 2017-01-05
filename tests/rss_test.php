@@ -55,6 +55,6 @@ class TestOfRSS extends UnitTestCase
 
 }
 
-$test = &new TestOfRSS();
+$test = new TestOfRSS();
 $test->run(new HtmlReporter());
 ?>

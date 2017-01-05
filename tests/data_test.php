@@ -68,6 +68,6 @@ class TestOfDataModel extends UnitTestCase {
 
 }
 
-$test = &new TestOfDataModel();
+$test = new TestOfDataModel();
 $test->run(new HtmlReporter());
 ?>

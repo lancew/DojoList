@@ -112,6 +112,6 @@ class TestOfSyncModel extends UnitTestCase {
 
 }
 
-$test = &new TestOfSyncModel();
+$test = new TestOfSyncModel();
 $test->run(new HtmlReporter());
 ?>

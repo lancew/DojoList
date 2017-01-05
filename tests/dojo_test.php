@@ -147,6 +147,6 @@ class TestOfDojoModel extends UnitTestCase
 
 }
 
-$test = &new TestOfDojoModel();
+$test = new TestOfDojoModel();
 $test->run(new HtmlReporter());
 ?>
