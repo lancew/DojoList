@@ -4,7 +4,7 @@
  * Do not include this file in your app: it only aims to provide documentation
  * about those functions.
  * 
- * @package limonade
+ * @package    limonade
  * @subpackage abstract
  */
  
@@ -13,11 +13,11 @@
  * You can define options inside it, a connection to a database ...
  *
  * @abstract this function might be redefined by user
- * @return void 
+ * @return   void 
  */
 function configure()
 {
-  return;
+    return;
 }
 
 /**
@@ -25,11 +25,11 @@ function configure()
  * and output buffer start.  
  *
  * @abstract this function might be redefined by user
- * @return void 
+ * @return   void 
  */
 function initialize()
 {
-  return;
+    return;
 }
 
 /**
@@ -42,14 +42,13 @@ function initialize()
  *   require_once_dir(option('controllers_dir'));
  * }
  * </code>
- * 
  *
- * @param string $callback the callback defined in matching route
+ * @param  string $callback the callback defined in matching route
  * @return void
  */
 function autoload_controller($callback)
 {
-  return;
+    return;
 }
  
 /**
@@ -58,9 +57,9 @@ function autoload_controller($callback)
  * to the templates.
  *
  * @abstract this function might be redefined by user
- * @param array() $route array (like returned by {@link route_build()},
+ * @param    array() $route array (like returned by {@link route_build()},
  *   with keys "method", "pattern", "names", "callback", "options")
- * @return void 
+ * @return   void 
  */
 function before($route)
 {
@@ -74,27 +73,27 @@ function before($route)
  * (except for `render_file` outputs  which are sent directly to the output buffer).
  *
  * @abstract this function might be redefined by user
- * @param string $output 
- * @param array() $route array (like returned by {@link route_find()},
+ * @param    string  $output 
+ * @param    array() $route  array (like returned by {@link route_find()}, with keys "method", "pattern", "names", "callback", "params", "options")
  *   with keys "method", "pattern", "names", "callback", "params", "options")
- * @return string 
+ * @return   string 
  */
 function after($output, $route)
 {
-  # Call functions...
-  # .. modifies $output...
-  return $output;
+    // Call functions...
+    // .. modifies $output...
+    return $output;
 }
  
 /**
  * Not found error output
  *
  * @abstract this function might be redefined by user
- * @param string $errno 
- * @param string $errstr 
- * @param string $errfile 
- * @param string $errline 
- * @return string "not found" output string
+ * @param    string $errno 
+ * @param    string $errstr 
+ * @param    string $errfile 
+ * @param    string $errline 
+ * @return   string "not found" output string
  */
 function not_found($errno, $errstr, $errfile=null, $errline=null)
 {
@@ -105,11 +104,11 @@ function not_found($errno, $errstr, $errfile=null, $errline=null)
  * Server error output
  *
  * @abstract this function might be redefined by user
- * @param string $errno 
- * @param string $errstr 
- * @param string $errfile 
- * @param string $errline 
- * @return string "server error" output string
+ * @param    string $errno 
+ * @param    string $errstr 
+ * @param    string $errfile 
+ * @param    string $errline 
+ * @return   string "server error" output string
  */
 function server_error($errno, $errstr, $errfile=null, $errline=null)
 {
@@ -118,24 +117,23 @@ function server_error($errno, $errstr, $errfile=null, $errline=null)
  
 /**
  * Called when a route is not found.
- * 
- * 
+ *
  * @abstract this function might be redefined by user
- * @param string $request_method 
- * @param string $request_uri 
- * @return void 
+ * @param    string $request_method 
+ * @param    string $request_uri 
+ * @return   void 
  */
 function route_missing($request_method, $request_uri)
 {
-  halt(NOT_FOUND, "($request_method) $request_uri"); # by default
+    halt(NOT_FOUND, "($request_method) $request_uri"); // by default
 }
 
 /**
  * Called before stoppping and exiting application.
  *
  * @abstract this function might be redefined by user
- * @param boolean exit or not
- * @return void 
+ * @param    boolean exit or not
+ * @return   void 
  */
 function before_exit($exit)
 {
@@ -149,17 +147,17 @@ function before_exit($exit)
  * to the `render` function.
  *
  * @abstract this function might be redefined by user
- * @param string $content_or_func a function, a file in current views dir or a string
- * @param string $layout 
- * @param array $locals 
- * @param array $view_path (by default <code>file_path(option('views_dir'),$content_or_func);</code>)
- * @return array with, in order, $content_or_func, $layout, $locals vars
+ * @param    string $content_or_func a function, a file in current views dir or a string
+ * @param    string $layout 
+ * @param    array  $locals 
+ * @param    array  $view_path       (by default <code>file_path(option('views_dir'),$content_or_func);</code>)
+ * @return   array with, in order, $content_or_func, $layout, $locals vars
  *  and the calculated $view_path
  */
 function before_render($content_or_func, $layout, $locals, $view_path)
 {
-  # transform $content_or_func, $layout, $locals or $view_path…
-  return array($content_or_func, $layout, $locals, $view_path);
+    // transform $content_or_func, $layout, $locals or $view_path…
+    return array($content_or_func, $layout, $locals, $view_path);
 }
 
 
@@ -168,12 +166,12 @@ function before_render($content_or_func, $layout, $locals, $view_path)
  * like in a controller with no return statement.
  *
  * @abstract this function might be defined by user
- * @param array() $route array (like returned by {@link route_build()},
+ * @param    array() $route array (like returned by {@link route_build()},
  *   with keys "method", "pattern", "names", "callback", "options")
- * @return string
+ * @return   string
  */
 function autorender($route)
 {
-  # process output depending on $route
-  return $output;
+    // process output depending on $route
+    return $output;
 }

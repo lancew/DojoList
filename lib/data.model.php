@@ -20,19 +20,19 @@
  * Load_Xml_data function.
  * 
  * @access public
- * @param string $file. (default: 'data/dojo.xml')
+ * @param  string $file. (default: 'data/dojo.xml')
  * 
  * @return void
  */
 function Load_Xml_data($file = 'data/dojo.xml')
 {
 
-	if (file_exists($file)) {
-		$xml = simplexml_load_file($file);
-	} else {
-		return 'Failed to load XML';
-	}
-	return $xml;
+    if (file_exists($file)) {
+        $xml = simplexml_load_file($file);
+    } else {
+        return 'Failed to load XML';
+    }
+    return $xml;
 }
 
 
@@ -40,18 +40,18 @@ function Load_Xml_data($file = 'data/dojo.xml')
  * Save_Xml_data function.
  *
  * @access public
- * @param mixed   $xml
- * @param string  $file. (default: 'data/dojo.xml')
+ * @param  mixed  $xml
+ * @param  string $file. (default: 'data/dojo.xml')
  *
  * @return void
  */
 function Save_Xml_data($xml, $file = 'data/dojo.xml')
 {
-	Backup_data();
-	$fh = fopen($file, 'w') or die("can't open file");
-	fwrite($fh, $xml);
-	fclose($fh);
-	return $file;
+    Backup_data();
+    $fh = fopen($file, 'w') or die("can't open file");
+    fwrite($fh, $xml);
+    fclose($fh);
+    return $file;
 }
 
 
@@ -59,19 +59,20 @@ function Save_Xml_data($xml, $file = 'data/dojo.xml')
  * get_string_between function.
  *
  * @access public
- * @param mixed   $string
- * @param mixed   $start
- * @param mixed   $end
+ * @param  mixed $string
+ * @param  mixed $start
+ * @param  mixed $end
  * @return void
  */
 function Get_string_between($string, $start, $end)
 {
-	$string = " ".$string;
-	$ini = strpos($string, $start);
-	if ($ini == 0) return "";
-	$ini += strlen($start);
-	$len = strpos($string, $end, $ini) - $ini;
-	return substr($string, $ini, $len);
+    $string = " ".$string;
+    $ini = strpos($string, $start);
+    if ($ini == 0) { return "";
+    }
+    $ini += strlen($start);
+    $len = strpos($string, $end, $ini) - $ini;
+    return substr($string, $ini, $len);
 }
 
 /**
@@ -82,21 +83,21 @@ function Get_string_between($string, $start, $end)
  */
 function guid()
 {
-	if (function_exists('com_create_guid')) {
-		return com_create_guid();
-	} else {
-		mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
-		$charid = strtoupper(md5(uniqid(rand(), true)));
-		$hyphen = chr(45);// "-"
-		$uuid = chr(123)// "{"
-		.substr($charid, 0, 8).$hyphen
-			.substr($charid, 8, 4).$hyphen
-			.substr($charid, 12, 4).$hyphen
-			.substr($charid, 16, 4).$hyphen
-			.substr($charid, 20, 12)
-			.chr(125);// "}"
-		return $uuid;
-	}
+    if (function_exists('com_create_guid')) {
+        return com_create_guid();
+    } else {
+        mt_srand((double)microtime()*10000);//optional for php 4.2.0 and up.
+        $charid = strtoupper(md5(uniqid(rand(), true)));
+        $hyphen = chr(45);// "-"
+        $uuid = chr(123)// "{"
+        .substr($charid, 0, 8).$hyphen
+         .substr($charid, 8, 4).$hyphen
+         .substr($charid, 12, 4).$hyphen
+         .substr($charid, 16, 4).$hyphen
+         .substr($charid, 20, 12)
+         .chr(125);// "}"
+        return $uuid;
+    }
 }
 
 /**
@@ -105,16 +106,16 @@ function guid()
  * This function checks individual fields and returns the number of errors found, preferably 0.
  *
  * @access public
- * @param mixed   $data
- * @param mixed   $type
+ * @param  mixed $data
+ * @param  mixed $type
  * @return INT 0 or 1
  */
 function Validate_field($data, $type)
 {
-	// This function checks fields and returns the number of errors found.
-	// Check if the parameters have been sent.
-	//if(!$data or !$type) { return 1;}
-	/*
+    // This function checks fields and returns the number of errors found.
+    // Check if the parameters have been sent.
+    //if(!$data or !$type) { return 1;}
+    /*
     [DojoName] => Lancew"
     [MembershipID] =>
     [CoachName] =>
@@ -129,46 +130,46 @@ function Validate_field($data, $type)
     [GUID] => {F6E3B62D-EE41-7213-D7DF-EFFFB9139F16}
     */
 
-	//echo $type.':'.$data.'<br>';
-	switch ($type) {
-	case "DojoName":
-		if (preg_match('/[^A-Za-z -]/', $data)) {   
+    //echo $type.':'.$data.'<br>';
+    switch ($type) {
+    case "DojoName":
+        if (preg_match('/[^A-Za-z -]/', $data)) {   
             return 'Dojo Name: Must be alphanumeric only';
         }
-		return null;
-	case "MembershipID":
-		if (preg_match('/[^0-9]/', $data)) {
+        return null;
+    case "MembershipID":
+        if (preg_match('/[^0-9]/', $data)) {
             return 'Membership ID: Must be numbers only';
         }
-		break;
-	case "CoachName":
-		if (preg_match('/[^A-Za-z ]/', $data)) {
+        break;
+    case "CoachName":
+        if (preg_match('/[^A-Za-z ]/', $data)) {
             return 'Coach Name: Must be letters a-z or A-Z only';
         }
-		return null;
-	case "DojoAddress":
-		if (preg_match('/[^A-Za-z0-9,. ]/', $data)) {
+        return null;
+    case "DojoAddress":
+        if (preg_match('/[^A-Za-z0-9,. ]/', $data)) {
             return 'Dojo Address: Must be alphanumeric or a comma, or fullstop only';
         }
-		return null;
-	case "ContactName":
-		if (preg_match('/[^A-Za-z ]/', $data)) {
+        return null;
+    case "ContactName":
+        if (preg_match('/[^A-Za-z ]/', $data)) {
             return 'Contact Name: Must be letters a-z or A-Z only';
         }
-		return null;
-	case "ContactPhone":
-		if (preg_match('/[^0-9() ]/', $data)) {
+        return null;
+    case "ContactPhone":
+        if (preg_match('/[^0-9() ]/', $data)) {
             return 'Contact telephone number: Must be numbers 0-9 only';
         }
-		return null;
-		
+        return null;
+        
 
 
-	default:
-		return null;
+    default:
+        return null;
 
 
-	}
+    }
 
 
 }
@@ -180,53 +181,53 @@ function Validate_field($data, $type)
  * returns the number of errors, hopefully it should be 0
  *
  * @access public
- * @param mixed   $_POST. (default: null)
+ * @param  mixed $_POST. (default: null)
  * @return void
  */
 function Validate_form($post = null)
 {
-	// echo '<pre>';
-	// print_r($_POST);
-	// echo '</pre>';
-	
-	//create the error array
-	$aErrors = null;
-	
-	
-	// Cycle through all variables. If no dojoname then fail
-	// else use the validate_field function
-	foreach ($post as $field => $value) {
+    // echo '<pre>';
+    // print_r($_POST);
+    // echo '</pre>';
+    
+    //create the error array
+    $aErrors = null;
+    
+    
+    // Cycle through all variables. If no dojoname then fail
+    // else use the validate_field function
+    foreach ($post as $field => $value) {
 
-		if ($field==="DojoName") {
-			if (!$value) {
-				$aErrors[] = 'Dojo name not present';
-				
+        if ($field==="DojoName") {
+            if (!$value) {
+                $aErrors[] = 'Dojo name not present';
+                
 
-			}
-		}
-		if ($value) {
-			$result = Validate_field($value, $field);
-			//  echo  $field.": ".$result;
-			$aErrors[] = $result;
-			//  echo "COUNT: $error_count<br>";
-		}
+            }
+        }
+        if ($value) {
+            $result = Validate_field($value, $field);
+            //  echo  $field.": ".$result;
+            $aErrors[] = $result;
+            //  echo "COUNT: $error_count<br>";
+        }
 
 
-	}
-	// return an array of validation errors
-	//print_r($aErrors);
-	$ret = null;
-	foreach($aErrors as $error){
-	   if($error){
-	       $ret = 1;
-	   }
-	}
-	if($ret != null){
-	   return $aErrors;
-	} else {
-	   return null;
-	}
-	
+    }
+    // return an array of validation errors
+    //print_r($aErrors);
+    $ret = null;
+    foreach($aErrors as $error){
+        if($error) {
+            $ret = 1;
+        }
+    }
+    if($ret != null) {
+          return $aErrors;
+    } else {
+          return null;
+    }
+    
 }
 
 function Backup_data()

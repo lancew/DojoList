@@ -21,21 +21,21 @@ require_once 'lib/data.model.php';
 function Load_RSS_data($file = 'data/dojo.rss')
 {
 
-	if (file_exists($file)) {
-		$xml = simplexml_load_file($file);
-	} else {
-		return 'Failed to load RSS';
-	}
-	return $xml;
+    if (file_exists($file)) {
+        $xml = simplexml_load_file($file);
+    } else {
+        return 'Failed to load RSS';
+    }
+    return $xml;
 }
 
 
 
 function Save_RSS_data($xml, $file = 'data/dojo.rss')
 {
-	$fh = fopen($file, 'w') or die("can't open file");
-	fwrite($fh, $xml);
-	fclose($fh);
+    $fh = fopen($file, 'w') or die("can't open file");
+    fwrite($fh, $xml);
+    fclose($fh);
     return $file;
 }
 
@@ -49,13 +49,13 @@ function RSS_header()
 		<title>DojoList Updates</title>
 		<link>http://www.dojolist.org/</link>
 		<description>Updates to Dojo listings</description>';
-	date_default_timezone_set('Europe/London');
-	$date = date(DATE_RFC822);
-	$rss_header .= "<lastBuildDate>$date</lastBuildDate>";
-		
-	$rss_header .= '<generator>DojoList</generator>
-	';	
-	return $rss_header;	
+    date_default_timezone_set('Europe/London');
+    $date = date(DATE_RFC822);
+    $rss_header .= "<lastBuildDate>$date</lastBuildDate>";
+        
+    $rss_header .= '<generator>DojoList</generator>
+	';    
+    return $rss_header;    
 
 }
 
@@ -74,9 +74,9 @@ function Delete_Oldest_rss($max_items='20')
         }
         //echo $item_count.':'.$max_items; 
         $item_count++;
-	}
-	$new_rss .= '</channel></rss>';
-	return(Save_RSS_data($new_rss));
+    }
+    $new_rss .= '</channel></rss>';
+    return(Save_RSS_data($new_rss));
 }
  
 
@@ -101,19 +101,19 @@ function Add_Rss_item($item_array = null)
     ";
     
     foreach ($rss->channel->item as $item) {
-	       //print_r($item);
-	       $new_rss .= '
+           //print_r($item);
+           $new_rss .= '
 	       ';
-	       $new_rss .= $item->asXML();
-	       $new_rss .= '
+           $new_rss .= $item->asXML();
+           $new_rss .= '
 	       ';
-	 
+     
         //echo $item_count.':'.$max_items; 
         $item_count++;
-	}
-	$new_rss .= '</channel></rss>';
-	Save_RSS_data($new_rss);
-	Delete_oldest_rss();
+    }
+    $new_rss .= '</channel></rss>';
+    Save_RSS_data($new_rss);
+    Delete_oldest_rss();
  
 
     
@@ -122,4 +122,4 @@ function Add_Rss_item($item_array = null)
  
  
  
- ?>
+    ?>

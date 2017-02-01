@@ -13,7 +13,7 @@
   <div id="content">
     <?php echo error_notices_render(); ?>
     <div id="main">
-      <?php echo $content;?>
+        <?php echo $content;?>
       <hr class="space">
     </div>
   </div>

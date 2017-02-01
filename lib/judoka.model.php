@@ -26,40 +26,37 @@ require_once 'lib/rss.php';
  * @param string $target Displayname of the judoka we are searching for.
  *
  * @return $xml single judoka
- *
  */
 function Find_judoka($target=null)
 {
-	$target = clean_name($target);
-	$return_value = null;
-	$xml = Load_Xml_data('data/judoka.xml');
+    $target = clean_name($target);
+    $return_value = null;
+    $xml = Load_Xml_data('data/judoka.xml');
 
-	foreach ($xml->Judoka as $Judoka) {
-		if (strtolower($Judoka->DisplayName) == strtolower($target)) {
+    foreach ($xml->Judoka as $Judoka) {
+        if (strtolower($Judoka->DisplayName) == strtolower($target)) {
 
-			$return_value = $Judoka;
-		}
-	}
-	return $return_value;
+            $return_value = $Judoka;
+        }
+    }
+    return $return_value;
 }
 
 /**
  * Return a array of Judoka associate with a Dojo
- *
- *
  */
 function Find_judoka_by_dojo($target=null)
 {
-	$return_value = null;
-	$xml = Load_Xml_data('data/judoka.xml');
+    $return_value = null;
+    $xml = Load_Xml_data('data/judoka.xml');
 
-	foreach ($xml->Judoka as $Judoka) {
-		if (strtolower($Judoka->Dojo) == strtolower($target)) {
-			
-			$return_value[] = $Judoka;
-		}
-	}
-	return $return_value;
+    foreach ($xml->Judoka as $Judoka) {
+        if (strtolower($Judoka->Dojo) == strtolower($target)) {
+            
+            $return_value[] = $Judoka;
+        }
+    }
+    return $return_value;
 }
 
 

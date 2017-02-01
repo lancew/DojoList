@@ -27,8 +27,8 @@ require_once 'lib/rss.php';
  */
 function Find_Dojo_all()
 {
-	$xml = Load_Xml_data();
-	return $xml;
+    $xml = Load_Xml_data();
+    return $xml;
 }
 
 
@@ -38,20 +38,19 @@ function Find_Dojo_all()
  * @param string $target Name of the dojo we are searching for.
  *
  * @return $xml single dojo
- *
  */
 function Find_dojo($target=null)
 {
-	$target = clean_name($target);
-	$return_value = null;
-	$xml = Load_Xml_data();
+    $target = clean_name($target);
+    $return_value = null;
+    $xml = Load_Xml_data();
 
-	foreach ($xml->Dojo as $dojo) {
-		if (strtolower($dojo->DojoName) == strtolower($target)) {
-			$return_value = $dojo;
-		}
-	}
-	return $return_value;
+    foreach ($xml->Dojo as $dojo) {
+        if (strtolower($dojo->DojoName) == strtolower($target)) {
+            $return_value = $dojo;
+        }
+    }
+    return $return_value;
 }
 
 
@@ -62,65 +61,64 @@ function Find_dojo($target=null)
  * @param array $file Uploaded logo.
  *
  * @return $xml single dojo
- *
  */
 function Create_dojo($dojo, $file = null)
 {
     Backup_data();
     
-	$xml = Load_Xml_data();
-	$new1 = $xml->addChild("Dojo");
-	//print_r($dojo);
-	//print_r($file);
+    $xml = Load_Xml_data();
+    $new1 = $xml->addChild("Dojo");
+    //print_r($dojo);
+    //print_r($file);
 
     $dojo_name = '';
     $source_url = '';
     
     
-	if ($file["DojoLogo"]["name"]) {
+    if ($file["DojoLogo"]["name"]) {
         if ((($file["DojoLogo"]["type"] == "image/gif")
             || ($file["DojoLogo"]["type"] == "image/jpeg")
             || ($file["DojoLogo"]["type"] == "image/pjpeg")
             || ($file["DojoLogo"]["type"] == "image/png"))
-			&& ($file["DojoLogo"]["size"] < 20000)
-		) {
-			if ($file["DojoLogo"]["error"] > 0) {
-				halt("Error: " . $file["DojoLogo"]["error"] . "<br />");
-			} else {
-				$new_child = 'data:'.$file["DojoLogo"]["type"].';base64,';
-				$file = file_get_contents($file['DojoLogo']['tmp_name']);
-				$new_child .= base64_encode($file);
-				$new1->addChild('DojoLogo', $new_child);
-			}
-		} else {
-			return 0;
-		}
-	}
-	
-	
-	
-	// Code for adding the coach photo
-	// ------------------------------------------
-	
-	if ($file["CoachPhoto"]["name"]) {
+            && ($file["DojoLogo"]["size"] < 20000)
+        ) {
+            if ($file["DojoLogo"]["error"] > 0) {
+                         halt("Error: " . $file["DojoLogo"]["error"] . "<br />");
+            } else {
+                          $new_child = 'data:'.$file["DojoLogo"]["type"].';base64,';
+                          $file = file_get_contents($file['DojoLogo']['tmp_name']);
+                          $new_child .= base64_encode($file);
+                          $new1->addChild('DojoLogo', $new_child);
+            }
+        } else {
+            return 0;
+        }
+    }
+    
+    
+    
+    // Code for adding the coach photo
+    // ------------------------------------------
+    
+    if ($file["CoachPhoto"]["name"]) {
         if ((($file["CoachPhoto"]["type"] == "image/gif")
             || ($file["CoachPhoto"]["type"] == "image/jpeg")
             || ($file["CoachPhoto"]["type"] == "image/pjpeg")
             || ($file["CoachPhoto"]["type"] == "image/png"))
-			&& ($file["CoachPhoto"]["size"] < 20000)
-		) {
-			if ($file["CoachPhoto"]["error"] > 0) {
-				halt("Error: " . $file["CoachPhoto"]["error"] . "<br />");
-			} else {
-				$new_child = 'data:'.$file["CoachPhoto"]["type"].';base64,';
-				$file = file_get_contents($file['CoachPhoto']['tmp_name']);
-				$new_child .= base64_encode($file);
-				$new1->addChild('CoachPhoto', $new_child);
-			}
-		} else {
-			return 0;
-		}
-	}
+            && ($file["CoachPhoto"]["size"] < 20000)
+        ) {
+            if ($file["CoachPhoto"]["error"] > 0) {
+                         halt("Error: " . $file["CoachPhoto"]["error"] . "<br />");
+            } else {
+                          $new_child = 'data:'.$file["CoachPhoto"]["type"].';base64,';
+                          $file = file_get_contents($file['CoachPhoto']['tmp_name']);
+                          $new_child .= base64_encode($file);
+                          $new1->addChild('CoachPhoto', $new_child);
+            }
+        } else {
+            return 0;
+        }
+    }
 
     
     // *** end of code adding coach photo.
@@ -132,54 +130,54 @@ function Create_dojo($dojo, $file = null)
         if ($key === 'URL') {
             $flag_url_present = '1';
         }
-	}
+    }
     
 
     // Go through all the data passed to us and add the items to the XML
-	foreach ($dojo as $key => $value) {
-		
-		if ($key != 'recaptcha_challenge_field'		    && $key != 'recaptcha_response_field' 
-		    && $key !='MAX_FILE_SIZE'
+    foreach ($dojo as $key => $value) {
+        
+        if ($key != 'recaptcha_challenge_field'            && $key != 'recaptcha_response_field' 
+            && $key !='MAX_FILE_SIZE'
         ) {
-			// If we are up to the DojoName entry, 
-			// create the appropriate URL and add it to the XML.
-			if ($key === 'DojoName' and $flag_url_present != '1') {
-			     $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
-                 $new1->addChild('URL', $source_url);
-                 $value = clean_name($value);
-			
-			}
-			
-			$clean_key = strip_tags(addslashes($key));
-			$clean_val = strip_tags(addslashes($value));
-			$new1->addChild($clean_key, $clean_val);
+            // If we are up to the DojoName entry, 
+            // create the appropriate URL and add it to the XML.
+            if ($key === 'DojoName' and $flag_url_present != '1') {
+                    $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$value;
+                             $new1->addChild('URL', $source_url);
+                             $value = clean_name($value);
+            
+            }
+            
+            $clean_key = strip_tags(addslashes($key));
+            $clean_val = strip_tags(addslashes($value));
+            $new1->addChild($clean_key, $clean_val);
 
-		}
-	}
+        }
+    }
 
     // Add field for update date and time
     date_default_timezone_set("UTC");
     $time = date("l, F d, Y h:i", time()); 
     $new1->addChild('Updated', $time);
     
-	Save_Xml_data($xml->asXML());
-	
-	$source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$dojo['DojoName'];
-	
-	$description = $dojo['DojoName']
-	               .' Dojo was created.'
-	               .' <a href="'
-	               .$source_url
-	               .'">'
-	               .$dojo['DojoName']
-	               .'</a>';
-	//print_r($dojo);
-	//echo $description;
-	$rss_array = array('description' => $description);
-	//print_r($rss_array);
-	Add_rss_item($rss_array);
+    Save_Xml_data($xml->asXML());
+    
+    $source_url = 'http://'.$_SERVER['SERVER_NAME'].'/dojo/'.$dojo['DojoName'];
+    
+    $description = $dojo['DojoName']
+                   .' Dojo was created.'
+                   .' <a href="'
+                   .$source_url
+                   .'">'
+                   .$dojo['DojoName']
+                   .'</a>';
+    //print_r($dojo);
+    //echo $description;
+    $rss_array = array('description' => $description);
+    //print_r($rss_array);
+    Add_rss_item($rss_array);
 
-	return 'Dojo Created';
+    return 'Dojo Created';
 
 }
 
@@ -189,13 +187,12 @@ function Create_dojo($dojo, $file = null)
  * @param string $Dojoname Name of the dojo.
  *
  * @return string $xml single dojo
- *
  */
 function Delete_dojo($Dojoname)
 {
-	Backup_data();
-	$xml = Load_Xml_data();
-	$newxml = '<xml>
+    Backup_data();
+    $xml = Load_Xml_data();
+    $newxml = '<xml>
     <!-- The data created by DojoList by
     <a xmlns:cc="http://creativecommons.org/ns#"
     href="http://github.com/lancew/DojoList"
@@ -209,23 +206,23 @@ function Delete_dojo($Dojoname)
     Ulrich Wisser under a Creative Commons NC-SA License.
     DojoList software version'.option('version').' -->';
 
-	foreach ($xml->Dojo as $dojo) {
-		if ($dojo->DojoName == $Dojoname) {
-			// do nothing if it is the dojo we are looking for
+    foreach ($xml->Dojo as $dojo) {
+        if ($dojo->DojoName == $Dojoname) {
+            // do nothing if it is the dojo we are looking for
 
-		} else {
-			// for every other dojo create a new dojo in the newxml file
-			$newxml .= $dojo->asXML();
+        } else {
+            // for every other dojo create a new dojo in the newxml file
+            $newxml .= $dojo->asXML();
 
-		}
-	}
-	$newxml .= '</xml>';
-	Save_Xml_data($newxml, 'data/dojo.xml');
-	
-	$description = "$Dojoname Dojo was deleted";
-	$rss_array = array('description' => $description);
-	Add_rss_item($rss_array);
-	return $description;
+        }
+    }
+    $newxml .= '</xml>';
+    Save_Xml_data($newxml, 'data/dojo.xml');
+    
+    $description = "$Dojoname Dojo was deleted";
+    $rss_array = array('description' => $description);
+    Add_rss_item($rss_array);
+    return $description;
 
 }
 
@@ -236,7 +233,6 @@ function Delete_dojo($Dojoname)
  * @param array $Dojo Name of the dojo to be deleted.
  *
  * @return string $xml single dojo
- *
  */
 function Update_dojo($Dojo)
 {
@@ -248,17 +244,16 @@ function Update_dojo($Dojo)
  * Count the number of Dojo in the DB.
  *
  * @return int $dojo_count
- *
  */
 function Count_dojo()
 {
-	$xml = Load_Xml_data();
-	$dojo_count = 0;
-	foreach ($xml->Dojo as $dojo) {
-		$dojo_count++;
-	}
+    $xml = Load_Xml_data();
+    $dojo_count = 0;
+    foreach ($xml->Dojo as $dojo) {
+        $dojo_count++;
+    }
 
-	return $dojo_count;
+    return $dojo_count;
 
 }
 
@@ -266,18 +261,17 @@ function Count_dojo()
  * Return a sorted list of clubs as an array.
  *
  * @return array $dojolist an array of dojo sorted alpha a-z
- *
  */
 function Sorted_dojo()
 {
-	$xml = Find_Dojo_all();
-	$dojolist = array();
-	foreach ($xml->Dojo as $dojo) {
-		$dojolist[] = (string)$dojo->DojoName;
+    $xml = Find_Dojo_all();
+    $dojolist = array();
+    foreach ($xml->Dojo as $dojo) {
+        $dojolist[] = (string)$dojo->DojoName;
 
-	}
-	sort($dojolist);
-	return $dojolist;
+    }
+    sort($dojolist);
+    return $dojolist;
 
 }
 
@@ -285,15 +279,15 @@ function Sorted_dojo()
 function Clean_name($name)
 {
     
-	$name = str_replace('&', ' and ', $name);
-	$name = str_replace("'", '', $name);
-	$name = str_replace("\\", '', $name);
-	$name = str_replace("\"", '', $name);
-	$name = str_replace("/", ' ', $name);
-	$name = str_replace("(", '', $name);
-	$name = str_replace(")", '', $name);
-	// Commenting this out to get tests working
-	//$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
+    $name = str_replace('&', ' and ', $name);
+    $name = str_replace("'", '', $name);
+    $name = str_replace("\\", '', $name);
+    $name = str_replace("\"", '', $name);
+    $name = str_replace("/", ' ', $name);
+    $name = str_replace("(", '', $name);
+    $name = str_replace(")", '', $name);
+    // Commenting this out to get tests working
+    //$name = iconv("UTF-8", "UTF-8//IGNORE", $name);
 
     return $name;
 }
@@ -337,31 +331,31 @@ function geoAddress($address = null)
 
 function Websites()
 {
-	$xml = Find_Dojo_all();
-	$websites = array();
-	foreach ($xml->Dojo as $dojo) {
-	       //echo $dojo->ClubWebsite;
-	       if($dojo->ClubWebsite > '') {
-                $websites[] = (string)$dojo->ClubWebsite;
-		   }
-	}
-	sort($websites);
-	return $websites;
+    $xml = Find_Dojo_all();
+    $websites = array();
+    foreach ($xml->Dojo as $dojo) {
+           //echo $dojo->ClubWebsite;
+        if($dojo->ClubWebsite > '') {
+             $websites[] = (string)$dojo->ClubWebsite;
+        }
+    }
+    sort($websites);
+    return $websites;
 
 }
 
 function Emails()
 {
-	$xml = Find_Dojo_all();
-	$emails = array();
-	foreach ($xml->Dojo as $dojo) {
-	       //echo $dojo->ClubWebsite;
-	       if($dojo->ContactEmail > '') {
-                $emails[] = (string)$dojo->ContactEmail;
-		   }
-	}
-	sort($emails);
-	return $emails;
+    $xml = Find_Dojo_all();
+    $emails = array();
+    foreach ($xml->Dojo as $dojo) {
+           //echo $dojo->ClubWebsite;
+        if($dojo->ContactEmail > '') {
+             $emails[] = (string)$dojo->ContactEmail;
+        }
+    }
+    sort($emails);
+    return $emails;
 
 }
 
