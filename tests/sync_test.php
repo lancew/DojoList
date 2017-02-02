@@ -7,55 +7,56 @@ require_once 'lib/dojo.model.php';
 
 
 
-class TestOfSyncModel extends UnitTestCase {
+class TestOfSyncModel extends UnitTestCase
+{
 
 
-	
-	
-	function testLoadFarXMLHTTP()
-	{
-		$this->assertTrue(LoadFarXML('http://dev.dojolist/data/dojo.xml'), 'LoadFarXML() the local xml via http');
-		
-	}
-	
-	
-	function testLoopFarDojo()
-	{
-	   $xml = LoadFarXML('http://dev.dojolist/data/dojo.xml');
-	  
-	   $count = 0;
-	   $text = '';
-	   foreach ($xml->Dojo as $dojo) {
-		if($count === 0){
-		  $text = $dojo->DojoName;
-		  $count++;
-		  }
-		}
-		
-		$this->assertEqual($text, 'Alresford Judo Club', 'First Dojo is '.$text.'not "Alresford Judo Club"');
-	}
+    
+    
+    function testLoadFarXMLHTTP()
+    {
+        $this->assertTrue(LoadFarXML('http://dev.dojolist/data/dojo.xml'), 'LoadFarXML() the local xml via http');
+        
+    }
+    
+    
+    function testLoopFarDojo()
+    {
+          $xml = LoadFarXML('http://dev.dojolist/data/dojo.xml');
+      
+          $count = 0;
+          $text = '';
+        foreach ($xml->Dojo as $dojo) {
+            if($count === 0) {
+                 $text = $dojo->DojoName;
+                 $count++;
+            }
+        }
+        
+        $this->assertEqual($text, 'Alresford Judo Club', 'First Dojo is '.$text.'not "Alresford Judo Club"');
+    }
 
-	 function testAlresfordInFarAndLocal()
-	{
-	   $xml = LoadFarXML('http://hampshirejudo.org.uk/dojolist/data/dojo.xml');
-	  
-	   $count = 0;
-	   $text = '';
-	   foreach ($xml->Dojo as $dojo) {
-		if($count === 0){
-		  $text = $dojo->DojoName;
-		  $count++;
-		  }
-		}
-		
-		$result = Find_dojo($text);
-		//$result = Dojo_in_local('blahblah');
-		
-		
-		$this->assertTrue($result, 'Alresford is in local and far xml');
-	} 
-	  	   
-	   
+    function testAlresfordInFarAndLocal()
+    {
+        $xml = LoadFarXML('http://hampshirejudo.org.uk/dojolist/data/dojo.xml');
+      
+        $count = 0;
+        $text = '';
+        foreach ($xml->Dojo as $dojo) {
+            if($count === 0) {
+                $text = $dojo->DojoName;
+                $count++;
+            }
+        }
+        
+        $result = Find_dojo($text);
+        //$result = Dojo_in_local('blahblah');
+        
+        
+        $this->assertTrue($result, 'Alresford is in local and far xml');
+    } 
+             
+       
 
     
     
@@ -64,12 +65,12 @@ class TestOfSyncModel extends UnitTestCase {
         
         unlink('data/dojo_test.xml');
         $dojo_array = array(
-			                    'DojoName' => 'test_dojo', 
-			                    'ClubWebsite' => 'url', 
-			                    'Latitude' => '0', 
-			                    'Longitude' => '0', 
-			                    'GUID' => guid() 
-			                    );
+                                'DojoName' => 'test_dojo', 
+                                'ClubWebsite' => 'url', 
+                                'Latitude' => '0', 
+                                'Longitude' => '0', 
+                                'GUID' => guid() 
+                                );
         Create_dojo($dojo_array);
         copy('data/dojo.xml', 'data/dojo_test.xml');
         Delete_dojo('test_dojo');
@@ -78,16 +79,16 @@ class TestOfSyncModel extends UnitTestCase {
         
     }
     
-     function testListDojoNotInLocal()
+    function testListDojoNotInLocal()
     {
         
         $dojo_array = array(
-			                    'DojoName' => 'test_dojo', 
-			                    'ClubWebsite' => 'url', 
-			                    'Latitude' => '0', 
-			                    'Longitude' => '0', 
-			                    'GUID' => guid() 
-			                    );
+                     'DojoName' => 'test_dojo', 
+                     'ClubWebsite' => 'url', 
+                     'Latitude' => '0', 
+                     'Longitude' => '0', 
+                     'GUID' => guid() 
+                     );
         Create_dojo($dojo_array);
         $result = ListDojoNotInLocal('data/dojo_test.xml');
         //print_r($result);
@@ -98,17 +99,17 @@ class TestOfSyncModel extends UnitTestCase {
     }
     
     
-	   
-	function testDojoUpdatedInFar()
-	{
-	   $result = NewerFarDojo('data/dojo_test.xml');
-	   $this->assertEqual($result, 1, 'NewerFarDojo returned '.$result.' not 1');
-	
-	}
-	
-	
-	
-	
+       
+    function testDojoUpdatedInFar()
+    {
+          $result = NewerFarDojo('data/dojo_test.xml');
+          $this->assertEqual($result, 1, 'NewerFarDojo returned '.$result.' not 1');
+    
+    }
+    
+    
+    
+    
 
 }
 
