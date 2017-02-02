@@ -24,9 +24,10 @@ require_once 'lib/judoka.model.php';
  *
  * @return Judoka html page
  */
-function Judoka_View() {
-    $target = params( 'judoka' );
-    $target = str_replace( '%20', ' ', $target );
-    set( 'Judoka', Find_judoka( $target ) );
-    return html( 'judoka/view.html.php' );
+function Judoka_View() 
+{
+    $target = params('judoka');
+    $target = str_replace('%20', ' ', $target);
+    set('Judoka', Find_judoka($target));
+    return html('judoka/view.html.php');
 }

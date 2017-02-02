@@ -24,11 +24,12 @@ require_once 'lib/dojo.model.php';
  *
  * @return unknown
  */
-function Admin_index() {
-    if ( isset( $_COOKIE["user"] ) ) {
-        return html( 'admin/index.html.php' );
+function Admin_index() 
+{
+    if (isset($_COOKIE["user"]) ) {
+        return html('admin/index.html.php');
     } else {
-        return html( 'admin/index_login.html.php' );
+        return html('admin/index_login.html.php');
     }
 }
 
@@ -38,12 +39,13 @@ function Admin_index() {
  *
  * @return unknown
  */
-function Admin_login() {
-    if ( $_POST['password'] == option( 'password' ) ) {
-        setcookie( "user", "Alex Porter", time()+3600 );
-        return html( 'admin/index.html.php' );
+function Admin_login() 
+{
+    if ($_POST['password'] == option('password') ) {
+        setcookie("user", "Alex Porter", time()+3600);
+        return html('admin/index.html.php');
     } else {
-        return html( 'admin/index_login.html.php' );
+        return html('admin/index_login.html.php');
     }
 }
 
@@ -53,9 +55,10 @@ function Admin_login() {
  *
  * @return unknown
  */
-function Admin_logout() {
-    setcookie( "user", "", time()-3600 );
-    return html( 'admin/index_login.html.php' );
+function Admin_logout() 
+{
+    setcookie("user", "", time()-3600);
+    return html('admin/index_login.html.php');
 }
 
 
@@ -67,7 +70,8 @@ function Admin_logout() {
  *
  * @return unknown
  */
-function Admin_Create_kml() {
+function Admin_Create_kml() 
+{
     $xml = Find_Dojo_all();
 
     $newKML = '<?xml version="1.0" encoding="UTF-8"?>
@@ -93,7 +97,7 @@ function Admin_Create_kml() {
 
         $newKML
             .= '<a href="'.
-            option( 'site_url' ).
+            option('site_url').
             '/dojo/'.
             $dojo->DojoName.
             '">View Details</a>';
@@ -106,10 +110,10 @@ function Admin_Create_kml() {
     }
     $newKML .= '</Document></kml>';
     $myFile = "data/dojo.kml";
-    $fh = fopen( $myFile, 'w' ) or die( "can't open file" );
-    fwrite( $fh, $newKML );
-    fclose( $fh );
-    return html( 'admin/create_kml.html.php' );
+    $fh = fopen($myFile, 'w') or die("can't open file");
+    fwrite($fh, $newKML);
+    fclose($fh);
+    return html('admin/create_kml.html.php');
 }
 
 
@@ -119,24 +123,25 @@ function Admin_Create_kml() {
  * @access public
  * @return void
  */
-function Admin_importjwm() {
+function Admin_importjwm() 
+{
 
     set_time_limit();
-    $ch = curl_init( "http://judoworldmap.com/" );
-    $fp = fopen( "data/jwm.txt", "w" );
+    $ch = curl_init("http://judoworldmap.com/");
+    $fp = fopen("data/jwm.txt", "w");
 
-    curl_setopt( $ch, CURLOPT_FILE, $fp );
-    curl_setopt( $ch, CURLOPT_HEADER, 0 );
-    curl_exec( $ch );
-    curl_close( $ch );
-    fclose( $fp );
+    curl_setopt($ch, CURLOPT_FILE, $fp);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_exec($ch);
+    curl_close($ch);
+    fclose($fp);
 
 
-    $raw_data = file_get_contents( 'data/jwm.txt' );
-    if ( strpos( $raw_data, 'This work is licensed under Creative Commons NC-SA' ) ) {
+    $raw_data = file_get_contents('data/jwm.txt');
+    if (strpos($raw_data, 'This work is licensed under Creative Commons NC-SA') ) {
 
-        $data = get_string_between( $raw_data, 'var icon17', 'new GIcon();' );
-        $data_array = explode( 'var icon', $data );
+        $data = get_string_between($raw_data, 'var icon17', 'new GIcon();');
+        $data_array = explode('var icon', $data);
         echo '<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">';
         echo '<table border=1>';
@@ -145,11 +150,11 @@ function Admin_importjwm() {
             //echo ".$value<br />";
             echo '<tr>';
             echo "<td>$loop</td>";
-            $coords = get_string_between( $value, 'GLatLng(', ')' );
-            $LatLng = explode( ',', $coords );
-            $url = get_string_between( $value, 'http://', '\\"' );
-            $name = strip_tags( stripslashes( get_string_between( $value, '<b>', '</b>' ) ) );
-            $name = clean_name( $name );
+            $coords = get_string_between($value, 'GLatLng(', ')');
+            $LatLng = explode(',', $coords);
+            $url = get_string_between($value, 'http://', '\\"');
+            $name = strip_tags(stripslashes(get_string_between($value, '<b>', '</b>')));
+            $name = clean_name($name);
 
 
 
@@ -160,14 +165,14 @@ function Admin_importjwm() {
             echo "<td>$name</td><td width =50>$url</td><td>$Lat</td><td>$Lng</td>";
 
 
-            $dojo = Find_dojo( $name );
+            $dojo = Find_dojo($name);
 
-            if ( !$dojo && $name ) {
+            if (!$dojo && $name ) {
                 echo "<td>NEW</td>";
 
                 $dojo_array = array( 'DojoName' => $name, 'ClubWebsite' => $url, 'Latitude' => $Lat, 'Longitude' => $Lng, 'URL' => 'http://judoworldmap.com/' );
                 //print_r($dojo_array);
-                Create_dojo( $dojo_array );
+                Create_dojo($dojo_array);
             } else {
                 echo "<td>&nbsp;</td>";
             }
@@ -177,11 +182,11 @@ function Admin_importjwm() {
 
         }
         echo '</table>';
-        unlink( 'data/jwm.txt' );
+        unlink('data/jwm.txt');
         admin_create_kml();
 
     } else {
-        halt( 'CC License no longer on JWM site' );
+        halt('CC License no longer on JWM site');
     }
 
 }
@@ -194,14 +199,15 @@ function Admin_importjwm() {
  * @access public
  * @return void
  */
-function sync() {
-    $NewInFar = DojoNotInLocal( option( 'sync_site' ) );
+function sync() 
+{
+    $NewInFar = DojoNotInLocal(option('sync_site'));
     $Newlist[]='No new in far site data';
-    $UpdatedInFar = NewerFarDojo( option( 'sync_site' ) );
-    set( 'NewInFar', $NewInFar );
-    set( 'UpdatedInFar', $UpdatedInFar );
+    $UpdatedInFar = NewerFarDojo(option('sync_site'));
+    set('NewInFar', $NewInFar);
+    set('UpdatedInFar', $UpdatedInFar);
 
-    return html( 'admin/sync.html.php' );
+    return html('admin/sync.html.php');
 
 }
 
@@ -211,10 +217,11 @@ function sync() {
  * @access public
  * @return void
  */
-function Sync_new() {
-    $Newlist = ListDojoNotInLocal( option( 'sync_site' ) );
-    set( 'Newlist', $Newlist );
-    return html( 'admin/sync_new.html.php' );
+function Sync_new() 
+{
+    $Newlist = ListDojoNotInLocal(option('sync_site'));
+    set('Newlist', $Newlist);
+    return html('admin/sync_new.html.php');
 
 }
 
@@ -225,10 +232,11 @@ function Sync_new() {
  * @access public
  * @return void
  */
-function Sync_updated() {
-    $Newlist = ListNewerFarDojo( option( 'sync_site' ) );
-    set( 'Newlist', $Newlist );
-    return html( 'admin/sync_updated.html.php' );
+function Sync_updated() 
+{
+    $Newlist = ListNewerFarDojo(option('sync_site'));
+    set('Newlist', $Newlist);
+    return html('admin/sync_updated.html.php');
 
 }
 

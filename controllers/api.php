@@ -27,9 +27,9 @@
  */
 function Api_read()
 {
-	$target = params('dojo');
-	$target = str_replace('%20', ' ', $target);
-	return json(Find_dojo($target));
+    $target = params('dojo');
+    $target = str_replace('%20', ' ', $target);
+    return json(Find_dojo($target));
 }
 
 
