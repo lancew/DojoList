@@ -10,9 +10,9 @@ Version    : 1.0
 Released   : 20090622
 
 -->
-<?php 
-// Set language to ... 
-putenv ("LC_ALL=en"); 
+<?php
+// Set language to ...
+putenv ("LC_ALL=en");
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -51,10 +51,10 @@ putenv ("LC_ALL=en");
 	<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js" type="text/javascript"></script>
 	<link href="/<?php echo option('css_dir') ?>/reset.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="/<?php echo option('css_dir') ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
-	
+
 	<link rel="alternate" type="application/rss+xml" href="<?php echo option('data_dir') ?>/dojo.rss" title="RSS feed for DojoList">
-	
-		
+
+
 </head>
 <body>
 
@@ -69,39 +69,39 @@ putenv ("LC_ALL=en");
 		<div id="menu">
 			<ul>
 				<li><a href="<?=url_for('/')?>"><?php echo _("Home"); ?></a></li>
-				
+
 				<li><a href="https://github.com/lancew/DojoList/archives/master"><?php echo _("Download"); ?></a></li>
-				
+
 				<li><a href="<?=url_for('/about')?>"><?php echo _("About"); ?></a></li>
 
 
-				
+
 
 
 			</ul>
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-		
-			<form 
-			 method="get" 
-			 action="<?=url_for('search')?>/" 
+
+			<form
+			 method="get"
+			 action="<?=url_for('search')?>/"
 			 name="search"
             >
 				<fieldset>
-				<input 
-				    type="text" 
-				    name="s" 
-				    id="search-text" 
-				    size="15" 
-				    value = "<?php echo _("Search"); ?>" 
+				<input
+				    type="text"
+				    name="s"
+				    id="search-text"
+				    size="15"
+				    value = "<?php echo _("Search"); ?>"
 				    onFocus="this.form.s.value = '';"
-				    onChange="this.form.action += this.form.s.value"; 
+				    onChange="this.form.action += this.form.s.value";
 				/>
-				<input 
-				    type="submit" 
-				    id="search-submit" 
-				    value="<?php echo _("GO"); ?>" 
+				<input
+				    type="submit"
+				    id="search-submit"
+				    value="<?php echo _("GO"); ?>"
 				/>
 				</fieldset>
 			</form>
@@ -113,18 +113,18 @@ putenv ("LC_ALL=en");
 	<div id="page">
 	<div id="page-bgtop">
 	<div id="content">
-		
+
 
 
 
     <?= $content; ?>
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 
 </div>
 		<!-- end #content -->
@@ -141,29 +141,29 @@ putenv ("LC_ALL=en");
 						<li><a href="<?=url_for('/')?><?php echo option('data_dir') ?>/dojo.rss">RSS</a></li>
 						<br />
 							<li><a href="<?php echo url_for('dojo','create'); ?>"> <?php echo _("Create new Dojo"); ?></a></li>
-						
+
 					</ul>
 				</li>
 
 				<li>
 					<h2>DojoList</h2>
-					
+
 					<p>DojoList is an open source project by Lance Wicks. The project aims to provide a system to make it easy for a association to maintain a list of Judo clubs.</p>
 					<p>The project is hosted at <a href="http://github.com/lancew/DojoList">http://github.com/lancew/DojoList</a> where you can access all the source code, record bugs, etc. Development tasks are managed via <a href="http://www.pivotaltracker.com/projects/35696">Pivotal Tarcker</a>.</p>
 					<p>This project has been built on the <a href="http://limonade-php.github.io/" title="Limonade PHP micro-framework">Limonade PHP micro-framework</a> and the <a href="http://jquery.com/">jquery</a> and <a href="http://www.mapstraction.com/">mapstraction</a> javascript libraries. Updates are protected by the <a href="http://recaptcha.net">reCaptcha</a> project.</p>
 					<p>Discussion about the project is hosted on <a href="https://groups.google.com/group/dojolist">Google groups</a>.</p>
-					<p>The DojoList project is licensed under a <a href="/<?php echo option('data_dir') ?>/agpl-3.0.txt">AGPL license.<br /><img src="/<?php echo option('images_dir') ?>/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>	
+					<p>The DojoList project is licensed under a <a href="/<?php echo option('data_dir') ?>/agpl-3.0.txt">AGPL license.<br /><img src="/<?php echo option('images_dir') ?>/agplv3-88x31.png" alt="agplv3-88x31" width="88" height="31"/></a></p>
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/459913/widgets/project_thin_badge.js"></script></p>
 					<p><a href = 'https://travis-ci.org/lancew/DojoList'><img src="https://travis-ci.org/lancew/DojoList.svg?branch=master"></img></a></p>
 					<p><a href="https://codeclimate.com/github/lancew/DojoList"><img src="https://codeclimate.com/github/lancew/DojoList.png" /></a></p>
 				</li>
 				<li>
 				<h2>Copyright</h2>
-				<p>&copy;2009-2010, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">The data created by DojoList</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a> It also contains other CC licenses data generated by <a href="http://www.judoworldmap.com">Ulrich Wisser</a>.		
-				
+				<p>&copy;2009-2018, Lance Wicks. Web layout from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.<br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">The data created by DojoList</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/lancew/DojoList" property="cc:attributionName" rel="cc:attributionURL">Lance Wicks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England &amp; Wales License</a> It also contains other CC licenses data generated by <a href="http://www.judoworldmap.com">Ulrich Wisser</a>.
+
 				</p>
-				
+
 
 				</li>
 			</ul>
@@ -175,14 +175,14 @@ putenv ("LC_ALL=en");
 	<!-- end #page -->
 	<div id="footer">
 	<p>DojoList v.<?php echo option('version');?></p>
-	
-	
-	
+
+
+
 	</div>
 	<!-- end #footer -->
 </div>
-    
-	
+
+
 	</body>
-</html>	
-	
+</html>
+
