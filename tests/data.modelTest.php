@@ -32,4 +32,12 @@ final class DataModelTest extends TestCase
             'Membership ID: Must be numbers only'
         );
     }
+    public function testValidate_fields_Dojoname()
+    {
+        $result = Validate_field('1Lwtest', 'DojoName');
+        $this->assertSame($result, 'Dojo Name: Must be alphanumeric only', 'test Validate_field Dojoname');
+        $result = Validate_field('Lwtest', 'DojoName');
+        $this->assertSame($result, null, 'test Validate_field Dojoname 2');
+    }
+
 }
