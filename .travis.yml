@@ -7,7 +7,6 @@ php:
 - 5.5
 - 5.4
 - hhvm
-script: php tests/all_tests.php
 env:
   global:
   - secure: cSUjO4SY34PObLbaQO1W09An4CrbyhpCCYsOYRh1FTgoM5DmpQUU4cG3dDiauxw3vCx3AtmIUbHll9P91P7PzxM5kIbBCl8DBHQszuZ5GuZHA0YhLOBhbLIdSZtcduUy0q0VOiYv6Zhn17gYN4LXjLGmsUEKNuZ6cWbvtAMaRX8=
