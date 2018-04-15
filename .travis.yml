@@ -3,7 +3,7 @@ language: php
 php:
   - 7.0
 script:
-  - ./vendor/bin/phpunit --verbose --bootstrap vendor/autoload.php tests/
+  - composer install; ./vendor/bin/phpunit --verbose --bootstrap vendor/autoload.php tests/
 env:
   global:
   - secure: cSUjO4SY34PObLbaQO1W09An4CrbyhpCCYsOYRh1FTgoM5DmpQUU4cG3dDiauxw3vCx3AtmIUbHll9P91P7PzxM5kIbBCl8DBHQszuZ5GuZHA0YhLOBhbLIdSZtcduUy0q0VOiYv6Zhn17gYN4LXjLGmsUEKNuZ6cWbvtAMaRX8=
