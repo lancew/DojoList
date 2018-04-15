@@ -5,13 +5,8 @@ echo 'This script runs the test scripts then publishes the bug database to the b
 echo "CTRL+C to cancel or wait 10 seconds for the script to run"
 sleep 10
 echo "Running tests..."
-php tests/all_tests.php > test.html
-echo "Exporting bugs..."
-git sd publish --to ./bugs --html
-echo "Running codeSniffer"
-phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium,./lib/recaptchalib.php ./ > codesniff.txt
-echo "Running GitStats"
-~/Documents/gitstats/gitstats/gitstats ~/Documents/Dev_Projects/DojoList/ ~/Documents/Dev_Projects/DojoList/stats
-open test.html
-open codesniff.txt
+./vendor/bin/phpunit --verbose --bootstrap vendor/autoload.php tests
+
+echo "Running codesniffer..."
+./vendor/bin/phpcs --ignore=./js,./lib/limonade,./tests/simpletest,./tests/selenium,./lib/recaptchalib.php ./ > codesniff.txt
 echo "Finished"
