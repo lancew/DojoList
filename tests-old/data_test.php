@@ -19,10 +19,10 @@ class TestOfDataModel extends UnitTestCase
     {
         $this->assertTrue(Load_Xml_data('data/data.xml'));
     }
-    
-        
-    
-    
+
+
+
+
 
     /*
     function testLoad_test_xml_data() {
@@ -42,29 +42,11 @@ class TestOfDataModel extends UnitTestCase
         $xml = Load_Xml_data('data/test.xml');
         $response = Save_Xml_data($xml, 'data/test1.xml');
         //temp change back to Data Saved ASAP
-        $this->assertTrue(file_exists('data/test1.xml')); 
+        $this->assertTrue(file_exists('data/test1.xml'));
         unlink('data/test1.xml');
     }
 
-    function testGet_string_between()
-    {
-        //require_once 'lib/data.model.php';
-        $result = Get_string_between('addda', 'a', 'a');
-        $this->assertEqual($result, 'ddd', 'test Get_string_between'); 
-        
-    }
-    
-    function testValidate_fields_Dojoname()
-    {
-        $result = Validate_field('1Lwtest', 'DojoName');
-        $this->assertEqual($result, 'Dojo Name: Must be alphanumeric only', 'test Validate_field Dojoname'); 
-        $result = Validate_field('Lwtest', 'DojoName');
-        //echo '-'.$result.'-';
-        $this->assertEqual($result, null, 'test Validate_field Dojoname 2'); 
-        
-    }
 
-   
 
 
 }
