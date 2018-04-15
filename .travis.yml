@@ -1,10 +1,6 @@
-after_success: ./upload.sh
 language: php
 php:
   - 7.0
 script:
-  - composer install; ./vendor/bin/phpunit --verbose --bootstrap vendor/autoload.php tests/
-env:
-  global:
-  - secure: cSUjO4SY34PObLbaQO1W09An4CrbyhpCCYsOYRh1FTgoM5DmpQUU4cG3dDiauxw3vCx3AtmIUbHll9P91P7PzxM5kIbBCl8DBHQszuZ5GuZHA0YhLOBhbLIdSZtcduUy0q0VOiYv6Zhn17gYN4LXjLGmsUEKNuZ6cWbvtAMaRX8=
-  - secure: bOC+tbKNbbkxIKwTCo9ntz8BOUKFrsAGtjqWl7lCn3zpuG7ymEaxuoNKKiSSC2vmPFG7/WQ8R9Kp7/cRoHGgynbapC5Z0msYonSrHWATI6uoBX/3MEeeyGHM/svzwhF+0s3r0huX+2k1b8BzYY67qffHKyaYxU/ARhHS3HZznlA=
+  - composer install
+  - ./vendor/bin/phpunit --verbose --bootstrap vendor/autoload.php tests/
