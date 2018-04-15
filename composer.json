@@ -1,8 +1,17 @@
 {
-    "name": "lancew/DojoList",
-    "description": "A judo club database system",
-    "homepage": "https://dojolist.org",
-    "keywords": [
-        "judo"
+    "name": "lancew/dojo-list",
+    "description": "System for the recording of club details for Judo and other martial arts",
+    "require": {
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.2",
+        "phpunit/phpunit": "^6"
+    },
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Lance Wicks",
+            "email": "lw@judocoach.com"
+        }
     ]
 }
